@@ -33,7 +33,7 @@ int InQueue(SequenceQueue *queue, int item) {
         return 0;
     }
 
-    if (IsEmptyQueue(queue)) {
+    if (IsEmptyQueue(*queue)) {
         (*queue)->front = 0;
     }
 
@@ -44,21 +44,27 @@ int InQueue(SequenceQueue *queue, int item) {
 }
 
 int OutQueue(SequenceQueue *queue, int *item) {
-    if (IsEmptyQueue(queue)) {
+    if (IsEmptyQueue(*queue)) {
         return 0;
     }
 
     *item = (*queue)->data[(*queue)->front];
+    (*queue)->front++;
+
     return 1;
 }
 
 int InitQueue(SequenceQueue *queue) {
+    // 此处 sizeof 的参数要注意
+    *queue = (SequenceQueue) malloc(sizeof(struct SequenceQueueType));
+
     (*queue)->front = -1;
     (*queue)->rear = -1;
 }
 
 void ShowQueue(SequenceQueue queue) {
     printf("items: ");
+
     for (int i = queue->front; i <= queue->rear; i++) {
         printf("%d ", queue->data[i]);
     }
@@ -74,15 +80,17 @@ int main() {
     InQueue(queue, 3);
     InQueue(queue, 4);
 
-    ShowQueue(queue);
-
+    ShowQueue(*queue);
     int *item = (int *) malloc(sizeof(int));
 
     OutQueue(queue, item);
-    printf("out: %d", *item);
-    OutQueue(queue, item);
-    printf("out: %d", *item);
+    printf("out: %d\n", *item);
+    ShowQueue(*queue);
 
-    ShowQueue(queue);
+    OutQueue(queue, item);
+    printf("out: %d\n", *item);
+    ShowQueue(*queue);
+
+    getchar();
 
 }
