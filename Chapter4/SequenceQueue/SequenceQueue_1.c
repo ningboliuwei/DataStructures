@@ -23,9 +23,8 @@ int IsEmptyQueue(SequenceQueue queue) {
 int LengthOfQueue(SequenceQueue queue) {
     if (IsEmptyQueue(queue)) {
         return 0;
-    } else {
-        return queue->rear - queue->front + 1;
     }
+    return queue->rear - queue->front + 1;
 }
 
 int InQueue(SequenceQueue *queue, int item) {
@@ -90,6 +89,8 @@ int main() {
     OutQueue(queue, item);
     printf("out: %d\n", *item);
     ShowQueue(*queue);
+
+    printf("length of queue: %d", LengthOfQueue(*queue));
 
     getchar();
 
