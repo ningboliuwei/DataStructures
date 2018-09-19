@@ -16,8 +16,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/Chapter2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/Chapter2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/dictionaries/Liu_Wei.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/dictionaries/Liu_Wei.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2/DoubleLinkList/DoubleLinkList_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/DoubleLinkList/DoubleLinkList_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2/SequenceList/SequenceList_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/SequenceList/SequenceList_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2/SingleLinkList/SingleLinkList_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/SingleLinkList/SingleLinkList_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/Chapter3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/Chapter3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/BracketMatching/BracketMatching.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/BracketMatching/BracketMatching.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/ExpressionCaculation/ExpressionCaculation_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/ExpressionCaculation/ExpressionCaculation_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/ExpressionCaculation/InfixExpression.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/ExpressionCaculation/InfixExpression.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/LineEdit/LineEdit.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/LineEdit/LineEdit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/LinkStack/LinkStack_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/LinkStack/LinkStack_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/NumberConvertion/NumberConvertion_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/NumberConvertion/NumberConvertion_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/SequenceStack/SequenceStack_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/Chapter4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/Chapter4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4/LinkQueue/LinkQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/LinkQueue/LinkQueue_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_2.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,30 +109,31 @@
     <session id="-886190002">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="998" />
+          <entry key="c" value="1211" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="998" />
+          <entry key="ObjectiveC" value="1211" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="c" value="2" />
+          <entry key="c" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="2" />
+          <entry key="ObjectiveC" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
@@ -118,7 +157,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_1.c">
+        <entry file="file://$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
@@ -129,22 +168,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="161" column="4" selection-start-line="161" selection-start-column="4" selection-end-line="161" selection-end-column="4" />
+            <state relative-caret-position="396">
+              <caret line="147" column="33" lean-forward="true" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              <folding>
+                <element signature="e#37#55#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter3/LinkStack/LinkStack_1.c">
+        <entry file="file://$PROJECT_DIR$/Chapter3_Stack/LinkStack/LinkStack_1.c">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter3/SequenceStack/SequenceStack_1.c">
+        <entry file="file://$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -154,6 +205,7 @@
     <findStrings>
       <find>showqueue</find>
       <find>%d</find>
+      <find>printf(&quot;length of queue: %d\n&quot;, LengthOfQueue(*queue));</find>
     </findStrings>
     <replaceStrings>
       <replace>%d\n</replace>
@@ -172,6 +224,7 @@
         <option value="$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_1.c" />
         <option value="$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_2.c" />
         <option value="$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c" />
+        <option value="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" />
       </list>
     </option>
   </component>
@@ -223,30 +276,41 @@
             <path>
               <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter3" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter3_Stack" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter3" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter3_Stack" type="462c0819:PsiDirectoryNode" />
               <item name="LinkStack" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter3" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter3_Stack" type="462c0819:PsiDirectoryNode" />
               <item name="SequenceStack" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter4_Queue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter4_Queue" type="462c0819:PsiDirectoryNode" />
               <item name="LoopQueue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter5_String" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter5_String" type="462c0819:PsiDirectoryNode" />
+              <item name="SequenceString" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,6 +326,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitHub\DataStructures\Chapter5_String\SequenceString" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GitHub\CLionProjects\DataStructures" />
     </key>
@@ -334,23 +401,24 @@
       <workItem from="1537250096370" duration="17000" />
       <workItem from="1537320439290" duration="3431000" />
       <workItem from="1537331847733" duration="4562000" />
-      <workItem from="1537363493694" duration="2146000" />
+      <workItem from="1537363493694" duration="2331000" />
+      <workItem from="1537366250470" duration="1097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24895000" />
+    <option name="totallyTimeSpent" value="26177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37350705" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37350705" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2345679" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -395,7 +463,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SingleLinkList/SingleLinkList_1.c" />
     <entry file="file://$PROJECT_DIR$/main.c" />
-    <entry file="file://$PROJECT_DIR$/Chapter4/LinkQueue/LinkQueue_1.c">
+    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LinkQueue/LinkQueue_1.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
@@ -405,7 +473,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_2.c">
+    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_2.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="93" column="22" lean-forward="true" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
@@ -425,7 +493,7 @@
     <entry file="file://$PROJECT_DIR$/Week01_LAB_DEMO/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_1.c">
+    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
@@ -435,16 +503,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter3/LinkStack/LinkStack_1.c">
+    <entry file="file://$PROJECT_DIR$/Chapter3_Stack/LinkStack/LinkStack_1.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter3/SequenceStack/SequenceStack_1.c">
+    <entry file="file://$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c">
+    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="161" column="4" selection-start-line="161" selection-start-column="4" selection-end-line="161" selection-end-column="4" />
+        <state relative-caret-position="396">
+          <caret line="147" column="33" lean-forward="true" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="e#37#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
