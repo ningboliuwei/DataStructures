@@ -1,5 +1,6 @@
 //
 // Created by Liu Wei on 2018/9/15.
+// 此版本有缺陷，如：若进一个元素，又出一个元素，然后判断是否是空队列？
 //
 
 #include <stdio.h>
@@ -7,27 +8,27 @@
 
 #define MAX_LENGTH 10
 
-typedef struct SequenceQueueType {
+typedef struct LoopQueueType {
     int data[MAX_LENGTH];
     int front;
     int rear;
-} *SequenceQueue;
+} *LoopQueue;
 
-int IsEmptyQueue(SequenceQueue queue) {
+int IsEmptyQueue(LoopQueue queue) {
     if (queue->front == -1 && queue->rear == -1) {
         return 1;
     }
     return 0;
 }
 
-int LengthOfQueue(SequenceQueue queue) {
+int LengthOfQueue(LoopQueue queue) {
     if (IsEmptyQueue(queue)) {
         return 0;
     }
     return queue->rear - queue->front + 1;
 }
 
-int InQueue(SequenceQueue *queue, int item) {
+int InQueue(LoopQueue *queue, int item) {
     if ((*queue)->rear == MAX_LENGTH - 1) {
         return 0;
     }
@@ -42,7 +43,7 @@ int InQueue(SequenceQueue *queue, int item) {
     return 1;
 }
 
-int OutQueue(SequenceQueue *queue, int *item) {
+int OutQueue(LoopQueue *queue, int *item) {
     if (IsEmptyQueue(*queue)) {
         return 0;
     }
@@ -53,15 +54,15 @@ int OutQueue(SequenceQueue *queue, int *item) {
     return 1;
 }
 
-int InitQueue(SequenceQueue *queue) {
+int InitQueue(LoopQueue *queue) {
     // 此处 sizeof 的参数要注意
-    *queue = (SequenceQueue) malloc(sizeof(struct SequenceQueueType));
+    *queue = (LoopQueue) malloc(sizeof(struct LoopQueueType));
 
     (*queue)->front = -1;
     (*queue)->rear = -1;
 }
 
-void ShowQueue(SequenceQueue queue) {
+void ShowQueue(LoopQueue queue) {
     printf("items: ");
 
     for (int i = queue->front; i <= queue->rear; i++) {
@@ -71,7 +72,7 @@ void ShowQueue(SequenceQueue queue) {
 }
 
 int main() {
-    SequenceQueue *queue = (SequenceQueue *) malloc(sizeof(SequenceQueue));
+    LoopQueue *queue = (LoopQueue *) malloc(sizeof(LoopQueue));
     InitQueue(queue);
 
     InQueue(queue, 1);
