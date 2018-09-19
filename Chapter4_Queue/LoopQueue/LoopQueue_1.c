@@ -2,10 +2,6 @@
 // Created by Liu Wei on 2018/9/19.
 //
 
-//
-// Created by Liu Wei on 2018/9/15.
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -98,7 +94,6 @@ int main() {
     ShowQueue(*queue);
     ShowLength(*queue);
 
-
     OutQueue(queue, item);
     printf("out: %d\n", *item);
     ShowQueue(*queue);
@@ -159,7 +154,7 @@ int main() {
     }
 
     int count = LengthOfQueue(*queue);
-    
+
     for (int i = 0; i < count; i++) {
         OutQueue(queue, item);
         printf("out: %d\n", *item);
