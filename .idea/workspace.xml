@@ -2,11 +2,12 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="DataStructures" targetName="SequenceQueue_1" />
-      <config projectName="DataStructures" targetName="SequenceStack_1" />
+      <config projectName="DataStructures" targetName="SequenceString_1" />
       <config projectName="DataStructures" targetName="LoopQueue_1" />
-      <config projectName="DataStructures" targetName="SequenceQueue_2" />
+      <config projectName="DataStructures" targetName="SequenceStack_1" />
       <config projectName="DataStructures" targetName="LinkListQueue_1" />
+      <config projectName="DataStructures" targetName="SequenceQueue_2" />
+      <config projectName="DataStructures" targetName="SequenceQueue_1" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -16,46 +17,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/Chapter2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/Chapter2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/dictionaries/Liu_Wei.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/dictionaries/Liu_Wei.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/DoubleLinkList/DoubleLinkList_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/DoubleLinkList/DoubleLinkList_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/SequenceList/SequenceList_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/SequenceList/SequenceList_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/SingleLinkList/SingleLinkList_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/SingleLinkList/SingleLinkList_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/Chapter3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/Chapter3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/BracketMatching/BracketMatching.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/BracketMatching/BracketMatching.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/ExpressionCaculation/ExpressionCaculation_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/ExpressionCaculation/ExpressionCaculation_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/ExpressionCaculation/InfixExpression.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/ExpressionCaculation/InfixExpression.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/LineEdit/LineEdit.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/LineEdit/LineEdit.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/LinkStack/LinkStack_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/LinkStack/LinkStack_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/NumberConvertion/NumberConvertion_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/NumberConvertion/NumberConvertion_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3/SequenceStack/SequenceStack_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/Chapter4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/Chapter4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/LinkQueue/LinkQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/LinkQueue/LinkQueue_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,31 +73,35 @@
     <session id="-886190002">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="1211" />
+          <entry key="c" value="3365" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="1211" />
+          <entry key="ObjectiveC" value="3365" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="c" value="3" />
+          <entry key="SequenceString_1 (disassembly)" value="1" />
+          <entry key="c" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="3" />
+          <entry key="Disassembly" value="1" />
+          <entry key="ObjectiveC" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
@@ -171,8 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="147" column="33" lean-forward="true" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+            <state relative-caret-position="2793">
+              <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -180,11 +148,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="274">
+              <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
               <folding>
                 <element signature="e#37#55#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putchar.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putc.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
             </state>
           </provider>
         </entry>
@@ -196,7 +182,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -235,9 +225,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="500" />
-    <option name="y" value="1" />
-    <option name="width" value="656" />
+    <option name="x" value="499" />
+    <option name="width" value="657" />
     <option name="height" value="456" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -345,7 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LoopQueue_1">
+  <component name="RunManager" selected="Application.SequenceString_1">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -376,6 +365,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SequenceString_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures" TARGET_NAME="SequenceString_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures" RUN_TARGET_NAME="SequenceString_1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.LinkListQueue_1" />
@@ -383,6 +377,7 @@
       <item itemvalue="Application.SequenceQueue_1" />
       <item itemvalue="Application.SequenceQueue_2" />
       <item itemvalue="Application.SequenceStack_1" />
+      <item itemvalue="Application.SequenceString_1" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -402,24 +397,26 @@
       <workItem from="1537320439290" duration="3431000" />
       <workItem from="1537331847733" duration="4562000" />
       <workItem from="1537363493694" duration="2331000" />
-      <workItem from="1537366250470" duration="1097000" />
+      <workItem from="1537366250470" duration="1332000" />
+      <workItem from="1537420804879" duration="4322000" />
+      <workItem from="1537449144125" duration="4550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26177000" />
+    <option name="totallyTimeSpent" value="35284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26972282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37350705" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2345679" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37350705" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.52877307" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -443,6 +440,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>s-&gt;vec[i]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>queue-&gt;front</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -503,23 +505,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2793">
+          <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter3_Stack/LinkStack/LinkStack_1.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="147" column="33" lean-forward="true" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+        <state relative-caret-position="266">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putchar.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="274">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
           <folding>
             <element signature="e#37#55#0" expanded="true" />
           </folding>
