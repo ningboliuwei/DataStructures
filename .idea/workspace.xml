@@ -2,12 +2,20 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
+<<<<<<< Updated upstream
       <config projectName="DataStructures" targetName="SequenceString_1" />
       <config projectName="DataStructures" targetName="LoopQueue_1" />
       <config projectName="DataStructures" targetName="SequenceStack_1" />
       <config projectName="DataStructures" targetName="LinkListQueue_1" />
       <config projectName="DataStructures" targetName="SequenceQueue_2" />
       <config projectName="DataStructures" targetName="SequenceQueue_1" />
+=======
+      <config projectName="DataStructures" targetName="LoopQueue_1" />
+      <config projectName="DataStructures" targetName="SequenceQueue_1" />
+      <config projectName="DataStructures" targetName="LinkListQueue_1" />
+      <config projectName="DataStructures" targetName="SequenceQueue_2" />
+      <config projectName="DataStructures" targetName="SequenceStack_1" />
+>>>>>>> Stashed changes
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -17,7 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,13 +43,13 @@
     <session id="717616718">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -125,8 +137,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="323">
               <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+=======
+            <state relative-caret-position="38">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#43#61#0" expanded="true" />
               </folding>
@@ -158,8 +175,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putchar.c">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="223">
               <caret line="85" selection-start-line="85" selection-end-line="85" />
+=======
+            <state relative-caret-position="337">
+              <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+              <folding>
+                <element signature="e#86#104#0" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -167,8 +192,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putc.c">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="269">
               <caret line="90" selection-start-line="90" selection-end-line="90" />
+=======
+            <state relative-caret-position="1767">
+              <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+              <folding>
+                <element signature="e#86#104#0" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -223,8 +256,14 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< Updated upstream
     <option name="x" value="499" />
     <option name="width" value="657" />
+=======
+    <option name="x" value="396" />
+    <option name="y" value="247" />
+    <option name="width" value="656" />
+>>>>>>> Stashed changes
     <option name="height" value="456" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -393,27 +432,45 @@
       <workItem from="1537249635817" duration="207000" />
       <workItem from="1537250096370" duration="17000" />
       <workItem from="1537320439290" duration="3431000" />
+<<<<<<< Updated upstream
       <workItem from="1537331847733" duration="4562000" />
       <workItem from="1537363493694" duration="2331000" />
       <workItem from="1537366250470" duration="1332000" />
       <workItem from="1537420804879" duration="4322000" />
       <workItem from="1537449144125" duration="5641000" />
+=======
+      <workItem from="1537331847733" duration="4675000" />
+      <workItem from="1537406597596" duration="937000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="36375000" />
+=======
+    <option name="totallyTimeSpent" value="23040000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+<<<<<<< Updated upstream
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26972282" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26772615" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Run" order="2" weight="0.37350705" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.52877307" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2053872" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2345679" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -492,6 +549,7 @@
     <entry file="file://$PROJECT_DIR$/Week01_LAB_DEMO/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -516,6 +574,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+=======
+    <entry file="file://$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -526,6 +593,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putc.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -537,6 +605,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
+=======
+    <entry file="file://$PROJECT_DIR$/Chapter4/LinkQueue/LinkQueue_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1767">
+          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+          <folding>
+            <element signature="e#86#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter3/LinkStack/LinkStack_1.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#37#55#0" expanded="true" />
           </folding>
