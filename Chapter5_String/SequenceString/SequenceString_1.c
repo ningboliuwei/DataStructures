@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX_LENGTH 100
+#define MAX_LENGTH 20
 
 typedef struct SequenceStringStruct {
     char vec[MAX_LENGTH];
@@ -26,9 +26,7 @@ int Concact(SequenceString *s, SequenceString *t) {
     for (i = 0; i < Length(t); i++) {
         s->vec[Length(s) + i + 1] = t->vec[i];
     }
-    s->vec[i] = '\0';
-
-
+    s->vec[Length(s) + Length(t)] = '\0';
     s->length = s->length + t->length;
 
     return 1;
@@ -55,7 +53,7 @@ int Compare(SequenceString *s, SequenceString *t) {
     int i = 0;
 
     for (i = 0; i < s->length && i < t->length && s->vec[i] == t->vec[i]; i++) {
-
+        // Do nothing
     }
 
     return s->vec[i] - t->vec[i];
@@ -146,14 +144,18 @@ int main() {
     printf("\n");
 
     Concact(s1, s2);
+    printf("after concat: ");
     OutputString(s1);
 
-    printf("length of s1 is: %d", Length(s1));
+    printf("length of s1 is: %d\n", Length(s1));
 
     Insert(s1, 3, s2);
+    printf("after insertion: ");
     OutputString(s1);
 
     Delete(s1, 3, 4);
+    printf("after deletion: ");
+    OutputString(s1);
 
     getchar();
 }
