@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX_LENGTH 20
+#define MAX_LENGTH 50
 
 typedef struct SequenceStringStruct {
     char vec[MAX_LENGTH];
@@ -17,17 +17,19 @@ int Length(SequenceString *s) {
 }
 
 int Concact(SequenceString *s, SequenceString *t) {
+    int tLength = Length(t);
+    int sLength = Length(s);
     // 因为还要在最后放个 \0 ？
-    if (Length(s) + Length(t) >= MAX_LENGTH) {
+    if (sLength + tLength >= MAX_LENGTH) {
         return 0;
     }
 
-    int i = 0;
-    for (i = 0; i < Length(t); i++) {
-        s->vec[Length(s) + i + 1] = t->vec[i];
+    for (int i = 0; i < tLength; i++) {
+        s->vec[sLength + i] = t->vec[i];
     }
-    s->vec[Length(s) + Length(t)] = '\0';
-    s->length = s->length + t->length;
+
+    s->length = sLength + tLength;
+    s->vec[s->length] = '\0';
 
     return 1;
 }
@@ -65,22 +67,18 @@ int Insert(SequenceString *s, int start, SequenceString *t) {
         return 0;
     }
 
-    int i = 0;
-    int k = 0;
-
-    // 从 start 处后移 t->length 个单元
-    for (int i = s->length - 1; i > start; i--) {
-        s->vec[i + t->length] = s->vec[i];
+    for (int i = s->length - 1 + t->length; i > start + t->length; i--) {
+        s->vec[i] = s->vec[i - t->length];
     }
 
     for (int i = 0; i < t->length; i++) {
-        s->vec[start] = t->vec[i];
+        s->vec[start + i] = t->vec[i];
     }
-    s->vec[s->length + t->length] = '\0';
+
     s->length = s->length + t->length;
+    s->vec[s->length] = '\0';
 
     return 1;
-
 }
 
 int Delete(SequenceString *s, int start, int length) {
@@ -90,15 +88,14 @@ int Delete(SequenceString *s, int start, int length) {
 
     int i = 0;
 
-    for (i = 0; i < length; i++) {
-        s->vec[start + i] = s->vec[start + i + length];
+    for (i = start; i < s->length - length; i++) {
+        s->vec[i] = s->vec[i + length];
     }
 
     s->vec[i] = '\0';
     s->length = s->length - length;
 
     return 1;
-
 }
 
 int InputString(SequenceString *s, char *value) {
@@ -107,11 +104,13 @@ int InputString(SequenceString *s, char *value) {
     for (i = 0; value[i] != '\0'; i++) {
         s->vec[i] = value[i];
     }
+
+    s->vec[i] = '\0';
     s->length = i;
 }
 
 int OutputString(SequenceString *s) {
-    for (int i = 0; i < s->length; i++) {
+    for (int i = 0; s->vec[i] != '\0'; i++) {
         printf("%c", s->vec[i]);
     }
 
@@ -152,10 +151,12 @@ int main() {
     Insert(s1, 3, s2);
     printf("after insertion: ");
     OutputString(s1);
+    printf("length of s1 is: %d\n", Length(s1));
 
     Delete(s1, 3, 4);
     printf("after deletion: ");
     OutputString(s1);
+    printf("length of s1 is: %d\n", Length(s1));
 
     getchar();
 }
