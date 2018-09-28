@@ -2,14 +2,30 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="DataStructures" targetName="1556" />
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
       <config projectName="DataStructures" targetName="SequenceString_1" />
       <config projectName="DataStructures" targetName="LoopQueue_1" />
+>>>>>>> origin/master
       <config projectName="DataStructures" targetName="SequenceStack_1" />
+      <config projectName="DataStructures" targetName="SequenceQueue_1" />
+<<<<<<< HEAD
+      <config projectName="DataStructures" targetName="LoopQueue_1" />
+      <config projectName="DataStructures" targetName="SequenceQueue_2" />
+      <config projectName="DataStructures" targetName="1556" />
+      <config projectName="DataStructures" targetName="SequenceString_1" />
       <config projectName="DataStructures" targetName="LinkListQueue_1" />
       <config projectName="DataStructures" targetName="1530" />
-      <config projectName="DataStructures" targetName="SequenceQueue_2" />
+=======
+=======
+      <config projectName="DataStructures" targetName="LoopQueue_1" />
       <config projectName="DataStructures" targetName="SequenceQueue_1" />
+      <config projectName="DataStructures" targetName="LinkListQueue_1" />
+      <config projectName="DataStructures" targetName="SequenceQueue_2" />
+      <config projectName="DataStructures" targetName="SequenceStack_1" />
+>>>>>>> Stashed changes
+>>>>>>> origin/master
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -19,7 +35,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/Chapter2_List/OJ/1530.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter2_List/OJ/1556.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+=======
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
+>>>>>>> origin/master
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,36 +60,30 @@
     <session id="717616718">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.15" value="2" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.24" value="2" />
-          <entry key="project.open.time.33" value="1" />
-          <entry key="project.open.time.40" value="2" />
-          <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.43" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="c" value="20" />
-          <entry key="txt" value="1" />
+          <entry key="c" value="8" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="20" />
+          <entry key="ObjectiveC" value="8" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="6027" />
+          <entry key="c" value="2693" />
           <entry key="m" value="18" />
           <entry key="txt" value="1" />
         </counts>
@@ -70,7 +91,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="6045" />
+          <entry key="ObjectiveC" value="2711" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -79,40 +100,36 @@
     <session id="-886190002">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="3507" />
+          <entry key="c" value="4217" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="3507" />
+          <entry key="ObjectiveC" value="4217" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="SequenceString_1 (disassembly)" value="1" />
-          <entry key="c" value="5" />
-          <entry key="txt" value="1" />
+          <entry key="c" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="1" />
           <entry key="Disassembly" value="1" />
-          <entry key="ObjectiveC" value="5" />
+          <entry key="ObjectiveC" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
@@ -120,13 +137,138 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Week01_LAB_DEMO/.idea/vcs.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+            <state relative-caret-position="323">
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+=======
+            <state relative-caret-position="38">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+>>>>>>> Stashed changes
+              <folding>
+                <element signature="e#43#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2793">
+              <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#37#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1556.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="893">
+              <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+              <folding>
+                <element signature="e#59#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1530.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+              <folding>
+                <element signature="e#375#393#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putchar.c">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="1615">
+=======
+<<<<<<< Updated upstream
+            <state relative-caret-position="223">
+>>>>>>> origin/master
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
+=======
+            <state relative-caret-position="337">
+              <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+              <folding>
+                <element signature="e#86#104#0" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putc.c">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="1710">
+=======
+<<<<<<< Updated upstream
+            <state relative-caret-position="269">
+>>>>>>> origin/master
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
+=======
+            <state relative-caret-position="1767">
+              <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+              <folding>
+                <element signature="e#86#104#0" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter3_Stack/LinkStack/LinkStack_1.c">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>showqueue</find>
       <find>%d</find>
       <find>printf(&quot;length of queue: %d\n&quot;, LengthOfQueue(*queue));</find>
+      <find>pstu</find>
     </findStrings>
     <replaceStrings>
       <replace>%d\n</replace>
@@ -146,11 +288,8 @@
         <option value="$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_2.c" />
         <option value="$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c" />
         <option value="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" />
-        <option value="$PROJECT_DIR$/Chapter2_List/OJ/1597.c" />
-        <option value="$PROJECT_DIR$/Week04_LAB_DEMO/DEMO1.c" />
-        <option value="$PROJECT_DIR$/Chapter2_List/OJ/2-2.c" />
-        <option value="$PROJECT_DIR$/Chapter2_List/OJ/2-3.c" />
-        <option value="$PROJECT_DIR$/Chapter2_List/OJ/2-4.c" />
+        <option value="$PROJECT_DIR$/Chapter2_List/OJ/1556.c" />
+        <option value="$PROJECT_DIR$/Chapter2_List/OJ/1530.c" />
       </list>
     </option>
   </component>
@@ -160,10 +299,24 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
+  <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+=======
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="498" />
+<<<<<<< Updated upstream
+    <option name="x" value="499" />
     <option name="width" value="657" />
+=======
+    <option name="x" value="396" />
+    <option name="y" value="247" />
+    <option name="width" value="656" />
+>>>>>>> Stashed changes
     <option name="height" value="456" />
+>>>>>>> origin/master
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -190,6 +343,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,23 +362,10 @@
               <item name="Chapter2_List" type="462c0819:PsiDirectoryNode" />
               <item name="OJ" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter2_List" type="462c0819:PsiDirectoryNode" />
-              <item name="SequenceList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter2_List" type="462c0819:PsiDirectoryNode" />
-              <item name="SingleLinkList" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,37 +468,63 @@
       <workItem from="1537249635817" duration="207000" />
       <workItem from="1537250096370" duration="17000" />
       <workItem from="1537320439290" duration="3431000" />
+<<<<<<< Updated upstream
       <workItem from="1537331847733" duration="4562000" />
       <workItem from="1537363493694" duration="2331000" />
       <workItem from="1537366250470" duration="1332000" />
       <workItem from="1537420804879" duration="4322000" />
       <workItem from="1537449144125" duration="5641000" />
-      <workItem from="1537837998879" duration="3811000" />
-      <workItem from="1537842774673" duration="784000" />
-      <workItem from="1537843845711" duration="2643000" />
-      <workItem from="1537848364535" duration="5072000" />
-      <workItem from="1537858060010" duration="3504000" />
-      <workItem from="1537928491397" duration="3125000" />
-      <workItem from="1538013108148" duration="4120000" />
-      <workItem from="1538120783761" duration="27000" />
-      <workItem from="1538148671732" duration="300000" />
-      <workItem from="1538149013214" duration="606000" />
+<<<<<<< HEAD
+      <workItem from="1537787962835" duration="3862000" />
+=======
+=======
+      <workItem from="1537331847733" duration="4675000" />
+      <workItem from="1537406597596" duration="937000" />
+>>>>>>> Stashed changes
+>>>>>>> origin/master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60367000" />
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="40237000" />
+=======
+<<<<<<< Updated upstream
+    <option name="totallyTimeSpent" value="36375000" />
+=======
+    <option name="totallyTimeSpent" value="23040000" />
+>>>>>>> Stashed changes
+>>>>>>> origin/master
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17803837" />
+<<<<<<< HEAD
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13347921" />
+=======
+<<<<<<< Updated upstream
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26972282" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26772615" />
+>>>>>>> Stashed changes
+>>>>>>> origin/master
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1593715" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4276094" />
+<<<<<<< HEAD
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37280703" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5285088" />
+=======
+<<<<<<< Updated upstream
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37350705" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.52877307" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2053872" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2345679" />
+>>>>>>> Stashed changes
+>>>>>>> origin/master
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -366,7 +533,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32659933" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32785088" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -378,20 +545,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Week04_LAB_DEMO/DEMO1.c</url>
-          <line>24</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -424,6 +577,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -431,56 +587,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="93" column="22" lean-forward="true" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putchar.c" />
-    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putc.c" />
-    <entry file="file://$PROJECT_DIR$/Week01_LAB_DEMO/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2793">
-          <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter3_Stack/LinkStack/LinkStack_1.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-3.c" />
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-2.c" />
-    <entry file="file://$PROJECT_DIR$/Week04_LAB_DEMO/DEMO1.c" />
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-1.c" />
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-2.c" />
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-3.c" />
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-4.c" />
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/SequenceList/SequenceList_1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" selection-start-line="14" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="e#86#104#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -491,10 +600,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/SingleLinkList/SingleLinkList_1.c">
+    <entry file="file://$PROJECT_DIR$/Week01_LAB_DEMO/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="145" column="5" selection-start-line="127" selection-start-column="3" selection-end-line="145" selection-end-column="5" />
+        <state relative-caret-position="323">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2793">
+          <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putchar.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter3_Stack/LinkStack/LinkStack_1.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+=======
+    <entry file="file://$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#37#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1556.c">
+=======
+<<<<<<< Updated upstream
+    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/newlib/libc/stdio/putc.c">
+>>>>>>> origin/master
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+          <folding>
+            <element signature="e#59#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1530.c">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="299">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+=======
+        <state relative-caret-position="305">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+=======
+    <entry file="file://$PROJECT_DIR$/Chapter4/LinkQueue/LinkQueue_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1767">
+          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+          <folding>
+            <element signature="e#86#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter3/LinkStack/LinkStack_1.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+>>>>>>> Stashed changes
+>>>>>>> origin/master
+          <folding>
+            <element signature="e#375#393#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
