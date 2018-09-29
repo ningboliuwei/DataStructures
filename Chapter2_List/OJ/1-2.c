@@ -13,8 +13,8 @@
 ==============================================================================*/
 #include <stdio.h>
 #include <string.h>
-
-struct stdType {
+struct stdType
+{
     int id;
     char name[10];
     char sex;
@@ -25,36 +25,34 @@ struct stdType {
     float average;
 };
 int N;//学生人数
-void getaverage(struct stdType *pstu, float *E, float *M, float *P);
-
-main() {
+void getaverage(struct stdType *pstu,float *E,float *M,float *P);
+main()
+{
     int i;
     struct stdType std[60];
-    float aveE = 0, aveM = 0, aveP = 0;
-    scanf("%d", &N);//输入学生人数
-    for (i = 0; i < N; i++) {
-        scanf("%d%s %c%f%f%f", &(std + i)->id, std[i].name, &std[i].sex, &std[i].English, &std[i].Maths,
-              &std[i].Program); //读取学生信息，依次为学号、姓名(不含空格)、性别、英语分数、数学分数、程序设计分数
-        (std + i)->sum = (std + i)->English + (std + i)->Maths + (std + i)->Program;
-        (std + i)->average = (std + i)->sum / 3;
-        //算出每个学生的总分，并保存到结构体的成员sum中
-        //算出每个学生的平均分，并保存到结构体的成员average中
+    float aveE=0,aveM=0,aveP=0;
+    scanf("%d",&N);//输入学生人数
+    for (i=0;i<N;i++)
+    {
+        scanf("%d%s %c%f%f%f",&(std+i)->id,std[i].name,&std[i].sex,&std[i].English,&std[i].Maths,&std[i].Program); //读取学生信息，依次为学号、姓名(不含空格)、性别、英语分数、数学分数、程序设计分数
+        (std + i)->sum = (std + i)->English + (std + i)->Maths + (std + i)->Program;    //算出每个学生的总分，并保存到结构体的成员sum中
+        (std + i)->average = (std + i)->sum / 3;     //算出每个学生的平均分，并保存到结构体的成员average中
     }
     /*获取各门课的平均分*/
-    getaverage(std, &aveE, &aveM, &aveP);
+    getaverage(std,&aveE,&aveM,&aveP);
 
     /*输出数据*/
     printf("No.     name    sex     English Maths   Program  sum      average\n");
-    for (i = 0; i < N; i++) {
-        printf("%d    %-8s%c   %8.1f%8.1f%8.1f  %8.1f%8.1f\n", std[i].id, std[i].name, std[i].sex, std[i].English,
-               std[i].Maths, std[i].Program, std[i].sum, std[i].average);
+    for (i=0;i<N;i++)
+    {
+        printf("%d    %-8s%c   %8.1f%8.1f%8.1f  %8.1f%8.1f\n",std[i].id,std[i].name, std[i].sex, std[i].English, std[i].Maths,std[i].Program, std[i].sum, std[i].average);
     }
-    printf("Average mark of English is %.2f\n", aveE);
-    printf("Average mark of Maths is %.2f\n", aveM);
-    printf("Average mark of Program is %.2f\n", aveP);
+    printf("Average mark of English is %.2f\n",aveE);
+    printf("Average mark of Maths is %.2f\n",aveM);
+    printf("Average mark of Program is %.2f\n",aveP);
 }
-
-void getaverage(struct stdType *pstu, float *E, float *M, float *P) {
+void getaverage(struct stdType *pstu,float *E,float *M,float *P)
+{
     float sumE = 0;
     float sumM = 0;
     float sumP = 0;
