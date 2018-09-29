@@ -2,15 +2,26 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Project" targetName="SequenceQueue_2" />
-      <config projectName="Project" targetName="LoopQueue_1" />
-      <config projectName="Project" targetName="SequenceStack_1" />
-      <config projectName="Project" targetName="1530" />
-      <config projectName="Project" targetName="SequenceQueue_1" />
-      <config projectName="Project" targetName="1556" />
-      <config projectName="Project" targetName="2-5cpp" />
-      <config projectName="Project" targetName="SequenceString_1" />
-      <config projectName="Project" targetName="LinkListQueue_1" />
+<<<<<<< HEAD
+      <config projectName="DataStructures" targetName="SequenceStack_1" />
+      <config projectName="DataStructures" targetName="SequenceQueue_1" />
+      <config projectName="DataStructures" targetName="SequenceQueue_2" />
+      <config projectName="DataStructures" targetName="LoopQueue_1" />
+      <config projectName="DataStructures" targetName="2-5" />
+      <config projectName="DataStructures" targetName="1556" />
+      <config projectName="DataStructures" targetName="SequenceString_1" />
+      <config projectName="DataStructures" targetName="LinkListQueue_1" />
+      <config projectName="DataStructures" targetName="1530" />
+=======
+      <config projectName="DataStructures" targetName="1556" />
+      <config projectName="DataStructures" targetName="SequenceString_1" />
+      <config projectName="DataStructures" targetName="LoopQueue_1" />
+      <config projectName="DataStructures" targetName="SequenceStack_1" />
+      <config projectName="DataStructures" targetName="LinkListQueue_1" />
+      <config projectName="DataStructures" targetName="1530" />
+      <config projectName="DataStructures" targetName="SequenceQueue_2" />
+      <config projectName="DataStructures" targetName="SequenceQueue_1" />
+>>>>>>> 45c49a38ac607df3a689722a8f05253ba8b602b1
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -19,11 +30,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="" />
+=======
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2_List/CMakeLists.txt" beforeDir="false" />
     </list>
+>>>>>>> 45c49a38ac607df3a689722a8f05253ba8b602b1
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,18 +54,18 @@
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.43" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="c" value="20" />
-          <entry key="cpp" value="1" />
+          <entry key="c" value="35" />
           <entry key="txt" value="2" />
           <entry key="xml" value="1" />
         </counts>
@@ -60,22 +73,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="2" />
-          <entry key="ObjectiveC" value="21" />
+          <entry key="ObjectiveC" value="35" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="6027" />
-          <entry key="cpp" value="16" />
+          <entry key="c" value="6629" />
           <entry key="m" value="18" />
-          <entry key="txt" value="38" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="38" />
-          <entry key="ObjectiveC" value="6061" />
+          <entry key="CMakeLists.txt" value="1" />
+          <entry key="ObjectiveC" value="6647" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -84,13 +96,16 @@
     <session id="-886190002">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -107,10 +122,12 @@
         <counts>
           <entry key="SequenceString_1 (disassembly)" value="1" />
           <entry key="c" value="5" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CMakeLists.txt" value="1" />
           <entry key="Disassembly" value="1" />
           <entry key="ObjectiveC" value="5" />
         </counts>
@@ -120,6 +137,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter2_List/SingleLinkList/SingleLinkList_1.c">
@@ -133,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="228">
+              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -161,6 +179,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-3.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="e#37#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-1.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+              <folding>
+                <element signature="e#51#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-2.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
@@ -172,23 +214,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-5.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" selection-end-line="135" />
+            <state relative-caret-position="152">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#59#76#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-5cpp.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -215,6 +248,9 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf />
+>>>>>>> 45c49a38ac607df3a689722a8f05253ba8b602b1
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -233,6 +269,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Chapter4/LinkListQueue/LinkListQueue_1.c" />
         <option value="$PROJECT_DIR$/Chapter4/LinkQueue/LinkQueue_1.c" />
         <option value="$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_1.c" />
@@ -241,13 +278,14 @@
         <option value="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" />
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/1597.c" />
         <option value="$PROJECT_DIR$/Week04_LAB_DEMO/DEMO1.c" />
+        <option value="$PROJECT_DIR$/Chapter2_List/OJ/1-2.c" />
+        <option value="$PROJECT_DIR$/Chapter2_List/OJ/1-3.c" />
+        <option value="$PROJECT_DIR$/Chapter2_List/OJ/2-1.c" />
+        <option value="$PROJECT_DIR$/Chapter2_List/OJ/1-1.c" />
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/2-2.c" />
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/2-3.c" />
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/2-4.c" />
-        <option value="$PROJECT_DIR$/Chapter2_List/OJ/2-5.cpp" />
-        <option value="$PROJECT_DIR$/Chapter2_List/OJ/2-5cpp.cpp" />
-        <option value="$PROJECT_DIR$/Chapter2_List/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Chapter2_List/OJ/2-5.c" />
       </list>
     </option>
   </component>
@@ -258,7 +296,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="499" />
+    <option name="x" value="498" />
     <option name="width" value="657" />
     <option name="height" value="456" />
   </component>
@@ -287,7 +325,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -322,6 +359,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -329,7 +367,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -351,53 +389,60 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.2-5cpp">
-    <configuration name="1530" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1530" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1530">
+<<<<<<< HEAD
+  <component name="RunManager" selected="Application.2-5">
+=======
+  <component name="RunManager" selected="Application.1530">
+>>>>>>> 45c49a38ac607df3a689722a8f05253ba8b602b1
+    <configuration name="1530" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures" TARGET_NAME="1530" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures" RUN_TARGET_NAME="1530">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="1556" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1556" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1556">
+    <configuration name="1556" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures" TARGET_NAME="1556" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures" RUN_TARGET_NAME="1556">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="2-5cpp" type="CMakeRunConfiguration" factoryName="Application" singleton="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="2-5cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="2-5cpp">
+<<<<<<< HEAD
+    <configuration name="2-5" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures" TARGET_NAME="2-5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures" RUN_TARGET_NAME="2-5">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+=======
+>>>>>>> 45c49a38ac607df3a689722a8f05253ba8b602b1
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkListQueue_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="LinkListQueue_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="LinkListQueue_1">
+    <configuration name="LinkListQueue_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures" TARGET_NAME="LinkListQueue_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures" RUN_TARGET_NAME="LinkListQueue_1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoopQueue_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="LoopQueue_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="LoopQueue_1">
+    <configuration name="LoopQueue_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures" TARGET_NAME="LoopQueue_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures" RUN_TARGET_NAME="LoopQueue_1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SequenceQueue_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="SequenceQueue_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="SequenceQueue_1">
+    <configuration name="SequenceQueue_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures" TARGET_NAME="SequenceQueue_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures" RUN_TARGET_NAME="SequenceQueue_1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SequenceQueue_2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="SequenceQueue_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="SequenceQueue_2">
+    <configuration name="SequenceQueue_2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures" TARGET_NAME="SequenceQueue_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures" RUN_TARGET_NAME="SequenceQueue_2">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SequenceStack_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="SequenceStack_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="SequenceStack_1">
+    <configuration name="SequenceStack_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures" TARGET_NAME="SequenceStack_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures" RUN_TARGET_NAME="SequenceStack_1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SequenceString_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="SequenceString_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="SequenceString_1">
+    <configuration name="SequenceString_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures" TARGET_NAME="SequenceString_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures" RUN_TARGET_NAME="SequenceString_1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -406,7 +451,10 @@
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.1530" />
       <item itemvalue="Application.1556" />
-      <item itemvalue="Application.2-5cpp" />
+<<<<<<< HEAD
+      <item itemvalue="Application.2-5" />
+=======
+>>>>>>> 45c49a38ac607df3a689722a8f05253ba8b602b1
       <item itemvalue="Application.LinkListQueue_1" />
       <item itemvalue="Application.LoopQueue_1" />
       <item itemvalue="Application.SequenceQueue_1" />
@@ -442,21 +490,35 @@
       <workItem from="1537858060010" duration="3504000" />
       <workItem from="1537928491397" duration="3125000" />
       <workItem from="1538013108148" duration="4120000" />
+<<<<<<< HEAD
+      <workItem from="1538184227447" duration="4526000" />
+=======
+      <workItem from="1538120783761" duration="27000" />
+      <workItem from="1538148671732" duration="300000" />
+      <workItem from="1538149013214" duration="606000" />
+>>>>>>> 45c49a38ac607df3a689722a8f05253ba8b602b1
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62115000" />
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="63960000" />
+=======
+    <option name="totallyTimeSpent" value="60367000" />
+>>>>>>> 45c49a38ac607df3a689722a8f05253ba8b602b1
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17420538" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17803837" />
+>>>>>>> 45c49a38ac607df3a689722a8f05253ba8b602b1
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1593715" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4276094" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -466,7 +528,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32996634" />
+      <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32659933" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -571,6 +633,62 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/SequenceList/SequenceList_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week04_LAB_DEMO/DEMO1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="69" column="5" selection-start-line="65" selection-start-column="3" selection-end-line="69" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-3.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="e#66#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/SingleLinkList/SingleLinkList_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-3.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -578,6 +696,61 @@
           <folding>
             <element signature="e#37#55#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding>
+            <element signature="e#65#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding>
+            <element signature="e#51#68#0" expanded="true" />
+          </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-3.c" />
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-2.c" />
+    <entry file="file://$PROJECT_DIR$/Week04_LAB_DEMO/DEMO1.c" />
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-1.c" />
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-2.c" />
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-3.c" />
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-4.c" />
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/SequenceList/SequenceList_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+>>>>>>> 45c49a38ac607df3a689722a8f05253ba8b602b1
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-4.c">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="342">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -591,24 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week04_LAB_DEMO/DEMO1.c" />
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding>
-            <element signature="e#65#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-2.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-3.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
@@ -619,67 +774,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/SingleLinkList/SingleLinkList_1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/SequenceList/SequenceList_1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="14" selection-start-line="14" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-4.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding>
-            <element signature="e#51#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-5.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-end-line="135" />
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#59#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+=======
+        <state relative-caret-position="715">
+          <caret line="145" column="5" selection-start-line="127" selection-start-column="3" selection-end-line="145" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-5cpp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+>>>>>>> 45c49a38ac607df3a689722a8f05253ba8b602b1
   </component>
 </project>
