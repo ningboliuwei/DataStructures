@@ -9,3 +9,4 @@
  add_executable(2-5cpp Chapter2_List/OJ/2-5cpp.cpp)
  add_executable(2-6 Chapter2_List/OJ/2-6.c)
 add_executable(2-6 Chapter2_List/OJ/2-6.c)
+add_executable(3-1 Chapter2_List/OJ/3-1.c)
