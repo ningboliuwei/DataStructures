@@ -14,6 +14,7 @@
       <config projectName="Project" targetName="3-3" />
       <config projectName="Project" targetName="3-4" />
       <config projectName="Project" targetName="2-6" />
+      <config projectName="Project" targetName="3-5" />
       <config projectName="Project" targetName="SequenceString_1" />
       <config projectName="Project" targetName="LinkListQueue_1" />
     </generated>
@@ -25,7 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter2_List/OJ/3-4.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
@@ -57,7 +58,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="c" value="33" />
+          <entry key="c" value="34" />
           <entry key="cpp" value="2" />
           <entry key="txt" value="2" />
           <entry key="xml" value="1" />
@@ -66,14 +67,14 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="2" />
-          <entry key="ObjectiveC" value="35" />
+          <entry key="ObjectiveC" value="36" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="9771" />
-          <entry key="cpp" value="16" />
+          <entry key="c" value="9772" />
+          <entry key="cpp" value="1449" />
           <entry key="m" value="18" />
           <entry key="txt" value="45" />
         </counts>
@@ -81,7 +82,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="45" />
-          <entry key="ObjectiveC" value="9805" />
+          <entry key="ObjectiveC" value="11239" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -151,11 +152,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-4.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="167">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding>
                 <element signature="e#73#92#0" expanded="true" />
               </folding>
@@ -163,13 +164,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-2.c">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+            <state relative-caret-position="307">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
               <folding>
-                <element signature="e#66#84#0" expanded="true" />
+                <element signature="e#68#85#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -214,6 +215,8 @@
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/3-2.c" />
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/3-3.c" />
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/3-4.c" />
+        <option value="$PROJECT_DIR$/Chapter2_List/OJ/3-5.c" />
+        <option value="$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp" />
       </list>
     </option>
   </component>
@@ -224,7 +227,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="499" />
+    <option name="x" value="155" />
     <option name="width" value="657" />
     <option name="height" value="456" />
   </component>
@@ -317,7 +320,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.3-4">
+  <component name="RunManager" selected="Application.3-5">
     <configuration name="1530" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1530" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1530">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -354,6 +357,11 @@
       </method>
     </configuration>
     <configuration name="3-4" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="3-4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="3-4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="3-5" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="3-5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="3-5">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -403,6 +411,7 @@
       <item itemvalue="Application.3-2" />
       <item itemvalue="Application.3-3" />
       <item itemvalue="Application.3-4" />
+      <item itemvalue="Application.3-5" />
       <item itemvalue="Application.LinkListQueue_1" />
       <item itemvalue="Application.LoopQueue_1" />
       <item itemvalue="Application.SequenceQueue_1" />
@@ -438,12 +447,12 @@
       <workItem from="1537858060010" duration="3504000" />
       <workItem from="1537928491397" duration="3125000" />
       <workItem from="1538013108148" duration="4120000" />
-      <workItem from="1538274052312" duration="7189000" />
+      <workItem from="1538274052312" duration="15453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81243000" />
+    <option name="totallyTimeSpent" value="89507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -454,8 +463,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28731763" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38047138" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28731763" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.48933783" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -484,6 +493,11 @@
           <url>file://$PROJECT_DIR$/Week04_LAB_DEMO/DEMO1.c</url>
           <line>24</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp</url>
+          <line>112</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -683,16 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-2.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-          <folding>
-            <element signature="e#66#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-1.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -705,10 +709,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-4.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="167">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
             <element signature="e#73#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding>
+            <element signature="e#66#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="e#68#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
