@@ -18,7 +18,7 @@ struct Node *InitLinkList() {
     return head;
 }
 
-int CreateLoopLinkList(struct Node *list) {
+int CreateLinkList(struct Node *list) {
     int value = 0;
     while (scanf("%d", &value) && value != -1) {
         struct Node *node = (struct Node *) malloc(sizeof(struct Node));
@@ -62,8 +62,8 @@ int main() {
     struct Node *head2 = InitLinkList();
     struct Node *head3 = InitLinkList();
 
-    CreateLoopLinkList(head1);
-    CreateLoopLinkList(head2);
+    CreateLinkList(head1);
+    CreateLinkList(head2);
 
     ConcatLinkList(head1, head2);
     ShowLinkList(head1);

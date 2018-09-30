@@ -10,3 +10,5 @@
  add_executable(2-6 Chapter2_List/OJ/2-6.c)
 add_executable(2-6 Chapter2_List/OJ/2-6.c)
 add_executable(3-1 Chapter2_List/OJ/3-1.c)
+add_executable(3-2 Chapter2_List/OJ/3-2.c)
+add_executable(3-3 Chapter2_List/OJ/3-3.c)
