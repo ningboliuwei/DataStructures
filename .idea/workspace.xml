@@ -15,6 +15,7 @@
       <config projectName="Project" targetName="3-4" />
       <config projectName="Project" targetName="2-6" />
       <config projectName="Project" targetName="3-5" />
+      <config projectName="Project" targetName="3-6" />
       <config projectName="Project" targetName="SequenceString_1" />
       <config projectName="Project" targetName="LinkListQueue_1" />
     </generated>
@@ -26,7 +27,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter2_List/OJ/3-6.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2_List/OJ/2-6.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/OJ/2-6.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,24 +104,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="3507" />
+          <entry key="c" value="4233" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="3507" />
+          <entry key="ObjectiveC" value="4233" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="SequenceString_1 (disassembly)" value="1" />
-          <entry key="c" value="5" />
+          <entry key="c" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Disassembly" value="1" />
-          <entry key="ObjectiveC" value="5" />
+          <entry key="ObjectiveC" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
@@ -127,48 +131,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-1.c">
+        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-2.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="36" selection-start-line="36" selection-end-line="43" selection-end-column="1" />
-              <folding>
-                <element signature="e#69#88#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="228">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-3.c">
+        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-1.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="69" column="1" selection-start-line="8" selection-end-line="69" selection-end-column="1" />
-              <folding>
-                <element signature="e#141#160#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-4.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-              <folding>
-                <element signature="e#73#92#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="262">
+              <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp">
+        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-6.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="113">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
               <folding>
-                <element signature="e#68#85#0" expanded="true" />
+                <element signature="e#76#93#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-6.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="138" column="1" selection-start-line="3" selection-end-line="138" selection-end-column="1" />
+              <folding>
+                <element signature="e#55#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -216,6 +214,7 @@
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/3-4.c" />
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/3-5.c" />
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp" />
+        <option value="$PROJECT_DIR$/Chapter2_List/OJ/3-6.c" />
       </list>
     </option>
   </component>
@@ -319,7 +318,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.3-5">
+  <component name="RunManager" selected="Application.3-6">
     <configuration name="1530" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1530" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1530">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -361,6 +360,11 @@
       </method>
     </configuration>
     <configuration name="3-5" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="3-5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="3-5">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="3-6" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="3-6" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="3-6">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -411,6 +415,7 @@
       <item itemvalue="Application.3-3" />
       <item itemvalue="Application.3-4" />
       <item itemvalue="Application.3-5" />
+      <item itemvalue="Application.3-6" />
       <item itemvalue="Application.LinkListQueue_1" />
       <item itemvalue="Application.LoopQueue_1" />
       <item itemvalue="Application.SequenceQueue_1" />
@@ -451,18 +456,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90525000" />
+    <option name="totallyTimeSpent" value="95474000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17603911" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28731763" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28664497" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.48933783" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -471,8 +476,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32996634" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32659933" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32899022" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3257329" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -584,20 +589,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Week04_LAB_DEMO/DEMO1.c" />
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding>
-            <element signature="e#65#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-2.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="228">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -633,16 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1166">
           <caret line="86" column="5" selection-start-line="79" selection-start-column="4" selection-end-line="86" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-6.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
-          <folding>
-            <element signature="e#55#72#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,6 +712,33 @@
           <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
             <element signature="e#68#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/1-1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-6.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="138" column="1" selection-start-line="3" selection-end-line="138" selection-end-column="1" />
+          <folding>
+            <element signature="e#55#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-6.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#76#93#0" expanded="true" />
           </folding>
         </state>
       </provider>

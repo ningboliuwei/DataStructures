@@ -16,7 +16,7 @@ typedef struct {
     int last;
 } SeqList;
 
-SeqList *InitSeqList() {
+SeqList *InitList() {
 //    @@1
     SeqList *list = (SeqList *) malloc(sizeof(SeqList));
     list->last = -1;
@@ -126,9 +126,9 @@ int ShowSeqList(SeqList *L) {
 int main() {
     SeqList *L1, *L2, *L3;
 
-    L1 = InitSeqList();    //初始化三个空表
-    L2 = InitSeqList();
-    L3 = InitSeqList();
+    L1 = InitList();    //初始化三个空表
+    L2 = InitList();
+    L3 = InitList();
 
     CreatSeqList(L1);    //创建两个顺序表
     CreatSeqList(L2);
