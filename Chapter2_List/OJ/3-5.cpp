@@ -29,36 +29,11 @@ int InitList(LinkList &L);     //线性表L初始化
 
 //@@2
 //自己设计主函数及其他需要的函数定义
-int main() {
-    LinkList list1;
-    LinkList list2;
-    LinkList list3;
 
-    InitList(list1);
-    InitList(list2);
+LinkList GetHead(LinkList L) {
+    return L;
+};   //获取链式存储的线性表（带头结点）的头指针
 
-    datatype value = 0;
-    while (scanf("%d", &value) && value != -1) {
-        LinkNode *node = (LinkNode *) malloc(sizeof(LinkNode));
-        node->data = value;
-        node->next = nullptr;
-        Append(list1, node);
-    }
-
-    while (scanf("%d", &value) && value != -1) {
-        LinkNode *node = (LinkNode *) malloc(sizeof(LinkNode));
-        node->data = value;
-        node->next = nullptr;
-        Append(list2, node);
-    }
-
-    MergeList_L(list1, list2, list3);
-    Show(list3);
-}
-//@@2
-
-
-//合并算法的伪代码参考如下
 void Show(LinkList L) {
     LinkNode *h = GetHead(L);
     LinkNode *p = NextPos(L, h);
@@ -71,9 +46,7 @@ void Show(LinkList L) {
     printf("\n");
 }
 
-LinkList GetHead(LinkList L) {
-    return L;
-};   //获取链式存储的线性表（带头结点）的头指针
+
 LinkList NextPos(LinkList L, LinkList h) {
     return h->next;
 };  //获取后继结点的地址
@@ -82,12 +55,18 @@ datatype GetCurElem(LinkList p) {
 };          //获取当前结点的数据值
 void DelFirst(LinkList L, LinkList &q) {
     q = L->next;
-    L->next = L->next->next;
+    if (L->next->next != NULL) {
+        L->next = L->next->next;
+    } else {
+        L->next = NULL;
+    }
+    // 下一行重要
+    q->next = NULL;
 };    //删除线性表中的第一个数据结点并把删除结点放入q中
 void Append(LinkList L, LinkList q) {
     LinkNode *p = GetHead(L);
 
-    while (p->next != nullptr) {
+    while (p->next != NULL) {
         p = NextPos(L, p);
     }
 
@@ -95,15 +74,16 @@ void Append(LinkList L, LinkList q) {
 };   //追加一个结点到线性表中（尾部加入q结点）
 void FreeNode(LinkList L) {
     LinkNode *p = L;
-    LinkNode *q = nullptr;
+    LinkNode *q = NULL;
 
-    while (p != nullptr) {
+    while (p != NULL) {
         q = p;
         p = p->next;
         free(q);
     }
 };             //释放整个线性表L
 
+//合并算法的伪代码参考如下
 int MergeList_L(LinkList &La, LinkList &Lb, LinkList &Lc) {
     InitList(Lc);
     LinkNode *ha = GetHead(La);
@@ -134,7 +114,36 @@ int MergeList_L(LinkList &La, LinkList &Lb, LinkList &Lc) {
 
 int InitList(LinkList &L) {
     L = (LinkList) malloc(sizeof(LinkList));
-    L->next = nullptr;
+    L->next = NULL;
 
     return 1;
 };     //线性表L初始化
+int main() {
+    LinkList list1;
+    LinkList list2;
+    LinkList list3;
+
+    InitList(list1);
+    InitList(list2);
+
+    datatype value = 0;
+    while (scanf("%d", &value) && value != -1) {
+        LinkNode *node = (LinkNode *) malloc(sizeof(LinkNode));
+        node->data = value;
+        node->next = NULL;
+        Append(list1, node);
+    }
+
+    while (scanf("%d", &value) && value != -1) {
+        LinkNode *node = (LinkNode *) malloc(sizeof(LinkNode));
+        node->data = value;
+        node->next = NULL;
+        Append(list2, node);
+    }
+
+    MergeList_L(list1, list2, list3);
+    Show(list3);
+    FreeNode(list1);
+    FreeNode(list2);
+}
+//@@2

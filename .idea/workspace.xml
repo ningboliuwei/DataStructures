@@ -26,9 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +72,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="9772" />
-          <entry key="cpp" value="1449" />
+          <entry key="cpp" value="1568" />
           <entry key="m" value="18" />
           <entry key="txt" value="45" />
         </counts>
@@ -82,7 +80,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="45" />
-          <entry key="ObjectiveC" value="11239" />
+          <entry key="ObjectiveC" value="11358" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -167,8 +165,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="241">
+              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding>
                 <element signature="e#68#85#0" expanded="true" />
               </folding>
@@ -183,6 +181,7 @@
       <find>showqueue</find>
       <find>%d</find>
       <find>printf(&quot;length of queue: %d\n&quot;, LengthOfQueue(*queue));</find>
+      <find>gethead</find>
     </findStrings>
     <replaceStrings>
       <replace>%d\n</replace>
@@ -447,12 +446,12 @@
       <workItem from="1537858060010" duration="3504000" />
       <workItem from="1537928491397" duration="3125000" />
       <workItem from="1538013108148" duration="4120000" />
-      <workItem from="1538274052312" duration="15453000" />
+      <workItem from="1538274052312" duration="16471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89507000" />
+    <option name="totallyTimeSpent" value="90525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -463,8 +462,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28731763" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.48933783" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28731763" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48933783" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -493,11 +492,6 @@
           <url>file://$PROJECT_DIR$/Week04_LAB_DEMO/DEMO1.c</url>
           <line>24</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp</url>
-          <line>112</line>
-          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -729,8 +723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/3-5.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="241">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
             <element signature="e#68#85#0" expanded="true" />
           </folding>
