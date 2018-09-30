@@ -45,22 +45,73 @@ int CreateList(LinkList list) {
 }
 
 int AddList(LinkList list1, LinkList list2, LinkList list3) {
+    int maxN = 0;
+    // 找出最高指数
+    LinkNode *current = list1->next;
+    while (current) {
+        if (current->n > maxN) {
+            maxN = current->n;
+        }
+        current = current->next;
+    }
 
+    current = list2->next;
+    while (current) {
+        if (current->n > maxN) {
+            maxN = current->n;
+        }
+        current = current->next;
+    }
+
+    // 方便头插法
+    for (int i = 0; i <= maxN; i++) {
+        int sumM = 0;
+        current = list1;
+        while (current) {
+            if (current->n == i) {
+                sumM = sumM + current->m;
+            }
+            current = current->next;
+        }
+
+        current = list2;
+        while (current) {
+            if (current->n == i) {
+                sumM = sumM + current->m;
+            }
+            current = current->next;
+        }
+
+        LinkNode *newNode = (LinkNode *) malloc(sizeof(LinkNode));
+        newNode->m = sumM;
+        newNode->n = i;
+        newNode->next = list3->next;
+        list3->next = newNode;
+    }
 }
 
 int ShowList(LinkList list) {
-    LinkNode *current = list;
+    LinkNode *current = list->next;
 
     while (current) {
-        printf("%d %d\n", current->m, current->n);
+        if (current->m != 0) {
+            printf("%d %d\n", current->m, current->n);
+        }
         current = current->next;
     }
 }
 
 int main() {
     LinkList list1 = InitList();
+    LinkList list2 = InitList();
+    LinkList list3 = InitList();
+
     CreateList(list1);
-    ShowList(list1);
+    CreateList(list2);
+
+    AddList(list1, list2, list3);
+
+    ShowList(list3);
 
     return 1;
 }
