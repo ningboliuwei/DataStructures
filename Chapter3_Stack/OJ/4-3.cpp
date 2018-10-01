@@ -1,10 +1,11 @@
 //
 // Created by 慰 on 2018/10/1.
-// 问题 B: 【数据结构3-2】链栈的基本操作
-
+// 问题 C: 【数据结构3-3】栈的应用——进制转换
 #include<stdio.h>
 #include<stdlib.h>
 
+//@@1
+//栈的类型申明
 typedef int DataType;
 
 typedef struct stacknode {
@@ -15,15 +16,15 @@ typedef struct stacknode {
 typedef struct {
     StackNode *top;
 } LinkStack;
+//@@1
 
+//@@2
+//用到的栈的基本运算函数的定义（push，pop等）
 int InitLinkStack(LinkStack &ls) {
-//    @@1
     ls.top = NULL;
-//    @@1
 }
 
 int Push(LinkStack &ls, DataType x) {
-//    @@2
     StackNode *newNode = (StackNode *) malloc(sizeof(StackNode));
     newNode->data = x;
     newNode->next = NULL;
@@ -35,45 +36,45 @@ int Push(LinkStack &ls, DataType x) {
         ls.top = newNode;
     }
     return 1;
-//    @@2
 }
 
-int LinkStackEmpty(LinkStack ls) {
-//    @@3
+int IsEmpty(LinkStack ls) {
     if (ls.top == NULL) {
         return 1;
     }
     return 0;
-//    @@3
 }
 
 int Pop(LinkStack &ls, DataType &x) {
-//    @@4
     x = ls.top->data;
     StackNode *q = ls.top;
     ls.top = ls.top->next;
     free(q);
 
     return 1;
-//    @@4
 }
+//@@2
 
 int main() {
-    LinkStack ls;
-    DataType x;
+    int n;   //n为输入的正整数
 
-    InitLinkStack(ls);
+//    @@3
+    //读入n，调用栈的操作，输出转换后的八进制数
+    LinkStack stack;
+    InitLinkStack(stack);
+    scanf("%d", &n);
+    while (n != 0) {
+        Push(stack, n % 8);
+        n = n / 8;
+    }
 
-    scanf("%d", &x);
-    while (x >= 0) {
-        Push(ls, x);
-        scanf("%d", &x);
+    DataType x = 0;
+    while (!IsEmpty(stack)) {
+        Pop(stack, x);
+        printf("%d", x);
     }
-    while (!LinkStackEmpty(ls)) {
-        Pop(ls, x);
-        printf("%d\n", x);
-    }
+
+//    @@3
+
     return 1;
-
 }
-
