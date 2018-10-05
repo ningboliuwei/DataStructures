@@ -8,6 +8,17 @@
 
 #define EXP_MAX_LENGTH 20
 
+typedef int NumberDataType;
+
+typedef struct NumberStackNodeStruct {
+    NumberDataType data;
+    struct NumberStackNodeStruct *next;
+} NumberStackNode;
+
+typedef struct {
+    NumberStackNode *top;
+} NumberLinkStack;
+
 typedef struct StackNodeStruct {
     char data;
     struct StackNodeStruct *next;
@@ -21,6 +32,10 @@ void InitStack(LinkStack *stack) {
     stack->top = NULL;
 }
 
+void InitNumberStack(NumberLinkStack *stack) {
+    stack->top = NULL;
+}
+
 int ReadTop(LinkStack *stack, char *topElement) {
     if (stack->top == NULL) {
         return 0;
@@ -31,9 +46,25 @@ int ReadTop(LinkStack *stack, char *topElement) {
     return 1;
 }
 
+int ReadTopNumber(NumberLinkStack *stack, NumberDataType *topElement) {
+    if (stack->top == NULL) {
+        return 0;
+    }
+
+    *topElement = stack->top->data;
+
+    return 1;
+}
 
 int Push(LinkStack *stack, char x) {
     StackNode *node = (StackNode *) malloc(sizeof(StackNode));
+    node->data = x;
+    node->next = stack->top;
+    stack->top = node;
+}
+
+int PushNumber(NumberLinkStack *stack, char x) {
+    NumberStackNode *node = (NumberStackNode *) malloc(sizeof(NumberStackNode));
     node->data = x;
     node->next = stack->top;
     stack->top = node;
@@ -46,6 +77,20 @@ int Pop(LinkStack *stack, char *x) {
     }
 
     StackNode *node = stack->top;
+    *x = node->data;
+    stack->top = node->next;
+    free(node);
+
+    return 1;
+}
+
+int PopNumber(NumberLinkStack *stack, NumberDataType *x) {
+// 栈为空
+    if (stack->top == NULL) {
+        return 0;
+    }
+
+    NumberStackNode *node = stack->top;
     *x = node->data;
     stack->top = node->next;
     free(node);
@@ -89,6 +134,10 @@ int Infix2Suffix(char *infix, char *suffix) {
     InitStack(stack);
 
     for (int i = 0; i < strlen(infix); i++) {
+        if (infix[i] == '#'){
+            break;
+        }
+
         char current = infix[i];
 
         // 非运算符，直接输出
@@ -155,7 +204,7 @@ int Infix2Suffix(char *infix, char *suffix) {
     return 1;
 }
 
-int Calculate(int x, int y, char op) {
+float Calculate(int x, int y, char op) {
     if (op == '+') {
         return x + y;
     }
@@ -173,55 +222,59 @@ int Calculate(int x, int y, char op) {
     }
 }
 
-int GetValue(char *suffix) {
-    LinkStack *numberStack = (LinkStack *) malloc(sizeof(LinkStack));
-    InitStack(numberStack);
 
-    char *topNumber = (char *) malloc(sizeof(char));
+int ConvertToInt(char *str, int length) {
+    int sum = 0;
+    for (int i = 0; i < length; i++) {
+        sum = sum * 10 + (str[i] - 48);
+    }
+    return sum;
+}
+
+float GetValue(char *suffix) {
+    NumberLinkStack *numberStack = (NumberLinkStack *) malloc(sizeof(NumberLinkStack));
+    InitNumberStack(numberStack);
+
+    NumberDataType *topNumber = (NumberDataType *) malloc(sizeof(NumberDataType));
 
     for (int i = 0; i < strlen(suffix); i++) {
-        char current = suffix[i];
-
-        if (current == '\n') {
+        if (suffix[i] == '\n') {
             break;
         }
 
-        if (GetOperatorLevel(current) == -1) {
-            Push(numberStack, current);
-        } else {
-            Pop(numberStack, topNumber);
-            int y = (*topNumber - 48);
-            Pop(numberStack, topNumber);
-            int x = (*topNumber - 48);
-            int temp = Calculate(x, y, current);
-            Push(numberStack, (temp + 48));
+        if (suffix[i] >= 48 && suffix[i] <= 57) {
+            char *startPos = suffix + i;
+            int length = 0;
+            while (suffix[i] != ' ') {
+                length++;
+                i++;
+            }
+            // 将字符转换为数值
+            int number = ConvertToInt(startPos, length);
+            PushNumber(numberStack, number);
+        } else if (suffix[i] != ' ') {
+            PopNumber(numberStack, topNumber);
+            int y = *topNumber;
+            PopNumber(numberStack, topNumber);
+            int x = *topNumber;
+            int temp = Calculate(x, y, suffix[i]);
+            PushNumber(numberStack, temp);
         }
     }
-    ReadTop(numberStack, topNumber);
-    return *topNumber - 48;
+    ReadTopNumber(numberStack, topNumber);
+    return *topNumber;
 }
 
-int ConvertToInt(char *str) {
-    int i = 0;
-    int result = 0;
-    while (str[i] != '\0') {
-        result = result * 10 + (str[i] - 48);
-        i++;
-    }
-    return result;
-}
 
 int main() {
     char *expression = (char *) malloc(sizeof(char) * EXP_MAX_LENGTH);
     char result[EXP_MAX_LENGTH];
-    int calculationResult = 0;
+    float calculationResult = 0;
 
-    printf("Input a infix expression.\n");
     gets(expression);
     Infix2Suffix(expression, result);
     puts(result);
-//    calculationResult = GetValue(result);
-//    printf("result is : %d", calculationResult);
-
-    getchar();
+    calculationResult = GetValue(result);
+    // 注意保留一位小数的写法
+    printf("result is : %.1f", calculationResult);
 }
