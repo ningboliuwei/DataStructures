@@ -84,7 +84,7 @@ int main() {
 //    printf("Input count:\n");
     scanf("%d", &n);
 //    printf("Input item weight:\n");
-    for (int i = 0; i < n; i++) {
+    for (int i = n-1; i >= 0; i--) {
         scanf("%d", weight + i);
     }
 
