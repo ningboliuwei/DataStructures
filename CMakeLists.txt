@@ -22,3 +22,5 @@ add_executable(4-4 Chapter3_Stack/OJ/4-4.cpp)
 add_executable(4-5 Chapter3_Stack/OJ/4-5.cpp)
 add_executable(4-6 Chapter3_Stack/OJ/4-6.cpp)
 add_executable(4-7 Chapter3_Stack/OJ/4-7.c)
+
+add_executable(4-8 Chapter3_Stack/OJ/4-8.c)
