@@ -16,6 +16,7 @@
       <config projectName="Project" targetName="5-1" />
       <config projectName="Project" targetName="4-3" />
       <config projectName="Project" targetName="3-4" />
+      <config projectName="Project" targetName="5-2" />
       <config projectName="Project" targetName="4-4" />
       <config projectName="Project" targetName="3-5" />
       <config projectName="Project" targetName="2-6" />
@@ -36,9 +37,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter4_Queue/OJ/5-1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter4_Queue/OJ/5-2.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4_Queue/OJ/5-1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/OJ/5-1.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,8 +70,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="c" value="37" />
-          <entry key="cpp" value="2" />
+          <entry key="c" value="42" />
+          <entry key="cpp" value="3" />
           <entry key="txt" value="3" />
           <entry key="xml" value="1" />
         </counts>
@@ -77,14 +79,14 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="3" />
-          <entry key="ObjectiveC" value="39" />
+          <entry key="ObjectiveC" value="45" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="9866" />
-          <entry key="cpp" value="2392" />
+          <entry key="c" value="9877" />
+          <entry key="cpp" value="2659" />
           <entry key="m" value="18" />
           <entry key="txt" value="45" />
         </counts>
@@ -92,7 +94,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="45" />
-          <entry key="ObjectiveC" value="12276" />
+          <entry key="ObjectiveC" value="12554" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -203,14 +205,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter4_Queue/OJ/5-1.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+            <state relative-caret-position="670">
+              <caret line="102" column="5" selection-start-line="79" selection-start-column="4" selection-end-line="102" selection-end-column="5" />
               <folding>
                 <element signature="e#42#59#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter4_Queue/OJ/5-2.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="47" column="44" selection-start-line="42" selection-start-column="3" selection-end-line="47" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -219,7 +239,7 @@
         <entry file="file://$PROJECT_DIR$/Chapter2_List/SingleLinkList/SingleLinkList_1.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-452">
-              <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+              <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -284,6 +304,8 @@
         <option value="$PROJECT_DIR$/Chapter3_Stack/OJ/4-8.c" />
         <option value="$PROJECT_DIR$/Chapter4_Queue/OJ/5-1.c" />
         <option value="$PROJECT_DIR$/Chapter4_Queue/OJ/5-1.cpp" />
+        <option value="$PROJECT_DIR$/Chapter4_Queue/OJ/5-2.c" />
+        <option value="$PROJECT_DIR$/Chapter4_Queue/OJ/5-2.cpp" />
       </list>
     </option>
   </component>
@@ -373,6 +395,12 @@
               <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
               <item name="Chapter4_Queue" type="462c0819:PsiDirectoryNode" />
+              <item name="LoopQueue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter4_Queue" type="462c0819:PsiDirectoryNode" />
               <item name="OJ" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -409,7 +437,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.5-1">
+  <component name="RunManager" selected="Application.5-2">
     <configuration name="1530" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1530" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1530">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -505,6 +533,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="5-2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="5-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="5-2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -561,6 +594,7 @@
       <item itemvalue="Application.4-7" />
       <item itemvalue="Application.4-8" />
       <item itemvalue="Application.5-1" />
+      <item itemvalue="Application.5-2" />
       <item itemvalue="Application.LinkListQueue_1" />
       <item itemvalue="Application.LoopQueue_1" />
       <item itemvalue="Application.SequenceQueue_1" />
@@ -608,19 +642,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151814000" />
+    <option name="totallyTimeSpent" value="154221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17787287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17787287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28395063" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.56453425" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28395063" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.56453425" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -718,13 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2793">
-          <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -859,6 +886,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="51" column="13" selection-start-line="48" selection-start-column="2" selection-end-line="51" selection-end-column="13" />
+          <folding>
+            <element signature="e#61#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -969,17 +999,31 @@
     <entry file="file://$PROJECT_DIR$/Chapter2_List/SingleLinkList/SingleLinkList_1.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-452">
-          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+          <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter4_Queue/OJ/5-1.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+        <state relative-caret-position="670">
+          <caret line="102" column="5" selection-start-line="79" selection-start-column="4" selection-end-line="102" selection-end-column="5" />
           <folding>
             <element signature="e#42#59#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="47" column="44" selection-start-line="42" selection-start-column="3" selection-end-line="47" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter4_Queue/OJ/5-2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
         </state>
       </provider>
     </entry>

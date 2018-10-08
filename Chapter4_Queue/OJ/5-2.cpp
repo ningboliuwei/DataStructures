@@ -1,81 +1,68 @@
 //
 // Created by Liu Wei on 2018/10/8.
 //
+
 #include<stdio.h>
 #include<stdlib.h>
-#include<iostream>
 
-using namespace std;
+#define MAXLEN 5
+
 typedef int datatype;
-typedef struct QNode {
-    datatype data;
-    struct QNode *next;
-} QNode;
 
-typedef struct qptr {
-    QNode *front; //队头指针
-    QNode *rear;  //队尾指针
-} LinkQueue;
+typedef struct {
+    datatype data[MAXLEN];
+    int front;          // 头指针
+    int rear;          // 尾指针
+} SeqQueue;
 
-int InitQueue(LinkQueue *&Q) {
+int InitQueue(SeqQueue *&Q) {
 //@@1
-    Q = new LinkQueue;
-    Q->front = NULL;
-    Q->rear = NULL;
+    Q = new SeqQueue;
+    Q->front = -1;
+    Q->rear = -1;
 
     return 1;
 //@@1
 }
 
-int QueueEmpty(LinkQueue *Q) {
+int QueueEmpty(SeqQueue *Q) {
 //    @@2
-    if (Q->front == NULL && Q->rear == NULL) {
+    if (Q->front == Q->rear) {
         return 1;
     }
+
     return 0;
-//    @@2
+    //    @@2
 }
 
-int InQueue(LinkQueue *Q, datatype x) {
+int InQueue(SeqQueue *Q, datatype x) {
 //    @@3
-    QNode *newNode = new QNode;
-    newNode->data = x;
-    newNode->next = NULL;
-
-    if (Q->rear == NULL) {
-        Q->front = newNode;
-        Q->rear = newNode;
-    } else {
-        Q->rear->next = newNode;
-        Q->rear = newNode;
+    if (Q->front == (Q->rear + 1) % MAXLEN) {
+        return 0;
     }
+
+    Q->rear = (Q->rear + 1) % MAXLEN;
+    Q->data[Q->rear] = x;
 
     return 1;
 //    @@3
 }
 
-int OutQueue(LinkQueue *Q, datatype &x) {
+int OutQueue(SeqQueue *Q, datatype &x) {
 //@@4
     if (QueueEmpty(Q)) {
         return 0;
     }
 
-    QNode *p = Q->front;
-    x = Q->front->data;
-    Q->front = Q->front->next;
-    // 表示队列中只有一个元素
-    if (Q->rear == p) {
-        Q->rear = NULL;
-    }
-
-    free(p);
+    Q->front = (Q->front + 1) % MAXLEN;
+    x = Q->data[Q->front];
 
     return 1;
 //@@4
 }
 
 int main() {
-    LinkQueue *Q;
+    SeqQueue *Q;
 //    @@5
     int choice = -1;
     int x = 0;
