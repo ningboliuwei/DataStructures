@@ -132,12 +132,14 @@ int main() {
 
     ShowMainMenu();
     scanf("%d", &choice);
+
     while (choice != 4) {
         if (choice == 1) {
             ShowDepartmentChooseMenu();
             scanf("%d", &department);
             printf("请输入病历号：");
             scanf("%d", &registerNumber);
+
             int result = InQueue(queues[department], registerNumber);
 
             if (result == 1) {
@@ -147,9 +149,15 @@ int main() {
         else if (choice == 2) {
             ShowDepartmentChooseMenu();
             scanf("%d", &department);
-            int result = OutQueue(queues[department], registerNumber);
-            if (result == 1) {
-                printf("请%d病人到内科看病\n", registerNumber);
+
+            if (QueueEmpty(queues[department])) {
+                printf("该诊室尚无人排队\n");
+            } else {
+                int result = OutQueue(queues[department], registerNumber);
+
+                if (result == 1) {
+                    printf("请%d病人到内科看病\n", registerNumber);
+                }
             }
         }// 就诊
         else if (choice == 3) {
@@ -160,6 +168,7 @@ int main() {
         else {
 
         }
+        ShowMainMenu();
         scanf("%d", &choice);
     }
 }
