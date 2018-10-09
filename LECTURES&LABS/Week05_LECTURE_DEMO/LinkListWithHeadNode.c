@@ -1,6 +1,6 @@
 //
 // Created by 慰 on 2018/10/8.
-// 本 C 文件中所有函数都针对于不带头结点的链表
+// 本 C 文件中所有函数都针对于带头结点的链表
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -9,32 +9,30 @@ typedef struct LinkNode {
     struct LinkNode *next;
 } Node, *LinkList;
 
-// 头插法创建不带头结点的链表
+// 头插法创建带头结点的链表
 LinkList CreateLinkListByHeadInsertion(LinkList linkList) {
     int data;
+    // 以下三行可以进一步简化为两行（见尾插法的写法）
+    Node *headNode = (Node *) malloc(sizeof(Node));
+    headNode->next = NULL;
+    linkList = headNode;
 
     while (scanf("%d", &data) && data != -1) {
         Node *newNode = (Node *) malloc(sizeof(Node));
         newNode->data = data;
         newNode->next = NULL;
 
-        // 如果 linkList 为空（即当前没有任何结点）
-        if (linkList == NULL) {
-            // linkList 指向新节点
-            linkList = newNode;
-        } else {
-            newNode->next = linkList;
-            linkList = newNode;
-        }
+        newNode->next = linkList->next;
+        linkList->next = newNode;
     }
 
     return linkList;
 }
 
-//显示不带头结点的链表元素
+//显示带头结点的链表元素
 void ShowLinkList(LinkList linkList) {
-    // 声明一个 Node 指针指向链表中第一个结点
-    Node *p = linkList;
+    // 声明一个 Node 指针指向链表中第一个非结点的结点
+    Node *p = linkList->next;
     // 输出链表中每一个节点的 data 域的值
     while (p != NULL) {
         printf("%d ", p->data);
@@ -47,31 +45,25 @@ void ShowLinkList(LinkList linkList) {
 // 尾插法创建带头结点的链表
 LinkList CreateLinkListByTailInsertion(LinkList linkList) {
     int data;
-    Node *tail = NULL;
+    linkList = (Node *) malloc(sizeof(Node));
+    linkList->next = NULL;
+    Node *tail = linkList;
 
     while (scanf("%d", &data) && data != -1) {
         Node *newNode = (Node *) malloc(sizeof(Node));
         newNode->data = data;
         newNode->next = NULL;
 
-        // 如果 linkList 为空（即当前没有任何结点）
-        if (linkList == NULL) {
-            // linkList 指向新节点
-            linkList = newNode;
-        } else {
-            // 尾结点的 next 域指向新节点
-            tail->next = newNode;
-        }
-        // 尾结点指针指向新的结点（即新结点作为尾结点）
+        tail->next = newNode;
         tail = newNode;
     }
 
     return linkList;
 }
 
-// 求不带头结点的链表长度
+// 求带头结点的链表长度
 int LengthOfLinkList(LinkList linkList) {
-    Node *p = linkList;
+    Node *p = linkList->next;
 
     int n = 0;
     while (p != NULL) {
@@ -84,7 +76,7 @@ int LengthOfLinkList(LinkList linkList) {
 
 // 根据位置（从 0 开始的下标）搜索链表中的元素
 Node *GetNodeByPosition(LinkList linkList, int pos) {
-    Node *p = linkList;
+    Node *p = linkList->next;
     int i = 0;
 
     // 链表为空
@@ -108,7 +100,7 @@ Node *GetNodeByPosition(LinkList linkList, int pos) {
 
 // 根据某个值搜索第一个结点拥有该值的结点在链表中的位置
 int GetPositionByValue(LinkList linkList, int value) {
-    Node *p = linkList;
+    Node *p = linkList->next;
     int i = 0;
 
     while (p != NULL && p->data != value) {
@@ -129,7 +121,7 @@ int GetPositionByValue(LinkList linkList, int value) {
 
 int Insert(LinkList *linkListPointer, int pos, int value) {
     // 因为链表无头结点的话，可能需要修改 linkList 指向的地址，所以需要将其作为指针
-    Node *p = *linkListPointer;
+    Node *p = (*linkListPointer);
     int i = 0;
 
     // 若要插入的位置小于 0 或者大于链表中最后一个结点的下标 + 1（最后一个结点的下标 + 1 表示作为最后一个节点插入），不合法
@@ -146,22 +138,14 @@ int Insert(LinkList *linkListPointer, int pos, int value) {
     newNode->data = value;
     newNode->next = NULL;
 
-    // 如果要将新结点作为第一个结点插入
-    if (pos == 0) {
-        // 链表不为空时
-        if (p != NULL) {
-            newNode->next = (*linkListPointer)->next;
-        }
-        *linkListPointer = newNode;
-    } else {
-        while (i < pos - 1) {
-            p = p->next;
-            i++;
-        }
-
-        newNode->next = p->next;
-        p->next = newNode;
+    while (i < pos) {
+        p = p->next;
+        i++;
     }
+
+    newNode->next = p->next;
+    p->next = newNode;
+
     return 1;
 }
 
@@ -169,7 +153,7 @@ int Insert(LinkList *linkListPointer, int pos, int value) {
 //// 删除链表中指定位置的元素
 int Delete(LinkList *linkListPointer, int pos, int value) {
     // 因为链表无头结点的话，可能需要修改 linkList 指向的地址，所以需要将其作为指针
-    Node *p = *linkListPointer;
+    Node *p = (*linkListPointer);
     int i = 0;
 
     // 链表为空
@@ -182,20 +166,14 @@ int Delete(LinkList *linkListPointer, int pos, int value) {
         return 0;
     }
 
-    // 如果删除的是第一个结点
-    if (pos == 0) {
-        *linkListPointer = p->next;
-        free(p);
-    } else {
-        while (i < pos - 1) {
-            p = p->next;
-            i++;
-        }
-
-        Node *q = p->next;
-        p->next = p->next->next;
-        free(q);
+    while (i < pos) {
+        p = p->next;
+        i++;
     }
+
+    Node *q = p->next;
+    p->next = p->next->next;
+    free(q);
     return 1;
 }
 
@@ -207,7 +185,7 @@ int main() {
     // 使用头插法创建列表，使用下一行
     linkList = CreateLinkListByHeadInsertion(linkList);
     // 使用尾插法创建列表，使用下一行
-    // linkList = CreateLinkListByTailInsertion(linkList);
+//     linkList = CreateLinkListByTailInsertion(linkList);
     // 显示列表中的元素
     ShowLinkList(linkList);
     // 输出链表中所有元素
