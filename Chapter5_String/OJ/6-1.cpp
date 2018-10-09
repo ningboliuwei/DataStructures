@@ -9,58 +9,68 @@
 
 using namespace std;
 
-typedef struct
-{
+typedef struct {
     char *ch;
     int length;
-}HString;
+} HString;
 
-int StrAssign(HString &S,char *chars)
-{
+int StrAssign(HString &S, char *chars) {
 //    @@1
+    int i = 0;
+
+    while (chars[i] != 0) {
+        i++;
+    }
+
+    S.length = i;
+    S.ch = (char *) malloc(sizeof(S.length));
+
+    for (int i = 0; i < S.length; i++) {
+        S.ch[i] = chars[i];
+    }
 //    @@1
 }
 
-void ShowString(HString S)
-{
+void ShowString(HString S) {
 //    @@2
+    for (int i = 0; i < S.length; i++) {
+        printf("%c", S.ch[i]);
+    }
+    printf("\n");
 //    @@2
 }
 
-int Delete(HString &S,int pos,int len)
-{
+int Delete(HString &S, int pos, int len) {
 //    @@3
 //    @@3
 }
 
-int Insert(HString &S,int pos,HString T)
-{
+int Insert(HString &S, int pos, HString T) {
 //    @@4
 //    @@4
 }
 
-int main( )
-{
-    HString S,T;
+int main() {
+    HString S, T;
     char a[100];
-    int pos,len;
+    int pos, len;
 
-    cin>>a;
-    StrAssign(S,a);
+    cin >> a;
+    StrAssign(S, a);
     ShowString(S);
 
-    cin>>a;
-    StrAssign(T,a);
+    cin >> a;
+    StrAssign(T, a);
     ShowString(T);
 
-    cout<<"请输入插入位置" ;
-    cin>>pos;
+    cout << "请输入插入位置";
+    cin >> pos;
 
 //    @@5        //插入
 //    @@5
 
-    cout<<"请输入删除位置和长度" ;
-    cin>>pos>>len;
+    cout << "请输入删除位置和长度";
+    cin >> pos >> len;
 
 //    @@6       //删除
 //    @@6
