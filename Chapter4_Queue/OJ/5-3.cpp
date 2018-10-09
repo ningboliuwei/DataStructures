@@ -1,5 +1,5 @@
 //
-// Created by Liu Wei on 2018/10/8.
+// Created by Liu Wei on 2018/10/9.
 //
 
 #include<stdio.h>
@@ -11,15 +11,15 @@ typedef int datatype;
 
 typedef struct {
     datatype data[MAXLEN];
-    int front;          // 头指针
-    int rear;          // 尾指针
+    int front;           // 头指针
+    int count;          //元素个数
 } SeqQueue;
 
 int InitQueue(SeqQueue *&Q) {
 //@@1
     Q = new SeqQueue;
     Q->front = -1;
-    Q->rear = -1;
+    Q->count = 0;
 
     return 1;
 //@@1
@@ -27,25 +27,32 @@ int InitQueue(SeqQueue *&Q) {
 
 int QueueEmpty(SeqQueue *Q) {
 //    @@2
-    if (Q->front == Q->rear) {
+    if (Q->count == 0) {
         return 1;
     }
 
     return 0;
-    //    @@2
+//    @@2
 }
 
 int InQueue(SeqQueue *Q, datatype x) {
 //    @@3
-    if (Q->front == (Q->rear + 1) % MAXLEN) {
+    if (Q->count == MAXLEN) {
         return 0;
     }
 
-    Q->rear = (Q->rear + 1) % MAXLEN;
-    Q->data[Q->rear] = x;
+    Q->data[Q->front + Q->count % MAXLEN] = x;
+    Q->count++;
 
     return 1;
 //    @@3
+}
+
+void ShowQueue(SeqQueue *Q) {
+    for (int i = 0; i < Q->count; i++) {
+        printf("%d ", Q->data[(Q->front + i) % MAXLEN]);
+    }
+    printf("\n");
 }
 
 int OutQueue(SeqQueue *Q, datatype &x) {
@@ -54,8 +61,9 @@ int OutQueue(SeqQueue *Q, datatype &x) {
         return 0;
     }
 
-    Q->front = (Q->front + 1) % MAXLEN;
     x = Q->data[Q->front];
+    Q->front = (Q->front + 1) % MAXLEN;
+    Q->count--;
 
     return 1;
 //@@4
@@ -79,8 +87,9 @@ int main() {
             if (InQueue(Q, x) == 1) {
                 printf("入队成功\n");
             } else {
-                printf("入队失败");
+                printf("入队失败\n");
             }
+//            ShowQueue(Q);
         } else if (choice == 3) {
             if (OutQueue(Q, x) == 1) {
                 printf("%d\n", x);
@@ -88,6 +97,7 @@ int main() {
             } else {
                 printf("出队失败\n");
             }
+//            ShowQueue(Q);
         }
     }
 //    @@5
