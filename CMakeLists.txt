@@ -30,3 +30,4 @@ add_executable(week05_lecture1 LECTURES&LABS/Week05_LECTURE_DEMO/LinkListWithout
 add_executable(LinkListWithoutHeadNode LECTURES&LABS/Week05_LECTURE_DEMO/LinkListWithoutHeadNode.c)
 add_executable(LinkListWithHeadNode LECTURES&LABS/Week05_LECTURE_DEMO/LinkListWithHeadNode.c)
 add_executable(5-3 Chapter4_Queue/OJ/5-3.cpp)
+add_executable(5-4 Chapter4_Queue/OJ/5-4.cpp)

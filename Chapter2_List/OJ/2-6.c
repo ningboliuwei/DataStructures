@@ -9,10 +9,10 @@
 typedef struct xznode {
     int m;       // 系数
     int n;       // 指数
-} datatype;
+} dataType;
 
 typedef struct {
-    datatype data[MAXLEN];
+    dataType data[MAXLEN];
     int last;
 } SeqList;
 
@@ -25,7 +25,7 @@ SeqList *InitList() {
 //    @@1
 }
 
-int InsSeqList(SeqList *L, int i, datatype x) {
+int InsSeqList(SeqList *L, int i, dataType x) {
 //    @@2
     int index = 0;
 

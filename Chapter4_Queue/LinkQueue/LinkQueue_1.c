@@ -74,7 +74,7 @@ int InitQueue(LinkQueue *queue) {
     queue->rear = NULL;
 }
 
-void ShowQueue(LinkQueue *queue) {
+void ShowDepartmentMenu(LinkQueue *queue) {
 
     if (IsEmptyQueue(queue)) {
         printf("empty queue");
@@ -98,17 +98,17 @@ int main() {
     InQueue(queue, 3);
     InQueue(queue, 4);
 
-    ShowQueue(queue);
+    ShowDepartmentMenu(queue);
 
     int *item = (int *) malloc(sizeof(int));
 
     OutQueue(queue, item);
     printf("out: %d\n", *item);
-    ShowQueue(queue);
+    ShowDepartmentMenu(queue);
 
     OutQueue(queue, item);
     printf("out: %d\n", *item);
-    ShowQueue(queue);
+    ShowDepartmentMenu(queue);
 
     printf("length of queue: %d", LengthOfQueue(queue));
 

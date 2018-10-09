@@ -7,10 +7,10 @@
 
 #define MAXLEN 5
 
-typedef int datatype;
+typedef int dataType;
 
 typedef struct {
-    datatype data[MAXLEN];
+    dataType data[MAXLEN];
     int front;          // 头指针
     int rear;          // 尾指针
 } SeqQueue;
@@ -35,7 +35,7 @@ int QueueEmpty(SeqQueue *Q) {
     //    @@2
 }
 
-int InQueue(SeqQueue *Q, datatype x) {
+int InQueue(SeqQueue *Q, dataType x) {
 //    @@3
     if (Q->front == (Q->rear + 1) % MAXLEN) {
         return 0;
@@ -48,7 +48,7 @@ int InQueue(SeqQueue *Q, datatype x) {
 //    @@3
 }
 
-int OutQueue(SeqQueue *Q, datatype &x) {
+int OutQueue(SeqQueue *Q, dataType &x) {
 //@@4
     if (QueueEmpty(Q)) {
         return 0;

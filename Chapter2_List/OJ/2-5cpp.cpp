@@ -10,9 +10,9 @@ using namespace std;
 
 #define MAXLEN  15
 
-typedef int datatype;
+typedef int dataType;
 typedef struct {
-    datatype data[MAXLEN];
+    dataType data[MAXLEN];
     int last;
 } SeqList;
 
@@ -25,7 +25,7 @@ SeqList *CreatList_Seq() {
 //    @@1
 }
 
-int InsList_Seq(SeqList *Lq, int i, datatype x) {
+int InsList_Seq(SeqList *Lq, int i, dataType x) {
 //    @@2
     SeqList *p = Lq;
     int index = 0;
@@ -47,7 +47,7 @@ int InsList_Seq(SeqList *Lq, int i, datatype x) {
 //    @@2
 }
 
-int SearchList_Seq(SeqList *Lq, datatype x) {
+int SearchList_Seq(SeqList *Lq, dataType x) {
 //    @@3
     for (int i = 0; i <= Lq->last; i++) {
         if (Lq->data[i] == x) {
@@ -66,7 +66,7 @@ void ShowList_Seq(SeqList *Lq) {
 //    @@4
 }
 
-datatype Getdata(SeqList *h, int i) {
+dataType Getdata(SeqList *h, int i) {
 //    @@7
     return h->data[i];
 //    @@7
@@ -110,7 +110,7 @@ void Union(SeqList *a, SeqList *b, SeqList *c) {
 
 int main() {
     SeqList *a, *b, *c;
-    datatype x;
+    dataType x;
 
     a = CreatList_Seq();
     b = CreatList_Seq();

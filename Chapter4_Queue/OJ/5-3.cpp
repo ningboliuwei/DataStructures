@@ -7,10 +7,10 @@
 
 #define MAXLEN 5
 
-typedef int datatype;
+typedef int dataType;
 
 typedef struct {
-    datatype data[MAXLEN];
+    dataType data[MAXLEN];
     int front;           // 头指针
     int count;          //元素个数
 } SeqQueue;
@@ -35,13 +35,13 @@ int QueueEmpty(SeqQueue *Q) {
 //    @@2
 }
 
-int InQueue(SeqQueue *Q, datatype x) {
+int InQueue(SeqQueue *Q, dataType x) {
 //    @@3
     if (Q->count == MAXLEN) {
         return 0;
     }
 
-    Q->data[Q->front + Q->count % MAXLEN] = x;
+    Q->data[(Q->front + Q->count) % MAXLEN] = x;
     Q->count++;
 
     return 1;
@@ -55,7 +55,7 @@ void ShowQueue(SeqQueue *Q) {
     printf("\n");
 }
 
-int OutQueue(SeqQueue *Q, datatype &x) {
+int OutQueue(SeqQueue *Q, dataType &x) {
 //@@4
     if (QueueEmpty(Q)) {
         return 0;
@@ -89,7 +89,7 @@ int main() {
             } else {
                 printf("入队失败\n");
             }
-//            ShowQueue(Q);
+            ShowQueue(Q);
         } else if (choice == 3) {
             if (OutQueue(Q, x) == 1) {
                 printf("%d\n", x);
@@ -97,7 +97,7 @@ int main() {
             } else {
                 printf("出队失败\n");
             }
-//            ShowQueue(Q);
+            ShowQueue(Q);
         }
     }
 //    @@5

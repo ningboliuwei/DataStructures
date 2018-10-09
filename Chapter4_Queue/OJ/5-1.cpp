@@ -6,9 +6,9 @@
 #include<iostream>
 
 using namespace std;
-typedef int datatype;
+typedef int dataType;
 typedef struct QNode {
-    datatype data;
+    dataType data;
     struct QNode *next;
 } QNode;
 
@@ -36,7 +36,7 @@ int QueueEmpty(LinkQueue *Q) {
 //    @@2
 }
 
-int InQueue(LinkQueue *Q, datatype x) {
+int InQueue(LinkQueue *Q, dataType x) {
 //    @@3
     QNode *newNode = new QNode;
     newNode->data = x;
@@ -54,7 +54,7 @@ int InQueue(LinkQueue *Q, datatype x) {
 //    @@3
 }
 
-int OutQueue(LinkQueue *Q, datatype &x) {
+int OutQueue(LinkQueue *Q, dataType &x) {
 //@@4
     if (QueueEmpty(Q)) {
         return 0;

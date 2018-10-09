@@ -8,16 +8,16 @@
 
 using namespace std;
 
-typedef int datatype;
+typedef int dataType;
 
 typedef struct linknode {
-    datatype data;
+    dataType data;
     struct linknode *next;
 } LinkNode, *LinkList;
 
 LinkList GetHead(LinkList L);   //获取链式存储的线性表（带头结点）的头指针
 LinkList NextPos(LinkList L, LinkList h);  //获取后继结点的地址
-datatype GetCurElem(LinkList p);          //获取当前结点的数据值
+dataType GetCurElem(LinkList p);          //获取当前结点的数据值
 void DelFirst(LinkList L, LinkList &q);    //删除线性表中的第一个数据结点并把删除结点放入q中
 void Append(LinkList L, LinkList q);   //追加一个结点到线性表中（尾部加入q结点）
 void FreeNode(LinkList L);             //释放整个线性表L
@@ -39,7 +39,7 @@ void Show(LinkList L) {
     LinkNode *p = NextPos(L, h);
 
     while (p) {
-        datatype element = GetCurElem(p);
+        dataType element = GetCurElem(p);
         printf("%d ", element);
         p = NextPos(L, p);
     }
@@ -50,7 +50,7 @@ void Show(LinkList L) {
 LinkList NextPos(LinkList L, LinkList h) {
     return h->next;
 };  //获取后继结点的地址
-datatype GetCurElem(LinkList p) {
+dataType GetCurElem(LinkList p) {
     return p->data;
 };          //获取当前结点的数据值
 void DelFirst(LinkList L, LinkList &q) {
@@ -91,8 +91,8 @@ int MergeList_L(LinkList &La, LinkList &Lb, LinkList &Lc) {
     LinkNode *pa = NextPos(La, ha);
     LinkNode *pb = NextPos(Lb, hb);
     while (pa && pb) {
-        datatype a = GetCurElem(pa);
-        datatype b = GetCurElem(pb);
+        dataType a = GetCurElem(pa);
+        dataType b = GetCurElem(pb);
         LinkList q;
         if (a <= b) {
             DelFirst(ha, q);
@@ -126,7 +126,7 @@ int main() {
     InitList(list1);
     InitList(list2);
 
-    datatype value = 0;
+    dataType value = 0;
     while (scanf("%d", &value) && value != -1) {
         LinkNode *node = (LinkNode *) malloc(sizeof(LinkNode));
         node->data = value;
