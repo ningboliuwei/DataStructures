@@ -70,8 +70,6 @@ LinkList CreateLinkListByTailInsertion(LinkList linkList) {
     return linkList;
 }
 
-//
-//
 // 求不带头结点的链表长度
 int LengthOfLinkList(LinkList linkList) {
     Node *p = linkList;
@@ -90,17 +88,23 @@ Node *GetNodeByPosition(LinkList linkList, int pos) {
     Node *p = linkList;
     int i = 0;
 
+    // 链表为空
+    if (p == NULL) {
+        return NULL;
+    }
+
+    // 若要插入的位置小于 0 或者大于链表中最后一个结点的下标，不合法
+    if (pos < 0 || pos > LengthOfLinkList(linkList) - 1) {
+        return NULL;
+    }
+
     // 在 p 没有移动到链表最后一个结点，及当前下标小于指定下标前，不断将 p 后移一个结点
     while (p->next != NULL && i < pos) {
         p = p->next;
         i++;
     }
-    // 若 i 刚好是指定下标（即 pos 没有比链表中最后一个结点的下标还大）
-    if (i == pos) {
-        return p;
-    } else {
-        return NULL;
-    }
+
+    return p;
 }
 
 // 根据某个值搜索第一个结点拥有该值的结点在链表中的位置
@@ -113,76 +117,88 @@ int GetPositionByValue(LinkList linkList, int value) {
         i++;
     }
 
-    if (p->data == value) {
+    // 链表为空
+    if (p == NULL) {
+        return -1;
+    } else if (p->data == value) {
         return i;
     } else {
+        // 遍历所有结点仍然找不到
         return -1;
     }
 }
 
-int Insert(LinkList linkList, int pos, int value) {
-    Node *p = linkList;
+int Insert(LinkList *linkListPointer, int pos, int value) {
+    // 因为链表无头结点的话，可能需要修改 linkList 指向的地址，所以需要将其作为指针
+    Node *p = *linkListPointer;
     int i = 0;
 
-    while (p->next != NULL && i < pos - 1) {
-        p = p->next;
-        i++;
-    }
-
-    if (p == NULL || i >= pos) {
+    // 若要插入的位置小于 0 或者大于链表中最后一个结点的下标 + 1（最后一个结点的下标 + 1 表示作为最后一个节点插入），不合法
+    if (pos < 0 || pos > LengthOfLinkList(*linkListPointer)) {
         return 0;
-    } else {
-        Node *s = (Node *) malloc(sizeof(Node));
-        s->data = value;
-        s->next = p->next;
-        p->next = s;
-
-        return 1;
     }
+
+    // 当前链表为空时，若要插入的位置不为 0，不合法
+    if (p == NULL && pos != 0) {
+        return 0;
+    }
+
+    Node *newNode = (Node *) malloc(sizeof(Node));
+    newNode->data = value;
+    newNode->next = NULL;
+
+    // 如果要将新结点作为第一个结点插入
+    if (pos == 0) {
+        // 链表不为空时
+        if (p != NULL) {
+            newNode->next = (*linkListPointer)->next;
+        }
+        *linkListPointer = newNode;
+    } else {
+        while (i < pos - 1) {
+            p = p->next;
+            i++;
+        }
+
+        newNode->next = p->next;
+        p->next = newNode;
+    }
+    return 1;
 }
+
 //
 //// 删除链表中指定位置的元素
-//int DelList_L(LinkList linkList, int pos) {
-//    Node *p = linkList;
-//    int index = 0;
-//
-//    while (p->next != NULL && index < pos - 1) {
-//        p = p->next;
-//        index++;
-//    }
-//
-//    if (p || index > pos - 1) {
-//        return 0;
-//    } else {
-//        Node *q = p->next;
-//        p->next = q->next;
-//        free(q);
-//
-//        return 1;
-//    }
-//}
-//
-//// 我自己的写法
-//int DelList_L2(LinkList linkList, int pos) {
-//    Node *p = linkList;
-//    int index = 0;
-//
-//    if (pos <= 0 || pos > LengthList_L(linkList)) {
-//        return -1;
-//    }
-//
-//    // 这里的 p->next == NULL 判定可以精简吗？
-//    while (index < pos - 1) {
-//        p = p->next;
-//        index++;
-//    }
-//
-//    Node *q = p->next;
-//    p->next = q->next;
-//    free(q);
-//
-//    return 1;
-//}
+int Delete(LinkList *linkListPointer, int pos, int value) {
+    // 因为链表无头结点的话，可能需要修改 linkList 指向的地址，所以需要将其作为指针
+    Node *p = *linkListPointer;
+    int i = 0;
+
+    // 链表为空
+    if (p == NULL) {
+        return 0;
+    }
+
+    // 若要删除的位置小于 0 或者大于链表中最后一个结点的下标，不合法
+    if (pos < 0 || pos > LengthOfLinkList(*linkListPointer) - 1) {
+        return 0;
+    }
+
+    // 如果删除的是第一个结点
+    if (pos == 0) {
+        *linkListPointer = p->next;
+        free(p);
+    } else {
+        while (i < pos - 1) {
+            p = p->next;
+            i++;
+        }
+
+        Node *q = p->next;
+        p->next = p->next->next;
+        free(q);
+    }
+    return 1;
+}
 
 
 int main() {
@@ -225,7 +241,7 @@ int main() {
     scanf("%d", &value);
     printf("Input the position you want to insert:");
     scanf("%d", &position);
-    int result = Insert(linkList, position, value);
+    int result = Insert(&linkList, position, value);
     // 插入成功
     if (result == 1) {
         printf("The elements of the link list after insertion:");
@@ -236,53 +252,18 @@ int main() {
         printf("Insertion failed.");
     }
 
-//    printf("\n");
-//    printf("The elements of the linklist:");
-//    ShowList_L(linkList);
-//    printf("\n");
-//
-//    int length = LengthList_L(linkList);
-//    printf("\n");
-//    printf("The length of the linklist is %d.", length);
-//    printf("\n");
+    printf("Input the position you want to delete:");
+    scanf("%d", &position);
+    result = Delete(&linkList, position, value);
+    // 删除成功
+    if (result == 1) {
+        printf("The elements of the link list after deletion:");
+        ShowLinkList(linkList);
+        printf("\n");
+    } else {
+        //删除失败
+        printf("Deletion failed.");
+    }
 
-//    printf("\n");
-//    printf("Input a index you want to search.");
-//    printf("\n");
-//
-//    int index = 0;
-//    scanf("%d", &index);
-//    Node *result = SearchListByPos_L(linkList, index);
-//    printf("The found element is %d", result->data);
-//
-//    printf("\n");
-//    printf("Input a element you want to search.");
-//    printf("\n");
-//
-//    int element = 0;
-//    scanf("%d", &element);
-//    int pos = SearchListByElement_L(linkList, element);
-//
-//    printf("\n");
-//    printf("The found position is %d", pos);
-
-//    int pos;
-//    printf("\n");
-//    printf("Input the position of element you want to delete");
-//    scanf("%d", &pos);
-//    int q = DelList_L2(linkList, pos);
-//
-//    printf("%d\n", q);
-//    printf("The elements of the linklist after deletion:");
-//    ShowList_L(linkList);
-//    printf("\n");
-
-
-//
-//    printf("%d\n", q);
-//    printf("The elements of the linklist after insertion:");
-//    ShowList_L(linkList);
-//    printf("\n");
-//
-//    getchar();
+    getchar();
 }
