@@ -1,6 +1,6 @@
 //
 // Created by Liu Wei on 2018/10/9.
-//
+// 问题 C: 【数据结构4-3】队列应用（P84六.1）
 
 #include<stdio.h>
 #include<stdlib.h>

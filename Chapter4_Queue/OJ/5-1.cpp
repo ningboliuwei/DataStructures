@@ -1,6 +1,6 @@
 //
 // Created by Liu Wei on 2018/10/8.
-//
+// 问题 A: 【数据结构4-1】链队列基本操作P77
 #include<stdio.h>
 #include<stdlib.h>
 #include<iostream>

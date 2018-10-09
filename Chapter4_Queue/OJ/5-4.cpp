@@ -1,6 +1,6 @@
 //
 // Created by Liu Wei on 2018/10/9.
-//
+// 问题 D: 【数据结构4-4】队列应用——医院排队
 
 #include <stdio.h>
 #include <stdlib.h>

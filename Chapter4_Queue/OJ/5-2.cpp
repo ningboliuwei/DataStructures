@@ -1,6 +1,6 @@
 //
 // Created by Liu Wei on 2018/10/8.
-//
+// 问题 B: 【数据结构4-2】循环队列基本操作
 
 #include<stdio.h>
 #include<stdlib.h>
