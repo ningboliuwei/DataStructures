@@ -91,7 +91,6 @@ int SubHStr(HString &Sub, HString S, int pos, int len)  //求子串
 
 int Index(HString S, HString T, int pos)  //在主串S中从pos位开始模式匹配
 {
-//    @@6
     if (S.length == 0 || T.length == 0) {
         return -1;
     }
@@ -100,26 +99,32 @@ int Index(HString S, HString T, int pos)  //在主串S中从pos位开始模式�
         return -1;
     }
 
-    int matchStart = -1;
+    int flagMatch;
+    int matchStart;
 
     for (int i = pos; i <= S.length - T.length; i++) {
+        matchStart = -1;
+        flagMatch = 0;
+
         if (S.ch[i] == T.ch[0]) {
             matchStart = i;
-            break;
+            flagMatch = 1;
+        }
+
+        if (matchStart != -1) {
+            for (int j = 0; j < T.length; j++) {
+                if (S.ch[j + matchStart] != T.ch[j]) {
+                    flagMatch = 0;
+                }
+            }
+        }
+
+        if (flagMatch == 1) {
+            return matchStart;
         }
     }
 
-    if (matchStart == -1) {
-        return -1;
-    } else {
-        for (int j = 0; j < T.length; j++) {
-            if (S.ch[j + matchStart] != T.ch[j]) {
-                return -1;
-            }
-        }
-        return matchStart;
-    }
-//    @@6
+    return -1;
 }
 
 int DelHStr(HString &S, int pos, int len) //串删除
