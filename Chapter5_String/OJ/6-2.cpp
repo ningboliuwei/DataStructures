@@ -201,16 +201,6 @@ int main() {
     HStrAssign(T, a);
     ShowHString(T);
 
-//    HString subString;
-//    subString.ch = (char *) malloc(sizeof(char));
-//    subString.length = 0;
-//
-//    int result = SubHStr(subString, S, 3, 4);
-//    if (result == 1) {
-//        ShowHString(subString);
-//    } else {
-//        printf("Error");
-//    }
     printf("index: %d\n", Index(S, T, 0));
 
     cin >> a;
