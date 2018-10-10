@@ -58,8 +58,8 @@ int Delete(HString &S, int pos, int len) {
         return 0;
     }
 
-    for (int i = pos + 1; i <= S.length - 1; i++) {
-        S.ch[i - len] = S.ch[i];
+    for (int i = 0; i < S.length - (pos + len); i++) {
+        S.ch[pos + i] = S.ch[pos + i + len];
     }
 
     S.length = S.length - len;
@@ -79,12 +79,12 @@ int Insert(HString &S, int pos, HString T) {
         ShowString(S);
         S.ch = (char *) realloc(S.ch, (S.length + T.length) * sizeof(char));
 
-        for (int i = S.length; i >= pos; i--) {
-            S.ch[T.length - 1 + i] = S.ch[i - 1];
+        for (int i = S.length - pos - 1; i >= 0; i--) {
+            S.ch[pos + i + T.length] = S.ch[pos + i];
         }
 
         for (int i = 0; i < T.length; i++) {
-            S.ch[pos + i - 1] = T.ch[i];
+            S.ch[pos + i] = T.ch[i];
         }
 
         S.length = S.length + T.length;

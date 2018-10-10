@@ -92,19 +92,33 @@ int SubHStr(HString &Sub, HString S, int pos, int len)  //求子串
 int Index(HString S, HString T, int pos)  //在主串S中从pos位开始模式匹配
 {
 //    @@6
-    if (S.length < T.length) {
+    if (S.length == 0 || T.length == 0) {
         return -1;
     }
 
-    for (int i = pos; i < S.length - T.length; i++) {
-        HString subString;
-        SubHStr(subString, S, i, T.length);
+    if (pos + T.length > S.length + 1) {
+        return -1;
+    }
 
-        if (HStrCompare(S, subString) == 0) {
-            return pos;
+    int matchStart = -1;
+
+    for (int i = pos; i <= S.length - T.length; i++) {
+        if (S.ch[i] == T.ch[0]) {
+            matchStart = i;
+            break;
         }
     }
-    return -1;
+
+    if (matchStart == -1) {
+        return -1;
+    } else {
+        for (int j = 0; j < T.length; j++) {
+            if (S.ch[j + matchStart] != T.ch[j]) {
+                return -1;
+            }
+        }
+        return matchStart;
+    }
 //    @@6
 }
 
@@ -123,8 +137,8 @@ int DelHStr(HString &S, int pos, int len) //串删除
         return 0;
     }
 
-    for (int i = pos + 1; i <= S.length - 1; i++) {
-        S.ch[i - len] = S.ch[i];
+    for (int i = 0; i < S.length - (pos + len); i++) {
+        S.ch[pos + i] = S.ch[pos + i + len];
     }
 
     S.length = S.length - len;
@@ -142,15 +156,14 @@ int InsHStr(HString &S, int pos, HString T)  //串插入
     }
 
     if (T.length != 0) {
-        ShowHString(S);
         S.ch = (char *) realloc(S.ch, (S.length + T.length) * sizeof(char));
 
-        for (int i = S.length; i >= pos; i--) {
-            S.ch[T.length - 1 + i] = S.ch[i - 1];
+        for (int i = S.length - pos - 1; i >= 0; i--) {
+            S.ch[pos + i + T.length] = S.ch[pos + i];
         }
 
         for (int i = 0; i < T.length; i++) {
-            S.ch[pos + i - 1] = T.ch[i];
+            S.ch[pos + i] = T.ch[i];
         }
 
         S.length = S.length + T.length;
@@ -164,6 +177,15 @@ int ReplaceHStr(HString &S, HString T, HString V)
 //串替换（调用模式匹配，删除，插入来实现）
 {
 //@@9
+    int i = 0;
+    int replaceStart = Index(S, T, i);
+
+    while (i < S.length && replaceStart != -1) {
+        i = i + (V.length - T.length) + 2;
+        DelHStr(S, replaceStart, T.length);
+        InsHStr(S, replaceStart, V);
+        replaceStart = Index(S, T, i);
+    }
 //@@9
 }
 
@@ -179,24 +201,23 @@ int main() {
     HStrAssign(T, a);
     ShowHString(T);
 
-    HString subString;
-    subString.ch = (char *) malloc(sizeof(char));
-    subString.length = 0;
+//    HString subString;
+//    subString.ch = (char *) malloc(sizeof(char));
+//    subString.length = 0;
+//
+//    int result = SubHStr(subString, S, 3, 4);
+//    if (result == 1) {
+//        ShowHString(subString);
+//    } else {
+//        printf("Error");
+//    }
+    printf("index: %d\n", Index(S, T, 0));
 
-    int result = SubHStr(subString, S, 3, 4);
-    if (result == 1) {
-        ShowHString(subString);
-    } else {
-        printf("Error");
-    }
+    cin >> a;
+    HStrAssign(V, a);
 
-
-
-//    cin >> a;
-//    HStrAssign(V, a);
-
-//    ReplaceHStr(S, T, V);
-//    ShowHString(S);
+    ReplaceHStr(S, T, V);
+    ShowHString(S);
 
     return 1;
 }
