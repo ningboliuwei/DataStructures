@@ -33,20 +33,64 @@ int StrAssign(HString &S, char *chars) {
 
 void ShowString(HString S) {
 //    @@2
-    for (int i = 0; i < S.length; i++) {
-        printf("%c", S.ch[i]);
+    if (S.length == 0) {
+        printf("空串\n");
+    } else {
+        for (int i = 0; i < S.length; i++) {
+            printf("%c", S.ch[i]);
+        }
+        printf("\n");
     }
-    printf("\n");
 //    @@2
 }
 
 int Delete(HString &S, int pos, int len) {
 //    @@3
+    if (pos < 0 || pos > S.length - 1) {
+        return 0;
+    }
+
+    if (len < 0 || len > S.length) {
+        return 0;
+    }
+
+    if (S.length == 0) {
+        return 0;
+    }
+
+    for (int i = pos + 1; i <= S.length - 1; i++) {
+        S.ch[i - len] = S.ch[i];
+    }
+
+    S.length = S.length - len;
+
+    return 1;
 //    @@3
 }
 
 int Insert(HString &S, int pos, HString T) {
 //    @@4
+    // 若插入位置小于 1 或超过字符串长度最大
+    if (pos < 1 || pos > S.length + 1) {
+        return 0;
+    }
+
+    if (T.length != 0) {
+        ShowString(S);
+        S.ch = (char *) realloc(S.ch, (S.length + T.length) * sizeof(char));
+
+        for (int i = S.length; i >= pos; i--) {
+            S.ch[T.length - 1 + i] = S.ch[i - 1];
+        }
+
+        for (int i = 0; i < T.length; i++) {
+            S.ch[pos + i - 1] = T.ch[i];
+        }
+
+        S.length = S.length + T.length;
+
+        return 1;
+    }
 //    @@4
 }
 
@@ -67,12 +111,25 @@ int main() {
     cin >> pos;
 
 //    @@5        //插入
+    int result = Insert(S, pos, T);
+    if (result == 0) {
+        printf("插入失败");
+    } else {
+        ShowString(S);
+    }
+
 //    @@5
 
     cout << "请输入删除位置和长度";
     cin >> pos >> len;
 
 //    @@6       //删除
+    result = Delete(S, pos, len);
+    if (result == 0) {
+        printf("删除失败");
+    } else {
+        ShowString(S);
+    }
 //    @@6
 
     return 1;
