@@ -35,3 +35,4 @@ add_executable(6-1 Chapter6_ArrayAndGenerailzeList/OJ/7-1.c)
 add_executable(6-2 Chapter5_String/OJ/6-2.cpp)
 
 add_executable(7-1 Chapter6_ArrayAndGenerailzeList/OJ/7-1.c)
+add_executable(7-2 Chapter6_ArrayAndGenerailzeList/OJ/7-2.cpp)
