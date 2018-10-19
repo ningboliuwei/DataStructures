@@ -44,3 +44,4 @@ add_executable(TraverseTree_Array Chapter7_Tree/TraverseTree/TraverseTree_Array.
 add_executable(8-2 Chapter7_Tree/OJ/8-2.cpp)
 add_executable(9-1 Chapter7_Tree/OJ/9-1.cpp)
 add_executable(9-2 Chapter7_Tree/OJ/9-2.cpp)
+add_executable(9-4 Chapter7_Tree/OJ/9-4.cpp)
