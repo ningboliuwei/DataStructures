@@ -37,4 +37,7 @@ add_executable(6-3 Chapter5_String/OJ/6-3.cpp)
 add_executable(6-4 Chapter5_String/OJ/6-4.cpp)
 add_executable(WEEK06_LECTURE1_DEMO LECTURES&LABS/WEEK06_LECTURE1_DEMO/WEEK06_LECTURE1_DEMO.cpp)
 add_executable(TraverseTree Chapter7_Tree/TraverseTree_Array.c)
-add_executable(TraverseTree_Link Chapter7_Tree/TraverseTree_Link.cpp)
+add_executable(TraverseTree_Link Chapter7_Tree/TraverseTree/TraverseTree_Link.cpp)
+add_executable(8-1 Chapter7_Tree/OJ/8-1.cpp)
+
+add_executable(TraverseTree_Array Chapter7_Tree/TraverseTree/TraverseTree_Array.c)

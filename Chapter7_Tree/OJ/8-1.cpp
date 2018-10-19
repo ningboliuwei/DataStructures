@@ -16,6 +16,31 @@ typedef struct BiNode {
 int create(BiTree &T, char pa[], int low_a, int high_a, char pb[], int low_b,
            int high_b) {     //创建根结点，递归创建T->lchild,T->rchild
 //@@1
+    T = (BiNode *) malloc(sizeof(BiNode));
+    T->data = pa[low_a];
+    int rootIndex = 0;
+    for (int i = low_b; i <= high_b; i++) {
+        if (pb[i] == T->data) {
+            rootIndex = i;
+            break;
+        }
+    }
+
+    int leftChildTreeNodeCount = rootIndex - low_b;
+    if (leftChildTreeNodeCount > 0) {
+        T->lchild = (BiNode *) malloc(sizeof(BiNode));
+        create(T->lchild, pa, low_a + 1, low_a + leftChildTreeNodeCount, pb, low_b, rootIndex - 1);
+    } else {
+        T->lchild = NULL;
+    }
+
+    int rightChildTreeNodeCount = high_b - rootIndex;
+    if (rightChildTreeNodeCount > 0) {
+        T->rchild = (BiNode *) malloc(sizeof(BiNode));
+        create(T->rchild, pa, high_a - rightChildTreeNodeCount + 1, high_a, pb, rootIndex + 1, high_b);
+    } else {
+        T->rchild = NULL;
+    }
 
 //@@1
 }
@@ -26,14 +51,11 @@ int CreateBiTree(BiTree &T, int n) {
     char pa[20];
     char pb[20];
 
-    int nodeCount;
-    scanf("%d", &nodeCount);
-
-    for (int i = 0; i < nodeCount; i++) {
+    for (int i = 0; i < n; i++) {
         scanf("%c", &pa[i]);
     }
 
-    for (int i = 0; i < nodeCount; i++) {
+    for (int i = 0; i < n; i++) {
         scanf("%c", &pb[i]);
     }
 //@@2
@@ -45,6 +67,11 @@ int CreateBiTree(BiTree &T, int n) {
 int Postorder(BiTree T)                 //后序遍历
 {
 //@@3
+    if (T != NULL) {
+        Postorder(T->lchild);
+        Postorder(T->rchild);
+        printf("%c ", T->data);
+    }
 //@@3
 }
 
@@ -52,9 +79,9 @@ int main() {
     BiTree T;
     int n;
 
-    cin >> n;                       //二叉树结点个数
+//    cin >> n;                       //二叉树结点个数
 
-    CreateBiTree(T, n);            //创建二叉链表
+    CreateBiTree(T, 9);            //创建二叉链表
 
     Postorder(T);                 //后序遍历
 
