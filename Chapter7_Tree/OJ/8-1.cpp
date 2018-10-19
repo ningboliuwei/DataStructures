@@ -55,6 +55,8 @@ int CreateBiTree(BiTree &T, int n) {
         scanf("%c", &pa[i]);
     }
 
+    scanf("\n");
+
     for (int i = 0; i < n; i++) {
         scanf("%c", &pb[i]);
     }
@@ -70,7 +72,7 @@ int Postorder(BiTree T)                 //后序遍历
     if (T != NULL) {
         Postorder(T->lchild);
         Postorder(T->rchild);
-        printf("%c ", T->data);
+        printf("%c", T->data);
     }
 //@@3
 }
@@ -79,9 +81,9 @@ int main() {
     BiTree T;
     int n;
 
-//    cin >> n;                       //二叉树结点个数
+    scanf("%d\n", &n);                       //二叉树结点个数
 
-    CreateBiTree(T, 9);            //创建二叉链表
+    CreateBiTree(T, n);            //创建二叉链表
 
     Postorder(T);                 //后序遍历
 

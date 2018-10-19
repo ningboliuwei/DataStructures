@@ -51,12 +51,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/OJ/TraverseTree/TraverseTree_Array.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Array.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/OJ/TraverseTree/TraverseTree_Level.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Level.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/OJ/TraverseTree/TraverseTree_Link.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Link.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,9 +101,10 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="6-2 (disassembly)" value="1" />
+          <entry key="8-1 (disassembly)" value="1" />
           <entry key="LinkListWithoutHeadNode (disassembly)" value="1" />
           <entry key="c" value="51" />
-          <entry key="cpp" value="15" />
+          <entry key="cpp" value="16" />
           <entry key="txt" value="3" />
           <entry key="xml" value="1" />
         </counts>
@@ -114,15 +112,15 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="3" />
-          <entry key="Disassembly" value="2" />
-          <entry key="ObjectiveC" value="66" />
+          <entry key="Disassembly" value="3" />
+          <entry key="ObjectiveC" value="67" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="11184" />
-          <entry key="cpp" value="8274" />
+          <entry key="cpp" value="8325" />
           <entry key="m" value="18" />
           <entry key="mm" value="22" />
           <entry key="txt" value="45" />
@@ -131,7 +129,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="45" />
-          <entry key="ObjectiveC" value="19498" />
+          <entry key="ObjectiveC" value="19549" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -206,10 +204,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1181">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="88">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -250,6 +253,7 @@
       <find>printf</find>
       <find>showlist</find>
       <find>int</find>
+      <find>tree</find>
     </findStrings>
     <replaceStrings>
       <replace>%d\n</replace>
@@ -775,15 +779,16 @@
       <workItem from="1539169046325" duration="2325000" />
       <workItem from="1539568613425" duration="3559000" />
       <workItem from="1539666750224" duration="4632000" />
-      <workItem from="1539915734688" duration="5359000" />
+      <workItem from="1539915734688" duration="7116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230256000" />
+    <option name="totallyTimeSpent" value="232013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.150978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -791,7 +796,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24354658" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5780023" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29741862" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -830,11 +835,6 @@
           <url>file://$PROJECT_DIR$/LECTURES&amp;LABS/WEEK06_LECTURE1_DEMO/WEEK06_LECTURE1_DEMO.cpp</url>
           <line>89</line>
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp</url>
-          <line>19</line>
-          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -912,7 +912,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.11.1-1/winsup/cygwin/malloc_wrapper.cc" />
     <entry file="file://$PROJECT_DIR$/Chapter3_Stack/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/Chapter3_Stack/OJ/4-5.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1202,10 +1201,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1181">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="88">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
