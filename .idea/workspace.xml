@@ -13,6 +13,7 @@
       <config projectName="Project" targetName="9-1" />
       <config projectName="Project" targetName="4-7" />
       <config projectName="Project" targetName="WEEK06_LECTURE1_DEMO" />
+      <config projectName="Project" targetName="9-2" />
       <config projectName="Project" targetName="4-8" />
       <config projectName="Project" targetName="TraverseTree" />
       <config projectName="Project" targetName="LinkListWithHeadNode" />
@@ -53,6 +54,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/9-2.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp" afterDir="false" />
@@ -107,7 +109,7 @@
           <entry key="8-2 (disassembly)" value="1" />
           <entry key="LinkListWithoutHeadNode (disassembly)" value="1" />
           <entry key="c" value="51" />
-          <entry key="cpp" value="17" />
+          <entry key="cpp" value="18" />
           <entry key="txt" value="3" />
           <entry key="xml" value="1" />
         </counts>
@@ -116,14 +118,14 @@
         <counts>
           <entry key="CMakeLists.txt" value="3" />
           <entry key="Disassembly" value="4" />
-          <entry key="ObjectiveC" value="68" />
+          <entry key="ObjectiveC" value="69" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="11184" />
-          <entry key="cpp" value="8998" />
+          <entry key="cpp" value="9242" />
           <entry key="m" value="18" />
           <entry key="mm" value="22" />
           <entry key="txt" value="45" />
@@ -132,7 +134,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="45" />
-          <entry key="ObjectiveC" value="20222" />
+          <entry key="ObjectiveC" value="20466" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -207,8 +209,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1361">
-              <caret line="85" column="13" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="13" />
+            <state relative-caret-position="479">
+              <caret line="95" column="1" selection-start-line="8" selection-end-line="95" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -222,13 +224,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            <state relative-caret-position="358">
+              <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
               <folding>
                 <element signature="e#69#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-2.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+              <folding>
+                <element signature="e#70#87#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -285,7 +299,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c" />
         <option value="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" />
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/1597.c" />
         <option value="$PROJECT_DIR$/Week04_LAB_DEMO/DEMO1.c" />
@@ -336,6 +349,7 @@
         <option value="$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp" />
         <option value="$PROJECT_DIR$/Chapter7_Tree/OJ/8-2.cpp" />
         <option value="$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp" />
+        <option value="$PROJECT_DIR$/Chapter7_Tree/OJ/9-2.cpp" />
       </list>
     </option>
   </component>
@@ -504,7 +518,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.9-1">
+  <component name="RunManager" selected="Application.9-2">
     <configuration name="1530" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1530" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1530">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -650,6 +664,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="9-2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="9-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="9-2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -751,6 +770,7 @@
       <item itemvalue="Application.8-1" />
       <item itemvalue="Application.8-2" />
       <item itemvalue="Application.9-1" />
+      <item itemvalue="Application.9-2" />
       <item itemvalue="Application.LinkListQueue_1" />
       <item itemvalue="Application.LinkListWithHeadNode" />
       <item itemvalue="Application.LinkListWithoutHeadNode" />
@@ -811,12 +831,12 @@
       <workItem from="1539169046325" duration="2325000" />
       <workItem from="1539568613425" duration="3559000" />
       <workItem from="1539666750224" duration="4632000" />
-      <workItem from="1539915734688" duration="13843000" />
+      <workItem from="1539915734688" duration="15287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238740000" />
+    <option name="totallyTimeSpent" value="240184000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -827,7 +847,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24354658" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24354658" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.647587" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -836,7 +856,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.22558923" />
+      <window_info active="true" anchor="bottom" id="CMake" order="11" visible="true" weight="0.22558923" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.36588103" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -945,13 +965,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter3_Stack/OJ/4-5.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1634">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter3_Stack/OJ/4-6.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1995">
@@ -1242,17 +1255,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1361">
-          <caret line="85" column="13" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="13" />
+        <state relative-caret-position="479">
+          <caret line="95" column="1" selection-start-line="8" selection-end-line="95" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        <state relative-caret-position="358">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
           <folding>
             <element signature="e#69#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding>
+            <element signature="e#70#87#0" expanded="true" />
           </folding>
         </state>
       </provider>

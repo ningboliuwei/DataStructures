@@ -15,15 +15,17 @@ typedef struct BiNode {
 } BiNode, *BiTree;
 
 int CreateBiTree(BiTree &T, char *elements, int &index) {
-    if (elements[index] != '\0') {
-        if (elements[index] == '*') {
-            T = NULL;
-        } else {
-            T = (BiNode *) malloc(sizeof(BiNode));
-            T->data = elements[index];
-            CreateBiTree(T->lchild, elements, ++index);
-            CreateBiTree(T->rchild, elements, ++index);
-        }
+    if (elements[index] == '\0') {
+        return 1;
+    }
+
+    if (elements[index] == '*') {
+        T = NULL;
+    } else {
+        T = (BiNode *) malloc(sizeof(BiNode));
+        T->data = elements[index];
+        CreateBiTree(T->lchild, elements, ++index);
+        CreateBiTree(T->rchild, elements, ++index);
     }
 }
 
@@ -34,7 +36,6 @@ void PreOrderTraverse(BiTree T) {
         PreOrderTraverse(T->lchild);
         PreOrderTraverse(T->rchild);
     }
-
 }
 
 void MiddleOrderTraverse(BiTree T) {
@@ -43,7 +44,6 @@ void MiddleOrderTraverse(BiTree T) {
         printf("%c", T->data);
         MiddleOrderTraverse(T->rchild);
     }
-
 }
 
 void PostOrderTraverse(BiTree T) {
@@ -52,7 +52,6 @@ void PostOrderTraverse(BiTree T) {
         PostOrderTraverse(T->rchild);
         printf("%c", T->data);
     }
-
 }
 
 
