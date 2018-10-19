@@ -10,6 +10,7 @@
       <config projectName="Project" targetName="SequenceQueue_2" />
       <config projectName="Project" targetName="6-4" />
       <config projectName="Project" targetName="8-2" />
+      <config projectName="Project" targetName="9-1" />
       <config projectName="Project" targetName="4-7" />
       <config projectName="Project" targetName="WEEK06_LECTURE1_DEMO" />
       <config projectName="Project" targetName="4-8" />
@@ -52,10 +53,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/8-2.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,7 +123,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="11184" />
-          <entry key="cpp" value="8478" />
+          <entry key="cpp" value="8998" />
           <entry key="m" value="18" />
           <entry key="mm" value="22" />
           <entry key="txt" value="45" />
@@ -132,7 +132,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="45" />
-          <entry key="ObjectiveC" value="19702" />
+          <entry key="ObjectiveC" value="20222" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -207,31 +207,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="1361">
+              <caret line="85" column="13" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-2.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-2.cpp">
+        <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="92">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+              <folding>
+                <element signature="e#69#88#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Link.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="86" column="34" selection-start-line="84" selection-start-column="7" selection-end-line="86" selection-end-column="34" />
+            <state relative-caret-position="64">
+              <caret line="65" selection-start-line="65" selection-end-line="88" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -278,7 +285,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter4/SequenceQueue/SequenceQueue_2.c" />
         <option value="$PROJECT_DIR$/Chapter4/LoopQueue/LoopQueue_1.c" />
         <option value="$PROJECT_DIR$/Chapter5_String/SequenceString/SequenceString_1.c" />
         <option value="$PROJECT_DIR$/Chapter2_List/OJ/1597.c" />
@@ -329,6 +335,7 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp" />
         <option value="$PROJECT_DIR$/Chapter7_Tree/OJ/8-2.cpp" />
+        <option value="$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp" />
       </list>
     </option>
   </component>
@@ -339,7 +346,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="136" />
+    <option name="y" value="17" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -496,7 +504,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.8-2">
+  <component name="RunManager" selected="Application.9-1">
     <configuration name="1530" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1530" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1530">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -637,6 +645,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="9-1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="9-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="9-1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -737,6 +750,7 @@
       <item itemvalue="Application.6-4" />
       <item itemvalue="Application.8-1" />
       <item itemvalue="Application.8-2" />
+      <item itemvalue="Application.9-1" />
       <item itemvalue="Application.LinkListQueue_1" />
       <item itemvalue="Application.LinkListWithHeadNode" />
       <item itemvalue="Application.LinkListWithoutHeadNode" />
@@ -797,12 +811,12 @@
       <workItem from="1539169046325" duration="2325000" />
       <workItem from="1539568613425" duration="3559000" />
       <workItem from="1539666750224" duration="4632000" />
-      <workItem from="1539915734688" duration="8597000" />
+      <workItem from="1539915734688" duration="13843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233494000" />
+    <option name="totallyTimeSpent" value="238740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -813,8 +827,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24354658" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.29741862" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24354658" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.647587" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -854,16 +868,6 @@
           <line>89</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-2.cpp</url>
-          <line>70</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-2.cpp</url>
-          <line>26</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -880,6 +884,7 @@
         <watch expression="S.ch[i]" />
         <watch expression="T" />
         <watch expression="T" />
+        <watch expression="elements[index]" />
       </configuration>
     </watches-manager>
   </component>
@@ -1211,13 +1216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Link.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="86" column="34" selection-start-line="84" selection-start-column="7" selection-end-line="86" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Level.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1228,20 +1226,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp">
+    <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-2.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="190">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-2.cpp">
+    <entry file="file://$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Link.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="64">
+          <caret line="65" selection-start-line="65" selection-end-line="88" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/8-1.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1361">
+          <caret line="85" column="13" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <folding>
+            <element signature="e#69#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
