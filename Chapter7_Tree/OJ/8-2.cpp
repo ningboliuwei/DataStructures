@@ -1,11 +1,11 @@
 //
 // Created by Liu Wei on 2018/10/11.
-// 问题 A: 【数据结构7-4】由先序和中序恢复二叉树
+// 问题 B: 【数据结构7-5】由中序和后序恢复二叉树
 // 测试数据：
 //9
-//ABDEHCFIG
 //DBHEAIFCG
-//结果：DHEBIFGCA
+//DHEBIFGCA
+//结果：ABDEHCFIG
 #include<stdio.h>
 #include<stdlib.h>
 #include<iostream>
@@ -21,27 +21,28 @@ int create(BiTree &T, char pa[], int low_a, int high_a, char pb[], int low_b,
            int high_b) {     //创建根结点，递归创建T->lchild,T->rchild
 //@@1
     T = (BiNode *) malloc(sizeof(BiNode));
-    T->data = pa[low_a];
+    // 在后续序列中找到根
+    T->data = pb[high_b];
     int rootIndex = 0;
-    for (int i = low_b; i <= high_b; i++) {
-        if (pb[i] == T->data) {
+    for (int i = low_a; i <= high_a; i++) {
+        if (pa[i] == T->data) {
             rootIndex = i;
             break;
         }
     }
 
-    int leftChildTreeNodeCount = rootIndex - low_b;
+    int leftChildTreeNodeCount = rootIndex - low_a;
     if (leftChildTreeNodeCount > 0) {
         T->lchild = (BiNode *) malloc(sizeof(BiNode));
-        create(T->lchild, pa, low_a + 1, low_a + leftChildTreeNodeCount, pb, low_b, rootIndex - 1);
+        create(T->lchild, pa, low_a, rootIndex - 1, pb, low_b, low_b + leftChildTreeNodeCount - 1);
     } else {
         T->lchild = NULL;
     }
 
-    int rightChildTreeNodeCount = high_b - rootIndex;
+    int rightChildTreeNodeCount = high_a - rootIndex;
     if (rightChildTreeNodeCount > 0) {
         T->rchild = (BiNode *) malloc(sizeof(BiNode));
-        create(T->rchild, pa, high_a - rightChildTreeNodeCount + 1, high_a, pb, rootIndex + 1, high_b);
+        create(T->rchild, pa, rootIndex + 1, high_a, pb, high_b - rightChildTreeNodeCount, high_b - 1);
     } else {
         T->rchild = NULL;
     }
@@ -71,13 +72,13 @@ int CreateBiTree(BiTree &T, int n) {
         return 1;
 }
 
-int Postorder(BiTree T)                 //后序遍历
+int Preorder(BiTree T)                 //后序遍历
 {
 //@@3
     if (T != NULL) {
-        Postorder(T->lchild);
-        Postorder(T->rchild);
         printf("%c", T->data);
+        Preorder(T->lchild);
+        Preorder(T->rchild);
     }
 //@@3
 }
@@ -90,7 +91,7 @@ int main() {
 
     CreateBiTree(T, n);            //创建二叉链表
 
-    Postorder(T);                 //后序遍历
+    Preorder(T);                 //后序遍历
 
     return 1;
 }
