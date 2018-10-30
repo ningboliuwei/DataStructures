@@ -9,24 +9,24 @@
 
 #define MAX_LENGTH 10
 
-typedef struct LoopQueueType {
+typedef struct SequenceQueueType {
     int data[MAX_LENGTH];
     int front;
     int rear;
-} *LoopQueue;
+} *SequenceQueue;
 
-int IsEmptyQueue(LoopQueue queue) {
+int IsEmptyQueue(SequenceQueue queue) {
     if (queue->front == queue->rear) {
         return 1;
     }
     return 0;
 }
 
-int LengthOfQueue(LoopQueue queue) {
+int LengthOfQueue(SequenceQueue queue) {
     return queue->rear - queue->front;
 }
 
-int InQueue(LoopQueue *queue, int item) {
+int InQueue(SequenceQueue *queue, int item) {
     if ((*queue)->rear == MAX_LENGTH - 1) {
         return 0;
     }
@@ -37,7 +37,7 @@ int InQueue(LoopQueue *queue, int item) {
     return 1;
 }
 
-int OutQueue(LoopQueue *queue, int *item) {
+int OutQueue(SequenceQueue *queue, int *item) {
     if (IsEmptyQueue(*queue)) {
         return 0;
     }
@@ -48,15 +48,15 @@ int OutQueue(LoopQueue *queue, int *item) {
     return 1;
 }
 
-int InitQueue(LoopQueue *queue) {
+int InitQueue(SequenceQueue *queue) {
     // 此处 sizeof 的参数要注意
-    *queue = (LoopQueue) malloc(sizeof(struct LoopQueueType));
+    *queue = (SequenceQueue) malloc(sizeof(struct SequenceQueueType));
 
     (*queue)->front = -1;
     (*queue)->rear = -1;
 }
 
-void ShowQueue(LoopQueue queue) {
+void ShowQueue(SequenceQueue queue) {
     printf("items: ");
 
     for (int i = queue->front + 1; i <= queue->rear; i++) {
@@ -66,7 +66,7 @@ void ShowQueue(LoopQueue queue) {
 }
 
 int main() {
-    LoopQueue *queue = (LoopQueue *) malloc(sizeof(LoopQueue));
+    SequenceQueue *queue = (SequenceQueue *) malloc(sizeof(SequenceQueue));
     int *item = (int *) malloc(sizeof(int));
 
     InitQueue(queue);
