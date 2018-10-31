@@ -31,20 +31,36 @@ void CreateHuffmanTree() {
 
     for (int i = n; i < 2 * n - 1; i++) {
         // 权值最小结点的下标
-        int min1 = 0;
-        // 权值次小结点的下标
-        int min2 = 0;
+
 
         // 0~i-1 行 双亲为-1 的结点里权值最小的两个min1，min2
         // 进行合并（有5个值需要修改）
 
-        for (int j = 0; j < i - 1; j++) {
-            if (HT[j].parent == -1 && HT[j].weight < HT[min1].weight) {
-                min1 = j;
-            }
+        int min1 = -1;
 
-            if (HT[j].parent == -1 && HT[j].weight > HT[min2].weight && HT[j].weight < HT[min2].weight) {
-                min2 = j;
+        for (int j = 0; j < i - 1; j++) {
+            if (HT[j].parent == -1) {
+                // 初始化最小的位置为第 1 个（无父结点的）的结点的位置
+                if (min1 == -1) {
+                    min1 = j;
+                } else {
+                    if (HT[j].weight < HT[min1].weight) {
+                        min1 = j;
+                    }
+                }
+            }
+        }
+
+        int min2 = -1;
+        for (int j = 0; j < i - 1; j++) {
+            if (HT[j].parent == -1) {
+                if (min2 == -1 && HT[j].weight > HT[min1].weight) {
+                    min2 = j;
+                } else {
+                    if (HT[j].weight > HT[min1].weight && HT[j].weight < HT[min2].weight) {
+                        min2 = j;
+                    }
+                }
             }
         }
 
@@ -54,6 +70,8 @@ void CreateHuffmanTree() {
         HT[i].rchild = min2;
         HT[min1].parent = i;
         HT[min2].parent = i;
+
+        printf("%d %d\n", min1, min2);
     }
 
     for (int i = 0; i < 2 * n - 1; i++) {
