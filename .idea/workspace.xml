@@ -127,7 +127,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="11208" />
-          <entry key="cpp" value="10863" />
+          <entry key="cpp" value="11049" />
           <entry key="m" value="18" />
           <entry key="mm" value="42" />
           <entry key="txt" value="45" />
@@ -136,7 +136,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="45" />
-          <entry key="ObjectiveC" value="22131" />
+          <entry key="ObjectiveC" value="22317" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -260,8 +260,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/10-1.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="88">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="e#266#284#0" expanded="true" />
               </folding>
@@ -914,12 +914,12 @@
       <workItem from="1540735437291" duration="1161000" />
       <workItem from="1540876302388" duration="7525000" />
       <workItem from="1540963634973" duration="275000" />
-      <workItem from="1540963964580" duration="5826000" />
+      <workItem from="1540963964580" duration="8638000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266859000" />
+    <option name="totallyTimeSpent" value="269671000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -940,7 +940,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24130191" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40608034" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40516275" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295964" />
@@ -1394,8 +1394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/10-1.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="88">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="e#266#284#0" expanded="true" />
           </folding>

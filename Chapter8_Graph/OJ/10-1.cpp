@@ -3,8 +3,30 @@
 // 问题 A: 【数据结构7-11】哈夫曼树
 // 测试数据
 // 输入：7 4 5 7 8 6 12 18
-// 输出：0 -1 4 -1 7 1 -1 5 -1 7 2 -1 7 -1 8 3 -1 8 -1 9 4 -1 6 -1 8 5 -1 12 -1 10 6 -1 18 -1 11 7 0 9 1 9 8 4 13 2 10 9 3 17 7 11 10 5 25 8 12 11 9 35 6 12 12 10 60 11 -1
+// 输出：0 -1 4 -1 7
+//1 -1 5 -1 7
+//2 -1 7 -1 8
+//3 -1 8 -1 9
+//4 -1 6 -1 8
+//5 -1 12 -1 10
+//6 -1 18 -1 11
+//7 0 9 1 9
+//8 4 13 2 10
+//9 3 17 7 11
+//10 5 25 8 12
+//11 9 35 6 12
+//12 10 60 11 -1
 
+// 输入：5 2 4 2 3 3
+// 输出：0 -1 2 -1 5
+//1 -1 4 -1 7
+//2 -1 2 -1 5
+//3 -1 3 -1 6
+//4 -1 3 -1 6
+//5 0 4 2 7
+//6 3 6 4 8
+//7 1 8 5 8
+//8 6 14 7 -1
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -53,16 +75,19 @@ void CreateHuffmanTree() {
 
         int min2 = -1;
         for (int j = 0; j < i; j++) {
-            if (HT[j].parent == -1) {
-                if (min2 == -1 && HT[j].weight > HT[min1].weight) {
+            // j != min1 的作用就是解决权值相等情况下出现的问题
+            if (HT[j].parent == -1 && j != min1) {
+                if (min2 == -1 && HT[j].weight >= HT[min1].weight) {
                     min2 = j;
                 } else {
-                    if (HT[j].weight > HT[min1].weight && HT[j].weight < HT[min2].weight) {
+                    if (HT[j].weight >= HT[min1].weight && HT[j].weight < HT[min2].weight) {
                         min2 = j;
                     }
                 }
             }
         }
+
+        printf("(%d)%d, (%d)%d\n", min1, HT[min1].weight, min2, HT[min2].weight);
 
         HT[i].weight = HT[min1].weight + HT[min2].weight;
         HT[i].parent = -1;
@@ -70,8 +95,6 @@ void CreateHuffmanTree() {
         HT[i].rchild = min2;
         HT[min1].parent = i;
         HT[min2].parent = i;
-
-
     }
 
     for (int i = 0; i < 2 * n - 1; i++) {
