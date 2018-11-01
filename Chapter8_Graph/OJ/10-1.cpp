@@ -38,7 +38,7 @@ void CreateHuffmanTree() {
 
         int min1 = -1;
 
-        for (int j = 0; j < i - 1; j++) {
+        for (int j = 0; j < i; j++) {
             if (HT[j].parent == -1) {
                 // 初始化最小的位置为第 1 个（无父结点的）的结点的位置
                 if (min1 == -1) {
@@ -52,7 +52,7 @@ void CreateHuffmanTree() {
         }
 
         int min2 = -1;
-        for (int j = 0; j < i - 1; j++) {
+        for (int j = 0; j < i; j++) {
             if (HT[j].parent == -1) {
                 if (min2 == -1 && HT[j].weight > HT[min1].weight) {
                     min2 = j;
@@ -71,7 +71,7 @@ void CreateHuffmanTree() {
         HT[min1].parent = i;
         HT[min2].parent = i;
 
-        printf("%d %d\n", min1, min2);
+
     }
 
     for (int i = 0; i < 2 * n - 1; i++) {
