@@ -1,6 +1,5 @@
 //
-// Created by Liu Wei on 2018/11/6.
-//
+// 王鹏版本，在 CLION 与 CFREE 上没问题，但在 OJ 上有问题
 
 #include<stdio.h>
 #include<iostream>
@@ -142,13 +141,13 @@ int InsHStr(HString &S,int pos,HString T)  //串插入
 int ReplaceHStr(HString &S, HString T,HString V)
 //串替换（调用模式匹配，删除，插入来实现）
 {
-
     int lenT,lenV,pos = 0;
     lenT = HStrLength(T);
     lenV = HStrLength(V);
     while(1)
     {
         pos = Index(S,T,pos);
+        printf("pos: %d\n", pos);
         if(pos == -1)
             break;
         else
@@ -156,6 +155,8 @@ int ReplaceHStr(HString &S, HString T,HString V)
             DelHStr(S,pos,lenT);
             InsHStr(S,pos,V);
             pos += lenV;
+            printf("length: %d", S)
+            ShowHString(S);
         }
     }
     return 1;
@@ -178,8 +179,13 @@ int main( )
     cin>>a;
     HStrAssign(V,a);
 
+    printf("%d\n", S.length);
+
     ReplaceHStr(S,T,V);
     ShowHString(S);
+
+    printf("%d\n", S.length);
+
 
     return 1;
 }

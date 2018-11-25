@@ -11,7 +11,7 @@ using namespace std;
 typedef struct  //串的堆分配存储
 {
     char *ch;
-    int length = 0;
+    int length;
 } HString;
 
 int HStrLength(HString S)  //串长
@@ -47,7 +47,7 @@ int HStrAssign(HString &S, char *chars) //串赋值
     }
 
     S.length = i;
-    S.ch = (char *) malloc(sizeof(S.length));
+    S.ch = (char *) malloc(sizeof(char) * S.length);
 
     for (int i = 0; i < S.length; i++) {
         S.ch[i] = chars[i];
