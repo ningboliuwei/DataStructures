@@ -64,16 +64,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/10-2.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter8_Graph/OJ/11-1.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudentWorks/20181120_1.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudentWorks/20181120_2.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMP/TEMP2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5_String/OJ/6-2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5_String/OJ/6-2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter8_Graph/OJ/10-1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/10-1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter8_Graph/OJ/11-1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter8_Graph/OJ/11-1.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,7 +138,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="11222" />
-          <entry key="cpp" value="12201" />
+          <entry key="cpp" value="12435" />
           <entry key="m" value="18" />
           <entry key="mm" value="57" />
           <entry key="txt" value="46" />
@@ -156,7 +147,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="46" />
-          <entry key="ObjectiveC" value="23498" />
+          <entry key="ObjectiveC" value="23732" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -262,8 +253,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-1.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="364">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+              <folding>
+                <element signature="e#62#80#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -904,12 +898,12 @@
       <workItem from="1542598158981" duration="1513000" />
       <workItem from="1542608649769" duration="1309000" />
       <workItem from="1542693565581" duration="1910000" />
-      <workItem from="1543152884016" duration="4795000" />
+      <workItem from="1543152884016" duration="7808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289351000" />
+    <option name="totallyTimeSpent" value="292364000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -921,16 +915,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18229716" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20868516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2483731" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37418655" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24775785" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33744395" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295964" />
@@ -939,7 +933,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.22017354" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.36008677" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.35986546" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -982,8 +976,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-1.cpp</url>
-          <line>37</line>
-          <option name="timeStamp" value="47" />
+          <line>71</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-1.cpp</url>
+          <line>42</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1401,8 +1400,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-1.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state relative-caret-position="364">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding>
+            <element signature="e#62#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
