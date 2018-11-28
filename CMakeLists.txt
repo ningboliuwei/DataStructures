@@ -56,3 +56,6 @@ add_executable(20181120_1 StudentWorks/20181120_1.cpp)
 add_executable(20181120_2 StudentWorks/20181120_2.cpp)
 
 add_executable(11-1 Chapter8_Graph/OJ/11-1.cpp)
+add_executable(20181127_1 StudentWorks/20181127_1.cpp)
+add_executable(20181127_2 StudentWorks/20181127_2.cpp)
+add_executable(11-2 Chapter8_Graph/OJ/11-2.cpp)
