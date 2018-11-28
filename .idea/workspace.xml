@@ -5,8 +5,10 @@
       <config projectName="Project" targetName="11-1" />
       <config projectName="Project" targetName="20181120_1" />
       <config projectName="Project" targetName="20181120_2" />
+      <config projectName="Project" targetName="11-4" />
       <config projectName="Project" targetName="1556" />
       <config projectName="Project" targetName="11-2" />
+      <config projectName="Project" targetName="11-3" />
       <config projectName="Project" targetName="2-5cpp" />
       <config projectName="Project" targetName="9-1" />
       <config projectName="Project" targetName="9-2" />
@@ -67,10 +69,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter8_Graph/OJ/11-2.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudentWorks/20181127_1.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudentWorks/20181127_2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter8_Graph/OJ/11-3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter8_Graph/OJ/11-4.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
@@ -101,8 +101,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-1.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="53" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="53" />
+            <state relative-caret-position="114">
+              <caret line="6" selection-end-line="74" />
+              <folding>
+                <element signature="e#62#80#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-2.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-3.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="17" lean-forward="true" selection-end-line="107" />
               <folding>
                 <element signature="e#62#80#0" expanded="true" />
               </folding>
@@ -111,10 +132,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-2.cpp">
+        <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-4.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="-114">
+              <caret line="73" column="20" lean-forward="true" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+              <folding>
+                <element signature="e#69#87#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,8 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter3_Stack/OJ/4-1.c" />
-        <option value="$PROJECT_DIR$/Chapter3_Stack/OJ/4-1.cpp" />
         <option value="$PROJECT_DIR$/Chapter3_Stack/OJ/4-2.cpp" />
         <option value="$PROJECT_DIR$/Chapter3_Stack/OJ/4-3.cpp" />
         <option value="$PROJECT_DIR$/Chapter3_Stack/OJ/4-4.cpp" />
@@ -205,14 +227,15 @@
         <option value="$PROJECT_DIR$/StudentWorks/20181127_1.cpp" />
         <option value="$PROJECT_DIR$/StudentWorks/20181127_2.cpp" />
         <option value="$PROJECT_DIR$/Chapter8_Graph/OJ/11-2.cpp" />
+        <option value="$PROJECT_DIR$/Chapter8_Graph/OJ/11-3.cpp" />
+        <option value="$PROJECT_DIR$/Chapter8_Graph/OJ/11-4.cpp" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="127" />
-    <option name="y" value="122" />
-    <option name="width" value="650" />
-    <option name="height" value="698" />
+    <option name="x" value="833" />
+    <option name="width" value="854" />
+    <option name="height" value="1017" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -312,7 +335,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -337,7 +360,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.11-2">
+  <component name="RunManager" selected="Application.11-3">
     <configuration name="10-1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="10-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="10-1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -354,6 +377,16 @@
       </method>
     </configuration>
     <configuration name="11-2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="11-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="11-2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="11-3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="11-3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="11-3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="11-4" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="11-4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="11-4">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -629,6 +662,8 @@
       <item itemvalue="Application.10-2" />
       <item itemvalue="Application.11-1" />
       <item itemvalue="Application.11-2" />
+      <item itemvalue="Application.11-3" />
+      <item itemvalue="Application.11-4" />
       <item itemvalue="Application.1530" />
       <item itemvalue="Application.1556" />
       <item itemvalue="Application.2-5cpp" />
@@ -741,12 +776,12 @@
       <workItem from="1542693565581" duration="1910000" />
       <workItem from="1543152884016" duration="12175000" />
       <workItem from="1543296570097" duration="2725000" />
-      <workItem from="1543369452837" duration="3659000" />
+      <workItem from="1543369452837" duration="12302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303115000" />
+    <option name="totallyTimeSpent" value="311758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -761,12 +796,12 @@
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20808202" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20808202" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27242154" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27242154" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37107623" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -775,7 +810,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32847533" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.21973094" />
+      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.21973094" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3576233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -818,11 +853,6 @@
           <url>file://$PROJECT_DIR$/StudentWorks/20181127_1.cpp</url>
           <line>38</line>
           <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-2.cpp</url>
-          <line>79</line>
-          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -869,6 +899,11 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>visited[i]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>T-&gt;data</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -917,20 +952,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/SingleLinkList/SingleLinkList_1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="235" lean-forward="true" selection-start-line="235" selection-end-line="235" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter2_List/OJ/2-2.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1231,22 +1252,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-1.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="53" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="53" />
+        <state relative-caret-position="114">
+          <caret line="6" selection-end-line="74" />
           <folding>
             <element signature="e#62#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-2.cpp">
+    <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-3.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="133">
+          <caret line="7" column="17" lean-forward="true" selection-end-line="107" />
+          <folding>
+            <element signature="e#62#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-4.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="73" column="20" lean-forward="true" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+          <folding>
+            <element signature="e#69#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
