@@ -59,27 +59,14 @@ void CreateGraph(MGraph *g) {
     }
 }
 
-void DFSM(MGraph *g, int nodeIndex, int visited[]) {
-
+void DFSM(MGraph *g, int nodeIndex, int *visited) {
     printf("%d ", g->vertex[nodeIndex]);
     visited[nodeIndex] = 1;
 
-    int toVisit = -1;
-
-    // 选择下标较小的那个访问
     for (int i = 0; i < g->n; i++) {
         if (g->edges[nodeIndex][i] == 1 && !visited[i]) {
-            if (toVisit == -1) {
-                toVisit = i;
-            } else {
-                if (i < toVisit) {
-                    toVisit = i;
-                }
-            }
+            DFSM(g, i, visited);
         }
-    }
-    if (g->edges[nodeIndex][toVisit] == 1 && !visited[toVisit] && toVisit != -1) {
-        DFSM(g, toVisit, visited);
     }
 }
 

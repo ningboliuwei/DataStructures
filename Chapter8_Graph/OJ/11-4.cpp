@@ -4,6 +4,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <queue>             //引用头文件
+
+using namespace std;
 
 #define MAXLEN 10
 
@@ -61,26 +64,27 @@ void CreateGraph(MGraph *g) {
 
 void BFSM(MGraph *g, int nodeIndex, int *visited) {
 
+    queue<int> q;
+
     printf("%d ", g->vertex[nodeIndex]);
     visited[nodeIndex] = 1;
 
-    int toVisit = -1;
+    q.push(nodeIndex);
 
-    // 选择下标较小的那个访问
-    for (int i = 0; i < g->n; i++) {
-        if (g->edges[nodeIndex][i] == 1 && !visited[i]) {
-            if (toVisit == -1) {
-                toVisit = i;
-            } else {
-                if (i < toVisit) {
-                    toVisit = i;
-                }
+    while (!q.empty()) {
+        int currentIndex = q.front();
+        q.pop();
+
+        for (int i = 0; i < g->n; i++) {
+            if (g->edges[currentIndex][i] == 1 && !visited[i]) {
+                printf("%d ", g->vertex[i]);
+                visited[i] = 1;
+                q.push(i);
             }
         }
     }
-    if (g->edges[nodeIndex][toVisit] == 1 && !visited[toVisit] && toVisit != -1) {
-        BFSM(g, toVisit, visited);
-    }
+
+    return;
 }
 
 void BFSTraverseM(MGraph *g) {
@@ -90,7 +94,7 @@ void BFSTraverseM(MGraph *g) {
         visited[i] = 0;
     }
 
-    printf("DFS ");
+    printf("BFS ");
     for (int i = 0; i < g->n; i++) {
         if (!visited[i]) {
             BFSM(g, i, visited);
