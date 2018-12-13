@@ -1,0 +1,48 @@
+// Created by 慰 on 2018/12/13.
+// 问题 C: 【数据结构10-3】希尔排序
+// 输入数据：10 49 38 65 97 76 13 27 48 55 4
+
+#include <stdio.h>
+
+int main() {
+    int count = 0;
+
+    scanf("%d", &count);
+    int array[count];
+
+    for (int i = 0; i < count; i++) {
+        int number;
+        scanf("%d", &number);
+
+        int j;
+
+        int high = i;
+        int low = 0;
+        int mid = (high + low) / 2;
+
+        while (low <= high) {
+            // 每次都要修改 mid 的值
+            mid = (high + low) / 2;
+            if (number < array[mid]) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+
+        for (j = i; j > mid; j--) {
+            array[j] = array[j - 1];
+        }
+
+        array[mid] = number;
+
+        // 显示当前趟排序所有元素
+        for (int k = 0; k < i; k++) {
+            printf("%d ", array[k]);
+        }
+        printf("\n");
+    }
+}
+
+
+
