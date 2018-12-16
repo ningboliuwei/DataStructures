@@ -19,22 +19,24 @@ int main() {
     int array[count];
     // 输入数组元素
     for (int i = 0; i < count; i++) {
-        scanf("%d", array[i]);
+        scanf("%d", &array[i]);
     }
 
     for (int gap = count / 2; gap > 0; gap = gap / 2) {
-        for (int i = 0; i < gap; i++) {
+        for (int i = gap; i < count; i++) {
             int j;
-            for (j = i; j > 0; j--) {
-                if (array[j] > number) {
-                    array[j] = array[j - 1];
+            int number = array[i];
+
+            for (j = i; j > 0; j = j - gap) {
+                if (array[j - gap] > number) {
+                    array[j] = array[j - gap];
                 } else {
                     break;
                 }
             }
-
             array[j] = number;
         }
+        ShowArray(array, count);
     }
 }
 
