@@ -4,43 +4,37 @@
 
 #include <stdio.h>
 
+// 显示数组中所有元素
+void ShowArray(int array[], int count) {
+    for (int k = 0; k < count; k++) {
+        printf("%d ", array[k]);
+    }
+    printf("\n");
+}
+
 int main() {
     int count = 0;
 
     scanf("%d", &count);
     int array[count];
-
+    // 输入数组元素
     for (int i = 0; i < count; i++) {
-        int number;
-        scanf("%d", &number);
+        scanf("%d", array[i]);
+    }
 
-        int j;
-
-        int high = i;
-        int low = 0;
-        int mid = (high + low) / 2;
-
-        while (low <= high) {
-            // 每次都要修改 mid 的值
-            mid = (high + low) / 2;
-            if (number < array[mid]) {
-                high = mid - 1;
-            } else {
-                low = mid + 1;
+    for (int gap = count / 2; gap > 0; gap = gap / 2) {
+        for (int i = 0; i < gap; i++) {
+            int j;
+            for (j = i; j > 0; j--) {
+                if (array[j] > number) {
+                    array[j] = array[j - 1];
+                } else {
+                    break;
+                }
             }
-        }
 
-        for (j = i; j > mid; j--) {
-            array[j] = array[j - 1];
+            array[j] = number;
         }
-
-        array[mid] = number;
-
-        // 显示当前趟排序所有元素
-        for (int k = 0; k < i; k++) {
-            printf("%d ", array[k]);
-        }
-        printf("\n");
     }
 }
 
