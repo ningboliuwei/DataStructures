@@ -2,6 +2,7 @@
 // Created by Liu Wei on 2018/12/17.
 // 问题 E:【数据结构10-5】快速排序
 // 输入数据： 8 49 38 65 97 76 13 27 50
+// 输入数据2： 9 49 38 65 97 76 65 13 27 50
 
 #include <stdio.h>
 
@@ -13,40 +14,45 @@ void ShowArray(int array[], int count) {
     printf("\n");
 }
 
-void QuickSort(int array[], int lower, int upper) {
-    int i = lower;
-    int j = upper;
+void QuickSort(int array[], int lower, int upper, int count) {
+    int left = lower;
+    int right = upper;
     int pivot = array[lower];
 
-    while (j > i) {
-        while (j > i && array[j] > pivot) {
-            j--;
+    while (left < right && array[left] != array[right]) {
+        while (array[right] > pivot) {
+            right--;
         }
 
-        while (i < j && array[i] < pivot) {
-            i++;
+        while (left < right && array[left] < pivot) {
+            left++;
         }
 
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
+        if (array[left] != array[right]) {
+            printf("left: %d right: %d\n", left, right);
+            printf("pivot = %d, swap %d & %d:\n", pivot, array[left], array[right]);
 
-        ShowArray(array, 8);
+            int temp = array[left];
+            array[left] = array[right];
+            array[right] = temp;
+
+            printf("after swap:\n");
+            ShowArray(array, count);
+        }
     }
 
-    if (lower < j - 1) {
-        QuickSort(array, lower, j - 1);
+    if (lower < right - 1) {
+        QuickSort(array, lower, right - 1, count);
     }
 
-    if (j + 1 < upper) {
-        QuickSort(array, j + 1, upper);
+    if (right + 1 < upper) {
+        QuickSort(array, right + 1, upper, count);
     }
 }
 
 
 int main() {
     int count = 0;
-
     scanf("%d", &count);
     int array[count];
     // 输入数组元素
@@ -55,7 +61,8 @@ int main() {
     }
     int lower = 0;
     int upper = count - 1;
-    QuickSort(array, lower, upper);
+    QuickSort(array, lower, upper, count);
+    printf("end");
 }
 
 
