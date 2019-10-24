@@ -215,62 +215,61 @@ void GetMergedList() {
 }
 
 int main() {
-//    SeqList *list = CreateList_Seq();
-//    int data = 0;
+    SeqList *list = CreateList_Seq();
+    int data = 0;
 
-//    while (1) {
-//        printf("Input a number, 0 to exit.");
-//        scanf("%d", &data);
-//
-//        if (data != 0) {
-//            // 注意下一行的 last + 2，也就是在当前最后一个元素的后面位置插入
-//            InsList_Seq(list, list->last + 2, data);
-//        } else {
-//            break;
-//        }
-//    }
+    while (1) {
+        printf("Input a number, 0 to exit.");
+        scanf("%d", &data);
 
-//    printf("\n");
-//    printf("The elements of the sequence list:");
-//    ShowList_Seq(list);
-//    printf("\n");
+        if (data != 0) {
+            // 注意下一行的 last + 2，也就是在当前最后一个元素的后面位置插入
+            InsList_Seq(list, list->last + 2, data);
+        } else {
+            break;
+        }
+    }
 
-//    int pos;
-//    printf("\n");
-//    printf("Input the position of element you want to delete");
-//    scanf("%d", &pos);
-//    int q = DelList_Seq(list, pos);
-//
-//    printf("%d\n", q);
-//    printf("The elements of the linklist after deletion:");
-//    ShowList_Seq(list);
-//    printf("\n");
-//
-//    int newElement;
-//    pos;
-//    printf("\n");
-//    printf("Input the new element.");
-//    scanf("%d", &newElement);
-//    printf("Input the position you want to insert.");
-//    scanf("%d", &pos);
-//    q = InsList_Seq(list, pos, newElement);
-//
-//    printf("%d\n", q);
-//    printf("The elements of the linklist after insertion:");
-//    ShowList_Seq(list);
-//    printf("\n");
+    printf("\n");
+    printf("The elements of the sequence list:");
+    ShowList_Seq(list);
+    printf("\n");
 
-//    printf("\n");
-//    printf("Input a element you want to search.");
-//    printf("\n");
-//
-//    int element = 0;
-//    scanf("%d", &element);
-//    int pos = SearchListByElement_Seq(list, element);
-//
-//    printf("\n");
-//    printf("The found position is %d", pos);
+    int pos;
+    printf("\n");
+    printf("Input the position of element you want to delete");
+    scanf("%d", &pos);
+    int q = DelList_Seq(list, pos);
 
-//    GetCommonElements();
+    printf("%d\n", q);
+    printf("The elements of the linklist after deletion:");
+    ShowList_Seq(list);
+    printf("\n");
+
+    int newElement;
+    printf("\n");
+    printf("Input the new element.");
+    scanf("%d", &newElement);
+    printf("Input the position you want to insert.");
+    scanf("%d", &pos);
+    q = InsList_Seq(list, pos, newElement);
+
+    printf("%d\n", q);
+    printf("The elements of the linklist after insertion:");
+    ShowList_Seq(list);
+    printf("\n");
+
+    printf("\n");
+    printf("Input a element you want to search.");
+    printf("\n");
+
+    int element = 0;
+    scanf("%d", &element);
+    pos = SearchListByElement_Seq(list, element);
+
+    printf("\n");
+    printf("The found position is %d", pos);
+
+    GetCommonElements();
     GetMergedList();
 }

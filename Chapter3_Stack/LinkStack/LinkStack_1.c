@@ -6,8 +6,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+typedef int datatype;
+
 typedef struct StackNodeStruct {
-    int data;
+    datatype data;
     struct StackNodeStruct *next;
 } StackNode;
 
@@ -30,14 +32,14 @@ int ReadTop(LinkStack *stack, int *x) {
 }
 
 
-int Push(LinkStack *stack, int x) {
+int Push(LinkStack *stack, datatype x) {
     StackNode *node = (StackNode *) malloc(sizeof(StackNode));
     node->data = x;
     node->next = stack->top;
     stack->top = node;
 }
 
-int Pop(LinkStack *stack, int *x) {
+int Pop(LinkStack *stack, datatype *x) {
 // 栈为空
     if (stack->top == NULL) {
         return 0;
@@ -64,8 +66,7 @@ int ShowStack(LinkStack *stack) {
     node = stack->top;
 
     while (node != NULL) {
-        printf("%d", node->data);
-        printf("\n");
+        printf("%d\n", node->data);
         node = node->next;
     }
 
@@ -80,7 +81,7 @@ int main() {
     Push(stack, 2);
     Push(stack, 3);
 
-    int *x = (int *) malloc(sizeof(int));
+    datatype *x = (datatype *) malloc(sizeof(int));
     ReadTop(stack, x);
     printf("top: %d\n", *x);
 

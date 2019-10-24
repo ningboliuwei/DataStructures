@@ -41,6 +41,7 @@ int ReadTop(SeqStack s, int *x) {
 
     return 1;
 }
+
 //
 //// 若栈不空，则删除st的栈顶元素，用x返回其值，
 //// 并返回1；否则返回0

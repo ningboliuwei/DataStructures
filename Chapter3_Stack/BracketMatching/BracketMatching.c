@@ -2,18 +2,16 @@
 // Created by Liu Wei on 2018/9/12.
 //
 
-//
-// Created by Liu Wei on 2018/9/11.
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 #define EXP_MAX_LENGTH 100
 
+typedef char datatype;
+
 typedef struct StackNodeStruct {
-    char data;
+    datatype data;
     struct StackNodeStruct *next;
 } StackNode;
 
@@ -25,7 +23,7 @@ void InitStack(LinkStack *stack) {
     stack->top = NULL;
 }
 
-int ReadTop(LinkStack *stack, char *x) {
+int ReadTop(LinkStack *stack, datatype *x) {
     if (stack->top == NULL) {
         return 0;
     }
@@ -36,14 +34,14 @@ int ReadTop(LinkStack *stack, char *x) {
 }
 
 
-int Push(LinkStack *stack, char x) {
+int Push(LinkStack *stack, datatype x) {
     StackNode *node = (StackNode *) malloc(sizeof(StackNode));
     node->data = x;
     node->next = stack->top;
     stack->top = node;
 }
 
-int Pop(LinkStack *stack, char *x) {
+int Pop(LinkStack *stack, datatype *x) {
 // 栈为空
     if (stack->top == NULL) {
         return 0;
@@ -65,21 +63,7 @@ int IsEmptyStack(LinkStack *stack) {
     return 0;
 }
 
-int ShowStack(LinkStack *stack) {
-    printf("--------\n");
-    StackNode *node;
-    node = stack->top;
-
-    while (node != NULL) {
-        printf("%d", node->data);
-        printf("\n");
-        node = node->next;
-    }
-
-    printf("--------\n");
-}
-
-int MatchBracket(char *exp) {
+int MatchBracket(datatype *exp) {
     int flag = 1;
     int i = 0;
     LinkStack *stack = (LinkStack *) malloc(sizeof(LinkStack));
@@ -87,23 +71,56 @@ int MatchBracket(char *exp) {
     InitStack(stack);
 
     while (i < strlen(exp) && flag) {
-        switch (exp[i]) {
-            case '(': {
-                Push(stack, exp[i]);
-                i++;
-                break;
-            }
-            case ')': {
-                char *top = (char *) malloc(sizeof(char));
-                ReadTop(stack, top);
-                if (!IsEmptyStack(stack) && *top == '(') {
-                    Pop(stack, top);
-                    i++;
-                } else {
-                    flag = 0;
+        datatype current = exp[i];
 
-                }
-                break;
+        if (current == '(') {
+            Push(stack, current);
+            i++;
+        } else if (current == ')') {
+            datatype *top = (datatype *) malloc(sizeof(datatype));
+            ReadTop(stack, top);
+
+            if (!IsEmptyStack(stack) && *top == '(') {
+                Pop(stack, top);
+                i++;
+            } else {
+                flag = 0;
+            }
+        }
+    }
+
+// 遍历了栈中所有的括号
+    if (flag && IsEmptyStack(stack)) {
+        return 1;
+    }
+
+    return 0;
+}
+
+int MatchBracket2(datatype *exp) {
+    int flag = 1;
+    int i = 0;
+    LinkStack *stack = (LinkStack *) malloc(sizeof(LinkStack));
+
+    InitStack(stack);
+
+    while (i < strlen(exp) && flag) {
+        datatype current = exp[i];
+
+        if (current == '(' || current == '[' || current == '{') {
+            Push(stack, exp[i]);
+            i++;
+        } else {
+            datatype *top = (datatype *) malloc(sizeof(datatype));
+            ReadTop(stack, top);
+
+            if (!IsEmptyStack(stack) && ((*top == '(' && current == ')')
+                                         || (*top == '[' && current == ']')
+                                         || (*top == '{' && current == '}'))) {
+                Pop(stack, top);
+                i++;
+            } else {
+                flag = 0;
             }
         }
     }
@@ -116,52 +133,12 @@ int MatchBracket(char *exp) {
     return 0;
 }
 
-int MatchBracket2(char *exp) {
-    int flag = 1;
-    int i = 0;
-    LinkStack *stack = (LinkStack *) malloc(sizeof(LinkStack));
-
-    InitStack(stack);
-
-    while (i < strlen(exp) && flag) {
-        char current = exp[i];
-
-        if (current == '(' || current == '[' || current == '{') {
-
-            Push(stack, exp[i]);
-            i++;
-
-        } else {
-            char *top = (char *) malloc(sizeof(char));
-            ReadTop(stack, top);
-            if (!IsEmptyStack(stack) &&
-                ((*top == '(' && current == ')')
-                 || (*top == '[' && current == ']')
-                 || (*top == '{' && current == '}'))) {
-                Pop(stack, top);
-                i++;
-            } else {
-                flag = 0;
-            }
-        }
-    }
-
-    // 遍历了栈中所有的括号
-    if (flag &&
-        IsEmptyStack(stack)
-            ) {
-        return 1;
-    }
-
-    return 0;
-}
-
 int main() {
-    char *exp = (char *) malloc(sizeof(char) * EXP_MAX_LENGTH);
+    datatype *exp = (datatype *) malloc(sizeof(datatype) * EXP_MAX_LENGTH);
     printf("Input brackets\n");
     gets(exp);
 
-    if (MatchBracket2(exp)) {
+    if (MatchBracket(exp)) {
         printf("Matching");
     } else {
         printf("Not matching");

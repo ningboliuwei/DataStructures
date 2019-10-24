@@ -83,7 +83,7 @@ int NumberConvertion(int number, int scale) {
         Push(stack, temp);
     }
 
-    printf("After conversion.");
+    printf("After conversion: ");
 
     while (!IsEmptyStack(stack)) {
         int *topNumber = (int *) malloc(sizeof(int));
@@ -98,9 +98,9 @@ int main() {
     int number = 0;
     int scale = 0;
 
-    printf("Input a number.\n");
+    printf("Input a number: \n");
     scanf("%d", &number);
-    printf("Input the scale.\n");
+    printf("Input the scale: \n");
     scanf("%d", &scale);
 
     NumberConvertion(number, scale);

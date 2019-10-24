@@ -134,7 +134,7 @@ int Infix2Suffix(char *infix, char *suffix) {
     InitStack(stack);
 
     for (int i = 0; i < strlen(infix); i++) {
-        if (infix[i] == '#'){
+        if (infix[i] == '#') {
             break;
         }
 

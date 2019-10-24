@@ -72,7 +72,7 @@ int CreateBiTree(BiTree &T, int n) {
         return 1;
 }
 
-int Preorder(BiTree T)                 //后序遍历
+void Preorder(BiTree T)                 //后序遍历
 {
 //@@3
     if (T != NULL) {
