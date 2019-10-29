@@ -138,7 +138,7 @@ int main() {
     printf("Input brackets\n");
     gets(exp);
 
-    if (MatchBracket(exp)) {
+    if (MatchBracket2(exp)) {
         printf("Matching");
     } else {
         printf("Not matching");

@@ -5,8 +5,8 @@
       <config projectName="Project" targetName="11-1" />
       <config projectName="Project" targetName="20181120_1" />
       <config projectName="Project" targetName="20181120_2" />
-      <config projectName="Project" targetName="11-4" />
       <config projectName="Project" targetName="13-2" />
+      <config projectName="Project" targetName="11-4" />
       <config projectName="Project" targetName="13-3" />
       <config projectName="Project" targetName="11-2" />
       <config projectName="Project" targetName="1556" />
@@ -17,8 +17,8 @@
       <config projectName="Project" targetName="9-2" />
       <config projectName="Project" targetName="9-3" />
       <config projectName="Project" targetName="9-4" />
-      <config projectName="Project" targetName="3-3" />
       <config projectName="Project" targetName="5-1" />
+      <config projectName="Project" targetName="3-3" />
       <config projectName="Project" targetName="TEMP3" />
       <config projectName="Project" targetName="3-4" />
       <config projectName="Project" targetName="5-2" />
@@ -34,7 +34,9 @@
       <config projectName="Project" targetName="9-5" />
       <config projectName="Project" targetName="LinkStack_1" />
       <config projectName="Project" targetName="LinkListWithoutHeadNode" />
+      <config projectName="Project" targetName="TEMP_W4_L1" />
       <config projectName="Project" targetName="4-1" />
+      <config projectName="Project" targetName="TEMP_STUDENT_EXERCISE" />
       <config projectName="Project" targetName="SelectionSort" />
       <config projectName="Project" targetName="SequenceString_1" />
       <config projectName="Project" targetName="week05_lecture1" />
@@ -48,8 +50,8 @@
       <config projectName="Project" targetName="TEMP_W3_L2" />
       <config projectName="Project" targetName="8-2" />
       <config projectName="Project" targetName="SequenceQueue_2" />
-      <config projectName="Project" targetName="6-4" />
       <config projectName="Project" targetName="4-6" />
+      <config projectName="Project" targetName="6-4" />
       <config projectName="Project" targetName="WEEK06_LECTURE1_DEMO" />
       <config projectName="Project" targetName="4-7" />
       <config projectName="Project" targetName="4-8" />
@@ -89,20 +91,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TEMP/TEMP3.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMP/TEMP_W2_L1.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMP/TEMP_W3_L1.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMP/TEMP_W3_L2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMP/TEMP_STUDENT_EXERCISE.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMP/TEMP_W4_L1.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2_List/SequenceList/SequenceList_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_List/SequenceList/SequenceList_1.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter3_Stack/BracketMatching/BracketMatching.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/BracketMatching/BracketMatching.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3_Stack/LinkStack/LinkStack_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/LinkStack/LinkStack_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3_Stack/NumberConvertion/NumberConvertion_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/NumberConvertion/NumberConvertion_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3_Stack/OJ/4-6.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/OJ/4-6.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/OJ/8-2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/8-2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMP/TEMP2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/TEMP2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4_Queue/LinkQueue/LinkQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/LinkQueue/LinkQueue_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_2.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.BracketMatching">
+  <component name="RunManager" selected="CMake Application.LinkListQueue_1">
     <configuration name="10-1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="10-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="10-1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -551,6 +547,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TEMP_STUDENT_EXERCISE" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_STUDENT_EXERCISE" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_STUDENT_EXERCISE">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TEMP_W2_L1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W2_L1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W2_L1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -562,6 +563,11 @@
       </method>
     </configuration>
     <configuration name="TEMP_W3_L2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W3_L2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W3_L2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TEMP_W4_L1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W4_L1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W4_L1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -664,9 +670,11 @@
       <item itemvalue="CMake Application.temp1" />
       <item itemvalue="CMake Application.TEMP2" />
       <item itemvalue="CMake Application.TEMP3" />
+      <item itemvalue="CMake Application.TEMP_STUDENT_EXERCISE" />
       <item itemvalue="CMake Application.TEMP_W2_L1" />
       <item itemvalue="CMake Application.TEMP_W3_L1" />
       <item itemvalue="CMake Application.TEMP_W3_L2" />
+      <item itemvalue="CMake Application.TEMP_W4_L1" />
       <item itemvalue="CMake Application.TraverseTree_Array" />
       <item itemvalue="CMake Application.TraverseTree_Link" />
       <item itemvalue="CMake Application.week05_lecture1" />
@@ -767,8 +775,21 @@
       <workItem from="1571720158417" duration="5612000" />
       <workItem from="1571729618932" duration="1142000" />
       <workItem from="1571745528634" duration="1570000" />
-      <workItem from="1571919498546" duration="2582000" />
+      <workItem from="1571919498546" duration="2817000" />
+      <workItem from="1571922986806" duration="827000" />
+      <workItem from="1571963758950" duration="4445000" />
+      <workItem from="1572178732477" duration="628000" />
+      <workItem from="1572224542678" duration="862000" />
+      <workItem from="1572315153008" duration="1086000" />
     </task>
+    <task id="LOCAL-00001" summary="2019 年链栈的一些改动">
+      <created>1571922507843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571922507843</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -786,6 +807,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2019 年链栈的一些改动" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019 年链栈的一些改动" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -835,11 +860,6 @@
           <line>77</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Chapter3_Stack/LinkStack/LinkStack_1.c</url>
-          <line>78</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -850,6 +870,7 @@
         <watch expression="elements[index]" language="ObjectiveC" />
         <watch expression="L" />
         <watch expression="L-&gt;next-&gt;next-&gt;next-&gt;next" />
+        <watch expression="stack-&gt;top-&gt;next.next" />
       </configuration>
     </watches-manager>
   </component>

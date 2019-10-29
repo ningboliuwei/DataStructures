@@ -33,7 +33,8 @@ int LengthOfQueue(LinkQueue *queue) {
     }
 
     LineQueueNode *node = queue->front;
-    while (node != queue->rear) {
+
+    while (node != NULL) {
         node = node->next;
         count++;
     }
@@ -74,19 +75,23 @@ int InitQueue(LinkQueue *queue) {
     queue->rear = NULL;
 }
 
-void ShowDepartmentMenu(LinkQueue *queue) {
+void ShowQueue(LinkQueue *queue) {
 
     if (IsEmptyQueue(queue)) {
         printf("empty queue");
     }
 
-    LineQueueNode *node = queue->front;
-    printf("%d ", node->data);
+    printf("queue: ");
 
-    do {
-        node = node->next;
+    LineQueueNode *node = queue->front;
+
+    while (node != NULL) {
         printf("%d ", node->data);
-    } while (node != queue->rear);
+        node = node->next;
+    }
+
+    printf("\n");
+
 }
 
 int main() {
@@ -98,19 +103,31 @@ int main() {
     InQueue(queue, 3);
     InQueue(queue, 4);
 
-    ShowDepartmentMenu(queue);
-
     int *item = (int *) malloc(sizeof(int));
 
+    ShowQueue(queue);
+    printf("length of queue: %d\n", LengthOfQueue(queue));
     OutQueue(queue, item);
     printf("out: %d\n", *item);
-    ShowDepartmentMenu(queue);
 
+    ShowQueue(queue);
+    printf("length of queue: %d\n", LengthOfQueue(queue));
     OutQueue(queue, item);
     printf("out: %d\n", *item);
-    ShowDepartmentMenu(queue);
 
-    printf("length of queue: %d", LengthOfQueue(queue));
+
+    ShowQueue(queue);
+    printf("length of queue: %d\n", LengthOfQueue(queue));
+    OutQueue(queue, item);
+    printf("out: %d\n", *item);
+
+
+    ShowQueue(queue);
+    printf("length of queue: %d\n", LengthOfQueue(queue));
+    OutQueue(queue, item);
+    printf("out: %d\n", *item);
+
+    printf("length of queue: %d\n", LengthOfQueue(queue));
 
     getchar();
 

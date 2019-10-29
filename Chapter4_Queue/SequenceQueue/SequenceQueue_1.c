@@ -18,6 +18,7 @@ int IsEmptyQueue(SequenceQueue queue) {
     if (queue->front == -1 && queue->rear == -1) {
         return 1;
     }
+
     return 0;
 }
 
@@ -25,6 +26,7 @@ int LengthOfQueue(SequenceQueue queue) {
     if (IsEmptyQueue(queue)) {
         return 0;
     }
+
     return queue->rear - queue->front + 1;
 }
 
@@ -94,5 +96,4 @@ int main() {
     printf("length of queue: %d", LengthOfQueue(*queue));
 
     getchar();
-
 }
