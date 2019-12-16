@@ -1,6 +1,6 @@
 //
 // Created by Liu Wei on 2018/9/19.
-//
+// front 同样也放元素的版本（会导致无法判断是队空还是队满）
 
 #include <stdio.h>
 #include <stdlib.h>

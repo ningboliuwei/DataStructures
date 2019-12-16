@@ -1,61 +1,63 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include<iostream>
+#include<malloc.h>
 
-#define MAXLEN 10
-typedef int DataType;
+using namespace std;
 
-typedef struct {
-    DataType data[MAXLEN];
-    int top;
-} SeqStack;
+typedef struct  //串的堆分配存储
+{
+    char *ch;
+    int length;
+} HString;
 
-int InitSeqStack(SeqStack &st) {
-
-    st.top = -1;
+int HStrAssign(HString &S) //串赋值
+{
+    int i, j, n = 0;
+    char ch;
+    S.ch = new char[100];
+    S.length = 0;
+    ch = getchar();
+    while (ch != '\n') {
+        S.ch[S.length] = ch;
+        S.length++;
+        ch = getchar();
+    }
     return 1;
-
 }
 
-int Push(SeqStack &st, DataType x) {
 
-    st.top++;
-    st.data[st.top] = x;
-    return 1;
-
-}
-
-int Pop(SeqStack &st, DataType &x) {
-
-    x = st.data[st.top];
-    st.top--;
-
-    return 1;
-
-}
-
-int IsSeqEmpty(SeqStack st) {
-
-    if (st.top != -1)
-        return 0;
-    else
-        return 1;
-
+int Index(HString S, HString T) {
+    int i, j, n = 0, x = 0;
+    for (i = 0; i < S.length; i++) {
+        if (S.ch[i] == T.ch[n]) {
+            n++;
+            for (j = i + 1; j < S.length; j++) {
+                if (n >= T.length)
+                    break;
+                if (S.ch[j] == T.ch[n])
+                    n++;
+                else
+                    return 0;
+            }
+        }
+        if (n == T.length)
+            return i + 1;
+    }
 }
 
 int main() {
-    SeqStack st;
-    DataType x;
+    HString S, T, V;
+    int n;
+    HStrAssign(S);
+    HStrAssign(T);
 
-    InitSeqStack(st);
+    cout << S.ch << endl;
+    cout << T.ch << endl;
 
-    scanf("%d", &x);
-    while (x >= 0) {
-        Push(st, x);
-        scanf("%d", &x);
-    }
-    while (!IsSeqEmpty(st)) {
-        Pop(st, x);
-        printf("%d\n", x);
-    }
+    n = Index(S, T);
+    if (n == 0)
+        cout << "失败" << endl;
+    else
+        cout << n << endl;
     return 1;
 }

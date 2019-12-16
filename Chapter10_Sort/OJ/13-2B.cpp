@@ -4,46 +4,26 @@
 // 输入数据：8 30 13 70 85 39 42 6 20
 
 #include <stdio.h>
-
 int main() {
-    int count = 0;
-
-    scanf("%d", &count);
-    int array[count];
-
-    for (int i = 0; i < count; i++) {
-        int number;
-        scanf("%d", &number);
-
-        int j;
-
-        int high = i;
-        int low = 0;
-        int mid = (high + low) / 2;
-
-        while (low <= high) {
-            // 每次都要修改 mid 的值
-            mid = (high + low) / 2;
-            if (number < array[mid]) {
-                high = mid - 1;
-            } else {
-                low = mid + 1;
+    int i, a[50];
+    int n, j;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+        scanf("%d", &a[i]);
+    for (i = 2; i <= n; i++) {
+        if (a[i] < a[i - 1]) {
+            a[0] = a[i];
+            j = i - 1;
+            while (a[0] < a[j]) {
+                a[j + 1] = a[j];
+                j--;
             }
+            a[j + 1] = a[0];
         }
-
-        for (j = i; j > mid; j--) {
-            array[j] = array[j - 1];
-        }
-
-        array[mid] = number;
-
-        // 显示当前趟排序所有元素
-        for (int k = 0; k < i; k++) {
-            printf("%d ", array[k]);
-        }
+        for (int h = 1; h <= n; h++)
+            printf("%d ", a[h]);
         printf("\n");
     }
+    getchar();
+    getchar();
 }
-
-
-

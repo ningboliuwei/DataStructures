@@ -1,6 +1,13 @@
 //
 // Created by Liu Wei on 2018/11/25.
 // 输入顶点和边，创建无向网的邻接矩阵
+// 输入
+// 3 2
+// a
+// b
+// c
+// a b 1
+// b c 2
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -70,5 +77,7 @@ int main() {
 
     CreateGraph(g);
     DisplayGraph(g);
+
+    getchar();
 }
 

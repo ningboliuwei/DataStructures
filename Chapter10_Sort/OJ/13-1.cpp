@@ -5,35 +5,33 @@
 #include <stdio.h>
 
 int main() {
-    int count = 0;
+  int count = 0;
 
-    scanf("%d", &count);
-    int array[count];
+  scanf("%d", &count);
+  int array[count];
 
-    for (int i = 0; i < count; i++) {
-        int number;
-        scanf("%d", &number);
+  for (int i = 0; i < count; i++) {
+    int number;
+    scanf("%d", &number);
 
-        int j;
+    int j;
 
-        for (j = 0; j < i; j++) {
-            if (number < array[j]) {
-                break;
-            }
-        }
-
-        for (int k = i; k > j; k--) {
-            array[k] = array[k - 1];
-        }
-
-        array[j] = number;
-
-        // 显示当前趟排序所有元素
-        for (int k = 0; k < i; k++) {
-            printf("%d ", array[k]);
-        }
-        printf("\n");
+    for (j = 0; j < i; j++) {
+      if (number < array[j]) {
+        break;
+      }
     }
+
+    for (int k = i; k > j; k--) {
+      array[k] = array[k - 1];
+    }
+
+    array[j] = number;
+
+    // 显示当前趟排序所有元素
+    for (int k = 0; k < i; k++) {
+      printf("%d ", array[k]);
+    }
+    printf("\n");
+  }
 }
-
-

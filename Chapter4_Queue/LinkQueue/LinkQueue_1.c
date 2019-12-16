@@ -35,8 +35,8 @@ int LengthOfQueue(LinkQueue *queue) {
     LineQueueNode *node = queue->front;
 
     while (node != NULL) {
-        node = node->next;
         count++;
+        node = node->next;
     }
 
     return count;

@@ -38,20 +38,42 @@ struct BT *GetTree() {
     struct BT *nodeG = (struct BT *) malloc(sizeof(struct BT));
     nodeG->data = 'G';
 
+// Tree1 ABCDEGF/CBEGDFA/CGEFDBA
+//    nodeA->lchild = nodeB;
+//    nodeA->rchild = NULL;
+//
+//    nodeB->lchild = nodeC;
+//    nodeB->rchild = nodeD;
+//
+//    nodeC->lchild = NULL;
+//    nodeC->rchild = NULL;
+//
+//    nodeD->lchild = nodeE;
+//    nodeD->rchild = nodeF;
+//
+//    nodeE->lchild = NULL;
+//    nodeE->rchild = nodeG;
+//
+//    nodeF->lchild = NULL;
+//    nodeF->rchild = NULL;
+//
+//    nodeG->lchild = NULL;
+//    nodeG->rchild = NULL;
 
+// Tree2 ABDEFGC/DBFEGAC/DFGEBCA
     nodeA->lchild = nodeB;
-    nodeA->rchild = NULL;
+    nodeA->rchild = nodeC;
 
-    nodeB->lchild = nodeC;
-    nodeB->rchild = nodeD;
+    nodeB->lchild = nodeD;
+    nodeB->rchild = nodeE;
 
     nodeC->lchild = NULL;
     nodeC->rchild = NULL;
 
-    nodeD->lchild = nodeE;
-    nodeD->rchild = nodeF;
+    nodeD->lchild = NULL;
+    nodeD->rchild = NULL;
 
-    nodeE->lchild = NULL;
+    nodeE->lchild = nodeF;
     nodeE->rchild = nodeG;
 
     nodeF->lchild = NULL;
@@ -64,7 +86,6 @@ struct BT *GetTree() {
 }
 
 void PreOrderTraverse(struct BT *tree) {
-
     if (tree != NULL) {
         printf("%c ", tree->data);
         PreOrderTraverse(tree->lchild);

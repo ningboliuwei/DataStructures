@@ -23,7 +23,7 @@ int main() {
   }
 
   for (int gap = count / 2; gap >= 1; gap = gap / 2) {
-    for (int i = 0; i < count; i=i+gap) {
+    for (int i = count-1; i >=gap; i=i-gap) {
       int number = array[i];
       int j = 0;
 
@@ -35,8 +35,8 @@ int main() {
         }
       }
       array[j] = number;
-       ShowArray(array, count);
     }
+    ShowArray(array, count);
   }
 
   getchar();

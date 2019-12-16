@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TREE_NODE_COUNT 7
+#define TREE_NODE_COUNT 8
 
-typedef int DataType;
+typedef char DataType;
 
 typedef struct BT {
     DataType data;
@@ -15,6 +15,34 @@ typedef struct BT {
 };
 
 struct BT *GetTree(struct BT *tree) {
+//    tree[0].data = 'a';
+//    tree[0].lchild = 1;
+//    tree[0].rchild = 2;
+//
+//    tree[1].data = 'b';
+//    tree[1].lchild = 3;
+//    tree[1].rchild = 4;
+//
+//    tree[2].data = 'c';
+//    tree[2].lchild = -1;
+//    tree[2].rchild = -1;
+//
+//    tree[3].data = 'd';
+//    tree[3].lchild = -1;
+//    tree[3].rchild = -1;
+//
+//    tree[4].data = 'e';
+//    tree[4].lchild = 5;
+//    tree[4].rchild = 6;
+//
+//    tree[5].data = 'f';
+//    tree[5].lchild = -1;
+//    tree[5].rchild = -1;
+//
+//    tree[6].data = 'g';
+//    tree[6].lchild = -1;
+//    tree[6].rchild = -1;
+
     tree[0].data = 'a';
     tree[0].lchild = 1;
     tree[0].rchild = 2;
@@ -24,24 +52,58 @@ struct BT *GetTree(struct BT *tree) {
     tree[1].rchild = 4;
 
     tree[2].data = 'c';
-    tree[2].lchild = -1;
-    tree[2].rchild = -1;
+    tree[2].lchild = 5;
+    tree[2].rchild = 6;
 
     tree[3].data = 'd';
     tree[3].lchild = -1;
     tree[3].rchild = -1;
 
-    tree[4].data = 'e';
-    tree[4].lchild = 5;
-    tree[4].rchild = 6;
+    tree[4].data = 'g';
+    tree[4].lchild = -1;
+    tree[4].rchild = -1;
 
-    tree[5].data = 'f';
+    tree[5].data = 'e';
     tree[5].lchild = -1;
-    tree[5].rchild = -1;
+    tree[5].rchild = 7;
 
-    tree[6].data = 'g';
+    tree[6].data = 'f';
     tree[6].lchild = -1;
     tree[6].rchild = -1;
+
+    tree[7].data = 'h';
+    tree[7].lchild = -1;
+    tree[7].rchild = -1;
+
+//    tree[0].data = 'a';
+//    tree[0].lchild = 1;
+//    tree[0].rchild = -1;
+//
+//    tree[1].data = 'b';
+//    tree[1].lchild = 2;
+//    tree[1].rchild = 3;
+//
+//    tree[2].data = 'c';
+//    tree[2].lchild = -1;
+//    tree[2].rchild = -1;
+//
+//    tree[3].data = 'd';
+//    tree[3].lchild = 4;
+//    tree[3].rchild = 5;
+//
+//    tree[4].data = 'e';
+//    tree[4].lchild = -1;
+//    tree[4].rchild = 6;
+//
+//    tree[5].data = 'f';
+//    tree[5].lchild = -1;
+//    tree[5].rchild = -1;
+//
+//    tree[6].data = 'g';
+//    tree[6].lchild = -1;
+//    tree[6].rchild = -1;
+
+
 
     return tree;
 }
@@ -60,31 +122,29 @@ void PreOrderTraverse(struct BT *tree, int index) {
 
 void MiddleOrderTraverse(struct BT *tree, int index) {
     if (tree[index].lchild != -1) {
-        PreOrderTraverse(tree, tree[index].lchild);
+        MiddleOrderTraverse(tree, tree[index].lchild);
     }
 
     printf("%c ", tree[index].data);
 
     if (tree[index].rchild != -1) {
-        PreOrderTraverse(tree, tree[index].rchild);
+        MiddleOrderTraverse(tree, tree[index].rchild);
     }
 }
 
 void PostOrderTraverse(struct BT *tree, int index) {
     if (tree[index].lchild != -1) {
-        PreOrderTraverse(tree, tree[index].lchild);
+        PostOrderTraverse(tree, tree[index].lchild);
     }
 
     if (tree[index].rchild != -1) {
-        PreOrderTraverse(tree, tree[index].rchild);
+        PostOrderTraverse(tree, tree[index].rchild);
     }
 
     printf("%c ", tree[index].data);
 }
 
 int main() {
-    struct BT root;
-    root.lchild = 0;
     struct BT *tree = (struct BT *) malloc(sizeof(struct BT) * TREE_NODE_COUNT);
     tree = GetTree(tree);
 

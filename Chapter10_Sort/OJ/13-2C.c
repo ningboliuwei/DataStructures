@@ -12,7 +12,7 @@ int main() {
   int array[count];
 
   for (int i = 0; i < count; i++) {
-    scanf("%d", &number);
+    scanf("%d", &array[i]);
 
     int j;
 
@@ -23,7 +23,7 @@ int main() {
     while (low <= high) {
       // 每次都要修改 mid 的值
       mid = (high + low) / 2;
-      if (number < array[mid]) {
+      if (array[i] < array[mid]) {
         high = mid - 1;
       } else {
         low = mid + 1;
@@ -34,7 +34,7 @@ int main() {
       array[j] = array[j - 1];
     }
 
-    array[mid] = number;
+    array[mid] = array[i];
 
     // 显示当前趟排序所有元素
     for (int k = 0; k < i; k++) {

@@ -2,86 +2,93 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Project" targetName="11-1" />
-      <config projectName="Project" targetName="20181120_1" />
-      <config projectName="Project" targetName="20181120_2" />
-      <config projectName="Project" targetName="13-2" />
-      <config projectName="Project" targetName="11-4" />
-      <config projectName="Project" targetName="13-3" />
-      <config projectName="Project" targetName="11-2" />
-      <config projectName="Project" targetName="1556" />
       <config projectName="Project" targetName="13-1" />
-      <config projectName="Project" targetName="11-3" />
-      <config projectName="Project" targetName="2-5cpp" />
-      <config projectName="Project" targetName="9-1" />
-      <config projectName="Project" targetName="9-2" />
-      <config projectName="Project" targetName="9-3" />
-      <config projectName="Project" targetName="9-4" />
-      <config projectName="Project" targetName="5-1" />
-      <config projectName="Project" targetName="3-3" />
-      <config projectName="Project" targetName="TEMP3" />
-      <config projectName="Project" targetName="3-4" />
-      <config projectName="Project" targetName="5-2" />
-      <config projectName="Project" targetName="TEMP2" />
-      <config projectName="Project" targetName="3-5" />
-      <config projectName="Project" targetName="5-3" />
-      <config projectName="Project" targetName="TEMP1" />
-      <config projectName="Project" targetName="3-6" />
-      <config projectName="Project" targetName="5-4" />
-      <config projectName="Project" targetName="13-4_deeplearn_B" />
-      <config projectName="Project" targetName="13-4" />
-      <config projectName="Project" targetName="13-5" />
-      <config projectName="Project" targetName="9-5" />
-      <config projectName="Project" targetName="LinkStack_1" />
-      <config projectName="Project" targetName="LinkListWithoutHeadNode" />
-      <config projectName="Project" targetName="TEMP_W4_L1" />
-      <config projectName="Project" targetName="4-1" />
-      <config projectName="Project" targetName="TEMP_STUDENT_EXERCISE" />
-      <config projectName="Project" targetName="SelectionSort" />
-      <config projectName="Project" targetName="SequenceString_1" />
+      <config projectName="Project" targetName="20181120_2" />
+      <config projectName="Project" targetName="20181120_1" />
       <config projectName="Project" targetName="week05_lecture1" />
-      <config projectName="Project" targetName="LinkListQueue_1" />
-      <config projectName="Project" targetName="LoopQueue_1" />
-      <config projectName="Project" targetName="10-1" />
-      <config projectName="Project" targetName="10-2" />
-      <config projectName="Project" targetName="1530" />
-      <config projectName="Project" targetName="TEMP_W3_L1" />
-      <config projectName="Project" targetName="SingleLinkList_1" />
-      <config projectName="Project" targetName="TEMP_W3_L2" />
-      <config projectName="Project" targetName="8-2" />
-      <config projectName="Project" targetName="SequenceQueue_2" />
-      <config projectName="Project" targetName="4-6" />
-      <config projectName="Project" targetName="6-4" />
-      <config projectName="Project" targetName="WEEK06_LECTURE1_DEMO" />
-      <config projectName="Project" targetName="4-7" />
-      <config projectName="Project" targetName="4-8" />
-      <config projectName="Project" targetName="LinkListWithHeadNode" />
-      <config projectName="Project" targetName="SequenceQueue_1" />
-      <config projectName="Project" targetName="4-2" />
-      <config projectName="Project" targetName="4-3" />
-      <config projectName="Project" targetName="6-1" />
-      <config projectName="Project" targetName="2-6" />
-      <config projectName="Project" targetName="4-4" />
-      <config projectName="Project" targetName="6-2" />
-      <config projectName="Project" targetName="8-1" />
-      <config projectName="Project" targetName="4-5" />
-      <config projectName="Project" targetName="6-3" />
-      <config projectName="Project" targetName="temp1" />
-      <config projectName="Project" targetName="3-1" />
-      <config projectName="Project" targetName="3-2" />
-      <config projectName="Project" targetName="BracketMatching" />
-      <config projectName="Project" targetName="SequenceList_1" />
-      <config projectName="Project" targetName="TEMP_W2_L1" />
-      <config projectName="Project" targetName="SequenceStack_1" />
-      <config projectName="Project" targetName="13-4_deeplearn" />
+      <config projectName="Project" targetName="TEMP_STUDENT_EXERCISE" />
+      <config projectName="Project" targetName="13-4_deeplearn_B" />
       <config projectName="Project" targetName="TraverseTree_Array" />
-      <config projectName="Project" targetName="13-1C" />
-      <config projectName="Project" targetName="20181127_2" />
-      <config projectName="Project" targetName="20181129_1" />
-      <config projectName="Project" targetName="20181127_1" />
-      <config projectName="Project" targetName="13-1B" />
-      <config projectName="Project" targetName="TraverseTree_Link" />
+      <config projectName="Project" targetName="1530" />
+      <config projectName="Project" targetName="8-2" />
+      <config projectName="Project" targetName="8-1" />
+      <config projectName="Project" targetName="BracketMatching" />
+      <config projectName="Project" targetName="TEMP3" />
+      <config projectName="Project" targetName="LinkListWithHeadNode" />
+      <config projectName="Project" targetName="2-5cpp" />
+      <config projectName="Project" targetName="WEEK06_LECTURE1_DEMO" />
+      <config projectName="Project" targetName="TEMP_W3_L1" />
+      <config projectName="Project" targetName="TEMP_W3_L2" />
+      <config projectName="Project" targetName="SequenceQueue_2" />
+      <config projectName="Project" targetName="9-4" />
+      <config projectName="Project" targetName="9-3" />
+      <config projectName="Project" targetName="9-2" />
+      <config projectName="Project" targetName="9-1" />
+      <config projectName="Project" targetName="TEMP_W5_L2" />
+      <config projectName="Project" targetName="LinkListQueue_1" />
+      <config projectName="Project" targetName="SequenceStack_1" />
+      <config projectName="Project" targetName="SequenceString_1" />
+      <config projectName="Project" targetName="TEMP_W9_L1" />
       <config projectName="Project" targetName="NumberConvertion_1" />
+      <config projectName="Project" targetName="TEMP_W5_L1" />
+      <config projectName="Project" targetName="10-2" />
+      <config projectName="Project" targetName="TEMP_W4_L1" />
+      <config projectName="Project" targetName="TraverseTree_Level" />
+      <config projectName="Project" targetName="2-6" />
+      <config projectName="Project" targetName="13-1C" />
+      <config projectName="Project" targetName="11-2" />
+      <config projectName="Project" targetName="TEMP2" />
+      <config projectName="Project" targetName="TEMP_W6_L1" />
+      <config projectName="Project" targetName="LoopQueue_2" />
+      <config projectName="Project" targetName="5-1" />
+      <config projectName="Project" targetName="3-6" />
+      <config projectName="Project" targetName="3-5" />
+      <config projectName="Project" targetName="3-4" />
+      <config projectName="Project" targetName="3-3" />
+      <config projectName="Project" targetName="3-2" />
+      <config projectName="Project" targetName="3-1" />
+      <config projectName="Project" targetName="SingleLinkList_1" />
+      <config projectName="Project" targetName="13-4_deeplearn" />
+      <config projectName="Project" targetName="SelectionSort" />
+      <config projectName="Project" targetName="LoopQueue_1" />
+      <config projectName="Project" targetName="4-8" />
+      <config projectName="Project" targetName="4-7" />
+      <config projectName="Project" targetName="4-6" />
+      <config projectName="Project" targetName="4-5" />
+      <config projectName="Project" targetName="4-4" />
+      <config projectName="Project" targetName="4-3" />
+      <config projectName="Project" targetName="4-2" />
+      <config projectName="Project" targetName="4-1" />
+      <config projectName="Project" targetName="10-1" />
+      <config projectName="Project" targetName="9-5" />
+      <config projectName="Project" targetName="TraverseTree_Link" />
+      <config projectName="Project" targetName="20181127_2" />
+      <config projectName="Project" targetName="20181127_1" />
+      <config projectName="Project" targetName="SequenceQueue_1" />
+      <config projectName="Project" targetName="temp1" />
+      <config projectName="Project" targetName="5-4" />
+      <config projectName="Project" targetName="5-3" />
+      <config projectName="Project" targetName="5-2" />
+      <config projectName="Project" targetName="TEMP1" />
+      <config projectName="Project" targetName="11-1" />
+      <config projectName="Project" targetName="SequenceList_1" />
+      <config projectName="Project" targetName="13-1B" />
+      <config projectName="Project" targetName="11-3" />
+      <config projectName="Project" targetName="LinkStack_1" />
+      <config projectName="Project" targetName="6-4" />
+      <config projectName="Project" targetName="6-3" />
+      <config projectName="Project" targetName="6-2" />
+      <config projectName="Project" targetName="6-1" />
+      <config projectName="Project" targetName="13-2B" />
+      <config projectName="Project" targetName="1556" />
+      <config projectName="Project" targetName="LinkListWithoutHeadNode" />
+      <config projectName="Project" targetName="TEMP_W2_L1" />
+      <config projectName="Project" targetName="20181129_1" />
+      <config projectName="Project" targetName="11-4" />
+      <config projectName="Project" targetName="13-5" />
+      <config projectName="Project" targetName="13-4" />
+      <config projectName="Project" targetName="13-3" />
+      <config projectName="Project" targetName="13-2" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -91,16 +98,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TEMP/TEMP_STUDENT_EXERCISE.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMP/TEMP_W4_L1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter10_Sort/OJ/13-2B.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMP/TEMP_W5_L1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMP/TEMP_W5_L2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMP/TEMP_W6_L1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMP/TEMP_W9_L1.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter3_Stack/BracketMatching/BracketMatching.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/BracketMatching/BracketMatching.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter10_Sort/OJ/13-1B.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10_Sort/OJ/13-1B.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter10_Sort/OJ/13-2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10_Sort/OJ/13-2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter10_Sort/OJ/13-4_deeplearn_B.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10_Sort/OJ/13-4_deeplearn_B.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter10_Sort/OJ/13-5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10_Sort/OJ/13-5.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter10_Sort/SelectionSort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10_Sort/SelectionSort.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter4_Queue/LinkQueue/LinkQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/LinkQueue/LinkQueue_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/SequenceQueue/SequenceQueue_2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter4_Queue/LoopQueue/LoopQueue_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Array.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Array.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Link.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Link.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter8_Graph/OJ/11-1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter8_Graph/OJ/11-1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/TEMP_STUDENT_EXERCISE.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/TEMP_STUDENT_EXERCISE.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/TEMP_W4_L1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/TEMP_W4_L1.cpp" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,9 +167,14 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TEMP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chapter10_Sort/OJ" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -160,7 +183,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myShowDebugConsoleByDefault" value="true" />
@@ -174,24 +199,13 @@
       <recent name="C:\GitHub\DataStructures\Chapter5_String\SequenceString" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\GitHub\DataStructures\TEMP" />
       <recent name="C:\GitHub\DataStructures\Chapter10_Sort\OJ" />
+      <recent name="C:\GitHub\DataStructures\Chapter4_Queue\LoopQueue" />
+      <recent name="C:\GitHub\DataStructures\TEMP" />
       <recent name="C:\GitHub\CLionProjects\DataStructures" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="CMake Application.LinkListQueue_1">
+  <component name="RunManager" selected="CMake Application.13-2B">
     <configuration name="10-1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="10-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="10-1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -238,6 +252,11 @@
       </method>
     </configuration>
     <configuration name="13-2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="13-2B" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-2B" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-2B">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -492,6 +511,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoopQueue_2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="LoopQueue_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="LoopQueue_2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NumberConvertion_1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="NumberConvertion_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="NumberConvertion_1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -572,7 +596,32 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TEMP_W5_L1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W5_L1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W5_L1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TEMP_W5_L2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W5_L2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W5_L2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TEMP_W6_L1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W6_L1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W6_L1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TEMP_W9_L1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W9_L1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W9_L1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TraverseTree_Array" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TraverseTree_Array" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TraverseTree_Array">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TraverseTree_Level" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TraverseTree_Level" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TraverseTree_Level">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -609,6 +658,7 @@
       <item itemvalue="CMake Application.13-1B" />
       <item itemvalue="CMake Application.13-1C" />
       <item itemvalue="CMake Application.13-2" />
+      <item itemvalue="CMake Application.13-2B" />
       <item itemvalue="CMake Application.13-3" />
       <item itemvalue="CMake Application.13-4" />
       <item itemvalue="CMake Application.13-4_deeplearn" />
@@ -658,6 +708,7 @@
       <item itemvalue="CMake Application.LinkListWithoutHeadNode" />
       <item itemvalue="CMake Application.LinkStack_1" />
       <item itemvalue="CMake Application.LoopQueue_1" />
+      <item itemvalue="CMake Application.LoopQueue_2" />
       <item itemvalue="CMake Application.NumberConvertion_1" />
       <item itemvalue="CMake Application.SelectionSort" />
       <item itemvalue="CMake Application.SequenceList_1" />
@@ -675,11 +726,28 @@
       <item itemvalue="CMake Application.TEMP_W3_L1" />
       <item itemvalue="CMake Application.TEMP_W3_L2" />
       <item itemvalue="CMake Application.TEMP_W4_L1" />
+      <item itemvalue="CMake Application.TEMP_W5_L1" />
+      <item itemvalue="CMake Application.TEMP_W5_L2" />
+      <item itemvalue="CMake Application.TEMP_W6_L1" />
+      <item itemvalue="CMake Application.TEMP_W9_L1" />
       <item itemvalue="CMake Application.TraverseTree_Array" />
+      <item itemvalue="CMake Application.TraverseTree_Level" />
       <item itemvalue="CMake Application.TraverseTree_Link" />
       <item itemvalue="CMake Application.week05_lecture1" />
       <item itemvalue="CMake Application.WEEK06_LECTURE1_DEMO" />
     </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -780,7 +848,31 @@
       <workItem from="1571963758950" duration="4445000" />
       <workItem from="1572178732477" duration="628000" />
       <workItem from="1572224542678" duration="862000" />
-      <workItem from="1572315153008" duration="1086000" />
+      <workItem from="1572315153008" duration="5646000" />
+      <workItem from="1572324701630" duration="5392000" />
+      <workItem from="1572335210504" duration="559000" />
+      <workItem from="1572867400996" duration="238000" />
+      <workItem from="1572922282628" duration="47000" />
+      <workItem from="1572929778332" duration="4101000" />
+      <workItem from="1572940990267" duration="153000" />
+      <workItem from="1573006376387" duration="1769000" />
+      <workItem from="1573173325325" duration="1306000" />
+      <workItem from="1573524875570" duration="11612000" />
+      <workItem from="1574130859669" duration="2073000" />
+      <workItem from="1574139449657" duration="657000" />
+      <workItem from="1574339196217" duration="5510000" />
+      <workItem from="1574382733600" duration="2244000" />
+      <workItem from="1574672928835" duration="5352000" />
+      <workItem from="1574736887524" duration="44000" />
+      <workItem from="1574744444929" duration="2444000" />
+      <workItem from="1574753811927" duration="1793000" />
+      <workItem from="1575347432281" duration="307000" />
+      <workItem from="1575546838729" duration="4241000" />
+      <workItem from="1575592135737" duration="1946000" />
+      <workItem from="1575860190551" duration="606000" />
+      <workItem from="1575895653282" duration="724000" />
+      <workItem from="1575937778683" duration="1069000" />
+      <workItem from="1575956527461" duration="655000" />
     </task>
     <task id="LOCAL-00001" summary="2019 年链栈的一些改动">
       <created>1571922507843</created>
@@ -789,7 +881,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571922507843</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2019 对 linkqueue 的一些改动（原先的有 bug）">
+      <created>1572316289292</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572316289292</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -810,7 +909,68 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2019 年链栈的一些改动" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019 年链栈的一些改动" />
+    <MESSAGE value="2019 对 linkqueue 的一些改动（原先的有 bug）" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019 对 linkqueue 的一些改动（原先的有 bug）" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="383" height="483" key="GridCell.Tab.0.bottom" timestamp="1575959727472">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="1259" height="415" key="GridCell.Tab.0.bottom/0.0.1280.920@0.0.1280.920" timestamp="1575597367913" />
+    <state width="383" height="483" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1575959727472" />
+    <state width="505" height="912" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-273.1050.1640@0.0.1920.1040" timestamp="1575938848370" />
+    <state width="1259" height="415" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.-273.1050.1680@0.0.1920.1080" timestamp="1575598847357" />
+    <state width="2027" height="261" key="GridCell.Tab.0.bottom/0.0.2048.1112/-1440.-464.1152.2008@0.0.2048.1112" timestamp="1575552013062" />
+    <state width="383" height="483" key="GridCell.Tab.0.center" timestamp="1575959727472">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="1259" height="415" key="GridCell.Tab.0.center/0.0.1280.920@0.0.1280.920" timestamp="1575597367913" />
+    <state width="383" height="483" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1575959727472" />
+    <state width="505" height="912" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-273.1050.1640@0.0.1920.1040" timestamp="1575938848369" />
+    <state width="1259" height="415" key="GridCell.Tab.0.center/0.0.1920.1080/1920.-273.1050.1680@0.0.1920.1080" timestamp="1575598847357" />
+    <state width="2027" height="261" key="GridCell.Tab.0.center/0.0.2048.1112/-1440.-464.1152.2008@0.0.2048.1112" timestamp="1575552013062" />
+    <state width="383" height="483" key="GridCell.Tab.0.left" timestamp="1575959727472">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="1259" height="415" key="GridCell.Tab.0.left/0.0.1280.920@0.0.1280.920" timestamp="1575597367913" />
+    <state width="383" height="483" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1575959727472" />
+    <state width="505" height="912" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-273.1050.1640@0.0.1920.1040" timestamp="1575938848369" />
+    <state width="1259" height="415" key="GridCell.Tab.0.left/0.0.1920.1080/1920.-273.1050.1680@0.0.1920.1080" timestamp="1575598847357" />
+    <state width="2027" height="261" key="GridCell.Tab.0.left/0.0.2048.1112/-1440.-464.1152.2008@0.0.2048.1112" timestamp="1575552013062" />
+    <state width="383" height="483" key="GridCell.Tab.0.right" timestamp="1575959727472">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="1259" height="415" key="GridCell.Tab.0.right/0.0.1280.920@0.0.1280.920" timestamp="1575597367913" />
+    <state width="383" height="483" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1575959727472" />
+    <state width="505" height="912" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-273.1050.1640@0.0.1920.1040" timestamp="1575938848369" />
+    <state width="1259" height="415" key="GridCell.Tab.0.right/0.0.1920.1080/1920.-273.1050.1680@0.0.1920.1080" timestamp="1575598847357" />
+    <state width="2027" height="261" key="GridCell.Tab.0.right/0.0.2048.1112/-1440.-464.1152.2008@0.0.2048.1112" timestamp="1575552013062" />
+    <state width="383" height="483" key="GridCell.Tab.1.bottom" timestamp="1575959727473">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="383" height="483" key="GridCell.Tab.1.bottom/0.0.1463.783@0.0.1463.783" timestamp="1575959727473" />
+    <state width="505" height="912" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-273.1050.1640@0.0.1920.1040" timestamp="1575938848371" />
+    <state width="383" height="483" key="GridCell.Tab.1.center" timestamp="1575959727473">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="383" height="483" key="GridCell.Tab.1.center/0.0.1463.783@0.0.1463.783" timestamp="1575959727473" />
+    <state width="505" height="912" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-273.1050.1640@0.0.1920.1040" timestamp="1575938848370" />
+    <state width="383" height="483" key="GridCell.Tab.1.left" timestamp="1575959727472">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="383" height="483" key="GridCell.Tab.1.left/0.0.1463.783@0.0.1463.783" timestamp="1575959727472" />
+    <state width="505" height="912" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-273.1050.1640@0.0.1920.1040" timestamp="1575938848370" />
+    <state width="383" height="483" key="GridCell.Tab.1.right" timestamp="1575959727473">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="383" height="483" key="GridCell.Tab.1.right/0.0.1463.783@0.0.1463.783" timestamp="1575959727473" />
+    <state width="505" height="912" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-273.1050.1640@0.0.1920.1040" timestamp="1575938848371" />
+    <state x="325" y="68" key="SettingsEditor" timestamp="1575896367772">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state x="284" y="166" key="SettingsEditor/0.0.1280.920@0.0.1280.920" timestamp="1575592157412" />
+    <state x="325" y="68" key="SettingsEditor/0.0.1463.783@0.0.1463.783" timestamp="1575896367772" />
+    <state x="528" y="201" key="SettingsEditor/0.0.2048.1112/-1440.-464.1152.2008@0.0.2048.1112" timestamp="1575551996132" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -826,11 +986,6 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp</url>
-          <line>63</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/StudentWorks/20181120_1.cpp</url>
           <line>57</line>
           <option name="timeStamp" value="37" />
@@ -839,11 +994,6 @@
           <url>file://$PROJECT_DIR$/StudentWorks/20181127_1.cpp</url>
           <line>38</line>
           <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-4.cpp</url>
-          <line>97</line>
-          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Chapter3_Stack/SequenceStack/SequenceStack_1.c</url>
@@ -860,6 +1010,41 @@
           <line>77</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/TEMP/TEMP_W4_L1.cpp</url>
+          <line>120</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/TEMP/TEMP_W5_L1.cpp</url>
+          <line>82</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Array.c</url>
+          <line>122</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Chapter7_Tree/OJ/9-1.cpp</url>
+          <line>63</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Chapter8_Graph/OJ/11-3.cpp</url>
+          <line>91</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/TEMP/TEMP_STUDENT_EXERCISE.cpp</url>
+          <line>24</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Chapter10_Sort/OJ/13-3.cpp</url>
+          <line>24</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -871,6 +1056,10 @@
         <watch expression="L" />
         <watch expression="L-&gt;next-&gt;next-&gt;next-&gt;next" />
         <watch expression="stack-&gt;top-&gt;next.next" />
+        <watch expression="queue" />
+        <watch expression="s1.vec" />
+        <watch expression="tree[index]" />
+        <watch expression="(elements[index]" />
       </configuration>
     </watches-manager>
   </component>

@@ -8,66 +8,61 @@
 
 // 显示数组中所有元素
 void ShowArray(int array[], int count) {
-    for (int k = 0; k < count; k++) {
-        printf("%d ", array[k]);
-    }
-    printf("\n");
+  for (int k = 0; k < count; k++) {
+    printf("%d ", array[k]);
+  }
+  printf("\n");
 }
 
 void QuickSort(int array[], int lower, int upper, int count) {
-    int left = lower;
-    int right = upper;
-    int pivot = array[lower];
+  int left = lower;
+  int right = upper;
+  int pivot = array[lower];
 
-    while (left < right && array[left] != array[right]) {
-        while (array[right] > pivot) {
-            right--;
-        }
-
-        while (left < right && array[left] < pivot) {
-            left++;
-        }
-
-        if (array[left] != array[right]) {
-            printf("left: %d right: %d\n", left, right);
-            printf("pivot = %d, swap %d & %d:\n", pivot, array[left], array[right]);
-
-            int temp = array[left];
-            array[left] = array[right];
-            array[right] = temp;
-
-            printf("after swap:\n");
-            ShowArray(array, count);
-        }
+  while (left < right && array[left] != array[right]) {
+    while (array[right] > pivot) {
+      right--;
     }
 
-    if (lower < right - 1) {
-        QuickSort(array, lower, right - 1, count);
+    while (left < right && array[left] < pivot) {
+      left++;
     }
 
-    if (right + 1 < upper) {
-        QuickSort(array, right + 1, upper, count);
+    if (array[left] != array[right]) {
+      printf("left: %d right: %d\n", left, right);
+      printf("pivot = %d, swap %d & %d:\n", pivot, array[left], array[right]);
+
+      int temp = array[left];
+      array[left] = array[right];
+      array[right] = temp;
+
+      printf("after swap:\n");
+      ShowArray(array, count);
     }
+  }
+
+  if (lower < right - 1) {
+    QuickSort(array, lower, right - 1, count);
+  }
+
+  if (right + 1 < upper) {
+    QuickSort(array, right + 1, upper, count);
+  }
 }
-
 
 int main() {
-    int count = 0;
-    scanf("%d", &count);
-    int array[count];
-    // 输入数组元素
-    for (int i = 0; i < count; i++) {
-        scanf("%d", &array[i]);
-    }
-    int lower = 0;
-    int upper = count - 1;
-    QuickSort(array, lower, upper, count);
-    printf("end");
+  int count = 0;
+  scanf("%d", &count);
+  int array[count];
+  // 输入数组元素
+  for (int i = 0; i < count; i++) {
+    scanf("%d", &array[i]);
+  }
+  int lower = 0;
+  int upper = count - 1;
+  QuickSort(array, lower, upper, count);
+  printf("end");
+
+  getchar();
+  getchar();
 }
-
-
-
-
-
-
-
