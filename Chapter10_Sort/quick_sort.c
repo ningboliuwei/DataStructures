@@ -38,6 +38,7 @@ void QuickSort(int array[], int lowerIndex, int upperIndex, int count) {
     if (upperIndex <= lowerIndex) {
         return;
     }
+   
     ShowArray(array, count);
     //切分
     int pivotIndex = Partition(array, lowerIndex, upperIndex);
