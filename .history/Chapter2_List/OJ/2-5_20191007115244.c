@@ -2,13 +2,12 @@
 // Created by Liu Wei on 2018/9/29.
 // 顺序表应用——合并顺序表(2)
 
-#include<stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 //using namespace std;
 
-
-#define MAXLEN  15
+#define MAXLEN 15
 
 typedef int datatype;
 typedef struct {
@@ -16,17 +15,17 @@ typedef struct {
     int last;
 } SeqList;
 
-SeqList *CreatList_Seq() {
-//    @@1
-    SeqList *list = (SeqList *) malloc(sizeof(SeqList));
+SeqList *CreatList() {
+    //    @@1
+    SeqList *list = (SeqList *)malloc(sizeof(SeqList));
     list->last = -1;
 
     return list;
-//    @@1
+    //    @@1
 }
 
 int InsList_Seq(SeqList *Lq, int i, datatype x) {
-//    @@2
+    //    @@2
     SeqList *p = Lq;
     int index = 0;
 
@@ -44,36 +43,36 @@ int InsList_Seq(SeqList *Lq, int i, datatype x) {
 
     Lq->data[i] = x;
     Lq->last++;
-//    @@2
+    //    @@2
 }
 
 int SearchList_Seq(SeqList *Lq, datatype x) {
-//    @@3
+    //    @@3
     for (int i = 0; i <= Lq->last; i++) {
         if (Lq->data[i] == x) {
             return i;
         }
     }
     return -1;
-//    @@3
+    //    @@3
 }
 
 void ShowList_Seq(SeqList *Lq) {
-//    @@4
+    //    @@4
     for (int i = 0; i <= Lq->last; i++) {
         printf("%d ", Lq->data[i]);
     }
-//    @@4
+    //    @@4
 }
 
 datatype Getdata(SeqList *h, int i) {
-//    @@7
+    //    @@7
     return h->data[i];
-//    @@7
+    //    @@7
 }
 
 void Union(SeqList *a, SeqList *b, SeqList *c) {
-//    @@5
+    //    @@5
     int nextBeginning = 0;
 
     for (int i = 0; i <= a->last; i++) {
@@ -105,19 +104,18 @@ void Union(SeqList *a, SeqList *b, SeqList *c) {
             c->data[c->last] = b->data[i];
         }
     }
-//    @@5
+    //    @@5
 }
-
 
 int main() {
     SeqList *a, *b, *c;
     datatype x;
 
-    a = CreatList_Seq();
-    b = CreatList_Seq();
-    c = CreatList_Seq();
+    a = CreatList();
+    b = CreatList();
+    c = CreatList();
 
-//    @@6
+    //    @@6
     int value = 0;
     while (scanf("%d", &value) && value != -1) {
         InsList_Seq(a, a->last + 1, value);
@@ -126,10 +124,8 @@ int main() {
     while (scanf("%d", &value) && value != -1) {
         InsList_Seq(b, b->last + 1, value);
     }
-//    @@6
-
+    //    @@6
 
     Union(a, b, c);
     ShowList_Seq(c);
 }
-

@@ -15,7 +15,7 @@ typedef struct {
     int last;
 } SeqList;
 
-SeqList *CreatList_Seq() {
+SeqList *CreatList() {
     // @@1
     SeqList *list = new SeqList();
     list->last = -1;
@@ -111,9 +111,9 @@ int main() {
     SeqList *a, *b, *c;
     datatype x;
 
-    a = CreatList_Seq();
-    b = CreatList_Seq();
-    c = CreatList_Seq();
+    a = CreatList();
+    b = CreatList();
+    c = CreatList();
 
     // @@6
     int value = 0;

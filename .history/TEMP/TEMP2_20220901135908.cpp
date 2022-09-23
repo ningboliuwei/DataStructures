@@ -1,7 +1,6 @@
 #include "stdlib.h"
 #include <stdio.h>
 
-
 #define MAXLEN 100
 
 typedef int datatype;
@@ -10,7 +9,7 @@ typedef struct {
     int last;
 } SeqList;
 
-SeqList *CreatList_Seq() {
+SeqList *CreatList() {
     SeqList *Lq;
     Lq = (SeqList *)malloc(sizeof(SeqList));
     Lq->last = -1;
@@ -38,14 +37,15 @@ void ShowList_Seq(SeqList *Lq) {
         printf("%d", Lq->data[i]);
 }
 
-datatype GetData(SeqList *h, int i) { return h->data[i]; }
+datatype GetData(SeqList *h, int i) {
+    return h->data[i];
+}
 
 void common(SeqList *a, SeqList *b, SeqList *c) {
     int i, k = 0, t;
     for (i = 0; i <= a->last; i++) {
         t = GetData(a, i);
         if (SearchList_Seq(b, t) == 1) {
-
             InsList_Seq(c, k, t);
             k++;
         }
@@ -56,9 +56,9 @@ int main() {
     SeqList *a, *b, *c;
     datatype x;
 
-    a = CreatList_Seq();
-    b = CreatList_Seq();
-    c = CreatList_Seq();
+    a = CreatList();
+    b = CreatList();
+    c = CreatList();
     while (1) {
         scanf("%d", &x);
         if (x == -1)

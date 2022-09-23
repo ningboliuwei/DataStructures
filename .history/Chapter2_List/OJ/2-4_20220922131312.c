@@ -44,7 +44,7 @@ void ShowList_Seq(SeqList *list) {
     printf("\n");
 }
 
-SeqList *CreatList_Seq() {
+SeqList *CreatList() {
     SeqList *list = (SeqList *)malloc(sizeof(SeqList));
     list->last = -1;
 
@@ -61,7 +61,7 @@ SeqList *CreatList_Seq() {
 int main() {
     SeqList *L;
     int pos, len;
-    L = CreatList_Seq();
+    L = CreatList();
     scanf("%d %d", &pos, &len);
     if (DelList(L, pos, len) == 0)
         printf("删除失败\n");

@@ -2,17 +2,17 @@
 // Created by Liu Wei on 2018/9/29.
 // 【2-4】顺序表应用——删除
 
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-typedef   int    datatype;
-#define MAXLEN   100
+typedef int datatype;
+#define MAXLEN 100
 
 typedef struct
 {
     datatype data[MAXLEN];
     int last;
-}SeqList;
+} SeqList;
 
 int DelList(SeqList *list, int pos, int length) {
     if (list->last == -1) {
@@ -43,8 +43,8 @@ void ShowList_Seq(SeqList *list) {
     printf("\n");
 }
 
-SeqList *CreatList_Seq() {
-    SeqList *list = (SeqList *) malloc(sizeof(SeqList));
+SeqList *CreatList() {
+    SeqList *list = (SeqList *)malloc(sizeof(SeqList));
     list->last = -1;
 
     int value = 0;
@@ -56,14 +56,12 @@ SeqList *CreatList_Seq() {
     return list;
 }
 
-
-int main()
-{
+int main() {
     SeqList *L;
-    int pos,len;
-    L=CreatList_Seq();
-    scanf("%d %d",&pos,&len);
-    if(DelList(L,pos,len)==0) printf("删除失败\n");
+    int pos, len;
+    L = CreatList();
+    scanf("%d %d", &pos, &len);
+    if (DelList(L, pos, len) == 0) printf("删除失败\n");
     ShowList_Seq(L);
     return 0;
 }

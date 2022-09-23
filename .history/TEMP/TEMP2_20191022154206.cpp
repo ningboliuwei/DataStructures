@@ -1,7 +1,7 @@
-#include<stdio.h>
-#include"stdlib.h"
+#include <stdio.h>
+#include "stdlib.h"
 
-#define MAXLEN  100
+#define MAXLEN 100
 
 typedef int datatype;
 typedef struct {
@@ -9,9 +9,9 @@ typedef struct {
     int last;
 } SeqList;
 
-SeqList *CreatList_Seq() {
+SeqList *CreatList() {
     SeqList *Lq;
-    Lq = (SeqList *) malloc(sizeof(SeqList));
+    Lq = (SeqList *)malloc(sizeof(SeqList));
     Lq->last = -1;
     return Lq;
 }
@@ -26,7 +26,8 @@ int SearchList_Seq(SeqList *Lq, datatype x) {
     for (i = 0; i <= Lq->last; i++) {
         if (Lq->data[i] == x)
             return 1;
-        else return 0;
+        else
+            return 0;
     }
 }
 
@@ -45,7 +46,6 @@ void common(SeqList *a, SeqList *b, SeqList *c) {
     for (i = 0; i <= a->last; i++) {
         t = Getdata(a, i);
         if (SearchList_Seq(b, t) == 1) {
-
             InsList_Seq(c, k, t);
             k++;
         }
@@ -56,9 +56,9 @@ int main() {
     SeqList *a, *b, *c;
     datatype x;
 
-    a = CreatList_Seq();
-    b = CreatList_Seq();
-    c = CreatList_Seq();
+    a = CreatList();
+    b = CreatList();
+    c = CreatList();
     while (1) {
         scanf("%d", &x);
         if (x == -1)
