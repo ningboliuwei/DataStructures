@@ -1,23 +1,28 @@
 {
-  "clangd.path": "C:\\Program Files\\LLVM\\bin\\clangd.exe",
-  "clang.executable": "C:\\Program Files\\LLVM\\bin\\clang.exe",
-  "clang-format.executable": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
-  "clang.cflags": ["-I${workspaceRoot}/dev"],
   "files.associations": {
     "*.cshtml": "html",
-    "xmemory0": "c",
-    "MONEY.C": "cpp",
-    "TEMP5.C": "cpp",
-    "TEMP6.C": "cpp",
-    "TEMP7.C": "cpp",
-    "TEMP8.C": "cpp",
-    "TEMP9.C": "cpp",
-    "TEMP10.C": "cpp",
-    "system_error": "cpp",
-    "array": "cpp",
-    "functional": "cpp",
+    "*.tcc": "cpp",
+    "bitset": "cpp",
+    "numeric": "cpp",
+    "ranges": "cpp",
+    "streambuf": "cpp",
+    "regex": "cpp",
     "tuple": "cpp",
-    "type_traits": "cpp",
-    "utility": "cpp"
+    "valarray": "cpp"
+  },
+  "C_Cpp.autocomplete": "Default",
+  "[cpp]": {
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "[c]": {
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
   }
 }

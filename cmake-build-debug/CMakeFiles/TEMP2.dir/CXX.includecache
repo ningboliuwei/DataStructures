@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/GitHub/DataStructures/TEMP/TEMP2.cpp
+stdio.h
+-
+stdlib.h
+C:/GitHub/DataStructures/TEMP/stdlib.h
+

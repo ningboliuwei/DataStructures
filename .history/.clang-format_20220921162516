@@ -1,0 +1,46 @@
+BasedOnStyle: Google
+---
+Language: Cpp
+AlignArrayOfStructures: Right
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortLambdasOnASingleLine: Inline
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: Right
+AlignOperands: AlignAfterOperator
+BinPackArguments: false
+BinPackParameters: false
+ColumnLimit: 120
+DerivePointerAlignment: false
+EmptyLineBeforeAccessModifier: Always
+IncludeCategories:
+  - Regex: '^"(llvm|llvm-c|clang|clang-c)/'
+    Priority: 2
+  - Regex: '^((<|")(gtest|gmock|isl|json)/)'
+    Priority: 3
+  - Regex: "^<gsl/.*>"
+    Priority: 4
+  - Regex: "^<.*/.*>"
+    Priority: 5
+  - Regex: "^<[[:alnum:]_]+>"
+    Priority: 4
+  - Regex: "^<.*"
+    Priority: 5
+  - Regex: '^".*'
+    Priority: 1
+InsertBraces: true
+IndentRequiresClause: true
+IndentPPDirectives: AfterHash
+NamespaceIndentation: Inner
+PackConstructorInitializers: NextLine
+RequiresClausePosition: OwnLine
+PointerAlignment: Left
+QualifierAlignment: Custom
+QualifierOrder:
+  ["inline", "static", "constexpr", "type", "restrict", "const", "volatile"]
+ReferenceAlignment: Pointer
+ReflowComments: false
+ShortNamespaceLines: 0
+---
+

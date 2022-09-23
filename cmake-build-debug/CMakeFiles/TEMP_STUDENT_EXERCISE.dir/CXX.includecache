@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/GitHub/DataStructures/TEMP/TEMP_STUDENT_EXERCISE.cpp
+stdio.h
+-
+iostream
+-
+malloc.h
+-
+
