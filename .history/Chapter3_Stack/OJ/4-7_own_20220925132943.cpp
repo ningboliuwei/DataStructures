@@ -1,7 +1,6 @@
 //
 // Created by 慰 on 2018/10/5.
 // 1604 问题 G: 【数据结构3-5】栈的应用——背包问题
-// OJ PASSED
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -119,7 +118,6 @@ int Packaging(int maxCapacity, int itemCount, int itemWeights[MAX_ITEM_COUNT], L
                     itemToTryIndex = stackTopIndex + 1;
                     totalWeight -= itemWeights[stackTopIndex];
                 } else {
-                    // 已经尝试过最后一个还无解，而且没得弹了，说明确实无解了
                     return -1;
                 }
             } else {

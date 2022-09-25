@@ -1,7 +1,6 @@
 //
 // Created by 慰 on 2018/10/5.
 // 1604 问题 G: 【数据结构3-5】栈的应用——背包问题
-// OJ PASSED
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -91,44 +90,29 @@ int Packaging(int maxCapacity, int itemCount, int itemWeights[MAX_ITEM_COUNT], L
         if (totalWeight + weightToTry == maxCapacity) {
             Push(selectedItemWeightsStack, itemToTryIndex);
             totalWeight += weightToTry;
-            solutionFound = true;
             return 1;
-        } else if (totalWeight + weightToTry > maxCapacity) {
-            // 若已经尝试完了最后一个重量，则弹出现有栈顶，并从要弹出的栈顶的下一个开始尝试
-            if (itemToTryIndex == itemCount - 1) {
-                int stackTopIndex;
-
-                if (!IsEmptyStack(selectedItemWeightsStack)) {
-                    Pop(selectedItemWeightsStack, stackTopIndex);
-                    itemToTryIndex = stackTopIndex + 1;
-                    totalWeight -= itemWeights[stackTopIndex];
-                } else {
-                    return -1;
-                }
-            } else {
-                // 若 当前总重量 + 接下来要尝试的重量 > 背包总容量，则不进行任何操作，直接尝试下一个
-                itemToTryIndex++;
-            }
+        } else if (totalWeight + weightToTry < maxCapacity) {
+            // 若 当前总重量 + 接下来要尝试的重量 < 背包总容量，且要尝试的不是最后一个（是最后一个还小于意味着无解，则和剩下的全部都超出容量做法一致，弹栈），则将要尝试的重量对应的下标入栈，
+            Push(selectedItemWeightsStack, itemToTryIndex);
+            totalWeight += weightToTry;
+            itemToTryIndex++;
+            // 若当前放入的已经是最后一个重量了（但是仍然没有等于最大容量）
+            if (itemToTryIndex == itemCount) {
+            };
+            // 若 当前总重量 + 接下来要尝试的重量 > 背包总容量，则不进行任何操作，直接尝试下一个
         } else {
-            // 若 当前总重量 + 接下来要尝试的重量 < 背包总容量，且要尝试的不是最后一个，则将要尝试的重量对应的下标入栈；如果已经尝试过了最后一个，则弹栈，说明上一个放入的无解，试试上一个放入的下一个。
-            if (itemToTryIndex == itemCount - 1) {
+            itemToTryIndex++;
+            // 若已经尝试完了最后一个重量，则弹出现有栈顶，并从要弹出的栈顶的下一个开始尝试
+            if (itemToTryIndex == itemCount) {
                 int stackTopIndex;
-
-                if (!IsEmptyStack(selectedItemWeightsStack)) {
-                    Pop(selectedItemWeightsStack, stackTopIndex);
-                    itemToTryIndex = stackTopIndex + 1;
-                    totalWeight -= itemWeights[stackTopIndex];
-                } else {
-                    // 已经尝试过最后一个还无解，而且没得弹了，说明确实无解了
-                    return -1;
-                }
-            } else {
-                Push(selectedItemWeightsStack, itemToTryIndex);
-                totalWeight += weightToTry;
-                itemToTryIndex++;
+                Pop(selectedItemWeightsStack, stackTopIndex);
+                itemToTryIndex = stackTopIndex + 1;
+                totalWeight -= itemWeights[stackTopIndex];
             }
         }
     }
+
+    return -1;
 }
 
 int main() {
@@ -148,10 +132,10 @@ int main() {
 
     int result = Packaging(maxCapacity, itemCount, itemWeights, selectedItemWeightsStack);
 
-    if (result == -1) {
-        printf("无解");
-    } else {
+    if (result == 1) {
         ShowSelectedWeights(selectedItemWeightsStack, itemWeights);
+    } else {
+        printf("无解；");
     }
 
     getchar();

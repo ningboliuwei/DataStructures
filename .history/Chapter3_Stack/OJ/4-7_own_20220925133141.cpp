@@ -119,7 +119,6 @@ int Packaging(int maxCapacity, int itemCount, int itemWeights[MAX_ITEM_COUNT], L
                     itemToTryIndex = stackTopIndex + 1;
                     totalWeight -= itemWeights[stackTopIndex];
                 } else {
-                    // 已经尝试过最后一个还无解，而且没得弹了，说明确实无解了
                     return -1;
                 }
             } else {
