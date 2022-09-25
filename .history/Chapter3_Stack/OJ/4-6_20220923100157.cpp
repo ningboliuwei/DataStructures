@@ -8,11 +8,11 @@
 
 #define EXP_MAX_LENGTH 20
 
-typedef int NumberDataType;
+typedef int DataType;
 
-typedef struct NumberStackNodeStruct {
-    NumberDataType data;
-    struct NumberStackNodeStruct *next;
+typedef struct StackNodeStruct {
+    DataType data;
+    struct StackNodeStruct *next;
 } NumberStackNode;
 
 typedef struct {
@@ -28,9 +28,13 @@ typedef struct {
     StackNode *top;
 } LinkStack;
 
-void InitStack(LinkStack *stack) { stack->top = NULL; }
+void InitStack(LinkStack *stack) {
+    stack->top = NULL;
+}
 
-void InitNumberStack(NumberLinkStack *stack) { stack->top = NULL; }
+void InitNumberStack(NumberLinkStack *stack) {
+    stack->top = NULL;
+}
 
 int ReadTop(LinkStack *stack, char *topElement) {
     if (stack->top == NULL) {
@@ -42,7 +46,7 @@ int ReadTop(LinkStack *stack, char *topElement) {
     return 1;
 }
 
-int ReadTopNumber(NumberLinkStack *stack, NumberDataType *topElement) {
+int ReadTopNumber(NumberLinkStack *stack, DataType *topElement) {
     if (stack->top == NULL) {
         return 0;
     }
@@ -80,7 +84,7 @@ int Pop(LinkStack *stack, char *x) {
     return 1;
 }
 
-int PopNumber(NumberLinkStack *stack, NumberDataType *x) {
+int PopNumber(NumberLinkStack *stack, DataType *x) {
     // 栈为空
     if (stack->top == NULL) {
         return 0;
@@ -173,9 +177,7 @@ int Infix2Suffix(char *infix, char *suffix) {
                     Push(stack, current);
                 } // 如果op的优先级低于或等于栈顶操作符的优先级，则依次弹出栈顶直到op的优先级高于栈顶操作符的优先级（或栈为空），再将op入栈
                 else {
-                    while (ReadTop(stack, topElement) &&
-                           GetOperatorLevel(current) <=
-                               GetOperatorLevel(*topElement)) {
+                    while (ReadTop(stack, topElement) && GetOperatorLevel(current) <= GetOperatorLevel(*topElement)) {
                         Pop(stack, topElement);
                         suffix[index] = *topElement;
                         index++;
@@ -233,8 +235,8 @@ float GetValue(char *suffix) {
         (NumberLinkStack *)malloc(sizeof(NumberLinkStack));
     InitNumberStack(numberStack);
 
-    NumberDataType *topNumber =
-        (NumberDataType *)malloc(sizeof(NumberDataType));
+    DataType *topNumber =
+        (DataType *)malloc(sizeof(DataType));
 
     for (int i = 0; i < strlen(suffix); i++) {
         if (suffix[i] == '\n') {

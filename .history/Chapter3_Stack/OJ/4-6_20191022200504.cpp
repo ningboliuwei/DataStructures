@@ -8,11 +8,11 @@
 
 #define EXP_MAX_LENGTH 20
 
-typedef int NumberDataType;
+typedef int DataType;
 
-typedef struct NumberStackNodeStruct {
-    NumberDataType data;
-    struct NumberStackNodeStruct *next;
+typedef struct StackNodeStruct {
+    DataType data;
+    struct StackNodeStruct *next;
 } NumberStackNode;
 
 typedef struct {
@@ -46,7 +46,7 @@ int ReadTop(LinkStack *stack, char *topElement) {
     return 1;
 }
 
-int ReadTopNumber(NumberLinkStack *stack, NumberDataType *topElement) {
+int ReadTopNumber(NumberLinkStack *stack, DataType *topElement) {
     if (stack->top == NULL) {
         return 0;
     }
@@ -57,21 +57,21 @@ int ReadTopNumber(NumberLinkStack *stack, NumberDataType *topElement) {
 }
 
 int Push(LinkStack *stack, char x) {
-    StackNode *node = (StackNode *) malloc(sizeof(StackNode));
+    StackNode *node = (StackNode *)malloc(sizeof(StackNode));
     node->data = x;
     node->next = stack->top;
     stack->top = node;
 }
 
 int PushNumber(NumberLinkStack *stack, char x) {
-    NumberStackNode *node = (NumberStackNode *) malloc(sizeof(NumberStackNode));
+    NumberStackNode *node = (NumberStackNode *)malloc(sizeof(NumberStackNode));
     node->data = x;
     node->next = stack->top;
     stack->top = node;
 }
 
 int Pop(LinkStack *stack, char *x) {
-// 栈为空
+    // 栈为空
     if (stack->top == NULL) {
         return 0;
     }
@@ -84,8 +84,8 @@ int Pop(LinkStack *stack, char *x) {
     return 1;
 }
 
-int PopNumber(NumberLinkStack *stack, NumberDataType *x) {
-// 栈为空
+int PopNumber(NumberLinkStack *stack, DataType *x) {
+    // 栈为空
     if (stack->top == NULL) {
         return 0;
     }
@@ -104,7 +104,6 @@ int IsEmptyStack(LinkStack *stack) {
     }
     return 0;
 }
-
 
 int GetOperatorLevel(char op) {
     if (op == '#') {
@@ -127,9 +126,9 @@ int GetOperatorLevel(char op) {
 }
 
 int Infix2Suffix(char *infix, char *suffix) {
-    LinkStack *stack = (LinkStack *) malloc(sizeof(LinkStack));
+    LinkStack *stack = (LinkStack *)malloc(sizeof(LinkStack));
     char index = 0;
-    char *topElement = (char *) malloc(sizeof(char));
+    char *topElement = (char *)malloc(sizeof(char));
 
     InitStack(stack);
 
@@ -149,12 +148,12 @@ int Infix2Suffix(char *infix, char *suffix) {
                 suffix[index] = ' ';
                 index++;
             }
-        }// 运算符
+        } // 运算符
         else {
             //如果op=='('，则直接入栈
             if (current == '(') {
                 Push(stack, current);
-            }// 如果 op==')'，则依次弹出栈顶直到弹出'('，但'('不输出到后缀表达式
+            } // 如果 op==')'，则依次弹出栈顶直到弹出'('，但'('不输出到后缀表达式
             else if (current == ')') {
                 do {
                     Pop(stack, topElement);
@@ -167,7 +166,7 @@ int Infix2Suffix(char *infix, char *suffix) {
                         index++;
                     }
                 } while (*topElement != '(');
-            }// 如果栈为空，则直接入栈
+            } // 如果栈为空，则直接入栈
             else if (IsEmptyStack(stack)) {
                 Push(stack, current);
             } else {
@@ -175,7 +174,7 @@ int Infix2Suffix(char *infix, char *suffix) {
                 // 如果op的优先级高于栈顶操作符的优先级，则入栈
                 if (GetOperatorLevel(current) > GetOperatorLevel(*topElement)) {
                     Push(stack, current);
-                }// 如果op的优先级低于或等于栈顶操作符的优先级，则依次弹出栈顶直到op的优先级高于栈顶操作符的优先级（或栈为空），再将op入栈
+                } // 如果op的优先级低于或等于栈顶操作符的优先级，则依次弹出栈顶直到op的优先级高于栈顶操作符的优先级（或栈为空），再将op入栈
                 else {
                     while (ReadTop(stack, topElement) && GetOperatorLevel(current) <= GetOperatorLevel(*topElement)) {
                         Pop(stack, topElement);
@@ -222,7 +221,6 @@ float Calculate(int x, int y, char op) {
     }
 }
 
-
 int ConvertToInt(char *str, int length) {
     int sum = 0;
     for (int i = 0; i < length; i++) {
@@ -232,10 +230,10 @@ int ConvertToInt(char *str, int length) {
 }
 
 float GetValue(char *suffix) {
-    NumberLinkStack *numberStack = (NumberLinkStack *) malloc(sizeof(NumberLinkStack));
+    NumberLinkStack *numberStack = (NumberLinkStack *)malloc(sizeof(NumberLinkStack));
     InitNumberStack(numberStack);
 
-    NumberDataType *topNumber = (NumberDataType *) malloc(sizeof(NumberDataType));
+    DataType *topNumber = (DataType *)malloc(sizeof(DataType));
 
     for (int i = 0; i < strlen(suffix); i++) {
         if (suffix[i] == '\n') {
@@ -265,9 +263,8 @@ float GetValue(char *suffix) {
     return *topNumber;
 }
 
-
 int main() {
-    char *expression = (char *) malloc(sizeof(char) * EXP_MAX_LENGTH);
+    char *expression = (char *)malloc(sizeof(char) * EXP_MAX_LENGTH);
     char result[EXP_MAX_LENGTH];
     float calculationResult = 0;
 
