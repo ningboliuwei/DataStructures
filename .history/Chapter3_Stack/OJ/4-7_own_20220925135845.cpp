@@ -90,6 +90,7 @@ int Packaging(int maxCapacity, int itemCount, int itemWeights[MAX_ITEM_COUNT], L
         if (totalWeight + weightToTry == maxCapacity) {
             Push(selectedItemWeightsStack, itemToTryIndex);
             totalWeight += weightToTry;
+            solutionFound = true;
             return 1;
         } else if (totalWeight + weightToTry > maxCapacity) {
             // 若已经尝试完了最后一个重量，则弹出现有栈顶，并从要弹出的栈顶的下一个开始尝试

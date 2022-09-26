@@ -97,8 +97,6 @@ main() {
                         ReadTop(expressionStack, stackTopOperator);
                         stackTopOperatorLevel = GetOperatorLevel(stackTopOperator);
                     }
-
-                    Push(expressionStack, currentChar);
                 }
             }
         }

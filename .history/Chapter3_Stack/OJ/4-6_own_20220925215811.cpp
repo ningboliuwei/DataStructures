@@ -72,11 +72,10 @@ main() {
     InitStack(expressionStack);
     DataType currentChar;
     while (scanf("%c", &currentChar) && currentChar != '#') {
-        // 如果是数字，直接输出
         if (currentChar == '0' || currentChar == '1' || currentChar == '2' || currentChar == '3' || currentChar == '4'
             || currentChar == '5' || currentChar == '6' || currentChar == '7' || currentChar == '8'
             || currentChar == '9') {
-            printf("%c ", currentChar);
+            printf("%c", currentChar);
         } else if (currentChar == '+' || currentChar == '-' || currentChar == '*' || currentChar == '/') {
             if (IsEmptyStack(expressionStack)) {
                 Push(expressionStack, currentChar);
@@ -86,30 +85,14 @@ main() {
                 ReadTop(expressionStack, stackTopOperator);
                 int stackTopOperatorLevel = GetOperatorLevel(stackTopOperator);
 
-                // 若当前输入的运算符的优先级 <= 栈顶运算符优先级，则将所有运算符进行出栈，直到栈顶元素优先级 >
-                // 当前输入的运算符优先级为止
                 if (currentOperatorLevel > stackTopOperatorLevel) {
                     Push(expressionStack, currentChar);
                 } else {
-                    while (currentOperatorLevel <= stackTopOperatorLevel && !IsEmptyStack(expressionStack)) {
-                        Pop(expressionStack, stackTopOperator);
-                        printf("%c ", stackTopOperator);
-                        ReadTop(expressionStack, stackTopOperator);
-                        stackTopOperatorLevel = GetOperatorLevel(stackTopOperator);
-                    }
-
-                    Push(expressionStack, currentChar);
+                    Pop(expressionStack, stackTopOperator);
+                    printf("%c", stackTopOperator);
                 }
             }
         }
     }
-    // 结束所有输入操作后，将所有剩下的运算符依次出栈
-    while (!IsEmptyStack(expressionStack)) {
-        char stackTopOperator;
-        Pop(expressionStack, stackTopOperator);
-        printf("%c ", stackTopOperator);
-    }
-
-    getchar();
     getchar();
 }

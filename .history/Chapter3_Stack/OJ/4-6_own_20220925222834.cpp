@@ -88,16 +88,12 @@ main() {
 
                 // 若当前输入的运算符的优先级 <= 栈顶运算符优先级，则将所有运算符进行出栈，直到栈顶元素优先级 >
                 // 当前输入的运算符优先级为止
-                if (currentOperatorLevel > stackTopOperatorLevel) {
-                    Push(expressionStack, currentChar);
+                if (currentOperatorLevel < stackTopOperatorLevel && !IsEmptyStack(expressionStack)) {
+                    Pop(expressionStack, stackTopOperator);
+                    printf("%c ", stackTopOperator);
+                    ReadTop(expressionStack, stackTopOperator);
+                    stackTopOperatorLevel = GetOperatorLevel(stackTopOperator);
                 } else {
-                    while (currentOperatorLevel <= stackTopOperatorLevel && !IsEmptyStack(expressionStack)) {
-                        Pop(expressionStack, stackTopOperator);
-                        printf("%c ", stackTopOperator);
-                        ReadTop(expressionStack, stackTopOperator);
-                        stackTopOperatorLevel = GetOperatorLevel(stackTopOperator);
-                    }
-
                     Push(expressionStack, currentChar);
                 }
             }
