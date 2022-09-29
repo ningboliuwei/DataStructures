@@ -9,7 +9,8 @@
     "regex": "cpp",
     "tuple": "cpp",
     "valarray": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "string_view": "cpp"
   },
   "C_Cpp.autocomplete": "Default",
   "[cpp]": {
