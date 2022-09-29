@@ -1,18 +1,11 @@
 //
 // Created by Liu Wei on 2018/10/11.
 // 问题 B: 【数据结构7-5】由中序和后序恢复二叉树
-// 测试数据1：
+// 测试数据：
 // 9
 // DBHEAIFCG
 // DHEBIFGCA
 //结果：ABDEHCFIG
-
-// 测试数据 2：
-// 10
-// DGBAECJHFI
-// GDBEJHIFCA
-// ABDGCEFHJI
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>

@@ -26,59 +26,66 @@ typedef struct BiNode {
 
 int create(BiTree &T, char pa[], int low_a, int high_a, char pb[], int low_b,
            int high_b) { //创建根结点，递归创建T->lchild,T->rchild
-                         //@@1
+    // @@1
+
     T = (BiNode *)malloc(sizeof(BiNode));
-    // 在后续序列中找到根
-    T->data = pb[high_b];
-    int rootIndex = 0;
-    for (int i = low_a; i <= high_a; i++) {
-        if (pa[i] == T->data) {
-            rootIndex = i;
+    int root_pos_a = low_a;
+    char root = pa[root_pos_a];
+    T->data = root;
+    int root_pos_b = -1;
+
+    for (int i = low_b; i <= high_b; i++) {
+        if (pb[i] == root) {
+            root_pos_b = i;
             break;
         }
     }
 
-    int leftChildTreeNodeCount = rootIndex - low_a;
-    if (leftChildTreeNodeCount > 0) {
-        T->lchild = (BiNode *)malloc(sizeof(BiNode));
-        create(T->lchild, pa, low_a, rootIndex - 1, pb, low_b, low_b + leftChildTreeNodeCount - 1);
-    } else {
+    int leftChildTreeNodeCount = root_pos_b - low_b;
+    int rightChildTreeNodeCount = high_b - root_pos_b;
+
+    // 开始左子树处的递归
+    if (leftChildTreeNodeCount == 0) {
         T->lchild = NULL;
-    }
-
-    int rightChildTreeNodeCount = high_a - rootIndex;
-    if (rightChildTreeNodeCount > 0) {
-        T->rchild = (BiNode *)malloc(sizeof(BiNode));
-        create(T->rchild, pa, rootIndex + 1, high_a, pb, high_b - rightChildTreeNodeCount, high_b - 1);
     } else {
+        create(T->lchild, pa, low_a + 1, low_a + leftChildTreeNodeCount, pb, low_b, root_pos_b - 1);
+    }
+    // 开始右子树处的递归
+    if (rightChildTreeNodeCount == 0) {
         T->rchild = NULL;
+    } else {
+        create(T->rchild, pa, low_a + leftChildTreeNodeCount + 1, high_a, pb, root_pos_b + 1, high_b);
     }
 
-    //@@1
+    return 1;
+    // @ @1
 }
 
 int CreateBiTree(BiTree &T, int n) {
-    //@@2                           //读入先序，中序序列，分别存入数组pa，pb
-    char pa[20];
-    char pb[20];
+    //@@2 //读入先序，中序序列，分别存入数组pa，pb
+    char pa[100];
+    char pb[100];
+
+    // 吞掉多余的\n
+    getchar();
 
     for (int i = 0; i < n; i++) {
         scanf("%c", &pa[i]);
     }
 
-    // 用于避免上一行结束的 \n 字符导致的问题
-    scanf("\n");
+    getchar();
 
     for (int i = 0; i < n; i++) {
         scanf("%c", &pb[i]);
     }
     //@@2
-
-    if (create(T, pa, 0, n - 1, pb, 0, n - 1)) //调用create函数创建二叉树T
+    //调用create函数创建二叉树T
+    if (create(T, pa, 0, n - 1, pb, 0, n - 1)) {
         return 1;
+    }
 }
 
-void Preorder(BiTree T) //后序遍历
+int Preorder(BiTree T) //后序遍历
 {
     //@@3
     if (T != NULL) {
@@ -90,14 +97,16 @@ void Preorder(BiTree T) //后序遍历
 }
 
 int main() {
-    BiTree T;
     int n;
+    BiTree T;
 
-    scanf("%d\n", &n); //二叉树结点个数
+    cin >> n; //二叉树结点个数
 
     CreateBiTree(T, n); //创建二叉链表
 
     Preorder(T); //后序遍历
 
+    getchar();
+    getchar();
     return 1;
 }
