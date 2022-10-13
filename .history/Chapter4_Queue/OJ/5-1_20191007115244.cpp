@@ -1,44 +1,44 @@
 //
 // Created by Liu Wei on 2018/10/8.
 // 问题 A: 【数据结构4-1】链队列基本操作P77
-#include<stdio.h>
-#include<stdlib.h>
-#include<iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
 
 using namespace std;
 typedef int dataType;
-typedef struct QNode {
+typedef struct QueueNode {
     dataType data;
-    struct QNode *next;
-} QNode;
+    struct QueueNode *next;
+} QueueNode;
 
 typedef struct qptr {
-    QNode *front; //队头指针
-    QNode *rear;  //队尾指针
+    QueueNode *front; //队头指针
+    QueueNode *rear;  //队尾指针
 } LinkQueue;
 
 int InitQueue(LinkQueue *&Q) {
-//@@1
+    //@@1
     Q = new LinkQueue;
     Q->front = NULL;
     Q->rear = NULL;
 
     return 1;
-//@@1
+    //@@1
 }
 
 int QueueEmpty(LinkQueue *Q) {
-//    @@2
+    //    @@2
     if (Q->front == NULL && Q->rear == NULL) {
         return 1;
     }
     return 0;
-//    @@2
+    //    @@2
 }
 
 int InQueue(LinkQueue *Q, dataType x) {
-//    @@3
-    QNode *newNode = new QNode;
+    //    @@3
+    QueueNode *newNode = new QueueNode;
     newNode->data = x;
     newNode->next = NULL;
 
@@ -51,16 +51,16 @@ int InQueue(LinkQueue *Q, dataType x) {
     }
 
     return 1;
-//    @@3
+    //    @@3
 }
 
 int OutQueue(LinkQueue *Q, dataType &x) {
-//@@4
+    //@@4
     if (QueueEmpty(Q)) {
         return 0;
     }
 
-    QNode *p = Q->front;
+    QueueNode *p = Q->front;
     x = Q->front->data;
     Q->front = Q->front->next;
     // 表示队列中只有一个元素
@@ -71,19 +71,20 @@ int OutQueue(LinkQueue *Q, dataType &x) {
     free(p);
 
     return 1;
-//@@4
+    //@@4
 }
 
 int main() {
     LinkQueue *Q;
-//    @@5
+    //    @@5
     int choice = -1;
     int x = 0;
     while (1) {
         printf("请选择： 1 创建新队列 2 入队 3 出队 0 结束\n");
         scanf("%d", &choice);
-        if (choice == 0) { return 0; }
-        else if (choice == 1) {
+        if (choice == 0) {
+            return 0;
+        } else if (choice == 1) {
             if (InitQueue(Q) == 1) {
                 printf("创建成功\n");
             };
@@ -101,5 +102,5 @@ int main() {
             }
         }
     }
-//    @@5
+    //    @@5
 }

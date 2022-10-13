@@ -9,14 +9,14 @@
 
 typedef int dataType;
 
-typedef struct QNode {
+typedef struct QueueNode {
     dataType data;
-    struct QNode *next;
-} QNode;
+    struct QueueNode *next;
+} QueueNode;
 
 typedef struct qptr {
-    QNode *front; //队头指针
-    QNode *rear;  //队尾指针
+    QueueNode *front; //队头指针
+    QueueNode *rear;  //队尾指针
 } LinkQueue;
 
 int InitQueue(LinkQueue *&Q) {
@@ -35,7 +35,7 @@ int QueueEmpty(LinkQueue *Q) {
 }
 
 int InQueue(LinkQueue *Q, dataType x) {
-    QNode *newNode = new QNode;
+    QueueNode *newNode = new QueueNode;
     newNode->data = x;
     newNode->next = NULL;
 
@@ -55,7 +55,7 @@ int OutQueue(LinkQueue *Q, dataType &x) {
         return 0;
     }
 
-    QNode *p = Q->front;
+    QueueNode *p = Q->front;
     x = Q->front->data;
     Q->front = Q->front->next;
     // 表示队列中只有一个元素
@@ -73,7 +73,7 @@ int QueueLength(LinkQueue *Q) {
         return 0;
     };
 
-    QNode *node = Q->front;
+    QueueNode *node = Q->front;
     int count = 0;
     while (node) {
         count++;
@@ -101,7 +101,7 @@ void ShowQueueElements(LinkQueue *Q) {
         return;
     };
 
-    QNode *node = Q->front;
+    QueueNode *node = Q->front;
     while (node) {
         printf("%d\n", node->data);
         node = node->next;
@@ -145,7 +145,7 @@ int main() {
             if (result == 1) {
                 printf("挂号成功请等候，您前面排队人数%d\n", QueueLength(queues[department]) - 1);
             }
-        }// 排队
+        } // 排队
         else if (choice == 2) {
             ShowDepartmentChooseMenu();
             scanf("%d", &department);
@@ -159,15 +159,13 @@ int main() {
                     printf("请%d病人到内科看病\n", registerNumber);
                 }
             }
-        }// 就诊
+        } // 就诊
         else if (choice == 3) {
             ShowDepartmentChooseMenu();
             scanf("%d", &department);
             ShowQueueInfo(queues[department]);
-        }// 查看排队
-        else {
-
-        }
+        } // 查看排队
+        else {}
         ShowMainMenu();
         scanf("%d", &choice);
     }

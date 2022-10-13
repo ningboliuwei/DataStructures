@@ -9,14 +9,14 @@
 #define QUEUE_COUNT 4
 
 typedef int dataType;
-typedef struct QNode {
+typedef struct QueueNode {
     dataType data;
-    struct QNode *next;
-} QNode;
+    struct QueueNode *next;
+} QueueNode;
 
 typedef struct qptr {
-    QNode *front; //队头指针
-    QNode *rear;  //队尾指针
+    QueueNode *front; //队头指针
+    QueueNode *rear;  //队尾指针
 } LinkQueue;
 
 int InitQueue(LinkQueue *&Q) {
@@ -42,7 +42,7 @@ int QueueEmpty(LinkQueue *Q) {
 
 int InQueue(LinkQueue *Q, dataType x) {
     //    @@3
-    QNode *newNode = (QNode *)malloc(sizeof(QNode));
+    QueueNode *newNode = (QueueNode *)malloc(sizeof(QueueNode));
     newNode->data = x;
     newNode->next = NULL;
 
@@ -64,7 +64,7 @@ int OutQueue(LinkQueue *Q, dataType &x) {
         return 0;
     }
 
-    QNode *p = Q->front;
+    QueueNode *p = Q->front;
     x = Q->front->data;
     Q->front = Q->front->next;
     // 表示队列中只有一个元素
@@ -83,7 +83,7 @@ int QueueLength(LinkQueue *Q) {
         return 0;
     };
 
-    QNode *node = Q->front;
+    QueueNode *node = Q->front;
     int count = 0;
     while (node) {
         count++;
@@ -111,7 +111,7 @@ void ShowQueueElements(LinkQueue *Q) {
         return;
     };
 
-    QNode *node = Q->front;
+    QueueNode *node = Q->front;
     while (node) {
         printf("%d\n", node->data);
         node = node->next;

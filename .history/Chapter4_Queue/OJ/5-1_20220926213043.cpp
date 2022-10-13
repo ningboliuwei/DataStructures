@@ -9,14 +9,14 @@
 
 using namespace std;
 typedef int dataType;
-typedef struct QNode {
+typedef struct QueueNode {
     dataType data;
-    struct QNode *next;
-} QNode;
+    struct QueueNode *next;
+} QueueNode;
 
 typedef struct qptr {
-    QNode *front; //队头指针
-    QNode *rear;  //队尾指针
+    QueueNode *front; //队头指针
+    QueueNode *rear;  //队尾指针
 } LinkQueue;
 
 int InitQueue(LinkQueue *&Q) {
@@ -31,14 +31,16 @@ int InitQueue(LinkQueue *&Q) {
 
 int QueueEmpty(LinkQueue *Q) {
     //    @@2
-    if (Q->front == NULL && Q->rear == NULL) { return 1; }
+    if (Q->front == NULL && Q->rear == NULL) {
+        return 1;
+    }
     return 0;
     //    @@2
 }
 
 int InQueue(LinkQueue *Q, dataType x) {
     //    @@3
-    QNode *newNode = new QNode;
+    QueueNode *newNode = new QueueNode;
     newNode->data = x;
     newNode->next = NULL;
 
@@ -56,13 +58,17 @@ int InQueue(LinkQueue *Q, dataType x) {
 
 int OutQueue(LinkQueue *Q, dataType &x) {
     //@@4
-    if (QueueEmpty(Q)) { return 0; }
+    if (QueueEmpty(Q)) {
+        return 0;
+    }
 
-    QNode *p = Q->front;
+    QueueNode *p = Q->front;
     x = Q->front->data;
     Q->front = Q->front->next;
     // 表示队列中只有一个元素
-    if (Q->rear == p) { Q->rear = NULL; }
+    if (Q->rear == p) {
+        Q->rear = NULL;
+    }
 
     free(p);
 
@@ -81,10 +87,14 @@ int main() {
         if (choice == 0) {
             return 0;
         } else if (choice == 1) {
-            if (InitQueue(Q) == 1) { printf("创建成功\n"); };
+            if (InitQueue(Q) == 1) {
+                printf("创建成功\n");
+            };
         } else if (choice == 2) {
             scanf("%d", &x);
-            if (InQueue(Q, x) == 1) { printf("入队成功\n"); }
+            if (InQueue(Q, x) == 1) {
+                printf("入队成功\n");
+            }
         } else if (choice == 3) {
             if (OutQueue(Q, x) == 1) {
                 printf("%d\n", x);

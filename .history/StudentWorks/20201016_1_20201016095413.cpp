@@ -3,24 +3,22 @@
 
 using namespace std;
 typedef int datatype;
-typedef struct QNode {
+typedef struct QueueNode {
     datatype data;
-    struct QNode *next;
-} QNode;
+    struct QueueNode *next;
+} QueueNode;
 
 typedef struct qptr {
-    QNode *front; //队头指针
-    QNode *rear;  //队尾指针
+    QueueNode *front; //队头指针
+    QueueNode *rear;  //队尾指针
 } LinkQueue;
 
 int InitQueue(LinkQueue *&Q) {
-
     Q->front = NULL;
     Q->rear = NULL;
     return 1;
 }
 int QueueEmpty(LinkQueue *Q) {
-
     if (Q->front == NULL) {
         return 0;
     }
@@ -28,9 +26,8 @@ int QueueEmpty(LinkQueue *Q) {
 }
 
 int InQueue(LinkQueue *Q, datatype x) {
-
-    QNode *p;
-    p = (QNode *)malloc(sizeof(QNode));
+    QueueNode *p;
+    p = (QueueNode *)malloc(sizeof(QueueNode));
     p->next = NULL;
     p->data = x;
     if (Q->front == NULL) {
@@ -45,7 +42,6 @@ int InQueue(LinkQueue *Q, datatype x) {
 }
 
 int OutQueue(LinkQueue *Q, datatype &x) {
-
     if (QueueEmpty(Q) == 1) {
         x = Q->front->data;
         Q->front = Q->front->next;
