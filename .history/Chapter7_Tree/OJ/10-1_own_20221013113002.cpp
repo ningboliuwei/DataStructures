@@ -1,7 +1,6 @@
 //
 // Created by Liu Wei on 2018/10/30.
 // 1641 问题 A: 【数据结构7-11】哈夫曼树
-// OJ PASSED
 // 测试数据
 // 输入：7 4 5 7 8 6 12 18
 // 输出：0 -1 4 -1 7
@@ -31,7 +30,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX_NODE_COUNT 100
+#define MAX_NODE_COUNT 10
+#define MAX_LENGTH 100
 // 线性表，用于保存所有的权值
 typedef struct {
     int data[MAX_NODE_COUNT];
@@ -45,7 +45,7 @@ typedef struct {
     int rightChild;
 
 } HTNode, *HuffmanTree;
-HTNode treeNodes[MAX_NODE_COUNT];
+HTNode treeNodes[MAX_LENGTH];
 
 // 创建线性表
 SeqList *CreateList() {
@@ -99,9 +99,9 @@ int LengthSeqList(SeqList *list) {
     return list->last + 1;
 }
 // 线性表查找
-int SearchListSeq(SeqList *list, int value) {
+int SearchListSeq(SeqList *list, int x) {
     for (int i = 0; i <= list->last; i++) {
-        if (list->data[i] == value) {
+        if (list->data[i] == x) {
             return i;
         }
     }
@@ -109,7 +109,7 @@ int SearchListSeq(SeqList *list, int value) {
 }
 
 void CreateHuffmanTree(HTNode treeNodes[], int &treeNodeCount) {
-    for (int i = 0; i < MAX_NODE_COUNT; i++) {
+    for (int i = 0; i < MAX_LENGTH; i++) {
         treeNodes[i].leftChild = -1;
         treeNodes[i].rightChild = -1;
         treeNodes[i].parent = -1;
@@ -124,69 +124,57 @@ void CreateHuffmanTree(HTNode treeNodes[], int &treeNodeCount) {
         int weight;
         scanf("%d", &weight);
         // 将所有的结点权值放入结点列表
-        treeNodes[i].weight = weight;
-        treeNodeCount++;
+        treeNodes[nodeCount].weight = weight;
     }
 
     // 在权值列表仍有至少 2 个结点的时候，不断找最小和次小权重的结点
-    while (treeNodeCount - LengthSeqList(usedNodeIndexList) >= 2) {
-        int startPos = 0;
-
-        for (startPos = 0; startPos < treeNodeCount; startPos++) {
-            // 注意：找不到才 break，说明没用过
-            if (SearchListSeq(usedNodeIndexList, startPos) == -1) {
-                break;
-            }
-        }
-
-        int mostMinWeight = treeNodes[startPos].weight;
-        int mostMinWeightNodeIndex = startPos;
+    while (LengthSeqList(usedNodeIndexList) < nodeCount - 1) {
+        int mostMinWeight = treeNodes[0].weight;
+        int mostMinWeightNodeIndex = 0;
         // 得到当前权值中最小的那个
-        for (int i = startPos; i < treeNodeCount; i++) {
+        for (int i = 1; i < nodeCount; i++) {
             // 当前的结点下标不在“用过”的下标列表中
-            if (SearchListSeq(usedNodeIndexList, i) == -1) {
+            if (SearchListSeq(usedNodeIndexList, i) != -1) {
                 if (treeNodes[i].weight < mostMinWeight) {
                     mostMinWeight = treeNodes[i].weight;
                     mostMinWeightNodeIndex = i;
                 }
             }
         }
-        // 将节点下标加入“用过的结点下标列表
+        // 将节点下标加入“用过的”列表
         InsListSeq(usedNodeIndexList, LengthSeqList(usedNodeIndexList), mostMinWeightNodeIndex);
 
         // 得到当前权值中次小的那个
-        for (startPos = 0; startPos < treeNodeCount; startPos++) {
-            if (SearchListSeq(usedNodeIndexList, startPos) == -1) {
-                break;
+        int secondMinWeight = treeNodes[0].weight;
+        int secondMinWeightIndex = 0;
+
+        for (int i = 1; i < LengthSeqList(weightList); i++) {
+            if (weightList->data[i] < secondMinWeight) {
+                secondMinWeight = weightList->data[i];
+                secondMinWeightIndex = i;
             }
         }
-
-        int secondMinWeight = treeNodes[startPos].weight;
-        int secondMinWeightIndex = startPos;
-
-        for (int i = startPos; i < treeNodeCount; i++) {
-            // 找不到是 ==-1！
-            if (SearchListSeq(usedNodeIndexList, i) == -1) {
-                if (treeNodes[i].weight < secondMinWeight) {
-                    secondMinWeight = treeNodes[i].weight;
-                    secondMinWeightIndex = i;
-                }
-            }
-        }
-
-        InsListSeq(usedNodeIndexList, LengthSeqList(usedNodeIndexList), secondMinWeightIndex);
+        // 从权值列表中删除这个最小的权值
+        DelSeqList(weightList, secondMinWeightIndex + 1);
+        // 将当前权重次小的结点放入结点列表
+        treeNodes[treeNodeCount].weight = secondMinWeight;
+        // 记录下权重次小结点的位置
+        int pos2 = treeNodeCount;
+        treeNodeCount++;
         // 得到两个结点权重之和
         treeNodes[treeNodeCount].weight = mostMinWeight + secondMinWeight;
         // 左孩子为权重最小结点
-        treeNodes[treeNodeCount].leftChild = mostMinWeightNodeIndex;
+        treeNodes[treeNodeCount].leftChild = pos1;
         // 右孩子为权重次小结点
-        treeNodes[treeNodeCount].rightChild = secondMinWeightIndex;
+        treeNodes[treeNodeCount].rightChild = pos2;
         // 权重最小结点和次小结点的父节点为当前结点
-        treeNodes[mostMinWeightNodeIndex].parent = treeNodeCount;
-        treeNodes[secondMinWeightIndex].parent = treeNodeCount;
-        // 总结点数 +1
-        treeNodeCount++;
+        treeNodes[pos1].parent = treeNodeCount;
+        treeNodes[pos2].parent = treeNodeCount;
+        // 将两个结点的权重之和加到权重列表中
+        InsList_Seq(weightList, weightList->last + 1, mostMinWeight + secondMinWeight);
     }
+    // 最后两个结点权重加起来之后，结点个数也要+1
+    treeNodeCount++;
 }
 
 void ShowHuffmanTree(HTNode treeNodes[], int treeNodeCount) {

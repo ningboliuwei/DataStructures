@@ -1,7 +1,6 @@
 //
 // Created by Liu Wei on 2018/10/30.
 // 1641 问题 A: 【数据结构7-11】哈夫曼树
-// OJ PASSED
 // 测试数据
 // 输入：7 4 5 7 8 6 12 18
 // 输出：0 -1 4 -1 7
@@ -31,7 +30,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX_NODE_COUNT 100
+#define MAX_NODE_COUNT 10
+#define MAX_LENGTH 100
 // 线性表，用于保存所有的权值
 typedef struct {
     int data[MAX_NODE_COUNT];
@@ -45,7 +45,7 @@ typedef struct {
     int rightChild;
 
 } HTNode, *HuffmanTree;
-HTNode treeNodes[MAX_NODE_COUNT];
+HTNode treeNodes[MAX_LENGTH];
 
 // 创建线性表
 SeqList *CreateList() {
@@ -109,7 +109,7 @@ int SearchListSeq(SeqList *list, int value) {
 }
 
 void CreateHuffmanTree(HTNode treeNodes[], int &treeNodeCount) {
-    for (int i = 0; i < MAX_NODE_COUNT; i++) {
+    for (int i = 0; i < MAX_LENGTH; i++) {
         treeNodes[i].leftChild = -1;
         treeNodes[i].rightChild = -1;
         treeNodes[i].parent = -1;
