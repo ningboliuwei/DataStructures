@@ -44,8 +44,6 @@ typedef struct {
     int rightChild;
 
 } HTNode, *HuffmanTree;
-HTNode HT[];
-
 // 创建线性表
 SeqList *CreatList() {
     SeqList *list = new SeqList;
@@ -93,13 +91,8 @@ int DelSeqList(SeqList *list, int i) {
 
     return 1;
 }
-// 线性表长度
-int LengthSeqList(SeqList *list) {
-    return list->last + 1;
-}
 
 void CreateHuffmanTree() {
-    int x = HT[1].leftChild;
     int nodeCount = 0;
     // 创建一个用于放置所有权值的线性表
     SeqList *weightList;
@@ -113,31 +106,10 @@ void CreateHuffmanTree() {
         InsList_Seq(weightList, weightList->last + 1, weight);
     }
 
-    while (LengthSeqList(weightList) > 0) {
-        int mostMinWeight = weightList->data[0];
-        int mostMinWeightIndex = 0;
-        // 得到当前权值中最小的那个
-        for (int i = 1; i < LengthSeqList(weightList); i++) {
-            if (weightList->data[i] < mostMinWeight) {
-                mostMinWeight = weightList->data[i];
-                mostMinWeightIndex = i;
-            }
-        }
-        // 从权值列表中删除这个最小的权值
-        DelSeqList(weightList, mostMinWeightIndex);
-        // 得到当前权值中次小的那个
-        int secondMinWeight = weightList->data[0];
-        int secondMinWeightIndex = 0;
+    int mostMinWeight = -1;
+    int secondMinWeight = -1;
 
-        for (int i = 1; i < LengthSeqList(weightList); i++) {
-            if (weightList->data[i] < secondMinWeight) {
-                secondMinWeight = weightList->data[i];
-                secondMinWeightIndex = i;
-            }
-            // 从权值列表中删除这个最小的权值
-            DelSeqList(weightList, secondMinWeightIndex);
-        }
-    }
+    for (int i = 0; i < weightList->last + 1; i++) {}
 }
 
 int main() {

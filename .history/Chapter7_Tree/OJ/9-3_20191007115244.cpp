@@ -21,7 +21,7 @@ int CreateBiTree(BiTree &T, char *elements, int &index) {
     if (elements[index] == '*') {
         T = NULL;
     } else {
-        T = (BiNode *)malloc(sizeof(BiNode));
+        T = (BiNode *) malloc(sizeof(BiNode));
         T->data = elements[index];
         CreateBiTree(T->lchild, elements, ++index);
         CreateBiTree(T->rchild, elements, ++index);
@@ -63,3 +63,5 @@ int main() {
 
     MiddleOrderTraverse(T);
 }
+
+

@@ -44,8 +44,6 @@ typedef struct {
     int rightChild;
 
 } HTNode, *HuffmanTree;
-HTNode HT[];
-
 // 创建线性表
 SeqList *CreatList() {
     SeqList *list = new SeqList;
@@ -99,7 +97,6 @@ int LengthSeqList(SeqList *list) {
 }
 
 void CreateHuffmanTree() {
-    int x = HT[1].leftChild;
     int nodeCount = 0;
     // 创建一个用于放置所有权值的线性表
     SeqList *weightList;

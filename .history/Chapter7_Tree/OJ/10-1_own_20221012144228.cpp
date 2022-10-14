@@ -44,8 +44,6 @@ typedef struct {
     int rightChild;
 
 } HTNode, *HuffmanTree;
-HTNode HT[];
-
 // 创建线性表
 SeqList *CreatList() {
     SeqList *list = new SeqList;
@@ -99,7 +97,6 @@ int LengthSeqList(SeqList *list) {
 }
 
 void CreateHuffmanTree() {
-    int x = HT[1].leftChild;
     int nodeCount = 0;
     // 创建一个用于放置所有权值的线性表
     SeqList *weightList;
@@ -131,11 +128,10 @@ void CreateHuffmanTree() {
 
         for (int i = 1; i < LengthSeqList(weightList); i++) {
             if (weightList->data[i] < secondMinWeight) {
-                secondMinWeight = weightList->data[i];
-                secondMinWeightIndex = i;
+                secondMinWeightIndex = weightList->data[i];
             }
             // 从权值列表中删除这个最小的权值
-            DelSeqList(weightList, secondMinWeightIndex);
+            DelSeqList(weightList, i);
         }
     }
 }

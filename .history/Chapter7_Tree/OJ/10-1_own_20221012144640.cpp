@@ -99,7 +99,6 @@ int LengthSeqList(SeqList *list) {
 }
 
 void CreateHuffmanTree() {
-    int x = HT[1].leftChild;
     int nodeCount = 0;
     // 创建一个用于放置所有权值的线性表
     SeqList *weightList;
