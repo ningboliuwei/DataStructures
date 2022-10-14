@@ -75,6 +75,25 @@ int InsListSeq(SeqList *&list, int i, int x) {
 
     return 1;
 }
+// 线性表删除
+int DelSeqList(SeqList *&list, int i) {
+    int index = 0;
+
+    if (list->last == -1) {
+        return 0;
+    }
+    if (i < 1 || i > list->last + 2) {
+        return 0;
+    }
+
+    for (index = i - 1; index < list->last; index++) {
+        list->data[index] = list->data[index + 1];
+    }
+
+    list->last--;
+
+    return 1;
+}
 // 线性表长度
 int LengthSeqList(SeqList *list) {
     return list->last + 1;

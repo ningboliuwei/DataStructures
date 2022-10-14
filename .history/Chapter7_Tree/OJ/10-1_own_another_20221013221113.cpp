@@ -47,48 +47,6 @@ typedef struct {
 } HTNode, *HuffmanTree;
 HTNode treeNodes[MAX_NODE_COUNT];
 
-// 创建线性表
-SeqList *CreateList() {
-    SeqList *list = new SeqList;
-    list->last = -1;
-
-    return list;
-}
-// 线性表插入
-int InsListSeq(SeqList *&list, int i, int x) {
-    int index = 0;
-
-    if (list->last == MAX_NODE_COUNT - 1) {
-        return 0;
-    }
-
-    if (i < 0 || i > list->last + 1) {
-        return 0;
-    }
-
-    for (index = list->last + 1; index >= i; index--) {
-        list->data[index] = list->data[index - 1];
-    }
-
-    list->data[i] = x;
-    list->last++;
-
-    return 1;
-}
-// 线性表长度
-int LengthSeqList(SeqList *list) {
-    return list->last + 1;
-}
-// 线性表查找
-int SearchListSeq(SeqList *list, int value) {
-    for (int i = 0; i <= list->last; i++) {
-        if (list->data[i] == value) {
-            return i;
-        }
-    }
-    return -1;
-}
-
 void CreateHuffmanTree(HTNode treeNodes[], int &treeNodeCount) {
     for (int i = 0; i < MAX_NODE_COUNT; i++) {
         treeNodes[i].leftChild = -1;
