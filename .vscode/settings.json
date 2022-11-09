@@ -32,7 +32,8 @@
     "limits": "cpp",
     "locale": "cpp",
     "memory": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "future": "cpp"
   },
   "C_Cpp.autocomplete": "Default",
   "[cpp]": {
