@@ -37,7 +37,7 @@ typedef char VertexType; //每个顶点数据类型为字符型
 
 typedef struct //邻接矩阵结构体
 {
-    VertexType vexs[MAX_VERTEX_COUNT]; //存放顶点元素的一维数组
+    VertexType vexs[MAX_VERTEX_COUNT];             //存放顶点元素的一维数组
     int edges[MAX_VERTEX_COUNT][MAX_VERTEX_COUNT]; //邻接矩阵二维数组
     int n; // 顶点数                                         //图的顶点数和边数
     int e; // 边数
@@ -46,7 +46,7 @@ typedef struct //邻接矩阵结构体
 typedef struct //辅助数组结构体(候选最短边)
 {
     VertexType adjvex; //候选最短边的邻接点
-    int minWeight;     //候选最短边的权值
+    int weight;        //候选最短边的权值
 } ShortEdge;
 
 int LocateVex(MGraph *G,
@@ -126,7 +126,6 @@ void PrintGraph(MGraph G) {
         printf("\t%c", G.vexs[i]);
 
         for (j = 0; j < G.n; j++) {
-
             if (G.edges[i][j] == MAX_INTEGER)
                 printf("\t∞");
             else

@@ -37,7 +37,7 @@ typedef char VertexType; //每个顶点数据类型为字符型
 
 typedef struct //邻接矩阵结构体
 {
-    VertexType vexs[MAX_VERTEX_COUNT]; //存放顶点元素的一维数组
+    VertexType vexs[MAX_VERTEX_COUNT];             //存放顶点元素的一维数组
     int edges[MAX_VERTEX_COUNT][MAX_VERTEX_COUNT]; //邻接矩阵二维数组
     int n; // 顶点数                                         //图的顶点数和边数
     int e; // 边数
@@ -46,7 +46,7 @@ typedef struct //邻接矩阵结构体
 typedef struct //辅助数组结构体(候选最短边)
 {
     VertexType adjvex; //候选最短边的邻接点
-    int minWeight;     //候选最短边的权值
+    int weight;        //候选最短边的权值
 } ShortEdge;
 
 int LocateVex(MGraph *G,
@@ -126,7 +126,6 @@ void PrintGraph(MGraph G) {
         printf("\t%c", G.vexs[i]);
 
         for (j = 0; j < G.n; j++) {
-
             if (G.edges[i][j] == MAX_INTEGER)
                 printf("\t∞");
             else
@@ -144,8 +143,8 @@ int GetMinimalWeightVertex(MGraph *G, ShortEdge *shortedge) {
 
     min = MAX_INTEGER;
     for (i = 1; i < G->n; i++) {
-        if (min > shortedge[i].minWeight && shortedge[i].minWeight != 0) {
-            min = shortedge[i].minWeight;
+        if (min > shortedge[i].weight && shortedge[i].weight != 0) {
+            min = shortedge[i].weight;
             loc = i;
         }
     }
@@ -164,10 +163,10 @@ void MiniSpanTree_Prim(MGraph *G, VertexType start) {
 
     for (i = 0; i < G->n; i++) {
         shortedge[i].adjvex = start; // 候选最短边临界点等于起点
-        shortedge[i].minWeight = G->edges[k][i];
+        shortedge[i].weight = G->edges[k][i];
     }
 
-    shortedge[k].minWeight = 0; // minWeight为0表示该顶点属于U集合
+    shortedge[k].weight = 0; // minWeight为0表示该顶点属于U集合
 
     // 2.处理后续结点
     for (i = 0; i < G->n - 1; i++) //对集合U，去找最短路径的顶点
@@ -175,17 +174,14 @@ void MiniSpanTree_Prim(MGraph *G, VertexType start) {
         k = GetMinimalWeightVertex(G, shortedge); //找最短路径的顶点
 
         printf("%c->%c,%d\n", shortedge[k].adjvex, G->vexs[k],
-               shortedge[k].minWeight); //输出找到的最短路径顶，及路径权值
-        shortedge[k].minWeight = 0; //将找到的最短路径顶点加入集合U中
+               shortedge[k].weight); //输出找到的最短路径顶，及路径权值
+        shortedge[k].weight = 0;     //将找到的最短路径顶点加入集合U中
 
-        for (j = 0; j < G->n;
-             j++) // U中加入了新节点，可能出现新的最短路径，故更新shortedge数组
+        for (j = 0; j < G->n; j++) // U中加入了新节点，可能出现新的最短路径，故更新shortedge数组
         {
-            if (G->edges[k][j] <
-                shortedge[j]
-                    .minWeight) //有更短路径出现时，将其替换进shortedge数组
+            if (G->edges[k][j] < shortedge[j].weight) //有更短路径出现时，将其替换进shortedge数组
             {
-                shortedge[j].minWeight = G->edges[k][j];
+                shortedge[j].weight = G->edges[k][j];
                 shortedge[j].adjvex = G->vexs[k];
             }
         }
