@@ -70,9 +70,7 @@ void MiniSpanTree_PRIM(MGraph G, int n, int v) {
             }
         }
         // 输出最小边（先选出从 U 到 U-V 中权值最小的那个边，k （从下标 0 遍历到 下标 n-1，k 是 V-U
-        // 中的那一端）就是终点的下标，closest[j] 就是 U 中离第 j 个顶点距离最近的那个点，closest[k] 就是 U 中离第 k
-        // 个顶点距离最近的那个点的下标（思想就是每加入一个新的顶点，先看看这个顶点到各个其他顶点的距离会不会比之前的其他所有点有更近的边，换句话说就是保证
-        // closest 和 lowcost 这两个数组中保存的都是 U 到每个 V-U 中所有点距离最短的那个点（和边））
+        // 中的那一端）就是终点的下标，closest[k] 就是
         printf("%d %d %d\n", closest[k] + 1, k + 1, min);
         // 设为 0，表示这个点在集合 U 中了
         lowcost[k] = 0;
