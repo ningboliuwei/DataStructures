@@ -139,9 +139,9 @@ void CreateGraph(MGraph *g) {
 int main() {
     MGraph *g = (MGraph *)malloc(sizeof(MGraph));
 
-    // CreateGraph(g);
-    // printf("最小生成树\n");
-    // MiniSpanTree_PRIM(*g, g->n, 0);
+    CreateGraph(g);
+    printf("最小生成树\n");
+    MiniSpanTree_PRIM(*g, g->n, 0);
 
     getchar();
     getchar();

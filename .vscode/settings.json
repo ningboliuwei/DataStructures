@@ -34,7 +34,8 @@
     "memory": "cpp",
     "vector": "cpp",
     "future": "cpp",
-    "cmath": "cpp"
+    "cmath": "cpp",
+    "filesystem": "cpp"
   },
   "C_Cpp.autocomplete": "Default",
   "[cpp]": {
