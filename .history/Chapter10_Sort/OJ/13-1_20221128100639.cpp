@@ -1,8 +1,6 @@
 //
 // Created by 慰 on 2018/12/13.
 // 问题 A: 【数据结构10-1】直接插入排序
-// ID: 1656
-// OJ PASSED
 // 输入数据：
 // 7
 // 49 38 65 97 76 13 27
@@ -25,7 +23,6 @@ void ShowArray(int array[], int length) {
     for (int i = 1; i <= length; i++) {
         printf("%d ", array[i]);
     }
-    printf("\n");
 }
 
 void InsertSort(int array[], int length) {
@@ -39,9 +36,8 @@ void InsertSort(int array[], int length) {
             int pos = i - 1;
 
             while (array[0] < array[pos]) {
-                // 只要当前需要排序的元素比当前元素小，则把当前元素往后移动一个（直到找到插入位置，有点像当前元素去找应该《挤进去》的位置）
+                // 只要关键字比当前元素小，则把当前元素往后移动一个（直到找到插入位置，有点像当前元素去找应该《挤进去》的位置）
                 array[pos + 1] = array[pos];
-                // 当前要和当前需要排序的元素
                 pos--;
             }
             array[pos + 1] = array[0];

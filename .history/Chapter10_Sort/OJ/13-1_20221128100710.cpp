@@ -1,8 +1,6 @@
 //
 // Created by 慰 on 2018/12/13.
 // 问题 A: 【数据结构10-1】直接插入排序
-// ID: 1656
-// OJ PASSED
 // 输入数据：
 // 7
 // 49 38 65 97 76 13 27
@@ -25,7 +23,6 @@ void ShowArray(int array[], int length) {
     for (int i = 1; i <= length; i++) {
         printf("%d ", array[i]);
     }
-    printf("\n");
 }
 
 void InsertSort(int array[], int length) {
