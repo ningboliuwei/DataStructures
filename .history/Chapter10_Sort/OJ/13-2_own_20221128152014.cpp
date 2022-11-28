@@ -46,7 +46,7 @@ void BiInsertSort(int array[], int length) {
             }
         }
         // high 最终停留在刚刚好比 array[0] 小一个的位置上
-        // 从这个位置的后一个位置开始到有序序列最后一个所有的元素往后移动一个（注意要倒着来）
+        // 从这个位置的后一个位置开始到有序序列最后一个所有的元素往后移动一个
         for (int j = i - 1; j >= high + 1; --j) {
             array[j + 1] = array[j];
         }

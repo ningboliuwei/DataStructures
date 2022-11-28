@@ -1,3 +1,0 @@
-"C:\Users\Liu Wei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.126\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\2-5cpp.dir/objects.a
-C:\mingw\mingw64\bin\ar.exe cr CMakeFiles\2-5cpp.dir/objects.a @CMakeFiles\2-5cpp.dir\objects1.rsp
-C:\mingw\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\2-5cpp.dir/objects.a -Wl,--no-whole-archive  -o 2-5cpp.exe -Wl,--out-implib,lib2-5cpp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\2-5cpp.dir\linklibs.rsp

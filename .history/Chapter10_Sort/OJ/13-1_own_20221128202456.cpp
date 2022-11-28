@@ -33,7 +33,7 @@ void InsertSort(int array[], int length) {
     for (int i = 2; i <= length; i++) {
         // 若当前需要进行排序的这个元素比有序序列中最后一个元素（也就应该是最大的元素要小），说明有必要进行排序
         if (array[i] < array[i - 1]) {
-            // 先把当前要排序的元素放入监视哨中
+            // 先把当前要排序的元素放入见监视哨中
             array[0] = array[i];
             // 有序序列中的最后一个元素（往前一个个看当前要排序的元素插入位置在哪里）
             int pos = i - 1;

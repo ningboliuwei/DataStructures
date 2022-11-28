@@ -1,11 +1,10 @@
 //
 // Created by 慰 on 2018/12/13.
 // 问题 B: 【数据结构10-2】二分插入排序
-// ID: 1657
-// OJ PASSED
+// ID: 1658
 // 输入数据：
-// 8
-// 30 13 70 85 39 42 6 20
+// 10
+// 49 38 65 97 76 13 27 48 55 4
 
 #include <stdio.h>
 #include <math.h>
@@ -27,7 +26,7 @@ void ShowArray(int array[], int length) {
     printf("\n");
 }
 
-void BiInsertSort(int array[], int length) {
+void ShellSort(int array[], int length) {
     // 第一个（array[1]）默认已经是属于有序序列了，从第2个（array[2]）开始排序）
 
     for (int i = 2; i <= length; i++) {
@@ -63,7 +62,7 @@ int main() {
 
     scanf("%d\n", &count);
     InputArray(array, count);
-    BiInsertSort(array, count);
+    ShellSort(array, count);
 
     getchar();
     getchar();

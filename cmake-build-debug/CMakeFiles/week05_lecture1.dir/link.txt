@@ -1,3 +1,0 @@
-"C:\Users\Liu Wei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.126\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\week05_lecture1.dir/objects.a
-C:\mingw\mingw64\bin\ar.exe cr CMakeFiles\week05_lecture1.dir/objects.a @CMakeFiles\week05_lecture1.dir\objects1.rsp
-C:\mingw\mingw64\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\week05_lecture1.dir/objects.a -Wl,--no-whole-archive  -o week05_lecture1.exe -Wl,--out-implib,libweek05_lecture1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\week05_lecture1.dir\linklibs.rsp

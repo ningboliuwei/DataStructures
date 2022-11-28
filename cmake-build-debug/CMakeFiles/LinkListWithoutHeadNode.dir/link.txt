@@ -1,3 +1,0 @@
-"C:\Users\Liu Wei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.126\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\LinkListWithoutHeadNode.dir/objects.a
-C:\mingw\mingw64\bin\ar.exe cr CMakeFiles\LinkListWithoutHeadNode.dir/objects.a @CMakeFiles\LinkListWithoutHeadNode.dir\objects1.rsp
-C:\mingw\mingw64\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\LinkListWithoutHeadNode.dir/objects.a -Wl,--no-whole-archive  -o LinkListWithoutHeadNode.exe -Wl,--out-implib,libLinkListWithoutHeadNode.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\LinkListWithoutHeadNode.dir\linklibs.rsp

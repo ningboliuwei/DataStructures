@@ -31,21 +31,6 @@ void ShowArray(int array[], int length) {
 void InsertSort(int array[], int length) {
     // 第一个（array[1]）默认已经是属于有序序列了，从第2个（array[2]）开始排序）
     for (int i = 2; i <= length; i++) {
-        // 若当前需要进行排序的这个元素比有序序列中最后一个元素（也就应该是最大的元素要小），说明有必要进行排序
-        if (array[i] < array[i - 1]) {
-            // 先把当前要排序的元素放入监视哨中
-            array[0] = array[i];
-            // 有序序列中的最后一个元素（往前一个个看当前要排序的元素插入位置在哪里）
-            int pos = i - 1;
-
-            while (array[0] < array[pos]) {
-                // 只要当前需要排序的元素比当前元素小，则把当前元素往后移动一个（直到找到插入位置，有点像当前元素去找应该《挤进去》的位置）
-                array[pos + 1] = array[pos];
-                // 当前要和当前需要排序的元素
-                pos--;
-            }
-            array[pos + 1] = array[0];
-        }
         ShowArray(array, length);
     }
 }
