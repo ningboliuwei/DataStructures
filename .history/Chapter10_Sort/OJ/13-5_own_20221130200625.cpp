@@ -1,13 +1,10 @@
 //
 // Created by 慰 on 2018/12/13.
-// 问题 B: 【数据结构10-4】改进的冒泡排序
-// ID: 1659
-// OJ PASSED
+// 问题 E: 【数据结构10-5】快速排序
+// ID: 1670
 // 输入数据：
-// 6
-// 3 45 82 36 100 12
-// 11
-// 40 24 30 13 39 19 15 34 27 28 1
+// 8
+// 49 38 65 97 76 13 27 50
 
 #include <stdio.h>
 #include <math.h>
@@ -29,10 +26,10 @@ void ShowArray(int array[], int length) {
 }
 
 void BubbleSort(int array[], int length) {
-    // 是否输出过结果（针对于一次都没有交换导致没有任何输出的情况）
-    bool resultOutput = false;
+    int totalSwapCount = 0;
 
     for (int i = 0; i < length; i++) {
+        // 本趟排序交换的次数，若某趟没交换过，则直接退出 for 循环
         int swapCount = 0;
 
         for (int j = 1; j <= length - i - 1; j++) {
@@ -43,17 +40,16 @@ void BubbleSort(int array[], int length) {
                 swapCount++;
             }
         }
+        totalSwapCount += swapCount;
 
-        // 如果本趟排序没有任何交换操作，则说明已经完全排好序，不需要再进行接下来的比较
         if (swapCount == 0) {
             break;
         }
 
         ShowArray(array, length);
-        resultOutput = true;
     }
     // 为了通过 OJ  [1 2 3 4 5 6 7] 测试数据的补丁（至少输出一次）
-    if (resultOutput == false) {
+    if (totalSwapCount == 0) {
         ShowArray(array, length);
     }
 }

@@ -33,6 +33,7 @@ void BubbleSort(int array[], int length) {
     bool resultOutput = false;
 
     for (int i = 0; i < length; i++) {
+        // 本趟排序交换的次数，若某趟没交换过，则直接退出 for 循环
         int swapCount = 0;
 
         for (int j = 1; j <= length - i - 1; j++) {
@@ -43,12 +44,6 @@ void BubbleSort(int array[], int length) {
                 swapCount++;
             }
         }
-
-        // 如果本趟排序没有任何交换操作，则说明已经完全排好序，不需要再进行接下来的比较
-        if (swapCount == 0) {
-            break;
-        }
-
         ShowArray(array, length);
         resultOutput = true;
     }

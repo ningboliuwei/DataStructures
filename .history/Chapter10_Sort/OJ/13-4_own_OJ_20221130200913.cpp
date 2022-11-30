@@ -43,12 +43,6 @@ void BubbleSort(int array[], int length) {
                 swapCount++;
             }
         }
-
-        // 如果本趟排序没有任何交换操作，则说明已经完全排好序，不需要再进行接下来的比较
-        if (swapCount == 0) {
-            break;
-        }
-
         ShowArray(array, length);
         resultOutput = true;
     }
