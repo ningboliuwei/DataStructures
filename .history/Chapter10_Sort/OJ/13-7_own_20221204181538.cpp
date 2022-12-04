@@ -15,7 +15,6 @@
 // 97 38 27 49 76 65 49
 // 8
 // 49 38 65 97 76 13 27 49
-// 本版本适用于 PPT 上的小根堆
 
 #include <stdio.h>
 #include <math.h>
@@ -78,6 +77,7 @@ void HeapSort(int array[], int length) {
         array[1] = array[length - i + 1];
         // 因为每次只是输出第一个（其他的还是满足堆的要求），所以符合 HeapAdjust 的前提，不需要跟建堆一样从 n/2 倒数到 1
         HeapAdjust(array, 1, length - i);
+        ShowArray(array, length);
     }
 }
 

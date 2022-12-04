@@ -15,7 +15,6 @@
 // 97 38 27 49 76 65 49
 // 8
 // 49 38 65 97 76 13 27 49
-// 本版本适用于 PPT 上的小根堆
 
 #include <stdio.h>
 #include <math.h>
@@ -63,7 +62,7 @@ void HeapAdjust(int array[], int start, int end) {
     }
 }
 
-void CreateHeap(int array[], int length) {
+int CreateHeap(int array[], int length) {
     for (int i = length / 2; i >= 1; i--) {
         HeapAdjust(array, i, length);
     }
