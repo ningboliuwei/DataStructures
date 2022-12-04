@@ -35,7 +35,10 @@
     "vector": "cpp",
     "future": "cpp",
     "cmath": "cpp",
-    "filesystem": "cpp"
+    "filesystem": "cpp",
+    "map": "cpp",
+    "set": "cpp",
+    "unordered_map": "cpp"
   },
   "C_Cpp.autocomplete": "Default",
   "[cpp]": {
