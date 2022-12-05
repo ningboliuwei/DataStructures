@@ -51,6 +51,10 @@ void ShowArray(int array[], int length) {
 void HeapAdjust(int array[], int start, int end) {
     int p = start;
 
+    if (end == start) {
+        return;
+    }
+
     while (p * 2 <= end && (array[p] < array[p * 2] || array[p] < array[p * 2 + 1])) {
         int temp = 0;
         // p*2+1>end 意为没有右孩子（但左孩子一定有）

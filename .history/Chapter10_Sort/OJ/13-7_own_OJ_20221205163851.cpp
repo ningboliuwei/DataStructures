@@ -51,7 +51,11 @@ void ShowArray(int array[], int length) {
 void HeapAdjust(int array[], int start, int end) {
     int p = start;
 
-    while (p * 2 <= end && (array[p] < array[p * 2] || array[p] < array[p * 2 + 1])) {
+    if (end == start) {
+        return;
+    }
+
+    while (p <= end && (array[p] < array[p * 2] || array[p] < array[p * 2 + 1])) {
         int temp = 0;
         // p*2+1>end 意为没有右孩子（但左孩子一定有）
         // 此处 <= 目的是：如果左右孩子相同（但比根节点小），则优先和左孩子交换，这样能和草稿纸上（包括 PPT
