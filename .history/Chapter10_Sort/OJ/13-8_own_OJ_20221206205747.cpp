@@ -66,7 +66,7 @@ int main() {
     int array1[6] = {6, 7, 8, 9, 10, 11};
     int array2[5] = {1, 2, 3, 4, 5};
 
-    MergeArray(array1, array2, 6, 5);
+    MergeArray(array1, array2, 5, 6);
 
     getchar();
     getchar();

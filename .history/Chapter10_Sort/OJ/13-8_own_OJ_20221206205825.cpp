@@ -43,6 +43,8 @@ void MergeArray(int array1[], int array2[], int length1, int length2) {
         pos3++;
     }
 
+    pos3--;
+
     while (pos1 < length1) {
         array3[pos3] = array1[pos1];
         pos1++;
@@ -66,7 +68,7 @@ int main() {
     int array1[6] = {6, 7, 8, 9, 10, 11};
     int array2[5] = {1, 2, 3, 4, 5};
 
-    MergeArray(array1, array2, 6, 5);
+    MergeArray(array1, array2, 5, 6);
 
     getchar();
     getchar();
