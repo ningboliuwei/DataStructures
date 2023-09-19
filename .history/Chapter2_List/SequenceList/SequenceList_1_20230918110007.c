@@ -13,9 +13,10 @@ typedef struct {
 } SeqList;
 
 SeqList *CreateList_Seq() {
-    SeqList *list = (SeqList *)malloc(sizeof(SeqList));
-    // 空表时，list->last 设为 -1
-    list->last = -1;
+    SeqList *list；
+        // SeqList *list = (SeqList *)malloc(sizeof(SeqList));
+        // 空表时，list->last 设为 -1
+        list->last = -1;
 
     return list;
 }
@@ -222,8 +223,7 @@ int main() {
 
         if (data != 0) {
             // 注意下一行的 last + 2，也就是在当前最后一个元素的后面位置插入
-            // InsList_Seq(list, list->last + 2, data);
-            InsList_Seq(list, 1, data);
+            InsList_Seq(list, list->last + 2, data);
         } else {
             break;
         }

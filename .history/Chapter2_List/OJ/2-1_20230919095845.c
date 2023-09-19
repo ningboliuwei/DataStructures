@@ -2,7 +2,6 @@
 // Created by 慰 on 2018/9/24.
 //【2-1】顺序表创建
 // OJ PASSED
-// #1589
 
 #include <stdlib.h>
 

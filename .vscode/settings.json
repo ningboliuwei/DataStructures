@@ -38,7 +38,8 @@
     "filesystem": "cpp",
     "map": "cpp",
     "set": "cpp",
-    "unordered_map": "cpp"
+    "unordered_map": "cpp",
+    "stdlib.h": "c"
   },
   "C_Cpp.autocomplete": "Default",
   "[cpp]": {

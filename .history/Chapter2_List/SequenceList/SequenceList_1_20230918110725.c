@@ -222,8 +222,7 @@ int main() {
 
         if (data != 0) {
             // 注意下一行的 last + 2，也就是在当前最后一个元素的后面位置插入
-            // InsList_Seq(list, list->last + 2, data);
-            InsList_Seq(list, 1, data);
+            InsList_Seq(list, list->last + 2, data);
         } else {
             break;
         }
