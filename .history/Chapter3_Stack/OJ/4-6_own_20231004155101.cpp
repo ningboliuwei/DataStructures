@@ -142,8 +142,8 @@ main() {
             || currentChar == '9') {             // 如果当前字符是数字
             Push(calculationStack, currentChar); // 将数字入栈
         } else if ((currentChar == '+' || currentChar == '-' || currentChar == '*'
-                    || currentChar == '/')) { // 如果当前字符是运算符，接连弹出两个栈顶元素进行运算
-            char stackTopElement;             // 定义一个变量stackTopElement，用于存储栈顶元素
+                    || currentChar == '/')) {       // 如果当前字符是运算符
+            char stackTopElement;                   // 定义一个变量stackTopElement，用于存储栈顶元素
             Pop(calculationStack, stackTopElement); // 弹出栈顶元素
             int x = (int)stackTopElement - '0';     // 将栈顶元素转换为数字
             Pop(calculationStack, stackTopElement); // 弹出栈顶元素

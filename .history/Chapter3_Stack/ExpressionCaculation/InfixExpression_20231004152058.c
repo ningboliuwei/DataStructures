@@ -125,7 +125,7 @@ int Infix2Suffix(char *infix, char *suffix) {
             } // 如果栈为空，则直接入栈
             else if (IsEmptyStack(stack)) {
                 Push(stack, current);
-            } else { // 如果栈不为空
+            } else {
                 ReadTop(stack, topElement);
 
                 // 如果op的优先级高于栈顶操作符的优先级，则入栈
