@@ -101,6 +101,11 @@ int CreateBiTree(BiTree &tree, char *elements, int &index) {
     }
 }
 
+/**
+ * @brief 层序遍历二叉树
+ *
+ * @param tree 二叉树
+ */
 void LevelOrder(BiTree &tree) {
     // 初始化队列
     LinkQueue *queue;
@@ -110,8 +115,7 @@ void LevelOrder(BiTree &tree) {
     if (tree != NULL) {
         InQueue(queue, tree);
     }
-    // 不断将队头结点出队，并将该结点的左孩子与右孩子入队（如果有的话），
-    // 直到队空为止
+    // 不断将队头结点出队，并将该结点的左孩子与右孩子入队，直到队空为止
     while (!QueueEmpty(queue)) {
         BiNode *node;
         OutQueue(queue, node);

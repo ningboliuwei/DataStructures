@@ -20,10 +20,9 @@ typedef struct BiNode {
 
 // 创建二叉树的函数，参数包括先序遍历序列 pa，中序遍历序列 pb，以及它们的下标范围
 int create(BiTree &T, char pa[], int low_a, int high_a, char pb[], int low_b, int high_b) {
-    T = (BiNode *)malloc(sizeof(BiNode)); // 分配一个结点的内存空间
-    T->data = pa[low_a];                  // 将先序遍历序列的第一个元素作为根结点
-    int rootIndex = 0;                    // 记录根结点在中序遍历序列中的下标
-
+    T = (BiNode *)malloc(sizeof(BiNode));   // 分配一个结点的内存空间
+    T->data = pa[low_a];                    // 将先序遍历序列的第一个元素作为根结点
+    int rootIndex = 0;                      // 记录根结点在中序遍历序列中的下标
     for (int i = low_b; i <= high_b; i++) { // 在中序遍历序列中查找根结点
         if (pb[i] == T->data) {
             rootIndex = i;
@@ -31,8 +30,7 @@ int create(BiTree &T, char pa[], int low_a, int high_a, char pb[], int low_b, in
         }
     }
 
-    int leftChildTreeNodeCount = rootIndex - low_b; // 左子树的结点个数
-
+    int leftChildTreeNodeCount = rootIndex - low_b;   // 左子树的结点个数
     if (leftChildTreeNodeCount > 0) {                 // 如果左子树非空
         T->lchild = (BiNode *)malloc(sizeof(BiNode)); // 分配一个结点的内存空间
         // 递归创建左子树
@@ -42,7 +40,6 @@ int create(BiTree &T, char pa[], int low_a, int high_a, char pb[], int low_b, in
     }
 
     int rightChildTreeNodeCount = high_b - rootIndex; // 右子树的结点个数
-
     if (rightChildTreeNodeCount > 0) {                // 如果右子树非空
         T->rchild = (BiNode *)malloc(sizeof(BiNode)); // 分配一个结点的内存空间
         // 递归创建右子树

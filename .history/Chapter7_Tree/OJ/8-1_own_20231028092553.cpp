@@ -40,9 +40,9 @@ int create(BiTree &T, char pa[], int low_a, int high_a, char pb[], int low_b,
         }
     }
 
-    // 当前根的左子树的元素个数为 根元素在中序序列中的下标 - 当前子树元素在中序序列中的元素范围下界的下标
+    // 当前根的左子树的元素个数为 根元素在中序序列中的下标 减去 当前子树元素在中序序列中的元素范围下界的下标
     int leftChildTreeNodeCount = root_pos_b - low_b;
-    // 当前根的右子树的元素个数为 当前子树元素在中序序列中的元素范围上界的下标 - 根元素在中序序列中的下标
+    // 当前根的右子树的元素个数为 当前子树元素在中序序列中的元素范围上界的下标 减去 根元素在中序序列中的下标
     int rightChildTreeNodeCount = high_b - root_pos_b;
 
     // 开始左子树处的递归
@@ -95,12 +95,8 @@ int CreateBiTree(BiTree &T, int n) {
     for (int i = 0; i < n; i++) {
         scanf("%c", &pb[i]);
     }
-    // @@2
-    // 调用create函数创建二叉树T
-    // 整个二叉树的元素在先序序列中的范围的下界为 0
-    // 整个二叉树的元素在先序序列中的范围的上界为 n-1
-    // 整个二叉树的元素在中序序列中的范围的下界为 0
-    // 整个二叉树的元素在中序序列中的范围的上界为 n-1
+    //@@2
+    //调用create函数创建二叉树T
     if (create(T, pa, 0, n - 1, pb, 0, n - 1)) {
         return 1;
     }

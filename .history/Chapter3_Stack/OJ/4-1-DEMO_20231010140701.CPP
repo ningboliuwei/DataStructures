@@ -1,8 +1,3 @@
-//
-// Created by 慰 on 2018/10/1.
-// 问题 A: 【数据结构3-1】顺序栈的基本操作
-// OJ PASSED
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,43 +10,28 @@ typedef struct {
 } SeqStack;
 
 int InitSeqStack(SeqStack &st) {
-    //@@1
+    // @@1
     st.top = -1;
-    //@@1
+    // @@1
 }
 
 int Push(SeqStack &st, DataType x) {
-    //@@2
-    if (st.top == MAXLEN - 1) {
-        return 0;
-    }
-
+    // @@2
     st.top++;
     st.data[st.top] = x;
-    return 1;
-    //@@2
+    // 另外一种写法
+    // st.data[++st.top] = x;
+    // @@2
 }
 
 int Pop(SeqStack &st, DataType &x) {
-    //@@3
-    if (st.top == -1) {
-        return 0;
-    }
-
-    x = st.data[st.top];
-    st.top--;
-
-    return 1;
-    //@@3
+    // @@3
+    // @@3
 }
 
 int IsSeqEmpty(SeqStack st) {
-    //    @@4
-    if (st.top == -1) {
-        return 1;
-    }
-    return 0;
-    //    @@4
+    // @@4
+    // @@4
 }
 
 int main() {
@@ -69,6 +49,5 @@ int main() {
         Pop(st, x);
         printf("%d\n", x);
     }
-
     return 1;
 }

@@ -1,75 +1,91 @@
 //
 // Created by Liu Wei on 2018/10/8.
-// 1611 问题 B: 【数据结构4-2】循环队列基本操作
+// 1610 问题 A: 【数据结构4-1】链队列基本操作P77
 // OJ PASSED
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
 
-#define MAXLEN 5
-
+using namespace std;
 typedef int dataType;
+typedef struct QueueNode {
+    dataType data;
+    struct QueueNode *next;
+} QueueNode;
 
-typedef struct {
-    dataType data[MAXLEN];
-    int front; // 头指针
-    int rear;  // 尾指针
-} SeqQueue;
+typedef struct qptr {
+    QueueNode *front; //队头指针
+    QueueNode *rear;  //队尾指针
+} LinkQueue;
 
-int InitQueue(SeqQueue *&Q) {
+int InitQueue(LinkQueue *&Q) {
     //@@1
-    // 使用 new 的话提交到 OJ 里就有问题
-    Q = (SeqQueue *)malloc(sizeof(SeqQueue));
-    Q->front = MAXLEN - 1;
-    Q->rear = MAXLEN - 1;
+    Q = new LinkQueue;
+    Q->front = NULL;
+    Q->rear = NULL;
 
     return 1;
     //@@1
 }
 
-int QueueEmpty(SeqQueue *Q) {
+int QueueEmpty(LinkQueue *Q) {
     //    @@2
-    if (Q->front == Q->rear) {
+    if (Q->front == NULL && Q->rear == NULL) {
         return 1;
     }
-
     return 0;
     //    @@2
 }
 
-int InQueue(SeqQueue *Q, dataType x) {
+int InQueue(LinkQueue *Q, dataType x) {
     //    @@3
-    if (Q->front == (Q->rear + 1) % MAXLEN) {
-        return 0;
+    QueueNode *newNode = new QueueNode;
+    newNode->data = x;
+    newNode->next = NULL;
+
+    // if (QueueEmpty(Q) == 1){
+    // if (Q->front == NULL && Q->rear == NULL){
+    if (Q->rear == NULL) {
+        Q->front = newNode;
+        Q->rear = newNode;
+    } else {
+        Q->rear->next = newNode;
+        Q->rear = newNode;
     }
-    Q->rear = (Q->rear + 1) % MAXLEN;
-    Q->data[Q->rear] = x;
 
     return 1;
     //    @@3
 }
 
-int OutQueue(SeqQueue *Q, dataType &x) {
+int OutQueue(LinkQueue *Q, dataType &x) {
     //@@4
     if (QueueEmpty(Q)) {
         return 0;
     }
-    Q->front = (Q->front + 1) % MAXLEN;
-    x = Q->data[Q->front];
+
+    QueueNode *p = Q->front;
+    x = Q->front->data;
+    Q->front = Q->front->next;
+    // 表示队列中只有一个元素
+    if (Q->rear == p) {
+        Q->rear = NULL;
+    }
+
+    free(p);
 
     return 1;
     //@@4
 }
 
 int main() {
-    SeqQueue *Q;
+    LinkQueue *Q;
     //    @@5
     int choice = -1;
     int x = 0;
     while (1) {
         printf("请选择： 1 创建新队列 2 入队 3 出队 0 结束\n");
         scanf("%d", &choice);
-
         if (choice == 0) {
             return 0;
         } else if (choice == 1) {
@@ -80,8 +96,6 @@ int main() {
             scanf("%d", &x);
             if (InQueue(Q, x) == 1) {
                 printf("入队成功\n");
-            } else {
-                printf("入队失败\n");
             }
         } else if (choice == 3) {
             if (OutQueue(Q, x) == 1) {

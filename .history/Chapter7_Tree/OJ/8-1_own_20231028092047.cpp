@@ -40,9 +40,9 @@ int create(BiTree &T, char pa[], int low_a, int high_a, char pb[], int low_b,
         }
     }
 
-    // 当前根的左子树的元素个数为 根元素在中序序列中的下标 - 当前子树元素在中序序列中的元素范围下界的下标
+    // 当前根的左子树的元素个数为 根元素在中序序列中的下标 减去 当前子树元素在中序序列中的元素范围下界的下标
     int leftChildTreeNodeCount = root_pos_b - low_b;
-    // 当前根的右子树的元素个数为 当前子树元素在中序序列中的元素范围上界的下标 - 根元素在中序序列中的下标
+    // 当前根的右子树的元素个数为 当前子树元素在中序序列中的元素范围上界的下标 减去 根元素在中序序列中的下标
     int rightChildTreeNodeCount = high_b - root_pos_b;
 
     // 开始左子树处的递归
@@ -53,7 +53,8 @@ int create(BiTree &T, char pa[], int low_a, int high_a, char pb[], int low_b,
         // 否则（当前左子树元素个数不为 0），递归调用本函数，其中要创建的左子树的根节点为当前结点的左孩子（T->lchild）,
         // 实参 pa 为先序序列
         // 左子树在先序序列中的元素范围下界为当前子树在先序序列中的元素范围下界的后一个元素的下标（low_a+1）
-        // 左子树在先序序列中的元素范围上界为左子树在先序序列中的元素范围下界 加 左子树的元素个数 - 1 →（low_a + leftChildTreeNodeCount）
+        // 左子树在先序序列中的元素范围上界为左子树在先序序列中的元素范围下界 加 左子树的元素个数 - 1 →（low_a +
+        // leftChildTreeNodeCount）
         // 实参 pb 为中序序列
         // 左子树在中序序列中的元素范围下界为当前子树在中序序列中的元素范围下界（low_b）的下标
         // 左子树在中序序列中的元素范围上界为当前子树在中序序列中的根节点位置的前一个元素的下标（root_pos_b - 1）
@@ -66,11 +67,12 @@ int create(BiTree &T, char pa[], int low_a, int high_a, char pb[], int low_b,
     } else {
         // 否则（当前右子树元素个数不为 0），递归调用本函数，其中要创建的右子树的根节点为当前结点的右孩子（T->rchild）,
         // 实参 pa 为先序序列
-        // 右子树在先序序列中的元素范围下界为左子树在先序序列中的元素范围上界（low_a + leftChildTreeNodeCount）的后一个（low_a + leftChildTreeNodeCount + 1）
+        // 右子树在先序序列中的元素范围下界为左子树在先序序列中的元素范围上界（low_a +
+        // leftChildTreeNodeCount）的后一个（low_a + leftChildTreeNodeCount + 1）
         // 右子树在先序序列中的元素范围上界为当前子树在先序序列中的元素范围上街（high_a）
         // 实参 pb 为中序序列
-        // 右子树在中序序列中的元素范围下界为当前子树在中序序列中的根节点位置的后一个元素的下标（root_pos_b + 1）
-        // 右子树在中序序列中的元素范围下界为当前子树在中序序列中的元素范围上界的下标（high_b）
+        // 右子树在中序序列中的元素范围下界为当前子树在中序序列中的根节点位置的前一个元素的后一个（root_pos_b + 1）
+        // 右子树在中序序列中的元素范围下界为当前子树在中序序列中的元素范围下界的下标（low_b）
         create(T->rchild, pa, low_a + leftChildTreeNodeCount + 1, high_a, pb, root_pos_b + 1, high_b);
     }
 
@@ -95,12 +97,8 @@ int CreateBiTree(BiTree &T, int n) {
     for (int i = 0; i < n; i++) {
         scanf("%c", &pb[i]);
     }
-    // @@2
-    // 调用create函数创建二叉树T
-    // 整个二叉树的元素在先序序列中的范围的下界为 0
-    // 整个二叉树的元素在先序序列中的范围的上界为 n-1
-    // 整个二叉树的元素在中序序列中的范围的下界为 0
-    // 整个二叉树的元素在中序序列中的范围的上界为 n-1
+    //@@2
+    //调用create函数创建二叉树T
     if (create(T, pa, 0, n - 1, pb, 0, n - 1)) {
         return 1;
     }
