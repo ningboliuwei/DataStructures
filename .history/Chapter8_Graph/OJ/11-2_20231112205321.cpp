@@ -21,11 +21,9 @@ typedef struct {
 } VertexNode;
 
 typedef struct {
-    // 邻接表
+    // 顶点向量
     VertexNode adjList[MAXLEN];
-    // 顶点数
     int n;
-    // 边数
     int e;
 } ALGraph;
 
@@ -38,7 +36,7 @@ void CreateGraph(ALGraph *g) {
     printf("输入顶点数与边数：\n");
     scanf("%d,%d", &(g->n), &(g->e));
     printf("输入各顶点：\n");
-    // 循环 g->n 次，输入每个顶点
+
     for (int i = 0; i < g->n; i++) {
         char c;
         getchar();
@@ -49,39 +47,36 @@ void CreateGraph(ALGraph *g) {
     }
 
     printf("请输入每条边对应的两个顶点：\n");
-    // 循环 g->e 次，输入每条边的起点与终点
+
     for (int i = 0; i < g->e; i++) {
         getchar();
         printf("请输入第%d条边的顶点：", i + 1);
         scanf("\n%c,%c", &vex1, &vex2);
-        // 找到边的起点在顶点表中的位置
+        // 找到边的起点在顶点集合中的位置
         for (pos1 = 0; pos1 < g->n; pos1++) {
             if (g->adjList[pos1].vertex == vex1) {
                 break;
             }
         }
-        // 找到边的终点在顶点表中的位置
+
         for (pos2 = 0; pos2 < g->n; pos2++) {
             if (g->adjList[pos2].vertex == vex2) {
                 break;
             }
         }
-        // 将边的终点在顶点表中的位置赋值给邻接表中的边表结点
+
         EdgeNode *newEdgeNode = (EdgeNode *)malloc(sizeof(EdgeNode));
         newEdgeNode->adjVex = pos2;
         newEdgeNode->next = NULL;
-        // 将边表结点插入到作为起点的顶点的边表中
+
         EdgeNode *tail = g->adjList[pos1].firstEdge;
-        // 如果该顶点的边表不为空
+
         if (tail != NULL) {
-            // 找到该顶点的边表的最后一个结点
             while (tail->next) {
                 tail = tail->next;
             }
-            // 将新的边表结点插入到最后一个结点的后面
             tail->next = newEdgeNode;
         } else {
-            // 如果该顶点的边表为空，则将新的边表结点插入到该顶点的边表中
             g->adjList[pos1].firstEdge = newEdgeNode;
         }
 
@@ -103,7 +98,7 @@ void CreateGraph(ALGraph *g) {
         // 以上部分加了为无向图
     }
 }
-// 输出邻接表
+
 void DisplayGraph(ALGraph *g) {
     for (int i = 0; i < g->n; i++) {
         printf("%d %c", i, g->adjList[i].vertex);

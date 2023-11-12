@@ -25,7 +25,7 @@ typedef struct {
     // 边数
     int e;
 } MGraph;
-// 创建图
+
 void CreateGraph(MGraph *g) {
     // 边的起点
     char vex1;
@@ -72,7 +72,7 @@ void CreateGraph(MGraph *g) {
         g->edges[pos2][pos1] = weight;
     }
 }
-// 输出邻接矩阵
+
 void DisplayGraph(MGraph *g) {
     for (int i = 0; i < g->n; i++) {
         for (int j = 0; j < g->n; j++) {

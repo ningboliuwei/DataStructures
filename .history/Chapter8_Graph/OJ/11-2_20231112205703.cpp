@@ -103,7 +103,7 @@ void CreateGraph(ALGraph *g) {
         // 以上部分加了为无向图
     }
 }
-// 输出邻接表
+
 void DisplayGraph(ALGraph *g) {
     for (int i = 0; i < g->n; i++) {
         printf("%d %c", i, g->adjList[i].vertex);

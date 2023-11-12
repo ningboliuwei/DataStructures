@@ -25,7 +25,7 @@ typedef struct {
     // 边数
     int e;
 } MGraph;
-// 创建图
+
 void CreateGraph(MGraph *g) {
     // 边的起点
     char vex1;
@@ -60,19 +60,19 @@ void CreateGraph(MGraph *g) {
                 break;
             }
         }
-        // 找到边的终点在顶点集合中的位置
+
         for (pos2 = 0; pos2 < g->n; pos2++) {
             if (g->vexs[pos2] == vex2) {
                 break;
             }
         }
-        // 将边的权值赋值给邻接矩阵中的对应元素
+
         g->edges[pos1][pos2] = weight;
         // 无向网要加下面一行（基于对角线对称）
         g->edges[pos2][pos1] = weight;
     }
 }
-// 输出邻接矩阵
+
 void DisplayGraph(MGraph *g) {
     for (int i = 0; i < g->n; i++) {
         for (int j = 0; j < g->n; j++) {

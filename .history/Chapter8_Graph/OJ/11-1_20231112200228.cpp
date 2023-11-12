@@ -25,7 +25,7 @@ typedef struct {
     // 边数
     int e;
 } MGraph;
-// 创建图
+
 void CreateGraph(MGraph *g) {
     // 边的起点
     char vex1;
@@ -33,9 +33,9 @@ void CreateGraph(MGraph *g) {
     char vex2;
     // 边的权值
     int weight;
-    // 边的起点在顶点集合中的位置
+    // 边的起点在顶点集合中的位置（下标）
     int pos1;
-    // 边的终点在顶点集合中的位置
+    // 边的终点在顶点集合中的位置（下标）
     int pos2;
     // 对邻接矩阵进行初始化
     for (int i = 0; i < MAXLEN; i++) {
@@ -51,28 +51,28 @@ void CreateGraph(MGraph *g) {
         scanf("\n%c", &c);
         g->vexs[i] = c;
     }
-    // 循环 g->e 次，输入每条边的起点、终点、权值
+
     for (int i = 0; i < g->e; i++) {
         scanf("\n%c %c %d", &vex1, &vex2, &weight);
-        // 找到边的起点在顶点集合中的位置
+
         for (pos1 = 0; pos1 < g->n; pos1++) {
             if (g->vexs[pos1] == vex1) {
                 break;
             }
         }
-        // 找到边的终点在顶点集合中的位置
+
         for (pos2 = 0; pos2 < g->n; pos2++) {
             if (g->vexs[pos2] == vex2) {
                 break;
             }
         }
-        // 将边的权值赋值给邻接矩阵中的对应元素
+
         g->edges[pos1][pos2] = weight;
         // 无向网要加下面一行（基于对角线对称）
         g->edges[pos2][pos1] = weight;
     }
 }
-// 输出邻接矩阵
+
 void DisplayGraph(MGraph *g) {
     for (int i = 0; i < g->n; i++) {
         for (int j = 0; j < g->n; j++) {

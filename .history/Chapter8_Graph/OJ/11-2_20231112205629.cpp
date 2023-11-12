@@ -72,16 +72,13 @@ void CreateGraph(ALGraph *g) {
         newEdgeNode->next = NULL;
         // 将边表结点插入到作为起点的顶点的边表中
         EdgeNode *tail = g->adjList[pos1].firstEdge;
-        // 如果该顶点的边表不为空
+
         if (tail != NULL) {
-            // 找到该顶点的边表的最后一个结点
             while (tail->next) {
                 tail = tail->next;
             }
-            // 将新的边表结点插入到最后一个结点的后面
             tail->next = newEdgeNode;
         } else {
-            // 如果该顶点的边表为空，则将新的边表结点插入到该顶点的边表中
             g->adjList[pos1].firstEdge = newEdgeNode;
         }
 
@@ -103,7 +100,7 @@ void CreateGraph(ALGraph *g) {
         // 以上部分加了为无向图
     }
 }
-// 输出邻接表
+
 void DisplayGraph(ALGraph *g) {
     for (int i = 0; i < g->n; i++) {
         printf("%d %c", i, g->adjList[i].vertex);

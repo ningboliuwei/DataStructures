@@ -25,50 +25,6 @@
 // 101010110111000100011
 // FFGCDAEE
 
-// OJ 第一组测试数据
-// 7（输入）
-// 4（输入）
-// 5（输入）
-// 7（输入）
-// 8（输入）
-// 6（输入）
-// 12（输入）
-// 18（输入）
-// A 4 1010（输出）
-// B 5 1011（输出）
-// C 7 011（输出）
-// D 8 100（输出）
-// E 6 010（输出）
-// F 12 00（输出）
-// G 18 11（输出）
-// 101010110111000100011（输入）
-// FFGCDAEE（输入）
-
-// OJ 第二组测试数据
-// 4
-// 6
-// 4
-// 3
-// 1
-// A 6 0
-// B 4 10
-// C 3 111
-// D 1 110
-// ABCD
-// 010111110
-// AAAACB
-
-// OJ 第三组测试数据
-// 3
-// 1
-// 2
-// 4
-// A 1 00
-// B 2 01
-// C 4 1
-// 00011
-// AABCCCC
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -143,10 +99,10 @@ int IsEmptyStack(LinkStack *stack) {
 }
 
 void CreateHuffmanTree(HTNode treeNodes[], int &treeNodeCount, int &leafNodeCount) {
-    char charset[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+    char s[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
 
     for (int i = 0; i < leafNodeCount; i++) {
-        treeNodes[i].text = charset[i];
+        treeNodes[i].text = s[i];
     }
 
     while (treeNodeCount < leafNodeCount * 2 - 1) {
@@ -257,7 +213,7 @@ void ShowCodeTable(HTNode treeNodes[], int treeNodeCount, int leafNodeCount) {
 }
 // 编码（根据字符串输出编码）
 void EncodeText(HTNode treeNodes[], int treeNodeCount, int leafNodeCount, char text[]) {
-    for (int i = 0; i < (int)strlen(text); i++) {
+    for (long i = 0; i < strlen(text); i++) {
         ShowCodeByText(treeNodes, treeNodeCount, text[i]);
     }
 
@@ -266,14 +222,14 @@ void EncodeText(HTNode treeNodes[], int treeNodeCount, int leafNodeCount, char t
 // 译码（根据编码输出字符串）
 void DecodeText(HTNode treeNodes[], int treeNodeCount, char encodedText[]) {
     int currentSegmentStartPos = 0;
-    while (currentSegmentStartPos < (int)strlen(encodedText)) {
+    while (currentSegmentStartPos < strlen(encodedText)) {
         for (int leafIndex = 0; leafIndex < treeNodeCount; leafIndex++) {
             bool match = true;
             // 重置编码长度计数器
             int codeLength = 0;
 
             if (treeNodes[leafIndex].leftChild == -1 && treeNodes[leafIndex].rightChild == -1 && strlen(treeNodes[leafIndex].code) > 0) {
-                for (int j = 0; j < (int)strlen(treeNodes[leafIndex].code); j++) {
+                for (int j = 0; j < strlen(treeNodes[leafIndex].code); j++) {
                     codeLength++;
                     if (treeNodes[leafIndex].code[j] != encodedText[currentSegmentStartPos + j]) {
                         match = false;
@@ -312,19 +268,19 @@ int main() {
         // 结点列表中的结点数
         treeNodeCount++;
     }
+    // 以下输入要转为编码的文本
+    char text[20];
+    scanf("%s", text);
+    // 输入编码
+    char encodedText[100];
+    scanf("%s", encodedText);
     CreateHuffmanTree(treeNodes, treeNodeCount, leafNodeCount);
     // 生成码表
     GenerateCodeTable(treeNodes, treeNodeCount, leafNodeCount);
     // 输出码表
     ShowCodeTable(treeNodes, treeNodeCount, leafNodeCount);
-    // 输入要转为编码的文本
-    char text[20];
-    scanf("%s", text);
     // 输出编码
     EncodeText(treeNodes, treeNodeCount, leafNodeCount, text);
-    // 输入编码
-    char encodedText[100];
-    scanf("%s", encodedText);
     // 输出译码
     DecodeText(treeNodes, treeNodeCount, encodedText);
     getchar();
