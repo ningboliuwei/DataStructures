@@ -75,7 +75,6 @@
 #include <string.h>
 
 #define MAX_NODE_COUNT 100
-#define MAX_LENGTH 1000
 // 线性表，用于保存所有的权值
 typedef struct {
     int weight;
@@ -232,7 +231,6 @@ void Encode(HTNode treeNodes[], int index, char text, int treeNodeCount) {
         treeNodes[leafIndex].code[pos] = codeSegment;
         pos++;
     }
-    // 最后加上字符串结束符 \0
     treeNodes[leafIndex].code[pos] = '\0';
 }
 // 生成码表
@@ -330,12 +328,12 @@ int main() {
     // 输出码表
     ShowCodeTable(treeNodes, treeNodeCount, leafNodeCount);
     // 输入要转为编码的文本
-    char text[MAX_LENGTH];
+    char text[20];
     scanf("%s", text);
     // 输出编码
     EncodeText(treeNodes, treeNodeCount, leafNodeCount, text);
     // 输入编码
-    char encodedText[MAX_LENGTH];
+    char encodedText[100];
     scanf("%s", encodedText);
     // 输出译码
     DecodeText(treeNodes, treeNodeCount, encodedText);

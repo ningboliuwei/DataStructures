@@ -112,7 +112,7 @@ void DFSTraverseM(MGraph *g) {
     }
 
     printf("DFS ");
-    // 针对所有当前尚未被访问的顶点，进行深度遍历
+    //
     for (int i = 0; i < g->n; i++) {
         if (!visited[i]) {
             DFSM(g, i, visited);

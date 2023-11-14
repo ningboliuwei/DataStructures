@@ -75,7 +75,6 @@
 #include <string.h>
 
 #define MAX_NODE_COUNT 100
-#define MAX_LENGTH 1000
 // 线性表，用于保存所有的权值
 typedef struct {
     int weight;
@@ -121,7 +120,7 @@ void Push(LinkStack *stack, DataType x) {
     node->next = stack->top;
     stack->top = node;
 }
-// 链栈的 Pop 函数
+
 int Pop(LinkStack *stack, DataType &x) {
     // 栈为空
     if (stack->top == NULL) {
@@ -135,14 +134,14 @@ int Pop(LinkStack *stack, DataType &x) {
 
     return 1;
 }
-// 判断是否是空栈
+
 int IsEmptyStack(LinkStack *stack) {
     if (stack->top == NULL) {
         return 1;
     }
     return 0;
 }
-// 创建哈夫曼树（参考 OJ-1641 代码）
+
 void CreateHuffmanTree(HTNode treeNodes[], int &treeNodeCount, int &leafNodeCount) {
     char charset[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
 
@@ -189,41 +188,37 @@ void CreateHuffmanTree(HTNode treeNodes[], int &treeNodeCount, int &leafNodeCoun
         treeNodeCount++;
     }
 }
-// 输出哈夫曼树
+
 void ShowHuffmanTree(HTNode treeNodes[], int treeNodeCount) {
     for (int i = 0; i < treeNodeCount; i++) {
         printf("%d %d %d %d %d\n", i, treeNodes[i].leftChild, treeNodes[i].weight, treeNodes[i].rightChild, treeNodes[i].parent);
     }
 }
-// 获取每个叶子结点的哈夫曼编码
+
 void Encode(HTNode treeNodes[], int index, char text, int treeNodeCount) {
-    // 找到当前字符对应的叶子结点在结点列表中的下标，并放入 leafIndex 变量中
     for (int i = 0; i < treeNodeCount; i++) {
         if (treeNodes[i].text == text) {
             index = i;
             break;
         }
     }
-
+    // 记录下叶子结点的最初位置
     int leafIndex = index;
-    // 因为从叶子结点往根节点获取编码，所以需要一个栈来保存编码，以实现倒序
+
     LinkStack *codeStack = (LinkStack *)malloc(sizeof(LinkStack));
     InitStack(codeStack);
     // 从叶子往根获取编码（0/1）
-    // 从叶子结点的位置不断向上找父节点，直到找到根节点
     while (treeNodes[index].parent != -1) {
         int originalIndex = index;
         index = treeNodes[index].parent;
-        // 如果当前结点是父节点的左孩子，那么编码为 0
+
         if (treeNodes[index].leftChild == originalIndex) {
             Push(codeStack, '0');
-        }
-        // 如果当前结点是父节点的右孩子，那么编码为 1
-        else if (treeNodes[index].rightChild == originalIndex) {
+        } else if (treeNodes[index].rightChild == originalIndex) {
             Push(codeStack, '1');
         }
     }
-    // 反向获取编码，放入对应的叶子结点的 code 域（一个字符数组）中
+    // 反向获取编码，放入对应的叶子结点
     int pos = 0;
     while (!IsEmptyStack(codeStack)) {
         // 先给 code 字符串数组开辟空间
@@ -232,24 +227,19 @@ void Encode(HTNode treeNodes[], int index, char text, int treeNodeCount) {
         treeNodes[leafIndex].code[pos] = codeSegment;
         pos++;
     }
-    // 最后加上字符串结束符 \0
     treeNodes[leafIndex].code[pos] = '\0';
 }
-// 生成码表
+
 void GenerateCodeTable(HTNode treeNodes[], int treeNodeCount, int leafNodeCount) {
-    // 为每个叶子结点生成码表
     for (int i = 0; i < leafNodeCount; i++) {
         Encode(treeNodes, 0, treeNodes[i].text, treeNodeCount);
     }
 }
 // 根据单个字符输出编码
 void ShowCodeByText(HTNode treeNodes[], int treeNodeCount, char text) {
-    // 遍历树中所有的结点
     for (int i = 0; i < treeNodeCount; i++) {
-        // 如果结点是叶子结点，且结点的字符和参数 text 的字符相同
         if (treeNodes[i].leftChild == -1 && treeNodes[i].rightChild == -1 && treeNodes[i].text == text) {
             int pos = 0;
-            // 输出这个字符对应的编码
             while (treeNodes[i].code[pos] != '\0') {
                 printf("%c", treeNodes[i].code[pos]);
                 pos++;
@@ -259,7 +249,6 @@ void ShowCodeByText(HTNode treeNodes[], int treeNodeCount, char text) {
 }
 // 输出码表
 void ShowCodeTable(HTNode treeNodes[], int treeNodeCount, int leafNodeCount) {
-    // 遍历所有的叶子结点，输出对应的哈夫曼编码
     for (int i = 0; i < leafNodeCount; i++) {
         printf("%c %d ", treeNodes[i].text, treeNodes[i].weight);
         ShowCodeByText(treeNodes, treeNodeCount, treeNodes[i].text);
@@ -268,14 +257,13 @@ void ShowCodeTable(HTNode treeNodes[], int treeNodeCount, int leafNodeCount) {
 }
 // 编码（根据字符串输出编码）
 void EncodeText(HTNode treeNodes[], int treeNodeCount, int leafNodeCount, char text[]) {
-    // 对文本进行编码
     for (int i = 0; i < (int)strlen(text); i++) {
         ShowCodeByText(treeNodes, treeNodeCount, text[i]);
     }
 
     printf("\n");
 }
-// 解码（根据编码输出字符串）
+// 译码（根据编码输出字符串）
 void DecodeText(HTNode treeNodes[], int treeNodeCount, char encodedText[]) {
     int currentSegmentStartPos = 0;
     while (currentSegmentStartPos < (int)strlen(encodedText)) {
@@ -330,12 +318,12 @@ int main() {
     // 输出码表
     ShowCodeTable(treeNodes, treeNodeCount, leafNodeCount);
     // 输入要转为编码的文本
-    char text[MAX_LENGTH];
+    char text[20];
     scanf("%s", text);
     // 输出编码
     EncodeText(treeNodes, treeNodeCount, leafNodeCount, text);
     // 输入编码
-    char encodedText[MAX_LENGTH];
+    char encodedText[100];
     scanf("%s", encodedText);
     // 输出译码
     DecodeText(treeNodes, treeNodeCount, encodedText);

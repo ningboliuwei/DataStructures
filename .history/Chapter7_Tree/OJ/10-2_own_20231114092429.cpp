@@ -75,7 +75,6 @@
 #include <string.h>
 
 #define MAX_NODE_COUNT 100
-#define MAX_LENGTH 1000
 // 线性表，用于保存所有的权值
 typedef struct {
     int weight;
@@ -197,33 +196,30 @@ void ShowHuffmanTree(HTNode treeNodes[], int treeNodeCount) {
 }
 // 获取每个叶子结点的哈夫曼编码
 void Encode(HTNode treeNodes[], int index, char text, int treeNodeCount) {
-    // 找到当前字符对应的叶子结点在结点列表中的下标，并放入 leafIndex 变量中
+    // 找到当前字符对应的叶子结点在结点列表中的下标
     for (int i = 0; i < treeNodeCount; i++) {
         if (treeNodes[i].text == text) {
             index = i;
             break;
         }
     }
-
+    // 记录下叶子结点的最初位置
     int leafIndex = index;
-    // 因为从叶子结点往根节点获取编码，所以需要一个栈来保存编码，以实现倒序
+
     LinkStack *codeStack = (LinkStack *)malloc(sizeof(LinkStack));
     InitStack(codeStack);
     // 从叶子往根获取编码（0/1）
-    // 从叶子结点的位置不断向上找父节点，直到找到根节点
     while (treeNodes[index].parent != -1) {
         int originalIndex = index;
         index = treeNodes[index].parent;
-        // 如果当前结点是父节点的左孩子，那么编码为 0
+
         if (treeNodes[index].leftChild == originalIndex) {
             Push(codeStack, '0');
-        }
-        // 如果当前结点是父节点的右孩子，那么编码为 1
-        else if (treeNodes[index].rightChild == originalIndex) {
+        } else if (treeNodes[index].rightChild == originalIndex) {
             Push(codeStack, '1');
         }
     }
-    // 反向获取编码，放入对应的叶子结点的 code 域（一个字符数组）中
+    // 反向获取编码，放入对应的叶子结点
     int pos = 0;
     while (!IsEmptyStack(codeStack)) {
         // 先给 code 字符串数组开辟空间
@@ -232,7 +228,6 @@ void Encode(HTNode treeNodes[], int index, char text, int treeNodeCount) {
         treeNodes[leafIndex].code[pos] = codeSegment;
         pos++;
     }
-    // 最后加上字符串结束符 \0
     treeNodes[leafIndex].code[pos] = '\0';
 }
 // 生成码表
@@ -330,12 +325,12 @@ int main() {
     // 输出码表
     ShowCodeTable(treeNodes, treeNodeCount, leafNodeCount);
     // 输入要转为编码的文本
-    char text[MAX_LENGTH];
+    char text[20];
     scanf("%s", text);
     // 输出编码
     EncodeText(treeNodes, treeNodeCount, leafNodeCount, text);
     // 输入编码
-    char encodedText[MAX_LENGTH];
+    char encodedText[100];
     scanf("%s", encodedText);
     // 输出译码
     DecodeText(treeNodes, treeNodeCount, encodedText);

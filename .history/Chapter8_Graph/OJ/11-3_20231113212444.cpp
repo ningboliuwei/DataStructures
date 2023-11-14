@@ -95,7 +95,7 @@ void DFSM(MGraph *g, int nodeIndex, int *visited) {
     printf("%d ", g->vertex[nodeIndex]);
     // 将当前顶点设为“已访问”
     visited[nodeIndex] = 1;
-    // 针对当前顶点的所有尚未被访问的邻接点，递归调用深度遍历函数
+
     for (int i = 0; i < g->n; i++) {
         if (g->edges[nodeIndex][i] == 1 && !visited[i]) {
             DFSM(g, i, visited);
@@ -104,15 +104,13 @@ void DFSM(MGraph *g, int nodeIndex, int *visited) {
 }
 
 void DFSTraverseM(MGraph *g) {
-    // 生命 visted 数组，用于记录哪些顶点已被访问过
     int visited[g->n];
-    // 初始化 visted 数组
+
     for (int i = 0; i < g->n; i++) {
         visited[i] = 0;
     }
 
     printf("DFS ");
-    // 针对所有当前尚未被访问的顶点，进行深度遍历
     for (int i = 0; i < g->n; i++) {
         if (!visited[i]) {
             DFSM(g, i, visited);
