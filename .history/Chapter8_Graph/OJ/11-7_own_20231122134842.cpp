@@ -29,28 +29,6 @@
 // 6 4 2
 // 3 2 5
 // 2 5 3
-// 或输入（PPT 63页）：
-// 8 11
-// a
-// b
-// c
-// d
-// e
-// f
-// g
-// h
-// a b 2
-// a c 3
-// b d 2
-// c d 1
-// d e 2
-// d f 4
-// e f 1
-// g e 2
-// f g 2
-// g h 1
-// f h 1
-// 输出
 
 #define MAX_VEX_COUNT 10
 #define MAX_EDGE_COUNT 100
@@ -136,10 +114,9 @@ void MiniSpanTree_KRUSKAL(MGraph G, int n, int v) {
         }
     }
 
-    // 遍历 edgeFlags 数组（相当于遍历了所有的边），输出所有 flag 为 1（即被选中的边）的信息，包括起点、终点与权值
-    for (int i = 0; i < G.e; i++) {
+    for (int i = 0; i < G.e - 1; i++) {
         if (edgeFlags[i].flag == 1) {
-            printf("%c %c %d\n", G.vexs[edgeFlags[i].u], G.vexs[edgeFlags[i].v], edgeFlags[i].weight);
+            printf("%d %d %d\n", edgeFlags[i].u + 1, edgeFlags[i].v + 1, edgeFlags[i].weight);
         }
     }
 } // Min

@@ -136,8 +136,8 @@ void MiniSpanTree_KRUSKAL(MGraph G, int n, int v) {
         }
     }
 
-    // 遍历 edgeFlags 数组（相当于遍历了所有的边），输出所有 flag 为 1（即被选中的边）的信息，包括起点、终点与权值
-    for (int i = 0; i < G.e; i++) {
+    // 输出所有 flag 为 1（即被选中的边）的信息
+    for (int i = 0; i < G.e - 1; i++) {
         if (edgeFlags[i].flag == 1) {
             printf("%c %c %d\n", G.vexs[edgeFlags[i].u], G.vexs[edgeFlags[i].v], edgeFlags[i].weight);
         }
