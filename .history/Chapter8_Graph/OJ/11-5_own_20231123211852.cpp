@@ -127,7 +127,7 @@ void ShortestPath_DIJ(MGraph G, int start) {
     for (w = 0; w < G.vexnum; ++w) {
         if (w != start) {
             // 输出当前顶点
-            printf("%c", G.vexs[w]);
+            printf("%d", w);
             pre = P[w];
 
             while (pre != -1) {

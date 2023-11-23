@@ -66,7 +66,7 @@ typedef struct {
 } MGraph;
 // V1是源点
 // Dijkstra 算法求有向网G的某个顶点到其余顶点的最短路径
-void ShortestPath_DIJ(MGraph G, int start) {
+void ShortestPath_DIJ(MGraph G, char start) {
     // P[] 表示从源点（如 v0）到各顶点的最短路径上，此顶点的前一顶点的下标；若从起点到该顶点无路径，则设值为
     // -1；本数组用于从某个顶点开始，倒推到起点的每一条边（因为一条最短路径都是由若干条最短路径的“前缀”组成的），
     // 也就是说，往前递归地寻找离当前这个顶点最近的点
@@ -78,23 +78,31 @@ void ShortestPath_DIJ(MGraph G, int start) {
     // 是否已经找到了到 i 这个点的最短路径，如果找到，则 final[i] 记为 TRUE，否则记为 FALSE
     int final[MAXVER];
     int i, v, w, min, pre;
+    int startPos = -1;
+    // 找到起点在顶点数组中的下标
+    for (int i = 0; i < G.vexnum; i++) {
+        if (G.vexs[i] == start) {
+            startPos = i;
+            break;
+        }
+    }
 
     // 初始化
     for (v = 0; v < G.vexnum; ++v) {
         // 初始化，FALSE 表示从起点 start 到顶点 v，还没有求出最短路径
         final[v] = FALSE;
         // D 初始值为从起点 start 到 v 点的直接路径的权值
-        D[v] = G.adjlist[start][v];
+        D[v] = G.adjlist[startPos][v];
         // 目前找到的从 start 到 v 的最短路径中，点 v 的前一个点，计入 P[v]; 若无直接路径，则 P[v] 为 0（若是 start 到
         // start，则记为“无直接路径”）
-        if (v == start || G.adjlist[start][v] == INFINITY) {
+        if (v == startPos || G.adjlist[start][v] == INFINITY) {
             P[v] = -1;
         } else {
-            P[v] = start;
+            P[v] = startPos;
         }
     }
     // 起点到自己的最短路径距离为 0
-    D[start] = 0;
+    D[startPos] = 0;
 
     // 对于起点，可以认为已经找到了最短路径
     final[start] = TRUE;
@@ -127,11 +135,11 @@ void ShortestPath_DIJ(MGraph G, int start) {
     for (w = 0; w < G.vexnum; ++w) {
         if (w != start) {
             // 输出当前顶点
-            printf("%c", G.vexs[w]);
+            printf("%d", w);
             pre = P[w];
 
             while (pre != -1) {
-                printf("<-%c", G.vexs[pre]);
+                printf("<-%d", pre);
                 pre = P[pre];
             }
 
@@ -191,7 +199,7 @@ int main() {
     CreateGraph(g);
     int start;
 
-    scanf("%d", &start);
+    scanf("%c", &start);
     ShortestPath_DIJ(*g, start);
 
     getchar();

@@ -29,27 +29,6 @@
 // 3<-2<-0 13
 // 4<-3<-2<-0 21
 // 6<-1<-0 20
-// PPT 上的例子
-// 输入
-// 7 10
-// 1
-// 2
-// 3
-// 4
-// 5
-// 6
-// 7
-// 1 2 13
-// 1 3 8
-// 3 4 5
-// 4 5 6
-// 5 6 2
-// 2 6 9
-// 2 7 7
-// 6 7 17
-// 1 7 32
-// 1 5 30
-// 1
 
 #define MAXVER 10
 #define INFINITY 99999
@@ -95,7 +74,7 @@ void ShortestPath_DIJ(MGraph G, int start) {
     }
     // 起点到自己的最短路径距离为 0
     D[start] = 0;
-
+https: // mooc2-ans.chaoxing.com/mooc2-ans/mycourse/teacherstudy?chapterId=689783201&courseId=219699959&clazzid=81589924
     // 对于起点，可以认为已经找到了最短路径
     final[start] = TRUE;
 
@@ -127,11 +106,11 @@ void ShortestPath_DIJ(MGraph G, int start) {
     for (w = 0; w < G.vexnum; ++w) {
         if (w != start) {
             // 输出当前顶点
-            printf("%c", G.vexs[w]);
+            printf("%d", w);
             pre = P[w];
 
             while (pre != -1) {
-                printf("<-%c", G.vexs[pre]);
+                printf("<-%d", pre);
                 pre = P[pre];
             }
 
