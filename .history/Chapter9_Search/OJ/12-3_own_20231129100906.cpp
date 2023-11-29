@@ -76,8 +76,7 @@ void BiTreeSearch(BiTree &tree, int key) {
             node = node->rchild;
         }
     }
-    // 如果循环结束后 node 指针为 NULL（意味着从未执行过前面 while 循环中的 return 语句，也就是没遇到过 node->element == key
-    // 的情况），那么说明没有找到要查找的值，输出 -1
+    // 如果循环结束后 node 指针为 NULL，那么说明没有找到要查找的值，输出 -1
     if (node == NULL) {
         printf("-1");
     }

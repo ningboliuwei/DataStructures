@@ -68,16 +68,14 @@ void BiTreeSearch(BiTree &tree, int key) {
         if (node->element == key) {
             return;
         }
-        // 如果要查找的值小于当前结点的值，那么将 node 指针指向当前结点的左孩子（可以理解为进入左子树寻找要查找的值）
+
         if (key < node->element) {
             node = node->lchild;
-        } // 如果要查找的值大于当前结点的值，那么将 node 指针指向当前结点的右孩子（可以理解为进入右子树寻找要查找的值）
-        else {
+        } else {
             node = node->rchild;
         }
     }
-    // 如果循环结束后 node 指针为 NULL（意味着从未执行过前面 while 循环中的 return 语句，也就是没遇到过 node->element == key
-    // 的情况），那么说明没有找到要查找的值，输出 -1
+
     if (node == NULL) {
         printf("-1");
     }

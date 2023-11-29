@@ -60,24 +60,21 @@ void BiTreeInsert(BiTree &tree, int value) {
 void BiTreeSearch(BiTree &tree, int key) {
     // 首先让结点指针 node 指向当前子树的根结点
     BiTreeNode *node = tree;
-    // 在整个查找过程中，node 指针总是从当前子树的根结点开始，向下一层移动（指向左孩子或右孩子），直到 node 为空（即再也没有下一层结点了）
+
     while (node != NULL) {
-        // 输出当前正在访问的结点
         printf("%d ", node->element);
-        // 如果当前结点的值等于要查找的值，那么直接返回
+
         if (node->element == key) {
             return;
         }
-        // 如果要查找的值小于当前结点的值，那么将 node 指针指向当前结点的左孩子（可以理解为进入左子树寻找要查找的值）
+
         if (key < node->element) {
             node = node->lchild;
-        } // 如果要查找的值大于当前结点的值，那么将 node 指针指向当前结点的右孩子（可以理解为进入右子树寻找要查找的值）
-        else {
+        } else {
             node = node->rchild;
         }
     }
-    // 如果循环结束后 node 指针为 NULL（意味着从未执行过前面 while 循环中的 return 语句，也就是没遇到过 node->element == key
-    // 的情况），那么说明没有找到要查找的值，输出 -1
+
     if (node == NULL) {
         printf("-1");
     }
