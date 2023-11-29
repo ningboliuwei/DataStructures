@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include <math.h>
 
-// 问题 B: 【数据结构9-2】二分查找
+// 问题 B: 【数据结构9-2】二分（折半）查找
 // ID：1653
+// OJ PASSED
 // 输入：
 // 11 12 13 14 15 16 17 -1
 // 14
@@ -26,14 +27,16 @@ int InputArray(int array[]) {
 }
 
 void BiSearch(int array[], int key, int low, int high, int &count, int &pos) {
-    int mid = floor((low + high) / 2);
-    count++;
-
+    // low > high 作为递归的结束（当找不到要查找的元素（key）时会导致 low 最终 > high）
     if (low > high) {
+        // 将 pos 设置为 -1，表示查找失败
         pos = -1;
         return;
     }
 
+    int mid = floor((low + high) / 2);
+    count++;
+    // 如果 mid 指向的元素正好等于要查找的元素，那么直接通过参数 pos 范围该元素的位置（即 mid 指向的位置）
     if (array[mid] == key) {
         pos = mid;
         return;
