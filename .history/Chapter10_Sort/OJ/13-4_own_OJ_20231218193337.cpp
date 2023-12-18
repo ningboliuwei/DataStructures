@@ -44,22 +44,19 @@ void BubbleSort(int array[], int length) {
                 array[0] = array[j + 1];
                 array[j + 1] = array[j];
                 array[j] = array[0];
-                // 交换次数加 1
                 swapCount++;
             }
         }
 
-        // 如果本趟排序没有任何交换操作，则说明已经完全排好序，不需要再进行接下来的比较，退出 for 循环
+        // 如果本趟排序没有任何交换操作，则说明已经完全排好序，不需要再进行接下来的比较
         if (swapCount == 0) {
             break;
         }
-        // 本趟排序结束，输出结果
+
         ShowArray(array, length);
-        // 本趟排序输出过结果，resultOutput 置为 true
         resultOutput = true;
     }
     // 为了通过 OJ  [1 2 3 4 5 6 7] 测试数据的补丁（至少输出一次）
-    // 如果 resultOutput 为 false，说明没有输出过结果，即所有元素都已经排好序，直接输出即可
     if (resultOutput == false) {
         ShowArray(array, length);
     }

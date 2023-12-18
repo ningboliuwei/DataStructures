@@ -55,10 +55,10 @@ void Partition(int array[], int low, int high, int &pivotPos) {
 
 void QuickSort(int array[], int low, int high, int &pivotPos) {
     if (low < high) {
-        ShowArray(array, 9);
         Partition(array, low, high, pivotPos);
         QuickSort(array, low, pivotPos - 1, pivotPos);
         QuickSort(array, pivotPos + 1, high, pivotPos);
+        ShowArray(array, high - low + 1);
     }
 }
 

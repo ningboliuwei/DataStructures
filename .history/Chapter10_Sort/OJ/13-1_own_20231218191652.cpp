@@ -45,7 +45,6 @@ void InsertSort(int array[], int length) {
                 // pos 前移一个，继续往前找
                 pos--;
             }
-            // 当前元素找到了应该插入的位置，把当前元素插入到 pos 指向的单元的后一个单元的位置中去
             array[pos + 1] = array[0];
         }
         ShowArray(array, length);

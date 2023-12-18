@@ -29,9 +29,9 @@ int InputArray(int array[]) {
 // 声明 BiSearch
 // 函数，用于递归地进行二分查找，参数分别为：所有元素所在的数组、要查找的元素、查找范围下界、查找范围上界、比较次数（用于以传参的方式返回值）、元素所在的位置（用于以传参的方式返回值）
 void BiSearch(int array[], int key, int low, int high, int &count, int &pos) {
-    // 将 low > high 作为递归的结束（当找不到要查找的元素（key）时会导致 low 最终 > high）
+    // low > high 作为递归的结束（当找不到要查找的元素（key）时会导致 low 最终 > high）
     if (low > high) {
-        // 若 low > high，则将 pos 设置为 -1，表示查找失败，然后退出函数
+        // 将 pos 设置为 -1，表示查找失败
         pos = -1;
         return;
     }
@@ -39,7 +39,7 @@ void BiSearch(int array[], int key, int low, int high, int &count, int &pos) {
     int mid = floor((low + high) / 2);
     // 比较次数加 1
     count++;
-    // 如果 mid 指向的元素正好等于要查找的元素，那么直接通过参数 pos 返回该元素的位置（即 mid 指向的位置）
+    // 如果 mid 指向的元素正好等于要查找的元素，那么直接通过参数 pos 范围该元素的位置（即 mid 指向的位置）
     if (array[mid] == key) {
         pos = mid;
         return;

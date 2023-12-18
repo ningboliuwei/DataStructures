@@ -55,11 +55,9 @@ void BubbleSort(int array[], int length) {
         }
         // 本趟排序结束，输出结果
         ShowArray(array, length);
-        // 本趟排序输出过结果，resultOutput 置为 true
         resultOutput = true;
     }
     // 为了通过 OJ  [1 2 3 4 5 6 7] 测试数据的补丁（至少输出一次）
-    // 如果 resultOutput 为 false，说明没有输出过结果，即所有元素都已经排好序，直接输出即可
     if (resultOutput == false) {
         ShowArray(array, length);
     }

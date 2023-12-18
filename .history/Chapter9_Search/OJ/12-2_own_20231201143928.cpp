@@ -31,7 +31,7 @@ int InputArray(int array[]) {
 void BiSearch(int array[], int key, int low, int high, int &count, int &pos) {
     // 将 low > high 作为递归的结束（当找不到要查找的元素（key）时会导致 low 最终 > high）
     if (low > high) {
-        // 若 low > high，则将 pos 设置为 -1，表示查找失败，然后退出函数
+        // 将 pos 设置为 -1，表示查找失败，然后退出函数
         pos = -1;
         return;
     }
@@ -39,7 +39,7 @@ void BiSearch(int array[], int key, int low, int high, int &count, int &pos) {
     int mid = floor((low + high) / 2);
     // 比较次数加 1
     count++;
-    // 如果 mid 指向的元素正好等于要查找的元素，那么直接通过参数 pos 返回该元素的位置（即 mid 指向的位置）
+    // 如果 mid 指向的元素正好等于要查找的元素，那么直接通过参数 pos 范围该元素的位置（即 mid 指向的位置）
     if (array[mid] == key) {
         pos = mid;
         return;

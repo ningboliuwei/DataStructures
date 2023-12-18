@@ -42,10 +42,9 @@ void InsertSort(int array[], int length) {
             while (array[0] < array[pos]) {
                 // 则把当前元素往后移动一个（直到找到插入位置，有点像当前元素去找应该《挤进去》的位置）
                 array[pos + 1] = array[pos];
-                // pos 前移一个，继续往前找
+                // pos 前移
                 pos--;
             }
-            // 当前元素找到了应该插入的位置，把当前元素插入到 pos 指向的单元的后一个单元的位置中去
             array[pos + 1] = array[0];
         }
         ShowArray(array, length);

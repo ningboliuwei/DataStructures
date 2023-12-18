@@ -39,27 +39,23 @@ void BubbleSort(int array[], int length) {
         int swapCount = 0;
         // 从无序序列中的第一个元素开始，依次和后一个元素进行比较，直到无序序列中的倒数第二个元素（第 i 趟排序，排好序的序列的元素个数为 i - 1 个）
         for (int j = 1; j <= length - i - 1; j++) {
-            // 如果当前元素比后一个元素大，则交换两个元素
             if (array[j] > array[j + 1]) {
                 array[0] = array[j + 1];
                 array[j + 1] = array[j];
                 array[j] = array[0];
-                // 交换次数加 1
                 swapCount++;
             }
         }
 
-        // 如果本趟排序没有任何交换操作，则说明已经完全排好序，不需要再进行接下来的比较，退出 for 循环
+        // 如果本趟排序没有任何交换操作，则说明已经完全排好序，不需要再进行接下来的比较
         if (swapCount == 0) {
             break;
         }
-        // 本趟排序结束，输出结果
+
         ShowArray(array, length);
-        // 本趟排序输出过结果，resultOutput 置为 true
         resultOutput = true;
     }
     // 为了通过 OJ  [1 2 3 4 5 6 7] 测试数据的补丁（至少输出一次）
-    // 如果 resultOutput 为 false，说明没有输出过结果，即所有元素都已经排好序，直接输出即可
     if (resultOutput == false) {
         ShowArray(array, length);
     }
