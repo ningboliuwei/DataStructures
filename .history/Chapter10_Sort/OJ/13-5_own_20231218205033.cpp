@@ -32,7 +32,6 @@ void ShowArray(int array[], int length) {
 
 // low, high 不能用引用，否则会在本趟排序过程中被改变（除非用别的变量做备份）
 // low 为参与快速排序的序列的下界，high 为参与快速排序的序列的上界，pivotPos 为支点（基准值）的位置
-// 声明 Partition() 函数，其作用是将序列中的元素分为两部分，左边的元素都比基准值小，右边的元素都比基准值大
 void Partition(int array[], int low, int high, int &pivotPos) {
     // 声明变量 pivotValue，用于存放基准值（即序列中第一个元素的值）
     int pivotValue = array[low];
@@ -64,31 +63,25 @@ void Partition(int array[], int low, int high, int &pivotPos) {
     array[pivotPos] = pivotValue;
 }
 
-void QuickSort(int array[], int low, int high, int &pivotPos) {
+void QuickSort(int array[], int low, int high, int &pivotPos, int count) {
     if (low < high) {
-        // 调用 Partition() 函数
+        // ShowArray(array, count);
         Partition(array, low, high, pivotPos);
-        // 递归调用 QuickSort() 函数，对基准值左边的序列进行快速排序
-        QuickSort(array, low, pivotPos - 1, pivotPos);
-        // 递归调用 QuickSort() 函数，对基准值右边的序列进行快速排序
-        QuickSort(array, pivotPos + 1, high, pivotPos);
+        QuickSort(array, low, pivotPos - 1, pivotPos, count);
+        QuickSort(array, pivotPos + 1, high, pivotPos, count);
     }
 }
 
 int main() {
-    // 声明 count 变量
     int count = 0;
-    // 声明 array 数组
     int array[MAX_LENGTH];
-    // 声明 pivotPos 变量
     int pivotPos = 0;
-    // 输入元素个数
+
     scanf("%d\n", &count);
-    // 输入数组
     InputArray(array, count);
-    // 调用 QuickSort() 函数，对 array 进行快速排序
-    QuickSort(array, 0, count - 1, pivotPos);
-    // 输出数组
+
+    QuickSort(array, 0, count - 1, pivotPos, count);
+
     ShowArray(array, count);
 
     getchar();

@@ -20,7 +20,6 @@ void InputArray(int array[], int length) {
     }
 }
 
-// 输出数组中的所有数据
 void ShowArray(int array[], int length) {
     // 注意这里下标从 0 开始
     for (int i = 0; i < length; i++) {
@@ -29,24 +28,22 @@ void ShowArray(int array[], int length) {
     printf("\n");
 }
 
-// 简单选择排序
 void SelectionSort(int array[], int length) {
-    // 进行 N 趟排序，每趟排序都把第 i 小的元素放在第 i 个位置上（即该趟中第一个待排序元素所在的位置）
+    // 每次排序都把第 N 小的数放在第 N 个位置上
     for (int i = 0; i < length; i++) {
-        // 声明一个名为 minPos 的变量，用来存储当前最小元素的位置（在遍历所有待排序元素，前假设的第一个元素最小）
         int minPos = i;
-        // 遍历所有待排序元素，找到最小的那个，并将其位置存储到 minPos 中
+        // 从第 i+1 个到最后一个中找到最小的那个，和第 i 个进行交换
         for (int j = i + 1; j < length; j++) {
             if (array[j] < array[minPos]) {
                 minPos = j;
             }
         }
-        // 如果 minPos 不等于 i，说明找到的最小元素的位置不是之前假设的那个，需要将其与整个序列中的第 i 个元素交换
+        // 如果 minPos 没变过，说明已经完全排好序了
         if (minPos != i) {
             int temp = array[minPos];
             array[minPos] = array[i];
             array[i] = temp;
-            // 交换后输出当前数组
+
             ShowArray(array, length);
         }
     }
@@ -55,6 +52,7 @@ void SelectionSort(int array[], int length) {
 int main() {
     int count = 0;
     int array[MAX_LENGTH];
+    int pivotPos = 0;
 
     scanf("%d\n", &count);
     InputArray(array, count);

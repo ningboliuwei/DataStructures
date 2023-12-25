@@ -66,29 +66,22 @@ void Partition(int array[], int low, int high, int &pivotPos) {
 
 void QuickSort(int array[], int low, int high, int &pivotPos) {
     if (low < high) {
-        // 调用 Partition() 函数
         Partition(array, low, high, pivotPos);
-        // 递归调用 QuickSort() 函数，对基准值左边的序列进行快速排序
         QuickSort(array, low, pivotPos - 1, pivotPos);
-        // 递归调用 QuickSort() 函数，对基准值右边的序列进行快速排序
         QuickSort(array, pivotPos + 1, high, pivotPos);
     }
 }
 
 int main() {
-    // 声明 count 变量
     int count = 0;
-    // 声明 array 数组
     int array[MAX_LENGTH];
-    // 声明 pivotPos 变量
     int pivotPos = 0;
-    // 输入元素个数
+
     scanf("%d\n", &count);
-    // 输入数组
     InputArray(array, count);
-    // 调用 QuickSort() 函数，对 array 进行快速排序
+
     QuickSort(array, 0, count - 1, pivotPos);
-    // 输出数组
+
     ShowArray(array, count);
 
     getchar();

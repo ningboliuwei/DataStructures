@@ -46,7 +46,7 @@ void SelectionSort(int array[], int length) {
             int temp = array[minPos];
             array[minPos] = array[i];
             array[i] = temp;
-            // 交换后输出当前数组
+
             ShowArray(array, length);
         }
     }
@@ -55,6 +55,7 @@ void SelectionSort(int array[], int length) {
 int main() {
     int count = 0;
     int array[MAX_LENGTH];
+    int pivotPos = 0;
 
     scanf("%d\n", &count);
     InputArray(array, count);

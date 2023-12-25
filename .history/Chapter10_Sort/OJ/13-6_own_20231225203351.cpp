@@ -41,12 +41,12 @@ void SelectionSort(int array[], int length) {
                 minPos = j;
             }
         }
-        // 如果 minPos 不等于 i，说明找到的最小元素的位置不是之前假设的那个，需要将其与整个序列中的第 i 个元素交换
+        // 如果 minPos 不等于 i，说明找到的最小元素的位置不是之前假设的那个，需要将其与第 i 个元素交换
         if (minPos != i) {
             int temp = array[minPos];
             array[minPos] = array[i];
             array[i] = temp;
-            // 交换后输出当前数组
+
             ShowArray(array, length);
         }
     }
@@ -55,6 +55,7 @@ void SelectionSort(int array[], int length) {
 int main() {
     int count = 0;
     int array[MAX_LENGTH];
+    int pivotPos = 0;
 
     scanf("%d\n", &count);
     InputArray(array, count);
