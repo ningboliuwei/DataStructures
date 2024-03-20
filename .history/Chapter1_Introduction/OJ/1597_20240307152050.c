@@ -1,6 +1,3 @@
-// OJ PASSED
-// 1597
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,6 +7,7 @@ typedef struct Node {
 } node;
 
 node *creatlink() { // 创建链表
+
     node *head = NULL, *p, *q, *t;
     int ch;
     head = (node *)malloc(sizeof(node));

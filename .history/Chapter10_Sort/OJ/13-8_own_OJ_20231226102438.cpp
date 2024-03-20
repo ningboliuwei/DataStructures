@@ -38,12 +38,8 @@
 int InputArray(int array[]) {
     int number = 0;
     int i = 0;
-    while (true) {
-        scanf("%d ", &number);
-        if (number == -1) {
-            break;
-        }
-        array[i] = number;
+    while (number != -1) {
+        scanf("%d ", &array[i]);
         i++;
     }
     return i;
@@ -73,17 +69,17 @@ void pnt(int array[], int lowBound, int upperBound) {
 //     // 将剩余的SR[j..n]复制到TR
 // } // Merge
 
-// void MSort(int SR[], int TR[], int s, int t) { // 将有序的SR[i..m]和SR[m+1..n]归并为有序的TR[i..n]
-//     if (s < t) {
-//         int mid = (s + t) / 2;
-//         MSort(SR, TR, s, mid);
-//         pnt(SR, s, mid);
-//         MSort(SR, TR, mid + 1, t);
-//         pnt(SR, mid + 1, t);
-//         Merge(SR, TR, s, mid, t);
-//         pnt(SR, s, t);
-//     }
-// }
+void MSort(int SR[], int TR[], int s, int t) { // 将有序的SR[i..m]和SR[m+1..n]归并为有序的TR[i..n]
+    if (s < t) {
+        int mid = (s + t) / 2;
+        MSort(SR, TR, s, mid);
+        pnt(SR, s, mid);
+        MSort(SR, TR, mid + 1, t);
+        pnt(SR, mid + 1, t);
+        Merge(SR, TR, s, mid, t);
+        pnt(SR, s, t);
+    }
+}
 
 int main() {
     int array[MAX_LENGTH];

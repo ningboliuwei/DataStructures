@@ -1,6 +1,3 @@
-// OJ PASSED
-// 1597
-
 #include <stdio.h>
 #include <stdlib.h>
 

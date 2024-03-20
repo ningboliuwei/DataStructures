@@ -38,7 +38,7 @@
 int InputArray(int array[]) {
     int number = 0;
     int i = 0;
-    while (true) {
+    while (number != -1) {
         scanf("%d ", &number);
         if (number == -1) {
             break;

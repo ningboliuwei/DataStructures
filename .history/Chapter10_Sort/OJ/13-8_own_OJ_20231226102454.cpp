@@ -38,12 +38,8 @@
 int InputArray(int array[]) {
     int number = 0;
     int i = 0;
-    while (true) {
-        scanf("%d ", &number);
-        if (number == -1) {
-            break;
-        }
-        array[i] = number;
+    while (number != -1) {
+        scanf("%d ", &array[i]);
         i++;
     }
     return i;

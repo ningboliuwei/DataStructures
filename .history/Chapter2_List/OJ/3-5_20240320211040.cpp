@@ -18,9 +18,10 @@ typedef struct linknode {
 LinkList GetHead(LinkList L);             //获取链式存储的线性表（带头结点）的头指针
 LinkList NextPos(LinkList L, LinkList h); //获取后继结点的地址
 dataType GetCurElem(LinkList p);          //获取当前结点的数据值
-void DelFirst(LinkList L, LinkList &q);   //删除线性表中的第一个数据结点并把删除结点放入q中
-void Append(LinkList L, LinkList q);      //追加一个结点到线性表中（尾部加入q结点）
-void FreeNode(LinkList L);                //释放整个线性表L
+void DelFirst(LinkList L,
+              LinkList &q);          //删除线性表中的第一个数据结点并把删除结点放入q中
+void Append(LinkList L, LinkList q); //追加一个结点到线性表中（尾部加入q结点）
+void FreeNode(LinkList L);           //释放整个线性表L
 int MergeList_L(LinkList &La, LinkList &Lb, LinkList &Lc);
 
 void Show(LinkList L);

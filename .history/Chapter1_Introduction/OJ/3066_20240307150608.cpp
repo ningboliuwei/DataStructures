@@ -60,7 +60,6 @@ void traverse(struct node *head) {
     }
 }
 
-// @@1
 // 销毁链表
 void destroy(struct node *head) {
     struct node *p = head; // 定义结点指针 p 并初始化为头结点指针
@@ -96,5 +95,3 @@ struct node *insertlinkby_elem(struct node *head, int elem) {
     }
     return head; // 返回链表头指针
 }
-
-// @@1
