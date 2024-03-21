@@ -77,14 +77,9 @@ struct PolyTerm *AddPolynomials(struct PolyTerm *poly1, struct PolyTerm *poly2) 
     // 如果 term1 或 term2 还有剩余的项，将其添加到结果中
     while (term1 != NULL) {
         newTerm = (struct PolyTerm *)malloc(sizeof(struct PolyTerm));
-        // 以下这个 if 语句是为了处理输入数据为
-        // 1 0
-        // 0 0
-        // 0 0
-        // 这种情况，没有这个 if 语句的话，会导致 lastTerm->next = newTerm 语句出错（没有给 lastTerm 分配空间）
+
         if (lastTerm == NULL) {
-            resultHead = newTerm;
-            lastTerm = newTerm;
+            lastTerm = (struct PolyTerm *)malloc(sizeof(struct PolyTerm));
         }
 
         lastTerm->next = newTerm;
@@ -97,14 +92,9 @@ struct PolyTerm *AddPolynomials(struct PolyTerm *poly1, struct PolyTerm *poly2) 
 
     while (term2 != NULL) {
         newTerm = (struct PolyTerm *)malloc(sizeof(struct PolyTerm));
-        // 以下这个 if 语句是为了处理输入数据为
-        // 0 0
-        // 1 0
-        // 0 0
-        // 这种情况，没有这个 if 语句的话，会导致 lastTerm->next = newTerm 语句出错（没有给 lastTerm 分配空间）
-        if (resultHead == NULL) {
-            resultHead = newTerm;
-            lastTerm = newTerm;
+
+        if (lastTerm == NULL) {
+            lastTerm = (struct PolyTerm *)malloc(sizeof(struct PolyTerm));
         }
 
         lastTerm->next = newTerm;

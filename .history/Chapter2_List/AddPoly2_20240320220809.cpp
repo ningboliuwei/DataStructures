@@ -40,11 +40,9 @@ struct PolyTerm *CreatePolynomial() {
 // 两个输入的多项式由链接表表示，其中每个节点表示一个项
 // 返回一个新的链表，代表相加后的多项式
 struct PolyTerm *AddPolynomials(struct PolyTerm *poly1, struct PolyTerm *poly2) {
-    struct PolyTerm *resultHead = NULL, *term1 = poly1, *term2 = poly2, *newTerm = NULL, *lastTerm = NULL;
+    struct PolyTerm *resultHead = NULL, *term1 = poly1, *term2 = poly2, *newTerm, *lastTerm;
     // lastTerm 保留了对结果链表的最后一个节点的引用。这对我们在循环中动态地向结果链表添加新节点非常有用。
-    // newTerm是通过动态内存分配创建的一个新的结构体变量（表示一个多项式中的一项）的指针。它用于创建一个新的多项式项，并将其添加到结果的多项式链表中。
     // 遍历两个输入的链表，根据指数合并项
-    // 这个while循环在term1或term2任何一个到达它们所在链表的末尾时会终止。也就是说，这个循环会遍历poly1和poly2这两个链表，直到任何一个链表遍历完为止。
     while (term1 != NULL && term2 != NULL) {
         newTerm = (struct PolyTerm *)malloc(sizeof(struct PolyTerm));
         if (resultHead == NULL) {
@@ -77,16 +75,6 @@ struct PolyTerm *AddPolynomials(struct PolyTerm *poly1, struct PolyTerm *poly2) 
     // 如果 term1 或 term2 还有剩余的项，将其添加到结果中
     while (term1 != NULL) {
         newTerm = (struct PolyTerm *)malloc(sizeof(struct PolyTerm));
-        // 以下这个 if 语句是为了处理输入数据为
-        // 1 0
-        // 0 0
-        // 0 0
-        // 这种情况，没有这个 if 语句的话，会导致 lastTerm->next = newTerm 语句出错（没有给 lastTerm 分配空间）
-        if (lastTerm == NULL) {
-            resultHead = newTerm;
-            lastTerm = newTerm;
-        }
-
         lastTerm->next = newTerm;
         lastTerm = newTerm;
         newTerm->coefficient = term1->coefficient;
@@ -97,16 +85,6 @@ struct PolyTerm *AddPolynomials(struct PolyTerm *poly1, struct PolyTerm *poly2) 
 
     while (term2 != NULL) {
         newTerm = (struct PolyTerm *)malloc(sizeof(struct PolyTerm));
-        // 以下这个 if 语句是为了处理输入数据为
-        // 0 0
-        // 1 0
-        // 0 0
-        // 这种情况，没有这个 if 语句的话，会导致 lastTerm->next = newTerm 语句出错（没有给 lastTerm 分配空间）
-        if (resultHead == NULL) {
-            resultHead = newTerm;
-            lastTerm = newTerm;
-        }
-
         lastTerm->next = newTerm;
         lastTerm = newTerm;
         newTerm->coefficient = term2->coefficient;
