@@ -34,9 +34,9 @@ Node *AddPolyNomial(Node *A, Node *B) {
     Node* head = NULL;
     Node* term1 = A;
     Node* term2 = B;
-    Node* p = NULL;
-    Node* q = NULL;
-
+    Node* p;
+    Node* q;
+    
     while (term1 != NULL && term2 != NULL) {
         p = new Node;
         if (head == NULL) {

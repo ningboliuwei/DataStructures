@@ -30,21 +30,15 @@ Node *createPolyTerm() {
     return head;
 }
 Node *AddPolyNomial(Node *A, Node *B) {
-    // Node *head = NULL, *term1 = A, *term2 = B, *p, *q;
-    Node* head = NULL;
-    Node* term1 = A;
-    Node* term2 = B;
-    Node* p = NULL;
-    Node* q = NULL;
-
+    Node *head = NULL, *term1 = A, *term2 = B, *p, *x;
     while (term1 != NULL && term2 != NULL) {
         p = new Node;
         if (head == NULL) {
             head = p;
-            q = p;
+            x = p;
         } else {
-            q->next = p;
-            q = p;
+            x->next = p;
+            x = p;
         }
         if (term1->n > term2->n) {
             p->m = term1->m;
@@ -68,7 +62,7 @@ Node *AddPolyNomial(Node *A, Node *B) {
         } else {
             p->next = term2;
         }
-    } else if (q == NULL) {
+    } else if (x == NULL) {
         if (B == NULL) {
             head = term1;
         } else {
@@ -77,8 +71,8 @@ Node *AddPolyNomial(Node *A, Node *B) {
     }
     while (term1 != NULL) {
         p = new Node;
-        q->next = p;
-        q = p;
+        x->next = p;
+        x = p;
         p->m = term1->m;
         p->n = term1->n;
         p->next = NULL;
@@ -86,8 +80,8 @@ Node *AddPolyNomial(Node *A, Node *B) {
     }
     while (term2 != NULL) {
         p = new Node;
-        q->next = p;
-        q = p;
+        x->next = p;
+        x = p;
         p->m = term2->m;
         p->n = term2->n;
         p->next = NULL;

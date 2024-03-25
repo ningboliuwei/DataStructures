@@ -90,7 +90,7 @@ int MatchBracket(char *expression) {
                     return 0;
                 }
             } else {
-                // 有多余的右括号，则说明不匹配
+                // 若不满足以上条件，则说明不匹配
                 return 0;
             }
         } else {

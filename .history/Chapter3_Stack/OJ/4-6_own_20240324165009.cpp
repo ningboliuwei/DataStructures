@@ -2,7 +2,7 @@
 // Created by 慰 on 2018/10/1.
 // 1605【数据结构3-6】栈的应用——表达式求解
 // 测试数据 1：
-// 输入：1*2+(3-8/4)*6
+// 输入：1 * 2 + (3 - 8 / 4) * 6
 // 结果：1 2 * 3 8 4 / - 6 * +，8
 
 #include <stdio.h>
@@ -66,19 +66,19 @@ int IsEmptyStack(LinkStack *stack) {
 
 int GetOperatorLevel(char op) {
     if (op == '#') {
-        return 0;
-    }
-
-    if (op == '(' || op == ')') {
-        return 1;
-    }
-
-    if (op == '*' || op == '/') {
         return 3;
     }
 
-    if (op == '+' || op == '-') {
+    if (op == '(' || op == ')') {
         return 2;
+    }
+
+    if (op == '*' || op == '/') {
+        return 1;
+    }
+
+    if (op == '+' || op == '-') {
+        return 0;
     }
 
     return -1;

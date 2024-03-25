@@ -74,11 +74,11 @@ int GetOperatorLevel(char op) {
     }
 
     if (op == '*' || op == '/') {
-        return 3;
+        return 2;
     }
 
     if (op == '+' || op == '-') {
-        return 2;
+        return 3;
     }
 
     return -1;

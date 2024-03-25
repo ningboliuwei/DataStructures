@@ -66,19 +66,19 @@ int IsEmptyStack(LinkStack *stack) {
 
 int GetOperatorLevel(char op) {
     if (op == '#') {
-        return 0;
-    }
-
-    if (op == '(' || op == ')') {
-        return 1;
-    }
-
-    if (op == '*' || op == '/') {
         return 3;
     }
 
-    if (op == '+' || op == '-') {
+    if (op == '(' || op == ')') {
         return 2;
+    }
+
+    if (op == '*' || op == '/') {
+        return 1;
+    }
+
+    if (op == '+' || op == '-') {
+        return 0;
     }
 
     return -1;

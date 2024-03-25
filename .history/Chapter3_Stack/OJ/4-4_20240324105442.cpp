@@ -86,11 +86,9 @@ int MatchBracket(char *expression) {
                     Pop(stack, top);
                     // 遍历下一个括号
                     i++;
-                } else {
-                    return 0;
                 }
             } else {
-                // 有多余的右括号，则说明不匹配
+                // 若不满足以上条件，则说明不匹配
                 return 0;
             }
         } else {

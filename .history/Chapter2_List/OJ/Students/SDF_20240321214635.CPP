@@ -30,13 +30,7 @@ Node *createPolyTerm() {
     return head;
 }
 Node *AddPolyNomial(Node *A, Node *B) {
-    // Node *head = NULL, *term1 = A, *term2 = B, *p, *q;
-    Node* head = NULL;
-    Node* term1 = A;
-    Node* term2 = B;
-    Node* p = NULL;
-    Node* q = NULL;
-
+    Node *head = NULL, *term1 = A, *term2 = B, *p, *q;
     while (term1 != NULL && term2 != NULL) {
         p = new Node;
         if (head == NULL) {
