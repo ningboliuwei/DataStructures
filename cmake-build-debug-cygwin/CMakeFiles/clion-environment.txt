@@ -1,0 +1,5 @@
+ToolSet: 3.3.6 (local)@C:\cygwin64
+Ninja: null@C:\Users\Liu Wei\AppData\Local\Programs\CLion\bin\ninja\cygwin\x64\ninja.exe
+Options: 
+
+Options:

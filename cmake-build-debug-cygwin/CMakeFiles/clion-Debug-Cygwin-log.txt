@@ -1,0 +1,13 @@
+"C:\Users\Liu Wei\AppData\Local\JetBrains\CLion2024.1\cygwin_cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /cygdrive/c/GitHub/DataStructures -B /cygdrive/c/GitHub/DataStructures/cmake-build-debug-cygwin
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
+CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!

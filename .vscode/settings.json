@@ -39,7 +39,17 @@
     "map": "cpp",
     "set": "cpp",
     "unordered_map": "cpp",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "iomanip": "cpp",
+    "istream": "cpp",
+    "ostream": "cpp",
+    "sstream": "cpp",
+    "stop_token": "cpp",
+    "__config": "cpp",
+    "__hash_table": "cpp",
+    "__locale": "cpp",
+    "ios": "cpp",
+    "thread": "cpp"
   },
   "C_Cpp.autocomplete": "Default",
   "[cpp]": {

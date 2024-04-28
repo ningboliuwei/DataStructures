@@ -1,108 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="Project" targetName="11-1" />
-      <config projectName="Project" targetName="20181120_1" />
-      <config projectName="Project" targetName="20181120_2" />
-      <config projectName="Project" targetName="11-4" />
-      <config projectName="Project" targetName="13-2" />
-      <config projectName="Project" targetName="TraverseTree_Level" />
-      <config projectName="Project" targetName="13-3" />
-      <config projectName="Project" targetName="11-2" />
-      <config projectName="Project" targetName="1556" />
-      <config projectName="Project" targetName="13-1" />
-      <config projectName="Project" targetName="11-3" />
-      <config projectName="Project" targetName="TEMP_W5_L2" />
-      <config projectName="Project" targetName="2-5cpp" />
-      <config projectName="Project" targetName="TEMP_W5_L1" />
-      <config projectName="Project" targetName="9-1" />
-      <config projectName="Project" targetName="9-2" />
-      <config projectName="Project" targetName="9-3" />
-      <config projectName="Project" targetName="9-4" />
-      <config projectName="Project" targetName="5-1" />
-      <config projectName="Project" targetName="3-3" />
-      <config projectName="Project" targetName="5-2" />
-      <config projectName="Project" targetName="3-4" />
-      <config projectName="Project" targetName="TEMP3" />
-      <config projectName="Project" targetName="5-3" />
-      <config projectName="Project" targetName="3-5" />
-      <config projectName="Project" targetName="TEMP2" />
-      <config projectName="Project" targetName="TEMP1" />
-      <config projectName="Project" targetName="3-6" />
-      <config projectName="Project" targetName="5-4" />
-      <config projectName="Project" targetName="13-4_deeplearn_B" />
-      <config projectName="Project" targetName="13-4" />
-      <config projectName="Project" targetName="13-5" />
-      <config projectName="Project" targetName="9-5" />
-      <config projectName="Project" targetName="LinkStack_1" />
-      <config projectName="Project" targetName="13-2B" />
-      <config projectName="Project" targetName="LinkListWithoutHeadNode" />
-      <config projectName="Project" targetName="TEMP_W4_L1" />
-      <config projectName="Project" targetName="4-1" />
-      <config projectName="Project" targetName="TEMP_STUDENT_EXERCISE" />
-      <config projectName="Project" targetName="SelectionSort" />
-      <config projectName="Project" targetName="SequenceString_1" />
-      <config projectName="Project" targetName="week05_lecture1" />
-      <config projectName="Project" targetName="LinkListQueue_1" />
-      <config projectName="Project" targetName="LoopQueue_1" />
-      <config projectName="Project" targetName="10-1" />
-      <config projectName="Project" targetName="LoopQueue_2" />
-      <config projectName="Project" targetName="10-2" />
-      <config projectName="Project" targetName="1530" />
-      <config projectName="Project" targetName="TEMP_W3_L1" />
-      <config projectName="Project" targetName="SingleLinkList_1" />
-      <config projectName="Project" targetName="TEMP_W3_L2" />
-      <config projectName="Project" targetName="8-2" />
-      <config projectName="Project" targetName="SequenceQueue_2" />
-      <config projectName="Project" targetName="4-6" />
-      <config projectName="Project" targetName="6-4" />
-      <config projectName="Project" targetName="WEEK06_LECTURE1_DEMO" />
-      <config projectName="Project" targetName="4-7" />
-      <config projectName="Project" targetName="4-8" />
-      <config projectName="Project" targetName="LinkListWithHeadNode" />
-      <config projectName="Project" targetName="SequenceQueue_1" />
-      <config projectName="Project" targetName="4-2" />
-      <config projectName="Project" targetName="4-3" />
-      <config projectName="Project" targetName="6-1" />
-      <config projectName="Project" targetName="2-6" />
-      <config projectName="Project" targetName="4-4" />
-      <config projectName="Project" targetName="6-2" />
-      <config projectName="Project" targetName="8-1" />
-      <config projectName="Project" targetName="6-3" />
-      <config projectName="Project" targetName="4-5" />
-      <config projectName="Project" targetName="temp1" />
-      <config projectName="Project" targetName="3-1" />
-      <config projectName="Project" targetName="TEMP_W6_L1" />
-      <config projectName="Project" targetName="3-2" />
-      <config projectName="Project" targetName="BracketMatching" />
-      <config projectName="Project" targetName="SequenceList_1" />
-      <config projectName="Project" targetName="TEMP_W2_L1" />
-      <config projectName="Project" targetName="SequenceStack_1" />
-      <config projectName="Project" targetName="13-4_deeplearn" />
-      <config projectName="Project" targetName="TEMP_W9_L1" />
-      <config projectName="Project" targetName="TraverseTree_Array" />
-      <config projectName="Project" targetName="13-1C" />
-      <config projectName="Project" targetName="20181127_2" />
-      <config projectName="Project" targetName="20181129_1" />
-      <config projectName="Project" targetName="20181127_1" />
-      <config projectName="Project" targetName="TraverseTree_Link" />
-      <config projectName="Project" targetName="13-1B" />
-      <config projectName="Project" targetName="NumberConvertion_1" />
-    </generated>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug-Cygwin" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Cygwin" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13153a6-95aa-4526-9baa-da84344f48ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231027220735.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231027221327.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231027221506.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231027222545.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231027222751.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231027222935.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231027223045.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231027223201.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231027223804.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028084527.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028084852.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028084858.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085007.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085024.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085338.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085439.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085445.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085516.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085534.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085724.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085737.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085824.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085853.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028085906.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028090139.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028090243.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028091630.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028091710.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028091727.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028091854.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028091914.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028092047.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028092056.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028092103.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028092137.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028092349.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028092534.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028092553.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028093225.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028093404.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/OJ/8-1_own_20231028093412.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/TraverseTree/TraverseTree_Link_20191112132858.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/TraverseTree/TraverseTree_Link_20201109211208.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/TraverseTree/TraverseTree_Link_20201109213135.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/TraverseTree/TraverseTree_Link_20201109213342.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/TraverseTree/TraverseTree_Link_20201109214319.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/TraverseTree/TraverseTree_Link_20201109214401.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/TraverseTree/TraverseTree_Link_20201109214501.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/TraverseTree/TraverseTree_Link_20201109214634.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/Chapter7_Tree/TraverseTree/TraverseTree_Link_20201109214655.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter10_Sort/OJ/13-4_deeplearn_B.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10_Sort/OJ/13-4_deeplearn_B.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter10_Sort/quick_sort.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10_Sort/quick_sort.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3_Stack/OJ/4-6_own2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3_Stack/OJ/4-6_own2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/OJ/8-1_own.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/8-1_own.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/OJ/8-1_own.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/OJ/8-1_own.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Array.c" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Array.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Array.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Array.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Link.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Link.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Link.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_Tree/TraverseTree/TraverseTree_Link.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +103,9 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="1RrLtGa4tY097T8TGeg6sjYCRf5" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -153,26 +131,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="cf.advertisement.text.has.clang-format" value="true" />
-    <property name="cf.advertisement.text.overridden" value="true" />
-    <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chapter10_Sort/OJ" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake 调试.Project.executor": "Debug",
+    "CMake 调试.未命名.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.advertisement.text.overridden": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "2024__Spring",
+    "last_opened_file_path": "C:/GitHub/DataStructures",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CMakeSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\DataStructures\Chapter10_Sort\OJ" />
+      <recent name="C:\GitHub\DataStructures\Chapter4_Queue\LoopQueue" />
+      <recent name="C:\GitHub\DataStructures\TEMP" />
+      <recent name="C:\GitHub\CLionProjects\DataStructures" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GitHub\DataStructures\Chapter10_Sort" />
       <recent name="C:\GitHub\CLionProjects\DataStructures\Chapter7_Tree\OJ" />
@@ -180,545 +166,20 @@
       <recent name="C:\GitHub\DataStructures\LECTURES&amp;LABS" />
       <recent name="C:\GitHub\DataStructures\Chapter5_String\SequenceString" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\GitHub\DataStructures\Chapter10_Sort\OJ" />
-      <recent name="C:\GitHub\DataStructures\Chapter4_Queue\LoopQueue" />
-      <recent name="C:\GitHub\DataStructures\TEMP" />
-      <recent name="C:\GitHub\CLionProjects\DataStructures" />
-    </key>
   </component>
-  <component name="RunManager" selected="CMake Application.13-2B">
-    <configuration name="10-1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="10-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="10-1">
+  <component name="RunManager">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="10-2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="10-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="10-2">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="11-1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="11-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="11-1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="11-2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="11-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="11-2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="11-3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="11-3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="11-3">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="11-4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="11-4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="11-4">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="13-1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="13-1B" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-1B" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-1B">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="13-1C" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-1C" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-1C">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="13-2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="13-2B" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-2B" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-2B">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="13-3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-3">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="13-4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-4">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="13-4_deeplearn" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-4_deeplearn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-4_deeplearn">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="13-4_deeplearn_B" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-4_deeplearn_B" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-4_deeplearn_B">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="13-5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="13-5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="13-5">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="1530" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1530" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1530">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="1556" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1556" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1556">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="2-5cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="2-5cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="2-5cpp">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="2-6" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="2-6" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="2-6">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="20181120_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="20181120_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="20181120_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="20181120_2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="20181120_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="20181120_2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="20181127_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="20181127_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="20181127_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="20181127_2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="20181127_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="20181127_2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="20181129_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="20181129_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="20181129_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="3-1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="3-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="3-1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="3-2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="3-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="3-2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="3-3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="3-3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="3-3">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="3-4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="3-4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="3-4">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="3-5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="3-5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="3-5">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="3-6" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="3-6" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="3-6">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="4-1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="4-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="4-1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="4-2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="4-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="4-2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="4-3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="4-3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="4-3">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="4-4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="4-4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="4-4">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="4-5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="4-5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="4-5">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="4-6" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="4-6" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="4-6">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="4-7" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="4-7" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="4-7">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="4-8" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="4-8" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="4-8">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="5-1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="5-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="5-1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="5-2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="5-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="5-2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="5-3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="5-3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="5-3">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="5-4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="5-4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="5-4">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="6-1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="6-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="6-1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="6-2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="6-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="6-2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="6-3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="6-3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="6-3">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="6-4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="6-4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="6-4">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="8-1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="8-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="8-1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="8-2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="8-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="8-2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="9-1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="9-1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="9-1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="9-2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="9-2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="9-2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="9-3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="9-3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="9-3">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="9-4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="9-4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="9-4">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="9-5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="9-5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="9-5">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BracketMatching" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="BracketMatching" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="BracketMatching">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkListQueue_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="LinkListQueue_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="LinkListQueue_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkListWithHeadNode" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="LinkListWithHeadNode" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="LinkListWithHeadNode">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkListWithoutHeadNode" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="LinkListWithoutHeadNode" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="LinkListWithoutHeadNode">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkStack_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="LinkStack_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="LinkStack_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoopQueue_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="LoopQueue_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="LoopQueue_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoopQueue_2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="LoopQueue_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="LoopQueue_2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumberConvertion_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="NumberConvertion_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="NumberConvertion_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SelectionSort" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="SelectionSort" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="SelectionSort">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SequenceList_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="SequenceList_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="SequenceList_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SequenceQueue_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="SequenceQueue_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="SequenceQueue_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SequenceQueue_2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="SequenceQueue_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="SequenceQueue_2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SequenceStack_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="SequenceStack_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="SequenceStack_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SequenceString_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="SequenceString_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="SequenceString_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingleLinkList_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="SingleLinkList_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="SingleLinkList_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP3">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP_STUDENT_EXERCISE" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_STUDENT_EXERCISE" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_STUDENT_EXERCISE">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP_W2_L1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W2_L1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W2_L1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP_W3_L1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W3_L1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W3_L1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP_W3_L2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W3_L2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W3_L2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP_W4_L1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W4_L1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W4_L1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP_W5_L1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W5_L1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W5_L1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP_W5_L2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W5_L2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W5_L2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP_W6_L1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W6_L1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W6_L1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TEMP_W9_L1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TEMP_W9_L1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TEMP_W9_L1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TraverseTree_Array" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TraverseTree_Array" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TraverseTree_Array">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TraverseTree_Level" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TraverseTree_Level" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TraverseTree_Level">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TraverseTree_Link" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="TraverseTree_Link" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="TraverseTree_Link">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WEEK06_LECTURE1_DEMO" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="WEEK06_LECTURE1_DEMO" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="WEEK06_LECTURE1_DEMO">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="temp1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="temp1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="temp1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="week05_lecture1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="week05_lecture1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="week05_lecture1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.Build All" />
-      <item itemvalue="CMake Application.10-1" />
-      <item itemvalue="CMake Application.10-2" />
-      <item itemvalue="CMake Application.11-1" />
-      <item itemvalue="CMake Application.11-2" />
-      <item itemvalue="CMake Application.11-3" />
-      <item itemvalue="CMake Application.11-4" />
-      <item itemvalue="CMake Application.13-1" />
-      <item itemvalue="CMake Application.13-1B" />
-      <item itemvalue="CMake Application.13-1C" />
-      <item itemvalue="CMake Application.13-2" />
-      <item itemvalue="CMake Application.13-2B" />
-      <item itemvalue="CMake Application.13-3" />
-      <item itemvalue="CMake Application.13-4" />
-      <item itemvalue="CMake Application.13-4_deeplearn" />
-      <item itemvalue="CMake Application.13-4_deeplearn_B" />
-      <item itemvalue="CMake Application.13-5" />
-      <item itemvalue="CMake Application.1530" />
-      <item itemvalue="CMake Application.1556" />
-      <item itemvalue="CMake Application.2-5cpp" />
-      <item itemvalue="CMake Application.2-6" />
-      <item itemvalue="CMake Application.20181120_1" />
-      <item itemvalue="CMake Application.20181120_2" />
-      <item itemvalue="CMake Application.20181127_1" />
-      <item itemvalue="CMake Application.20181127_2" />
-      <item itemvalue="CMake Application.20181129_1" />
-      <item itemvalue="CMake Application.3-1" />
-      <item itemvalue="CMake Application.3-2" />
-      <item itemvalue="CMake Application.3-3" />
-      <item itemvalue="CMake Application.3-4" />
-      <item itemvalue="CMake Application.3-5" />
-      <item itemvalue="CMake Application.3-6" />
-      <item itemvalue="CMake Application.4-1" />
-      <item itemvalue="CMake Application.4-2" />
-      <item itemvalue="CMake Application.4-3" />
-      <item itemvalue="CMake Application.4-4" />
-      <item itemvalue="CMake Application.4-5" />
-      <item itemvalue="CMake Application.4-6" />
-      <item itemvalue="CMake Application.4-7" />
-      <item itemvalue="CMake Application.4-8" />
-      <item itemvalue="CMake Application.5-1" />
-      <item itemvalue="CMake Application.5-2" />
-      <item itemvalue="CMake Application.5-3" />
-      <item itemvalue="CMake Application.5-4" />
-      <item itemvalue="CMake Application.6-1" />
-      <item itemvalue="CMake Application.6-2" />
-      <item itemvalue="CMake Application.6-3" />
-      <item itemvalue="CMake Application.6-4" />
-      <item itemvalue="CMake Application.8-1" />
-      <item itemvalue="CMake Application.8-2" />
-      <item itemvalue="CMake Application.9-1" />
-      <item itemvalue="CMake Application.9-2" />
-      <item itemvalue="CMake Application.9-3" />
-      <item itemvalue="CMake Application.9-4" />
-      <item itemvalue="CMake Application.9-5" />
-      <item itemvalue="CMake Application.BracketMatching" />
-      <item itemvalue="CMake Application.LinkListQueue_1" />
-      <item itemvalue="CMake Application.LinkListWithHeadNode" />
-      <item itemvalue="CMake Application.LinkListWithoutHeadNode" />
-      <item itemvalue="CMake Application.LinkStack_1" />
-      <item itemvalue="CMake Application.LoopQueue_1" />
-      <item itemvalue="CMake Application.LoopQueue_2" />
-      <item itemvalue="CMake Application.NumberConvertion_1" />
-      <item itemvalue="CMake Application.SelectionSort" />
-      <item itemvalue="CMake Application.SequenceList_1" />
-      <item itemvalue="CMake Application.SequenceQueue_1" />
-      <item itemvalue="CMake Application.SequenceQueue_2" />
-      <item itemvalue="CMake Application.SequenceStack_1" />
-      <item itemvalue="CMake Application.SequenceString_1" />
-      <item itemvalue="CMake Application.SingleLinkList_1" />
-      <item itemvalue="CMake Application.TEMP1" />
-      <item itemvalue="CMake Application.temp1" />
-      <item itemvalue="CMake Application.TEMP2" />
-      <item itemvalue="CMake Application.TEMP3" />
-      <item itemvalue="CMake Application.TEMP_STUDENT_EXERCISE" />
-      <item itemvalue="CMake Application.TEMP_W2_L1" />
-      <item itemvalue="CMake Application.TEMP_W3_L1" />
-      <item itemvalue="CMake Application.TEMP_W3_L2" />
-      <item itemvalue="CMake Application.TEMP_W4_L1" />
-      <item itemvalue="CMake Application.TEMP_W5_L1" />
-      <item itemvalue="CMake Application.TEMP_W5_L2" />
-      <item itemvalue="CMake Application.TEMP_W6_L1" />
-      <item itemvalue="CMake Application.TEMP_W9_L1" />
-      <item itemvalue="CMake Application.TraverseTree_Array" />
-      <item itemvalue="CMake Application.TraverseTree_Level" />
-      <item itemvalue="CMake Application.TraverseTree_Link" />
-      <item itemvalue="CMake Application.week05_lecture1" />
-      <item itemvalue="CMake Application.WEEK06_LECTURE1_DEMO" />
-    </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -844,6 +305,8 @@
       <workItem from="1575937778683" duration="1069000" />
       <workItem from="1575956527461" duration="655000" />
       <workItem from="1588315725172" duration="528000" />
+      <workItem from="1714051733042" duration="100000" />
+      <workItem from="1714051841707" duration="476000" />
     </task>
     <task id="LOCAL-00001" summary="2019 年链栈的一些改动">
       <created>1571922507843</created>
@@ -863,7 +326,12 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -875,18 +343,11 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2019 年链栈的一些改动" />
     <MESSAGE value="2019 对 linkqueue 的一些改动（原先的有 bug）" />
     <option name="LAST_COMMIT_MESSAGE" value="2019 对 linkqueue 的一些改动（原先的有 bug）" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="241" y="37" key="SettingsEditor" timestamp="1588317814701">
-      <screen x="0" y="0" width="1463" height="783" />
-    </state>
-    <state x="241" y="37" key="SettingsEditor/0.0.1463.783@0.0.1463.783" timestamp="1588317814701" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -978,6 +439,10 @@
         <watch expression="(elements[index]" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="masterDetails">
     <states>
