@@ -113,7 +113,7 @@ void MiniSpanTree_KRUSKAL(MGraph G, int n, int v) {
         }
         // 选中的这条权值最小边的起点下标保存到 startVertexIndex 中
         int startVertexIndex = edgeFlags[minEdgeIndex].u;
-        // 选中的这条权值最小边的终点下标保存到 endVertexIndex 中
+        // 选中的这条权值最小边的终点下标保存到 pos2 中
         int endVertexIndex = edgeFlags[minEdgeIndex].v;
         // 如果找到的权值最小边的起点与终点不属于同一个集合（连通分量），
         if (vertexSets[startVertexIndex] != vertexSets[endVertexIndex]) {

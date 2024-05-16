@@ -2,72 +2,6 @@
 // Created by Liu Wei on 2024/4/28
 // 问题 A: 【数据结构7-12】哈夫曼编码
 // OJ PASSED
-// 测试数据
-// 输入：
-// 7
-// 4
-// 5
-// 7
-// 8
-// 6
-// 12
-// 18
-// ABCDEFG
-// 00001101110010100100101
-// 输出：
-// A 4 1010
-// B 5 1011
-// C 7 011
-// D 8 100
-// E 6 010
-// F 12 00
-// G 18 11
-// 101010110111000100011
-// FFGCDAEE
-
-// OJ 第一组测试数据
-// 7（输入）
-// 4（输入）
-// 5（输入）
-// 7（输入）
-// 8（输入）
-// 6（输入）
-// 12（输入）
-// 18（输入）
-// A 4 1010（输出）
-// B 5 1011（输出）
-// C 7 011（输出）
-// D 8 100（输出）
-// E 6 010（输出）
-// F 12 00（输出）
-// G 18 11（输出）
-// 101010110111000100011（输入）
-// FFGCDAEE（输入）
-
-// OJ 第二组测试数据
-// 4
-// 6
-// 4
-// 3
-// 1
-// A 6 0
-// B 4 10
-// C 3 111
-// D 1 110
-// ABCD
-// 010111110
-// AAAACB
-
-// OJ 第三组测试数据
-// 3
-// 1
-// 2
-// 4
-// A 1 00
-// B 2 01
-// C 4 1
-// 00011
-// AABCCCC
 
 #include <stdio.h>  // 引入标准输入输出库
 #include <stdlib.h> // 引入标准库，用于动态分配内存等操作
@@ -150,7 +84,7 @@ void GenerateAndPrintHuffmanCodes(HuffmanTree HT, int n) {
         for (int q = k - 1, r = 0; q >= 0; q--, r++) {
             HT[i].code[r] = temp[q];
         }
-        HT[i].code[k] = 0; // 添加字符串结束符
+        HT[i].code[k] = '\0'; // 添加字符串结束符
 
         // 打印字符和对应的哈夫曼编码
         printf("%c %d ", HT[i].data, HT[i].weight);
@@ -175,12 +109,11 @@ void HuffmanEncode(HuffmanTree HT, int n, char *str) {
 void HuffmanDecode(HuffmanTree HT, int n, char *code) {
     int i = 2 * n - 2; // 根节点索引
     // 遍历编码字符串
-    while (*code != 0) {
-        if (*code == '0') {
-            i = HT[i].lchild; // 向左移动}
-        } else {
+    while (*code != '\0') {
+        if (*code == '0')
+            i = HT[i].lchild; // 向左移动
+        else
             i = HT[i].rchild; // 向右移动
-        }
 
         if (HT[i].lchild == -1 && HT[i].rchild == -1) {
             printf("%c", HT[i].data); // 到达叶子节点，输出字符
@@ -189,24 +122,6 @@ void HuffmanDecode(HuffmanTree HT, int n, char *code) {
 
         code++; // 移动到编码的下一个字符
     }
-    printf("\n");
-}
-
-void HuffmanDecode2(HuffmanTree HT, int n, char *code) {
-    char *ptr = code; // 指向当前编码的开始位置
-    // 循环，直到编码字符串的末尾
-    while (*ptr != 0) {
-        // 遍历叶子节点
-        for (int i = 0; i < n; i++) {
-            // 检查当前编码字符串是否以某个字符的编码开始
-            if (strncmp(HT[i].code, ptr, strlen(HT[i].code)) == 0) {
-                printf("%c", HT[i].data);  // 匹配到编码，打印对应的字符
-                ptr += strlen(HT[i].code); // 移动指针到当前匹配编码的下一个位置
-                break;
-            }
-        }
-    }
-    printf("\n");
 }
 
 // 主函数
@@ -223,11 +138,11 @@ int main() {
     // 读入需要编码的字符串
     char str[1000];
     scanf("%s", str);
-    7 4 5 7 8 6 12 18 HuffmanEncode(HT, n, str); // 进行哈夫曼编码
+    HuffmanEncode(HT, n, str); // 进行哈夫曼编码
 
     // 读入需要译码的编码字符串
     scanf("%s", str);
-    HuffmanDecode2(HT, n, str); // 进行哈夫曼译码
+    HuffmanDecode(HT, n, str); // 进行哈夫曼译码
 
     // 阻塞程序结束，等待用户输入，确保看到程序输出结果
     getchar();

@@ -223,7 +223,7 @@ int main() {
     // 读入需要编码的字符串
     char str[1000];
     scanf("%s", str);
-    7 4 5 7 8 6 12 18 HuffmanEncode(HT, n, str); // 进行哈夫曼编码
+    HuffmanEncode(HT, n, str); // 进行哈夫曼编码
 
     // 读入需要译码的编码字符串
     scanf("%s", str);
