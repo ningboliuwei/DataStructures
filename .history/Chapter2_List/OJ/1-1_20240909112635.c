@@ -21,6 +21,13 @@ void creatlink(struct node *head); //创建链表
 void traverse(struct node *head);  //遍历链表
 
 
+struct {
+    int data[100];
+    int last;
+}
+
+
+
 //主函数
 main() {
     int c;

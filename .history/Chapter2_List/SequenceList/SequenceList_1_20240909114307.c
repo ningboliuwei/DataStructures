@@ -13,7 +13,8 @@ typedef struct {
 } SeqList;
 
 SeqList* CreateList_Seq() {
-        SeqList *list = (SeqList *)malloc(sizeof(SeqList));
+    SeqList* list;
+        // SeqList *list = (SeqList *)malloc(sizeof(SeqList));
         // 空表时，list->last 设为 -1
         list->last = -1;
 

@@ -21,8 +21,18 @@ void creatlink(struct node *head); //创建链表
 void traverse(struct node *head);  //遍历链表
 
 
+
+
 //主函数
 main() {
+
+    struct {
+    int data[100];
+    int last;
+}
+
+
+    
     int c;
     struct node *head;                                 //定义头结点指针
     head = (struct node *)malloc(sizeof(struct node)); //动态分配头结点内存空间

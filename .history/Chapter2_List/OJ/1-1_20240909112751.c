@@ -20,6 +20,10 @@ void destroy(struct node *head);   //销毁链表
 void creatlink(struct node *head); //创建链表
 void traverse(struct node *head);  //遍历链表
 
+typedef struct {
+    int data[100];
+    int last;
+}SeqList;
 
 //主函数
 main() {
