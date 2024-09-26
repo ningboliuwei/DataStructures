@@ -11,7 +11,8 @@
         "C:/cygwin64/usr/x86_64-w64-mingw32/sys-root/mingw/include/",
         "C:/cygwin64/lib/gcc/x86_64-w64-mingw32/11/include/c++/",
         "C:/cygwin64/lib/gcc/x86_64-w64-mingw32/11/include/c++/tr1",
-        "C:/cygwin64/lib/**"
+        "C:/cygwin64/lib/**",
+        "C:/SDL2/**"
       ],
       "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
       "windowsSdkVersion": "10.0.17763.0",
