@@ -158,7 +158,7 @@ void BFSM(MGraph *g, int nodeIndex, int *visited) {
         // 将所有与（出队的）队头顶点邻接的且尚未被访问过的顶点入队
         for (int i = 0; i < g->n; i++) {
             if (g->edges[*vertex][i] == 1 && !visited[i]) {
-                printf("%d ", g->vertex[i]);
+                printf("%d ", g->vertex[*vertex]);
                 visited[i] = 1;
                 InQueue(queue, i);
             }

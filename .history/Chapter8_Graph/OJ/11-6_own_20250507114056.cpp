@@ -144,22 +144,20 @@ void BFSM(MGraph *g, int nodeIndex, int *visited) {
     // 创建一个队列并初始化
     SequenceQueue *queue = (SequenceQueue *)malloc(sizeof(SequenceQueue));
     InitQueue(queue);
-    // 输出当前顶点信息（可以理解为“访问”了这个顶点）
-    printf("%d ", g->vertex[nodeIndex]);
-    // 将当前定点设为“已访问”
-    visited[nodeIndex] = 1;
     // 将当前顶点（遍历的出发点）的下标入队
     InQueue(queue, nodeIndex);
     // 只要当前队列不为空，就一直进行出队（注意，从队列中删除的永远是当前的队头元素）操作，直到队列为空为止
     while (!IsEmptyQueue(*queue)) {
-        int *vertex = (int *)malloc(sizeof(int));
+        int *item = (int *)malloc(sizeof(int));
         // 将队头元素出队
-        OutQueue(queue, vertex);
+        OutQueue(queue, item);
+        // 输出当前顶点信息（可以理解为“访问”了这个顶点）
+        printf("%d ", g->vertex[*item]);
+        // 将该点设置为“已访问”
+        visited[*item] = 1;
         // 将所有与（出队的）队头顶点邻接的且尚未被访问过的顶点入队
         for (int i = 0; i < g->n; i++) {
-            if (g->edges[*vertex][i] == 1 && !visited[i]) {
-                printf("%d ", g->vertex[i]);
-                visited[i] = 1;
+            if (g->edges[nodeIndex][i] == 1 && !visited[i]) {
                 InQueue(queue, i);
             }
         }
