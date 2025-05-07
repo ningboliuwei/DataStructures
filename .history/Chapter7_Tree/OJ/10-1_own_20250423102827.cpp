@@ -50,7 +50,7 @@ void CreateHuffmanTree(HTNode treeNodes[], int &treeNodeCount) {
         treeNodes[i].rightChild = -1; // 初始化右子节点
         treeNodes[i].parent = -1;     // 初始化父节点
     }
-    int nodeCount = 0; // 初始化叶子节点数量
+    int nodeCount = 0; // 初始叶子节点数量
 
     scanf("%d", &nodeCount); // 读取叶子节点数量
 

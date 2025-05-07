@@ -60,12 +60,16 @@ int LengthOfQueue(SequenceQueue queue) {
         return 0;
     }
 
-    return queue->rear - queue->front;
+    return queue->rear - queue->front + 1;
 }
 // 入队
 int InQueue(SequenceQueue *queue, int item) {
     if ((*queue)->rear == MAXLEN - 1) {
         return 0;
+    }
+
+    if (IsEmptyQueue(*queue)) {
+        (*queue)->front = 0;
     }
 
     (*queue)->rear++;
@@ -79,8 +83,8 @@ int OutQueue(SequenceQueue *queue, int *item) {
         return 0;
     }
 
-    (*queue)->front++;
     *item = (*queue)->data[(*queue)->front];
+    (*queue)->front++;
 
     return 1;
 }
@@ -145,6 +149,7 @@ void BFSM(MGraph *g, int nodeIndex, int *visited) {
     SequenceQueue *queue = (SequenceQueue *)malloc(sizeof(SequenceQueue));
     InitQueue(queue);
     // 输出当前顶点信息（可以理解为“访问”了这个顶点）
+    // printf("%d ", g->vertex[nodeIndex]);
     // 将当前顶点设为“已访问”
     visited[nodeIndex] = 1;
     // 将当前顶点（遍历的出发点）的下标入队
@@ -157,7 +162,7 @@ void BFSM(MGraph *g, int nodeIndex, int *visited) {
         // 将队头元素出队
         OutQueue(queue, item);
         // 输出队头元素（相当于访问）
-        printf("%d ", g->vertex[*item]);
+        printf("%d ", *item);
         // 将所有与（出队的）队头顶点邻接的且尚未被访问过的顶点入队
         for (int i = 0; i < g->n; i++) {
             if (g->edges[currentIndex][i] == 1 && !visited[i]) {
