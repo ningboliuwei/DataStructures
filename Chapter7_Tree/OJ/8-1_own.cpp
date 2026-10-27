@@ -13,7 +13,7 @@
       B    C
      /\    /\
     D  E  F G
-      /  /   
+      /  /
      H   I            */
 
 #include <stdio.h>

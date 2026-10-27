@@ -30,7 +30,7 @@
 // 3 2 5
 // 2 5 3
 
-#define MAX_VEX_COUNT 10
+#define MAX_VEX_COUNT 6
 #define INFINITY 99999
 typedef struct {
     char vexs[MAX_VEX_COUNT];

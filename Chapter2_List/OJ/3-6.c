@@ -2,17 +2,17 @@
 // Created by 慰 on 2018/9/30.
 // 问题 F: 【数据结构2-7】多项式求和——链表实现（p39自主设计实验2）
 
-#include<stdio.h>
-#include<malloc.h>
+#include <stdio.h>
+#include <malloc.h>
 
 typedef struct Node {
-    int m;       // 系数
-    int n;       // 指数
+    int m; // 系数
+    int n; // 指数
     struct Node *next;
 } LinkNode, *LinkList;
 
 LinkList InitList() {
-    LinkList list = (LinkList) malloc(sizeof(LinkNode));
+    LinkList list = (LinkList)malloc(sizeof(LinkNode));
     return list;
 }
 
@@ -34,7 +34,7 @@ int CreateList(LinkList list) {
     int n = -1;
 
     while (scanf("%d%d", &m, &n) && !(m == 0 && n == 0)) {
-        LinkNode *newNode = (LinkNode *) malloc(sizeof(LinkNode));
+        LinkNode *newNode = (LinkNode *)malloc(sizeof(LinkNode));
         newNode->m = m;
         newNode->n = n;
         newNode->next = NULL;
@@ -82,7 +82,7 @@ int AddList(LinkList list1, LinkList list2, LinkList list3) {
             current = current->next;
         }
 
-        LinkNode *newNode = (LinkNode *) malloc(sizeof(LinkNode));
+        LinkNode *newNode = (LinkNode *)malloc(sizeof(LinkNode));
         newNode->m = sumM;
         newNode->n = i;
         newNode->next = list3->next;
@@ -115,4 +115,3 @@ int main() {
 
     return 1;
 }
-

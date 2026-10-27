@@ -50,7 +50,7 @@ void BiSearch(int array[], int key, int low, int high, int &count, int &pos) {
     } // 如果关键字大于 mid 指向的元素
     else {
         // 递归查找右半部分，即下界 low 变为 mid + 1，上界 high 不变
-        BiSearch(array, ke999, count, pos);
+        BiSearch(array, key, mid + 1, high, count, pos);
     }
 }
 

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-// 问题 B: 【数据结构9-2】二分查找
+// 问题 B: 【数据结构9-3】二叉搜索树（二叉排序树）BST
 // ID：1654
 // OJ PASSED
 // 输入：

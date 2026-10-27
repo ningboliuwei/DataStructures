@@ -156,8 +156,7 @@ void BFSM(MGraph *g, int nodeIndex, int *visited) {
     InQueue(queue, nodeIndex);
     // 只要当前队列不为空，就一直进行出队（注意，从队列中删除的永远是当前的队头元素）操作，直到队列为空为止
     while (!IsEmptyQueue(*queue)) {
-        // 得到当前队头元素（在顶点数组）中的下标
-        int currentIndex = (*queue)->front;
+     int currentIndex = (*queue)->front;
         // 为了和从以往的实验题中 copy 来的队列的代码“兼容”，需要声明 item 这个变量，实际上在本程序中用不到
         int *item = (int *)malloc(sizeof(int));
         // 将队头元素出队
@@ -166,7 +165,8 @@ void BFSM(MGraph *g, int nodeIndex, int *visited) {
         for (int i = 0; i < g->n; i++) {
             if (g->edges[currentIndex][i] == 1 && !visited[i]) {
                 printf("%d ", g->vertex[i]);
-                visited[i] = 1;
+                visited[i] =     // 得到当前队头元素（在顶点数组）中的下标
+       1;
                 InQueue(queue, i);
             }
         }

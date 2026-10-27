@@ -10,7 +10,7 @@
 // 输出：
 // 4 4
 
-#define MAX_COUNT 100
+#define MAX_COUNT 10
 
 int main() {
     int array[MAX_COUNT];
@@ -23,36 +23,18 @@ int main() {
         i++;
     }
 
+    i--;
+
     scanf("%d", &array[0]);
 
-    int count = 0;
-
-    // while (array[i] != key) {
-    //     i--;
-    //     count++;
-    // }
-    // 对于以上代码，如果不设置监视哨，那么在找一个不存在的元素的情况下，i 就会小于
-    // 0，导致下标越界，除非每次都在循环中判断一下 i 是否已经 < 0 了
-
-    // while (array[i] != key) {
-    //     i--;
-    //     count++;
-
-    //     if (i == -1) {
-    //         break;
-    //     }
-    // }
-    // 对于以上代码，才能保证不越界，但是多了一个判断
-
-    while (array[0] != array[i]) {
+    while (array[i] != array[0]) {
         i--;
-        count++;
     }
 
-    if (i == -1) {
-        printf("失败 %d", count - 1);
+    if (i != 0) {
+        printf("%d %d", i, array[0]);
     } else {
-        printf("%d %d", i, count - 1);
+        printf("失败 %d", i);
     }
 
     getchar();

@@ -1,171 +1,232 @@
-//
-// Created by 慰 on 2018/10/1.
-// 1605【数据结构3-6】栈的应用——表达式求解
-// 测试数据 1：
-// 输入：1*2+(3-8/4)*6
-// 结果：1 2 * 3 8 4 / - 6 * +，8
-
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include <string.h>
 
-#define EXP_MAX_LENGTH 20
+#define MAX_SIZE 100
 
-typedef char DataType;
-
-typedef struct StackNodeStruct {
-    DataType data;
-    struct StackNodeStruct *next;
-} StackNode;
-
+// 定义字符栈
 typedef struct {
-    StackNode *top;
-} LinkStack;
+    char data[MAX_SIZE]; // 存储字符的数组
+    int top;             // 栈顶指针
+} CharStack;
 
-void InitStack(LinkStack *stack) {
-    stack->top = NULL;
+// 初始化栈
+void InitCharStack(CharStack *s) {
+    s->top = -1;
 }
 
-int ReadTop(LinkStack *stack, DataType &topElement) {
-    if (stack->top == NULL) {
-        return 0;
-    }
-
-    topElement = stack->top->data;
-
-    return 1;
+// 判断栈是否为空
+int IsEmptyCharStack(CharStack *s) {
+    return s->top == -1;
 }
 
-int Push(LinkStack *stack, char x) {
-    StackNode *node = (StackNode *)malloc(sizeof(StackNode));
-    node->data = x;
-    node->next = stack->top;
-    stack->top = node;
+// 栈入栈
+void PushChar(CharStack *s, char c) {
+    if (s->top < MAX_SIZE - 1) {
+        s->data[++(s->top)] = c;
+    } else {
+        printf("栈溢出！\n");
+        exit(1);
+    }
 }
 
-int Pop(LinkStack *stack, char &x) {
-    // 栈为空
-    if (stack->top == NULL) {
-        return 0;
+// 栈出栈
+char PopChar(CharStack *s) {
+    if (!IsEmptyCharStack(s)) {
+        return s->data[(s->top)--];
+    } else {
+        printf("栈为空！\n");
+        exit(1);
     }
-
-    StackNode *node = stack->top;
-    x = node->data;
-    stack->top = node->next;
-    free(node);
-
-    return 1;
 }
 
-int IsEmptyStack(LinkStack *stack) {
-    if (stack->top == NULL) {
-        return 1;
+// 获取栈顶元素
+char PeekChar(CharStack *s) {
+    if (!IsEmptyCharStack(s)) {
+        return s->data[s->top];
+    } else {
+        return '#'; // 特殊符号，表示栈为空
     }
-    return 0;
 }
 
-int GetOperatorLevel(char op) {
-    if (op == '#') {
-        return 0;
-    }
+// 判断是否为运算符
+int IsOperator(char c) {
+    return c == '+' || c == '-' || c == '*' || c == '/';
+}
 
-    if (op == '(' || op == ')') {
-        return 1;
-    }
-
-    if (op == '*' || op == '/') {
-        return 3;
-    }
-
-    if (op == '+' || op == '-') {
+// 获取操作符优先级
+int GetPriority(char c) {
+    if (c == '*' || c == '/') {
         return 2;
+    } else if (c == '+' || c == '-') {
+        return 1;
+    } else {
+        return 0;
     }
-
-    return -1;
 }
 
-main() {
-    LinkStack *expressionStack = (LinkStack *)malloc(sizeof(LinkStack));
-    InitStack(expressionStack);
-    DataType currentChar;
-    char suffixExpression[100];
-    int index = -1;
-    // 中缀表达式转换为后缀表达式--BEGIN
-    while (scanf("%c", &currentChar) && currentChar != '#') {
-        // 如果是数字，直接输出
-        if (currentChar == '0' || currentChar == '1' || currentChar == '2' || currentChar == '3' || currentChar == '4' || currentChar == '5'
-            || currentChar == '6' || currentChar == '7' || currentChar == '8' || currentChar == '9') {
-            printf("%c ", currentChar);
-            suffixExpression[++index] = currentChar;
-        } else if (currentChar == '+' || currentChar == '-' || currentChar == '*' || currentChar == '/') {
-            if (IsEmptyStack(expressionStack)) {
-                Push(expressionStack, currentChar);
-            } else {
-                int currentOperatorLevel = GetOperatorLevel(currentChar);
-                char stackTopOperator;
-                ReadTop(expressionStack, stackTopOperator);
-                int stackTopOperatorLevel = GetOperatorLevel(stackTopOperator);
-
-                // 若当前输入的运算符的优先级 <= 栈顶运算符优先级，则将所有运算符进行出栈，直到栈顶元素优先级 >
-                // 当前输入的运算符优先级为止
-                // 然后再将当前的入栈
-                while (currentOperatorLevel <= stackTopOperatorLevel && !IsEmptyStack(expressionStack)) {
-                    Pop(expressionStack, stackTopOperator);
-                    printf("%c ", stackTopOperator);
-                    suffixExpression[++index] = stackTopOperator;
-                    ReadTop(expressionStack, stackTopOperator);
-                    stackTopOperatorLevel = GetOperatorLevel(stackTopOperator);
-                }
-
-                Push(expressionStack, currentChar);
+// 中缀表达式转换为后缀表达式
+void InfixToPostfix(char *infix, char *postfix) {
+    CharStack opStack;
+    InitCharStack(&opStack);
+    int i = 0, k = 0;
+    while (infix[i] != '#' && infix[i] != '\0') {
+        if (isdigit(infix[i])) {
+            // 将数字字符复制到后缀表达式中
+            while (isdigit(infix[i])) {
+                postfix[k++] = infix[i++];
             }
+            postfix[k++] = ' '; // 数字结束，添加空格分隔
+        } else if (infix[i] == '(') {
+            PushChar(&opStack, infix[i++]);
+        } else if (infix[i] == ')') {
+            while (!IsEmptyCharStack(&opStack) && PeekChar(&opStack) != '(') {
+                postfix[k++] = PopChar(&opStack);
+                postfix[k++] = ' '; // 操作符后添加空格分隔
+            }
+            if (!IsEmptyCharStack(&opStack) && PeekChar(&opStack) == '(') {
+                PopChar(&opStack); // 弹出左括号
+            }
+            i++;
+        } else if (IsOperator(infix[i])) {
+            while (!IsEmptyCharStack(&opStack) && GetPriority(PeekChar(&opStack)) >= GetPriority(infix[i])) {
+                postfix[k++] = PopChar(&opStack);
+                postfix[k++] = ' '; // 操作符后添加空格分隔
+            }
+            PushChar(&opStack, infix[i++]);
+        } else {
+            i++; // 跳过空格或未知字符
         }
     }
-    // 结束所有输入操作后，将所有剩下的运算符依次出栈
-    while (!IsEmptyStack(expressionStack)) {
-        char stackTopOperator;
-        Pop(expressionStack, stackTopOperator);
-        printf("%c ", stackTopOperator);
-        suffixExpression[++index] = stackTopOperator;
+    // 弹出栈中剩余的操作符
+    while (!IsEmptyCharStack(&opStack)) {
+        postfix[k++] = PopChar(&opStack);
+        postfix[k++] = ' '; // 操作符后添加空格分隔
     }
-    // 中缀表达式转换为后缀表达式--END
+    postfix[k] = '\0'; // 添加字符串结束符
+}
 
-    printf("\n");
-    // 计算后缀表达式结果--BEGIN
-    LinkStack *calculationStack = (LinkStack *)malloc(sizeof(LinkStack));
-    InitStack(calculationStack);
-    int result = 0; // 定义一个变量result，用于存储计算结果
+// 计算后缀表达式
+double EvaluatePostfix(char *postfix) {
+    CharStack stack;
+    InitCharStack(&stack);
+    int i = 0;
+    while (postfix[i] != '\0') {
+        if (isdigit(postfix[i])) {
+            // 将数字字符压入栈中
+            while (isdigit(postfix[i])) {
+                PushChar(&stack, postfix[i++]);
+            }
+            PushChar(&stack, ' '); // 数字结束，添加空格作为标识
+        } else if (IsOperator(postfix[i])) {
+            // 操作符，弹出两个操作数进行计算
+            double num2 = 0, num1 = 0;
+            char numStr[MAX_SIZE];
+            int idx = 0;
 
-    for (int i = 0; i <= index; i++) {          // 遍历后缀表达式
-        char currentChar = suffixExpression[i]; // 获取当前字符
+            // 获取第二个操作数
+            while (!IsEmptyCharStack(&stack) && PeekChar(&stack) != ' ') {
+                numStr[idx++] = PopChar(&stack);
+            }
+            if (!IsEmptyCharStack(&stack) && PeekChar(&stack) == ' ') {
+                PopChar(&stack); // 弹出空格
+            }
+            numStr[idx] = '\0';
+            // 反转字符串
+            for (int j = 0; j < idx / 2; j++) {
+                char temp = numStr[j];
+                numStr[j] = numStr[idx - j - 1];
+                numStr[idx - j - 1] = temp;
+            }
+            num2 = atof(numStr);
 
-        if (currentChar == '0' || currentChar == '1' || currentChar == '2' || currentChar == '3' || currentChar == '4' || currentChar == '5'
-            || currentChar == '6' || currentChar == '7' || currentChar == '8' || currentChar == '9') { // 如果当前字符是数字
-            Push(calculationStack, currentChar);                                                       // 将数字入栈
-        } else if ((currentChar == '+' || currentChar == '-' || currentChar == '*'
-                    || currentChar == '/')) {       // 如果当前字符是运算符，接连弹出两个栈顶元素进行运算
-            char stackTopElement;                   // 定义一个变量stackTopElement，用于存储栈顶元素
-            Pop(calculationStack, stackTopElement); // 弹出栈顶元素
-            int x = (int)stackTopElement - '0';     // 将栈顶元素转换为数字
-            Pop(calculationStack, stackTopElement); // 弹出栈顶元素
-            int y = (int)stackTopElement - '0';     // 将栈顶元素转换为数字
+            // 重置 idx，获取第一个操作数
+            idx = 0;
+            while (!IsEmptyCharStack(&stack) && PeekChar(&stack) != ' ') {
+                numStr[idx++] = PopChar(&stack);
+            }
+            if (!IsEmptyCharStack(&stack) && PeekChar(&stack) == ' ') {
+                PopChar(&stack); // 弹出空格
+            }
+            numStr[idx] = '\0';
+            // 反转字符串
+            for (int j = 0; j < idx / 2; j++) {
+                char temp = numStr[j];
+                numStr[j] = numStr[idx - j - 1];
+                numStr[idx - j - 1] = temp;
+            }
+            num1 = atof(numStr);
 
-            if (currentChar == '+') {        // 如果当前运算符是加号
-                result = x + y;              // 计算x+y的值
-            } else if (currentChar == '-') { // 如果当前运算符是减号
-                result = x - y;              // 计算x-y的值
-            } else if (currentChar == '*') { // 如果当前运算符是乘号
-                result = x * y;              // 计算x*y的值
-            } else if (currentChar == '/') { // 如果当前运算符是除号
-                result = x / y;              // 计算x/y的值
+            // 计算结果
+            double result = 0;
+            switch (postfix[i]) {
+                case '+': result = num1 + num2; break;
+                case '-': result = num1 - num2; break;
+                case '*': result = num1 * num2; break;
+                case '/':
+                    if (num2 == 0) {
+                        printf("错误：除数不能为零！\n");
+                        exit(1);
+                    }
+                    result = num1 / num2;
+                    break;
+                default: printf("错误：未知操作符 %c！\n", postfix[i]); exit(1);
             }
 
-            Push(calculationStack, result); // 将计算结果入栈
+            // 将计算结果以字符形式压入栈中
+            char resultStr[MAX_SIZE];
+            sprintf(resultStr, "%.0f", result);
+            int len = strlen(resultStr);
+            for (int j = 0; j < len; j++) {
+                PushChar(&stack, resultStr[j]);
+            }
+            PushChar(&stack, ' '); // 结果结束，添加空格作为标识
+            i++;                   // 跳过操作符
+        } else {
+            i++; // 跳过空格或未知字符
         }
     }
-    printf("%d", result);
-    // 计算后缀表达式结果--END
 
-    getchar();
-    getchar();
+    // 获取最终结果
+    char finalNumStr[MAX_SIZE];
+    int idx = 0;
+    while (!IsEmptyCharStack(&stack) && PeekChar(&stack) != ' ') {
+        finalNumStr[idx++] = PopChar(&stack);
+    }
+    finalNumStr[idx] = '\0';
+    // 反转字符串
+    for (int j = 0; j < idx / 2; j++) {
+        char temp = finalNumStr[j];
+        finalNumStr[j] = finalNumStr[idx - j - 1];
+        finalNumStr[idx - j - 1] = temp;
+    }
+    double finalResult = atof(finalNumStr);
+    return finalResult;
+}
+
+int main() {
+    char infixExp[MAX_SIZE];
+    char c;
+    int idx = 0;
+
+    // 输入提示信息
+    printf("请输入中缀表达式（以#结束）：\n");
+    while ((c = getchar()) != '#') {
+        infixExp[idx++] = c;
+    }
+    infixExp[idx] = '\0';
+
+    char postfixExp[MAX_SIZE]; // 存储后缀表达式的数组
+    InfixToPostfix(infixExp, postfixExp);
+
+    // 输出后缀表达式
+    printf("后缀表达式为：\n");
+    printf("%s\n", postfixExp);
+
+    // 计算结果
+    double result = EvaluatePostfix(postfixExp);
+    printf("%.1f\n", result);
+
+    return 0;
 }

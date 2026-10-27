@@ -38,7 +38,7 @@ void BubbleSort(int array[], int length) {
         // 声明变量 swapCount，用于记录本趟排序交换的次数
         int swapCount = 0;
         // 从无序序列中的第一个元素开始，依次和后一个元素进行比较，直到无序序列中的倒数第二个元素（第 i 趟排序，排好序的序列的元素个数为 i - 1 个）
-        for (int j = 1; j <= length - i - 1; j++) {
+        for (int j = 1; j <= length - i; j++) {
             // 如果当前元素比后一个元素大，则交换两个元素
             if (array[j] > array[j + 1]) {
                 array[0] = array[j + 1];
