@@ -10,7 +10,7 @@
 // 输出：
 // 4 4
 
-#define MAX_COUNT 100
+#define MAX_COUNT 10
 
 int main() {
     int array[MAX_COUNT];
@@ -45,11 +45,11 @@ int main() {
     // 对于以上代码，才能保证不越界，但是多了一个判断
 
     while (array[0] != array[i]) {
-        i--;
         count++;
+        i--;
     }
 
-    if (i == -1) {
+    if (i == 0) {
         printf("失败 %d", count - 1);
     } else {
         printf("%d %d", i, count - 1);

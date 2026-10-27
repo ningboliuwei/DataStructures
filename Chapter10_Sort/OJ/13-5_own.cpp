@@ -89,7 +89,7 @@ int main() {
     // 调用 QuickSort() 函数，对 array 进行快速排序
     QuickSort(array, 0, count - 1, pivotPos);
     // 输出数组
-    ShowArray(array, count);
+    // ShowArray(array, count);
 
     getchar();
     getchar();

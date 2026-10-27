@@ -13,7 +13,7 @@
       B    C
      /\    /\
     D  E  F G
-      /  /   
+      /  /
      H   I            */
 
 #include <stdio.h>
@@ -129,11 +129,9 @@ int main() {
     int n;
     BiTree T;
 
-    cin >> n; //二叉树结点个数
-
+    scanf("%d", &n);    //二叉树结点个数
     CreateBiTree(T, n); //创建二叉链表
-
-    Postorder(T); //后序遍历
+    Postorder(T);       //后序遍历
 
     getchar();
     getchar();
