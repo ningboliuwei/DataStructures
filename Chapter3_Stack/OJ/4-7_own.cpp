@@ -86,8 +86,9 @@ int Packaging(int maxCapacity, int itemCount, int itemWeights[MAX_ITEM_COUNT], L
 
     while (itemToTryIndex != itemCount) {
         int weightToTry = itemWeights[itemToTryIndex];
-        // 若 当前总重量 + 接下来要尝试的重量 = 背包总容量，则算找到了解，将要尝试的重量对应的下标入栈，并 return 退出函数
+        // 若 当前总重量 + 接下来要尝试的重量 = 背包总容量，则算找到了解
         if (totalWeight + weightToTry == maxCapacity) {
+            // 将要尝试的重量对应的下标入栈，并 return 退出函数
             Push(selectedItemWeightsStack, itemToTryIndex);
             totalWeight += weightToTry;
             return 1;

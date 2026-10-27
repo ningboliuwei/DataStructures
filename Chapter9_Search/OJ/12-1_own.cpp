@@ -9,6 +9,7 @@
 // 14
 // 输出：
 // 4 4
+// 2025-12-11 修改代码顺序，使其更符合逻辑
 
 #define MAX_COUNT 10
 
@@ -17,42 +18,31 @@ int main() {
     int number = 0;
     int i = 1;
 
-    while (number != -1) {
+    while (true) {
         scanf("%d", &number);
+
+        if (number == -1) {
+            break;
+        }
+
         array[i] = number;
         i++;
     }
 
     scanf("%d", &array[0]);
 
-    int count = 0;
+    int count = 1;
 
-    // while (array[i] != key) {
-    //     i--;
-    //     count++;
-    // }
-    // 对于以上代码，如果不设置监视哨，那么在找一个不存在的元素的情况下，i 就会小于
-    // 0，导致下标越界，除非每次都在循环中判断一下 i 是否已经 < 0 了
-
-    // while (array[i] != key) {
-    //     i--;
-    //     count++;
-
-    //     if (i == -1) {
-    //         break;
-    //     }
-    // }
-    // 对于以上代码，才能保证不越界，但是多了一个判断
-
+    i--;
     while (array[0] != array[i]) {
-        count++;
         i--;
+        count++;
     }
 
     if (i == 0) {
-        printf("失败 %d", count - 1);
+        printf("失败 %d", count);
     } else {
-        printf("%d %d", i, count - 1);
+        printf("%d %d", i, count);
     }
 
     getchar();

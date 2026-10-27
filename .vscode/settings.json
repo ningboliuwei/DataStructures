@@ -1,5 +1,8 @@
 {
   "files.associations": {
+    "*.page-template": "vue",
+    "*.layout-template": "vue",
+    "*.vue": "vue",
     "*.cshtml": "html",
     "*.tcc": "cpp",
     "bitset": "cpp",
@@ -49,7 +52,10 @@
     "__hash_table": "cpp",
     "__locale": "cpp",
     "ios": "cpp",
-    "thread": "cpp"
+    "thread": "cpp",
+    "TEMP10.C": "cpp",
+    "stdio.h": "c",
+    "list": "c"
   },
   "C_Cpp.autocomplete": "Default",
   "[cpp]": {

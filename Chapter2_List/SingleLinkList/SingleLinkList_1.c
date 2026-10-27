@@ -15,7 +15,8 @@ LinkList CreateListF_L(LinkList linkList) {
     Node *newNode;
     int data = 0;
 
-    Node *head = (Node *)malloc(sizeof(Node));
+    Node *head;
+    head = (Node *)malloc(sizeof(Node));
     head->next = NULL;
     linkList = head;
 
@@ -127,7 +128,6 @@ int InsList_L(LinkList linkList, int pos, int newElement) {
     Node *p = linkList;
     int index = 0;
 
-    // PPT 上为 while (p ...  到底哪个是正确的？
     while (p->next != NULL && index < pos - 1) {
         p = p->next;
         index++;
@@ -205,10 +205,10 @@ int main() {
     // printf("Input a index you want to search.");
     // printf("\n");
 
-    int index = 0;
-    scanf("%d", &index);
-    Node *result = SearchListByPos_L(linkList, index);
-    printf("The found element is %d", result->data);
+    // int index = 0;
+    // scanf("%d", &index);
+    // Node *result = SearchListByPos_L(linkList, index);
+    // printf("The found element is %d", result->data);
     //
     //    printf("\n");
     //    printf("Input a element you want to search.");
@@ -221,11 +221,11 @@ int main() {
     //    printf("\n");
     //    printf("The found position is %d", pos);
 
-    // int pos;
-    // printf("\n");
-    // printf("Input the position of element you want to delete");
-    // scanf("%d", &pos);
-    // int q = DelList_L(linkList, pos);
+    int pos;
+    printf("\n");
+    printf("Input the position of element you want to delete");
+    scanf("%d", &pos);
+    int q = DelList_L(linkList, pos);
 
     // printf("%d\n", q);
     // printf("The elements of the linklist after deletion:");

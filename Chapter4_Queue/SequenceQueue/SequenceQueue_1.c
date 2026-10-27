@@ -12,7 +12,7 @@ typedef struct SequenceQueueType {
     int data[MAX_LENGTH];
     int front;
     int rear;
-} *SequenceQueue;
+} * SequenceQueue;
 
 int IsEmptyQueue(SequenceQueue queue) {
     if (queue->front == -1 && queue->rear == -1) {
@@ -58,7 +58,7 @@ int OutQueue(SequenceQueue *queue, int *item) {
 
 int InitQueue(SequenceQueue *queue) {
     // 此处 sizeof 的参数要注意
-    *queue = (SequenceQueue) malloc(sizeof(struct SequenceQueueType));
+    *queue = (SequenceQueue)malloc(sizeof(struct SequenceQueueType));
 
     (*queue)->front = -1;
     (*queue)->rear = -1;
@@ -74,7 +74,7 @@ void ShowQueue(SequenceQueue queue) {
 }
 
 int main() {
-    SequenceQueue *queue = (SequenceQueue *) malloc(sizeof(SequenceQueue));
+    SequenceQueue *queue = (SequenceQueue *)malloc(sizeof(SequenceQueue));
     InitQueue(queue);
 
     InQueue(queue, 1);
@@ -83,7 +83,7 @@ int main() {
     InQueue(queue, 4);
 
     ShowQueue(*queue);
-    int *item = (int *) malloc(sizeof(int));
+    int *item = (int *)malloc(sizeof(int));
 
     OutQueue(queue, item);
     printf("out: %d\n", *item);

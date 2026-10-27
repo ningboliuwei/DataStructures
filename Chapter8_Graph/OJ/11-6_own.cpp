@@ -1,6 +1,6 @@
 //
 // Created by Liu Wei on 2018/11/25.
-// 问题 B: 【数据结构8-4】图的遍历——BFS
+// 问题 B: 【数据结�-4】图的遍历——BFS
 // OJ: 1646 OJ PASSED
 /*
 8 10
@@ -35,7 +35,7 @@ typedef int VertexType;
 typedef struct {
     VertexType vertex[MAXLEN];
     int edges[MAXLEN][MAXLEN];
-    // 顶点数
+    // 顶点�
     int n;
     // 边数
     int e;
@@ -54,7 +54,7 @@ int IsEmptyQueue(SequenceQueue queue) {
 
     return 0;
 }
-// 求队列长度
+// 求队列长�
 int LengthOfQueue(SequenceQueue queue) {
     if (IsEmptyQueue(queue)) {
         return 0;
@@ -84,7 +84,7 @@ int OutQueue(SequenceQueue *queue, int *item) {
 
     return 1;
 }
-// 初始化队列
+// 初始化队�
 int InitQueue(SequenceQueue *queue) {
     // 此处 sizeof 的参数要注意
     *queue = (SequenceQueue)malloc(sizeof(struct SequenceQueueType));
@@ -135,25 +135,25 @@ void CreateGraph(MGraph *g) {
         }
 
         g->edges[pos1][pos2] = 1;
-        // 无向图邻接矩阵对称
+        // 无向图邻接矩阵对�
         g->edges[pos2][pos1] = 1;
     }
 }
-// 广度遍历函数（从指定的顶点出发，以广度优先的方式遍历所有的邻接顶点）
+// 广度遍历函数（从指定的顶点出发，以广度优先的方式遍历所有的邻接顶点�
 void BFSM(MGraph *g, int nodeIndex, int *visited) {
-    // 创建一个队列并初始化
+    // 创建一个队列并初始�
     SequenceQueue *queue = (SequenceQueue *)malloc(sizeof(SequenceQueue));
     InitQueue(queue);
-    // 输出当前顶点信息（可以理解为“访问”了这个顶点）
+    // 输出当前顶点信息（可以理解为“访问”了这个顶点�
     printf("%d ", g->vertex[nodeIndex]);
-    // 将当前定点设为“已访问”
+    // 将当前定点设为“已访问�
     visited[nodeIndex] = 1;
     // 将当前顶点（遍历的出发点）的下标入队
     InQueue(queue, nodeIndex);
     // 只要当前队列不为空，就一直进行出队（注意，从队列中删除的永远是当前的队头元素）操作，直到队列为空为止
     while (!IsEmptyQueue(*queue)) {
         int *vertex = (int *)malloc(sizeof(int));
-        // 将队头元素出队
+        // 将队头元素出�
         OutQueue(queue, vertex);
         // 将所有与（出队的）队头顶点邻接的且尚未被访问过的顶点入队
         for (int i = 0; i < g->n; i++) {
@@ -171,7 +171,7 @@ void BFSM(MGraph *g, int nodeIndex, int *visited) {
 void BFSTraverseM(MGraph *g) {
     // 声明 visted 数组，用于记录哪些顶点已被访问过
     int visited[g->n];
-    // 初始化 visted 数组
+    // 初始�visted 数组
     for (int i = 0; i < g->n; i++) {
         visited[i] = 0;
     }
