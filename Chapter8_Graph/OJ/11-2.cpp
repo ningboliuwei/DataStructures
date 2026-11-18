@@ -5,12 +5,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAXLEN 10
 typedef char VertexType;
 
 // 邻接表中的边表结点结构
 typedef struct EdgeNodeStruct {
-    VertexType adjVex;
+    int adjVex;
     struct EdgeNodeStruct *next;
 } EdgeNode;
 
@@ -22,7 +21,7 @@ typedef struct {
 
 typedef struct {
     // 邻接表
-    VertexNode adjList[MAXLEN];
+    VertexNode *adjList;
     // 顶点数
     int n;
     // 边数
@@ -35,25 +34,29 @@ void CreateGraph(ALGraph *g) {
     int pos1;
     int pos2;
 
-    printf("输入顶点数与边数：\n");
-    scanf("%d,%d", &(g->n), &(g->e));
-    printf("输入各顶点：\n");
+    if (scanf("%d %d", &(g->n), &(g->e)) != 2 || g->n < 0 || g->e < 0) {
+        exit(EXIT_FAILURE);
+    }
+    g->adjList = (VertexNode *)malloc(g->n * sizeof(VertexNode));
+    if (g->n > 0 && g->adjList == NULL) {
+        exit(EXIT_FAILURE);
+    }
     // 循环 g->n 次，输入每个顶点
     for (int i = 0; i < g->n; i++) {
         char c;
-        getchar();
-        scanf("%c", &c);
+        if (scanf(" %c", &c) != 1) {
+            exit(EXIT_FAILURE);
+        }
         g->adjList[i].vertex = c;
         // 如果下面这句不加会有什么结果？
         g->adjList[i].firstEdge = NULL;
     }
 
-    printf("请输入每条边对应的两个顶点：\n");
     // 循环 g->e 次，输入每条边的起点与终点
     for (int i = 0; i < g->e; i++) {
-        getchar();
-        printf("请输入第%d条边的顶点：", i + 1);
-        scanf("\n%c,%c", &vex1, &vex2);
+        if (scanf(" %c %c", &vex1, &vex2) != 2) {
+            exit(EXIT_FAILURE);
+        }
         // 找到边的起点在顶点表中的位置
         for (pos1 = 0; pos1 < g->n; pos1++) {
             if (g->adjList[pos1].vertex == vex1) {
@@ -66,8 +69,14 @@ void CreateGraph(ALGraph *g) {
                 break;
             }
         }
+        if (pos1 == g->n || pos2 == g->n) {
+            exit(EXIT_FAILURE);
+        }
         // 将边的终点在顶点表中的位置赋值给邻接表中的边表结点
         EdgeNode *newEdgeNode = (EdgeNode *)malloc(sizeof(EdgeNode));
+        if (newEdgeNode == NULL) {
+            exit(EXIT_FAILURE);
+        }
         newEdgeNode->adjVex = pos2;
         newEdgeNode->next = NULL;
         // 将边表结点插入到作为起点的顶点的边表中
@@ -120,10 +129,22 @@ void DisplayGraph(ALGraph *g) {
 
 int main() {
     ALGraph *g = (ALGraph *)malloc(sizeof(ALGraph));
+    if (g == NULL) {
+        return EXIT_FAILURE;
+    }
 
     CreateGraph(g);
     DisplayGraph(g);
 
-    int i = 0;
-    scanf("%d", &i);
+    for (int i = 0; i < g->n; i++) {
+        EdgeNode *node = g->adjList[i].firstEdge;
+        while (node != NULL) {
+            EdgeNode *next = node->next;
+            free(node);
+            node = next;
+        }
+    }
+    free(g->adjList);
+    free(g);
+    return 0;
 }
